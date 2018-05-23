@@ -1,6 +1,6 @@
 .breadcrumbs {
   padding-left: 0;
-  color: $gray-medium;
+  color: $red-disabled;
   & > li {
     display: inline-block;
     &:not(:first-child)::before {
@@ -11,17 +11,17 @@
       margin-left: 8px;
     }
     & > a {
-      color: $gray-medium;
+      color: $crimson-red;
       text-decoration: none;
       &:hover, &:focus {
-        color: $brand-primary-lighten;
+        color: $red-hoverfocus;
       }
       &:active {
-        color: $brand-primary-darken;
+        color: $red-active;
       }
     }
-    &.active > a {
-      color: $brand-primary-darken;
+    &.active {
+      color: $red-disabled;
     }
   }
 }
