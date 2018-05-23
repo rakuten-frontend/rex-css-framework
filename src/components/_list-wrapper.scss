@@ -1,0 +1,109 @@
+.list-wrapper {
+  background: $white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  margin-bottom: 24px;
+  &.with-overflow {
+    ul {
+      max-height: 184px;
+      overflow-y: scroll;
+    }
+  }
+  ul {
+    padding-top: 8px;
+    margin: 0;
+    li {
+      color: $gray;
+      margin: 0;
+      a {
+        color: $gray;
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+      span {
+        width: 100%;
+        padding: 8px 16px;
+        cursor: pointer;
+        display: inline-block;
+        &:hover,
+        &.hover {
+          background: $gray-lightest;
+        }
+      }
+    }
+  }
+  .separated {
+    border-top: solid 1px $gray-lighter;
+    ul {
+      padding: 0;
+      max-height: none;
+      overflow: auto;
+      li {
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &.with-icons {
+    .list-title {
+      font-weight: normal;
+      padding: 16px 16px 8px;
+      margin: 0;
+      font-size: 16px;
+    }
+    li {
+      >span,
+      .rex-icon {
+        display: inline-block;
+      }
+      >span {
+        padding: 0;
+        &.active {
+          border-left: solid 2px $gray-dark;
+          .rex-icon,
+          .icon {
+            margin-left: 14px;
+          }
+        }
+        >span {
+          width: auto;
+          vertical-align: top;
+          padding: 16px 0;
+        }
+      }
+      .rex-icon,
+      .icon {
+        font-size: 24px;
+        margin: 16px;
+        &.chevron-right {
+          float: right;
+          font-size: 16px;
+          top: 8px;
+        }
+      }
+    }
+    &.with-li-borders {
+      ul {
+        li {
+          border-bottom: solid 1px $gray-lighter;
+          span {
+          &.active {
+            border-left: none;
+            .rex-icon,
+            .icon {
+              border-left: solid 2px $gray-dark;
+              padding-left: 14px;
+              margin-left: 0;
+              &.chevron-right {
+                border: none;
+              }
+            }
+          } 
+          }
+        }
+      }
+    }
+  }
+}

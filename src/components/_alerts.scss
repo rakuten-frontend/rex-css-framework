@@ -1,0 +1,73 @@
+@mixin alertcolor($bg-color, $border, $color) {
+  background-color: $bg-color;
+  border: 1px solid $border;
+  color: $color;
+}
+
+.alert {
+  border-radius: 4px;
+  display: block;
+  position: relative;
+  word-break: break-all;
+  padding: {
+    top: 13px;
+    right: 56px;
+    bottom: 13px;
+    left: 24px;
+  }
+  &.alert-icon {
+    padding-left: 64px;
+  }
+  .rex-icon {
+    margin: 16px;
+    font-size: 21px;
+    position: absolute;
+    left: 0;
+  }
+  .close {
+    color: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .rex-icon {
+      cursor: pointer;
+      position: static;
+    }
+  }
+  &.success {
+    @include alertcolor($green-lighter, $green-light, $success);
+  }
+  &.info {
+    @include alertcolor($blue-lighter, $blue-light, $info);
+  }
+  &.warning {
+    @include alertcolor($yellow-lighter, $yellow-light, $warning);
+  }
+  &.danger {
+    @include alertcolor($red-lighter, $red-light, $danger);
+  }
+  &.alert-list {
+    @include alertcolor($red-lighter, $red-light, $danger);
+    word-break: break-all;
+    list-style: none;
+    display: block;
+    padding: 16px;
+    .title {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .message {
+      position: relative;
+      margin-bottom: 8px;
+      padding-left: 2em;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: rex-icon;  // TODO: make it variable or mixin
+        content: $_32-chevron-right;
+        margin-right: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+//////////
+// Entry point for default theme
+//////////
+
+// Color settings
+@import "../core/rex_colors";
+@import "./colors/default";
+
+// Main
+@import "../main.scss";

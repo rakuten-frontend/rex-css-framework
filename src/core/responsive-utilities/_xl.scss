@@ -1,0 +1,27 @@
+.visible-xl-block,
+.visible-xl-inline,
+.visible-xl-inline-block {
+  display: none !important;
+}
+
+@media (min-width: $screen-xl-min) {
+  @include responsive-visibility('.visible-xl');
+}
+.visible-lg-block {
+  @media (min-width: $screen-xl-min) {
+    display: block !important;
+  }
+}
+.visible-lg-inline {
+  @media (min-width: $screen-xl-min) {
+    display: inline !important;
+  }
+}
+.visible-lg-inline-block {
+  @media (min-width: $screen-xl-min) {
+    display: inline-block !important;
+  }
+}
+@media (min-width: $screen-xl-min) {
+  @include responsive-invisibility('.hidden-xl');
+}

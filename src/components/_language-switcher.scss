@@ -1,0 +1,205 @@
+%popup {
+  position: absolute;
+  left: -14px;
+  width: 124px;
+  line-height: 1.5;
+  color: $white;
+  background-color: $gray;
+  padding: 8px 16px;
+  border-radius: 4px;
+  opacity: 0;
+	display: none;
+}
+%popup_trigangle {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid $gray;
+  border-right:6px solid transparent;
+  border-left:6px solid transparent;
+  top: -16px;
+  left: 45%;
+}
+
+.language-switcher {
+  padding-right: 16px;
+  text-align: center;
+  position: relative;
+  min-width: 64px;
+  > small {
+    color: $gray-light;
+    line-height: 48px;
+		cursor: pointer;
+  }
+  i {
+    top: 11px;
+    float: left;
+  }
+  small {
+    float: left;
+    padding-left: 4px;
+    padding-top: 6px;
+    font-size: 12px;
+  }
+  .coming-soon {
+    @extend %popup;
+    @extend .rex-motion;
+    @include transition(opacity 0.15s $standard-curve);
+    &:before {
+      @extend %popup_trigangle;
+    }
+  }
+  &:hover {
+    .coming-soon {
+			display: block;
+      @extend .rex-motion;
+      @include animation(rex-fadeInDown 0.15s $standard-curve forwards);
+      &:before {}
+    }
+  }
+  .local-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1000;
+    &.visible {
+      display: block;
+      transition: 0.2s $standard-curve;
+    }
+  }
+  .local-options {
+    width: 272px;
+    height: auto;
+    border-radius: 4px;
+    background-color: $white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    text-align: left;
+    @extend .rex-motion;
+    @include animation(rex-fadeInDown 0.15s $standard-curve forwards);
+    transition: 0.2s $standard-curve;
+    > p {
+      margin-bottom: 8px !important;
+    }
+    &.visible {
+      display: block;
+    }
+    .lang-text {
+      margin-left: 24px;
+    }
+    .lang-subheading {
+      margin-bottom: 8px !important;
+      position: relative;
+      height: 28px;
+      span.lang-icon {
+        margin-right: 8px;
+        position: absolute;
+        font-size: 19px;
+      }
+    }
+    .current-lang {
+      width: 100%;
+      height: 40px;
+      padding: 8px 16px;
+      font-weight: normal;
+      border-radius: 4px;
+      background-color: $white;
+      border: solid 1px $brand-primary;
+      position: relative;
+      cursor: default;
+      span {
+        color: $gray;
+        top: 5px;
+        position: absolute;
+      }
+      &:hover {
+        border: solid 1px $brand-primary-lighten;
+        transition: 0.2s $standard-curve;
+        .dropdown-btn {
+          transition: 0.2s $standard-curve;
+          background: $brand-primary-lighten;
+        }
+      }
+      .dropdown-btn {
+        width: 32px;
+        height: 38px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        position: absolute;
+        background: $brand-primary;
+        right: 0;
+        top: 0;
+        float: right;
+        .arrow-down {
+          width: 0; 
+          height: 0; 
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 8px solid $white;
+          left: 10px;
+          top: 17px;
+          position: absolute;
+        }
+      }
+    }
+    .local-actions {
+      text-align: center;
+      padding-top: 16px;
+      .save {
+        width: 131px;
+        height: 40px;
+        display: block;
+        margin: 24px auto 16px;
+      }
+    }
+  }
+}
+
+.local-select-options {
+  position: relative;
+  .lang-options {
+    position: absolute;
+    top: 8px;
+    width: 192px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    background: $white;
+    cursor: default;
+    &:hover {
+      color: $brand-primary;
+      transition: 0.2s $standard-curve;
+    }
+    .lang-option {
+      cursor: default;
+      @extend .rex-motion;
+      @include animation(rex-fadeInDown 0.15s $standard-curve forwards);
+      padding: 16px;
+      color: $gray;
+      background: $white;
+      &:first-of-type {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      &:last-of-type {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+      &.active {
+        color: $brand-primary;
+      }
+      &:hover {
+        background: $gray-lighter;
+        transition: 0.2s $standard-curve;
+      }
+    }
+  }
+}

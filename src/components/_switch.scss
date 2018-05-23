@@ -1,0 +1,52 @@
+.switch-area {
+  input {
+    display: none;
+  }
+  .switch-label {
+    width: 48px;
+    background: $gray-medium-light;
+    border-radius: 4px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+    &:before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: $white;
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: .2s;
+    }
+  }
+  :checked + .switch-label {
+    background-color: $brand-primary;
+    &:before {
+      left: 27px;
+      transition: .2s;
+    }
+  }
+
+  &.rounded {
+    .switch-label {
+      border-radius: 14px;
+      &:before {
+        border-radius: 10px;
+      }
+    }
+  }
+  &.disabled {
+    .switch-label {
+      background: $gray-lighter;
+      cursor: initial;
+      &:before {
+        left: 3px;
+        cursor: initial;
+      }
+    }
+  }
+}

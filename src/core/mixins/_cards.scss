@@ -1,0 +1,85 @@
+@mixin getCardMerginTop($type) {
+  @if $type == 'square' {
+    margin-top: 20px;
+  } @else if $type == 'panel' {
+    margin-top: 6px;
+  } @else {
+    margin-top: 22px;
+  }
+}
+
+@mixin getCardJustifyContent($type) {
+  @if $type != 'panel' {
+    justify-content: flex-end;
+  }
+}
+
+@mixin getCardPadding($type) {
+  @if $type == 'wide' {
+    padding: 22px 24px;
+  } @else if $type == 'panel' {
+    padding: 16px;
+  } @else {
+    padding: 16px 24px;
+  }
+}
+
+@mixin extraContents($type) {
+  @if $type != 'text' {
+    color: $brand-primary;
+  }
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  @include getCardJustifyContent($type);
+  @include getCardMerginTop($type);
+  .button {
+    @if $type == 'text' {
+      color: $blue;
+    }
+    margin: 0px 16px;
+    text-decoration: none;
+    &:hover, &:active {
+      @if $type == 'text' {
+        color: $blue;
+      } @else {
+        color: $brand-primary;
+      }
+    }
+  }
+  .more {
+    position: relative;
+    &::before {
+      content: $_32-overflow-button;
+      font-family: "rex-icon";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0.429em; // = 6px
+      line-height: 4.5;
+    }
+  }
+}
+
+@mixin contentStyle($type) {
+  @include getCardPadding($type);
+  font-size: 16px;
+  .header {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: $gray;
+  }
+  .description {
+    line-height: 1.5;
+  }
+  .extra.contents {
+    @include extraContents($type);
+  }
+}
+
+@mixin cardBaseStyle($width, $height) {
+  width: $width;
+  min-height: $height;
+  background-color: $white;
+  border-radius: 4px;
+}

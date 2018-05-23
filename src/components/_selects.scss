@@ -1,0 +1,84 @@
+// placeholder selectors for extends 
+
+%select_arrow {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  border-top: solid 8px $gray-medium-light;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: solid 7px $gray-medium-light;
+}
+
+%arrow_disabled {
+  border-top: solid 7px $gray-light;
+}
+
+
+// declarations
+
+.select-wrapper {
+  position: relative;
+  select {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+select {
+  border: 1px solid $white;
+  color: $gray;
+  height: 40px;
+  -webkit-appearance: none;
+  background: transparent;
+  border-bottom: solid 1px;
+  border-radius: 0;
+  font-size: 12pt;
+  margin: 0;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  &:disabled {
+    + .select-arrow {
+      @extend %arrow_disabled;
+    }
+  }
+}
+.select-arrow {
+  @extend %select_arrow;
+}
+
+
+
+.select-component,
+select {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  &.disabled,
+  &:disabled {
+    cursor: initial;
+    color: $gray-light;
+    .current-value {
+      border-bottom: dashed 1px $gray-light;
+    }
+    &:after {
+      @extend %arrow_disabled;
+    }
+  }
+  .current-value {
+    padding-bottom: 8px;
+    border-bottom: solid 1px $gray-medium-light;
+  }
+  .underline {
+    height: 1px;
+    width: 100%;
+  }
+  &:after {
+    @extend %select_arrow;
+  }
+}

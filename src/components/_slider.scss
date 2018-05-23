@@ -1,0 +1,142 @@
+// because class(%) doesn't work well, use mixin
+@mixin slider-thumb {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: $brand-primary;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  &:hover {
+    background: $white;
+    border: 3px solid $brand-primary;
+  }
+  &:active {
+    background: $white;
+    border: 6px solid $brand-primary;
+  }
+}
+@mixin disabled-slider {
+  cursor: default;
+  width: 12px;
+  height: 12px;
+  background: $gray-light;
+  &:hover, &:active {
+    background: $gray-light;
+    border-color: $gray-light;
+  }
+}
+@mixin small-thumb {
+  width: 16px;
+  height: 16px;
+  &:hover {
+    border-width: 2px;
+  }
+  &:active {
+    border-width: 4px;
+  }
+}
+
+.slider-wrapper {
+  width: 100%;
+  position: relative;
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: $gray-light;
+    outline: none;
+    border-radius: 100px;
+    padding-bottom: 0px;
+  }
+  .slider-line {
+    height: 4px;
+    background: $brand-primary;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+  }
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    @include slider-thumb;
+  }
+  .slider::-moz-range-thumb {
+    @include slider-thumb;
+  }
+  &.disabled {
+    .slider-line {
+      background-color: $gray-light;
+    }
+    .slider {
+      &::-webkit-slider-thumb {
+        @include disabled-slider;
+      }
+      &::-moz-range-thumb {
+        @include disabled-slider;
+      }
+      &::-ms-thumb {
+        @include disabled-slider;
+      }
+    }
+  }
+  &.icon {
+    margin-left: 1.5em;
+    .slider {
+      &::-webkit-slider-thumb {
+        @include small-thumb;
+      }
+      &::-moz-range-thumb {
+        @include small-thumb;
+      }
+      &::-ms-thumb {
+        @include small-thumb;
+      }
+    }
+    .rex-icon {
+      color: $brand-primary;
+      position: absolute;
+      left: -1.5em;
+      top: -0.4em;
+      font-size: 1em;
+    }
+  }
+  &.range-tooltip {
+    .tooltip {
+      position: absolute;
+      top: -3.5em;
+      margin-left: -1.7em;
+    }
+    .slider {
+      &::-webkit-slider-thumb {
+        @include small-thumb;
+      }
+      &::-moz-range-thumb {
+        @include small-thumb;
+      }
+      &::-ms-thumb {
+        @include small-thumb;
+      }
+    }
+  }
+  &.ranges {
+    .min {
+      background-color: transparent;
+      &.slider {
+        &::-webkit-slider-thumb {
+          top: 0.25em;
+        }
+        &::-moz-range-thumb {
+          top: 0.25em;
+        }
+        &::-ms-thumb {
+          top: 0.25em;
+        }
+        }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+%badge_base {
+  position: absolute;
+  background-color: $brand-primary;
+  line-height: 1.4;
+  color: $white;
+  text-align: center;
+  padding: 0 0.375em;
+  font-size: 0.35em;
+}
+%icon_badge {
+  left: 100%;
+}
+.badge {
+  display: inline-block;
+  font-size: 32px;
+  position: relative;
+  &.icon {
+    .rex-icon {
+      font-size: 1em;
+    }
+    .empty {
+      @extend %icon_badge;
+      margin: 0 0 0 -0.9em;
+      top: 0.7em;
+    }
+    .round {
+      @extend %icon_badge;
+      margin: 0 0 0 -1em;
+      top: 0.5em;
+    }
+    .pill {
+      @extend %icon_badge;
+      margin: 0 0 0 -1em;
+      top: 0.5em;
+    }
+  }
+  &.link {
+    > a {
+      font-size: 0.5em;
+    }
+    .empty,
+    .round,
+    .pill {
+      margin-left: 4px;
+      bottom: 1.25em;
+    }
+    .pill {
+      line-height: 1.5;
+    }
+  }
+  .empty {
+    @extend %badge_base;
+    border-radius: 50%;
+    width: 1.1em;
+    height: 1.1em;
+  }
+  .round {
+    @extend %badge_base;
+    border-radius: 0.3em;
+    height: 1.4em;
+  }
+  .pill {
+    @extend %badge_base;
+    border-radius: 1em;
+    line-height: 1.2;
+    height: 1.3045em;
+  }
+}

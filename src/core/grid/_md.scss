@@ -1,0 +1,11 @@
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+.container {
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+}
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}

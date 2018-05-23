@@ -1,0 +1,38 @@
+.tooltip {
+  display: inline-block;
+  background-color: $brand-primary;
+  border-radius: 3px;
+  padding: 1px 7.5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: $white;
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent;
+  min-width: 3.2em;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    width: .6666em;
+    height: .6666em;
+    transform: rotate(45deg);
+    border-radius: 0 0 2px 0;
+    background-color: $brand-primary;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+  }
+  &.small {
+    font-size: 10px;
+    padding: 0 6px;
+    min-width: 3.2em;
+    text-align: center;
+    &::before {
+      bottom: -3px;
+    }
+  }
+}

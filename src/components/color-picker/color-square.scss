@@ -1,0 +1,28 @@
+.color-square {
+  width: 40px;
+  height: 40px;
+  &:hover {
+    border: solid 2px $gray-darkest;
+  }
+  &.red {
+    background-color: $red-brand;
+  }
+  &.yellow {
+    background-color: $yellow-brand;
+  }
+  &.green {
+    background-color: $green-brand;
+  }
+  &.dark-blue {
+    background-color: $dark-blue-brand;
+  }
+  &.blue {
+    background-color: $blue-brand;
+  }
+  &.purple {
+    background-color: $purple-brand;
+  }
+  &.pink {
+    background-color: $pink-brand;
+  }
+}

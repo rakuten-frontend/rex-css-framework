@@ -1,0 +1,43 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name}{ @content; }
+  @-moz-keyframes #{$name}{ @content; }
+  @-o-keyframes #{$name}{ @content; }
+  @keyframes #{$name}{ @content; }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+.rex-motion {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.rex-motion.infinite {
+  animation-iteration-count: infinite;
+}
+
+.rex-motion-close {
+  opacity: 0;
+  @include transition(all .2s);
+}

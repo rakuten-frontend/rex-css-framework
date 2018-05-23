@@ -1,0 +1,11 @@
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+.container {
+  @media (min-width: $screen-xl-min) {
+    width: $container-xl;
+  }
+}
+@media (min-width: $screen-xl-min) {
+  @include make-grid(xl);
+}

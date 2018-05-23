@@ -1,0 +1,56 @@
+$color-transition: $bg_curve;
+
+@mixin set-square-bg-color($color) {
+    background-color: $color;
+    transition:$color-transition;
+  &#current-color:hover {
+    transition:$color-transition;
+    background-color: $brand-primary-lighten;
+  }
+}
+
+#color-list {
+  .color-square {
+    width: 40px;
+    height: 40px;
+    transition: border-radius $sharp-curve 0.1s;
+    &#current-color {
+      text-align: center;
+      &:hover {
+        border: none;
+      }
+      i {
+        color: white;
+        font-size: 20px;
+        line-height:2;
+      }
+    }
+    &:hover {
+      border: solid 2px $gray-darkest;
+    }
+    &.red { @include set-square-bg-color($red-brand);
+     }
+    &.yellow { @include set-square-bg-color($yellow-brand);
+     }
+    &.green { @include set-square-bg-color($green-brand);
+     }
+    &.dark-blue { @include set-square-bg-color($dark-blue-brand);
+     }
+    &.blue { @include set-square-bg-color($blue-brand);
+     }
+    &.purple { @include set-square-bg-color($purple-brand);
+     }
+    &.pink { @include set-square-bg-color($pink-brand);
+     }
+  }
+}
+
+.color-options {
+    height: 0;
+    overflow: hidden;
+    @include transition(all 0.2s $standard-curve);
+}
+.color-options.open {
+    height: 365px;
+    @include transition(all 0.2s $standard-curve);
+}

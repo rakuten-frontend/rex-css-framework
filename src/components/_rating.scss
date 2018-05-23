@@ -1,0 +1,22 @@
+.rating {
+  color: $gray-light;
+  .rex-icon {
+    margin-right: 1px;
+    margin-left: 1px;
+    font-size: inherit;
+  }
+  .active, .selected, .rex-icon:hover {
+    color: $yellow-medium-light;
+  }
+  &.disabled {
+    .rex-icon {
+      color: $gray-light;
+    }
+  }
+  &.readonly .rex-icon:hover {
+    color: inherit;
+  }
+}
+.rating > * {
+  display: inline-block;
+}

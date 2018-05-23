@@ -1,0 +1,352 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: $headings-small-color;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 { font-size: $font-size-h1; font-weight: $font-weight-h1; }
+h2, .h2 { font-size: $font-size-h2; font-weight: $font-weight-h2; }
+h3, .h3 { font-size: $font-size-h3; font-weight: $font-weight-h3; }
+h4, .h4 { font-size: $font-size-h4; font-weight: $font-weight-h4; }
+h5, .h5 { font-size: $font-size-h5; font-weight: $font-weight-h5; }
+h6, .h6 { font-size: $font-size-h6; font-weight: $font-weight-h6; }
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+.lead {
+  margin-bottom: $line-height-computed;
+  font-size: $font-size-lead;
+  font-weight: 200;
+  line-height: 1.4;
+  color: $gray-dark;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size-lead-sm;
+  }
+}
+
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: (12px small font / 14px base font) * 100% = about 85%
+small,
+.small {
+  font-size: (100% * $font-size-small / $font-size-base);
+}
+
+.extra-small {
+  font-size: floor((100% * $font-size-extra-small / $font-size-base));
+}
+
+.large {
+  font-size: (100% * $font-size-large / $font-size-base);
+}
+
+mark,
+.mark {
+  background-color: $state-warning-bg;
+  padding: .2em;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Contextual colors
+.text-muted {
+  color: $text-muted;
+}
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+
+@include text-emphasis-variant('.text-success', $state-success-text);
+
+@include text-emphasis-variant('.text-info', $state-info-text);
+
+@include text-emphasis-variant('.text-warning', $state-warning-text);
+
+@include text-emphasis-variant('.text-danger', $state-danger-text);
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+}
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $state-success-bg);
+
+@include bg-variant('.bg-info', $state-info-bg);
+
+@include bg-variant('.bg-warning', $state-warning-bg);
+
+@include bg-variant('.bg-danger', $state-danger-bg);
+
+
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: (($line-height-computed / 2) - 1);
+  margin: ($line-height-computed * 2) 0 $line-height-computed;
+  border-bottom: 1px solid $page-header-border-color;
+}
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+  li {
+    margin-bottom: 16px;
+  }
+  ul,
+  ol {
+    margin-bottom: 0;
+    padding-left: 24px;
+    font-size: $font-size-small;
+    li {
+      margin-bottom: 16px;
+    }
+    li:first-child {
+      margin-top: 16px;
+    }
+  }
+}
+
+// List options
+
+// [converter] extracted from `.list-unstyled` for libsass compatibility
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  ul, ol {
+    list-style: none;
+  }
+}
+// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
+.list-unstyled {
+  @include list-unstyled;
+}
+
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  > li {
+    display: inline-block;
+    padding-right: 24px;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: $line-height-computed;
+}
+dt,
+dd {
+  line-height: $line-height-base;
+}
+dt {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $dl-horizontal-breakpoint) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow;
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
+  }
+}
+
+
+// Misc
+// -------------------------
+abbr { text-decoration: none; }
+// Abbreviations and acronyms
+abbr[title],
+// Add data-* attribute to help out our tooltip plugin,
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted $abbr-border-color;
+}
+.initialism {
+  font-size: 90%;
+  @extend .text-uppercase;
+}
+
+// Blockquotes
+blockquote {
+  margin: 0 auto $line-height-computed;
+  font-size: $blockquote-font-size;
+  font-weight: $blockquote-font-weight;
+  position: relative;
+  padding: 0;
+  max-width: 576px;
+  span {
+    position: absolute !important;
+    font-size: calc( 16/10 * 18.4px);
+    &:before {
+      color: $gray-lighter;
+    }
+  }
+  span.blockquote-left {
+    left: 0 !important;
+    top: 4px;
+    font-size: $blockquote-font-size;
+  }
+  span.blockquote-right {
+    right: 0 !important;
+    top: initial;
+    bottom: 0;
+    font-size: $blockquote-font-size;
+  }
+  p {
+    padding: $blockquote-padding-y $blockquote-padding-x;
+    margin: 0;
+    margin-bottom: 8px !important;
+  }
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%;
+    line-height: $line-height-base;
+    text-align: right;
+    margin-right: 40px;
+
+    &:before {
+      content: '\2014 \00A0'; // em dash, nbsp
+      color: $gray-lighter;
+    }
+  }
+  footer {
+    padding: 0 40px;
+    margin: 0;
+    cite {
+      font-style: normal;
+      font-weight: 300;
+    }
+  }
+}
+
+// Addresses
+address {
+  margin-bottom: $line-height-computed;
+  font-style: normal;
+  line-height: $line-height-base;
+}
+
+.rex-color {
+  &.blue { color: $blue; }
+  &.dark-blue { color: $dark-blue; }
+  &.green { color: $green; }
+  &.pink { color: $pink; }
+  &.purple { color: $purple; }
+  &.crimson-red { color: $crimson-red; }
+  &.yellow { color: $yellow; }
+}
+
+.rex-bg {
+  &.blue { background: $blue; }
+  &.dark-blue { background: $dark-blue; }
+  &.green { background: $green; }
+  &.pink { background: $pink; }
+  &.purple { background: $purple; }
+  &.crimson-red { background: $crimson-red; }
+  &.yellow { background: $yellow; }
+}

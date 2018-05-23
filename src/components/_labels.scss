@@ -1,0 +1,53 @@
+.label {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: $white;
+  padding: 2px 7.5px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: normal;
+  color: $brand-primary;
+  background-color: $white;
+  border: 1px solid transparent;
+  word-break: break-all;
+  &.small {
+    font-size: 10px;
+    padding: 0 6px;
+    line-height: 18px;
+  }
+  &.outline {
+    border-color: $brand-primary;
+    background-color: transparent;
+    color: $brand-primary;
+  }
+  &.circular {
+    font-size: 16px;
+    background-color: $brand-primary;
+    color: $white;
+    line-height: 1.2;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    &.stamp {
+      color: $black;
+      background-color: #ffcc00;
+    }
+    &.off {
+      line-height: 1.1;
+      .large {
+        font-size: 18px;
+      }
+    }
+    .label-text {
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      top: 50%;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+  }
+}

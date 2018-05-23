@@ -1,0 +1,25 @@
+@include keyframes('rex-bounce') {
+  from, 20%, 53%, 80%, to {
+    @include animation-timing-function($acceleration-curve);
+    @include translate3d(0,0,0);
+  }
+  40%, 43% {
+    @include animation-timing-function($deceleration-curve);
+    @include translate3d(0, -15px, 0);
+  }
+
+  70% {
+    @include animation-timing-function($deceleration-curve);
+    @include translate3d(0, -7px, 0);
+  }
+
+  90% {
+    @include translate3d(0,-2px,0);
+  }
+}
+
+.rex-motion.bounce {
+  @include animation-name(rex-bounce);
+  @include animation-duration(0.7s);
+  @include transform-origin(center bottom);
+}

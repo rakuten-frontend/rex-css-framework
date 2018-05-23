@@ -1,0 +1,671 @@
+//
+// Input groups
+// --------------------------------------------------
+// Base styles
+// -------------------------
+input,
+textarea {
+  border: 0;
+  padding-bottom: 8px;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+  }
+  &::-moz-placeholder {
+    color: $gray-medium;
+  }
+  &:-ms-input-placeholder {
+    color: $gray-medium;
+  }
+  &:-moz-placeholder {
+    color: $gray-medium;
+  }
+  &::-webkit-input-placeholder {
+    color: $gray-medium;
+  }
+  &::placeholder {
+    color: $gray-medium;
+  }
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+
+%textarea_thick_border {
+  margin-bottom: 1px;
+  padding: calc(#{$font-size-base} - 1px);
+}
+%textarea_thin_border {
+  margin-bottom: 1px;
+  padding: $font-size-base;
+  padding-top: $padding-large;
+}
+
+%small_base {
+  display: block;
+  color: $gray-medium;
+  font-size: $font-size-extra-small;
+  line-height: 1.5;
+}
+
+%focused_transition {
+  transition: 0.05s;
+}
+
+%label_base_text_input {
+  display: block;
+  font-size: $input-area-label-size;
+  font-weight: normal;
+  color: $gray;
+  top: 30px;
+  left: 1px;
+}
+
+%input_focused {
+  // border-bottom: solid 2px $brand-primary;
+  @extend %focused_transition;
+}
+
+%label_hover {
+  color: $brand-focus;
+  @extend %focused_transition;
+}
+
+%underline_focused {
+  background: $brand-primary;
+  height: 2px;
+}
+
+.input-area {
+  .underline {
+    height: 1px;
+    background: $gray-medium;
+    width: 100%;
+    position: absolute;
+  }
+  label {
+    margin-bottom: 4px;
+  }
+  @include clearfix;
+  min-width: 100%;
+  position: relative; // For dropdowns
+  margin-bottom: 1em;
+  border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
+  label {
+    @extend %label_base_text_input;
+  }
+  small {
+    @extend %small_base;
+    margin-top: 8px;
+    &.blank-helper {
+      color: transparent;
+    }
+  }
+  input {
+    width: 100%;
+    line-height: $input-height-base; // border-bottom: 1px solid $gray-medium;
+    caret-color: $brand-primary;
+    &:focus,
+    &:active {
+      @extend %input_focused;
+      &+label {
+        @extend %label_hover;
+      }
+      &+.underline {
+        @extend %underline_focused;
+      }
+    } //Move Label above input
+    &+label {
+      top: 0px;
+    }
+    &:disabled {
+      color: $gray-lighter;
+      padding-bottom: 0;
+      &+.underline {
+        background: $gray-lighter;
+        border-bottom: dotted 2px $gray-medium-light;
+        height: 1px;
+      }
+    }
+  }
+  &.focused {
+    label {
+      font-size: $input-area-focus-label-size;
+      transition: 0.2s;
+      color: $brand-primary;
+      top: 0px;
+      left: 0px;
+    }
+    input {
+      @extend %input_focused;
+      &+.underline {
+        @extend %underline_focused;
+      }
+    }
+  } // Undo padding and float of grid classes
+  &[class*="col-"] {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  } // Disabled Input Group
+  &.input-area-read-only {
+    input,
+    input:hover {
+      border-bottom: none;
+      pointer-events: none;
+    }
+  }
+  .form-control {
+    // Ensure that the input is always above the *appended* addon button for
+    // proper border colors.
+    position: relative;
+    z-index: 2; // IE9 fubars the placeholder attribute in text inputs and the arrows on
+    // select elements in input groups. To fix it, we float the input. Details:
+    // https://github.com/twbs/rex/issues/11561#issuecomment-28936855
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    &:focus {
+      z-index: 3;
+    }
+  }
+  &.hover {
+    &+label,
+    &+label {
+      @extend %label_hover;
+    }
+  }
+  &.active {
+    label {
+      color: $brand-focus;
+    }
+    &+label,
+    &+label {
+      @extend %label_hover;
+    }
+  }
+  &.with-icon-label {
+    .rex-icon {
+      font-size: 24px;
+      color: $gray-medium;
+    }
+    .icon-container {
+      display: inline-block;
+      position: relative;
+      .rex-icon {
+        top: 4px;
+      }
+    }
+    input,
+    .underline {
+      width: calc(100% - 32px);
+      right: 0;
+    }
+    input {
+      padding-left: 8px;
+    }
+  }
+}
+
+// Sizing options
+//
+// Remix the default form control sizing classes into new ones for easier
+// manipulation.
+.input-area-sm {
+  @extend .input-sm;
+}
+
+.input-area-lg {
+  @extend .input-lg;
+}
+
+// Display as table-cell
+// -------------------------
+.input-area-addon,
+.input-area-btn,
+.input-area .form-control {
+  display: table-cell;
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+}
+
+// Addon and addon wrapper for buttons
+.input-area-addon,
+.input-area-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle; // Match the inputs
+}
+
+// Text input groups
+// -------------------------
+.input-sm {
+  padding: $padding-small-vertical $padding-small-horizontal;
+  border-radius: $input-border-radius-small; // added label distance
+  label {
+    margin-bottom: 2px;
+  }
+  input {
+    font-size: $font-size-small;
+    padding-bottom: 4px;
+  }
+}
+
+.input-lg {
+  font-size: $font-size-large;
+  border-radius: $input-border-radius-large; // added label distance
+  padding: 0;
+  label {
+    font-size: $font-size-base;
+  }
+  input {
+    font-size: $font-size-large;
+    padding-bottom: 8px;
+  }
+}
+
+.input-area-addon {
+  padding: $padding-base-vertical $padding-base-horizontal;
+  font-size: $font-size-base;
+  font-weight: normal;
+  line-height: 1;
+  color: $input-color;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $input-area-addon-border-color;
+  border-radius: $input-border-radius; // Sizing
+  // Nuke default margins from checkboxes and radios to vertically center within.
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-top: 0;
+  }
+}
+
+// Reset rounded corners
+.input-area .form-control:first-child,
+.input-area-addon:first-child,
+.input-area-btn:first-child>.btn,
+.input-area-btn:first-child>.btn-group>.btn,
+.input-area-btn:first-child>.dropdown-toggle,
+.input-area-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-area-btn:last-child>.btn-group:not(:last-child)>.btn {
+  @include border-right-radius(0);
+}
+
+.input-area-addon:first-child {
+  border-right: 0;
+}
+
+.input-area .form-control:last-child,
+.input-area-addon:last-child,
+.input-area-btn:last-child>.btn,
+.input-area-btn:last-child>.btn-group>.btn,
+.input-area-btn:last-child>.dropdown-toggle,
+.input-area-btn:first-child>.btn:not(:first-child),
+.input-area-btn:first-child>.btn-group:not(:first-child)>.btn {
+  @include border-left-radius(0);
+}
+
+.input-area-addon:last-child {
+  border-left: 0;
+}
+
+// Button input groups
+// -------------------------
+.input-area-btn {
+  position: relative; // Jankily prevent input button groups from wrapping with `white-space` and
+  // `font-size` in combination with `inline-block` on buttons.
+  font-size: 0;
+  white-space: nowrap; // Negative margin for spacing, position for bringing hovered/focused/actived
+  // element above the siblings.
+  >.btn {
+    position: relative;
+    +.btn {
+      margin-left: -1px;
+    } // Bring the "active" button to the front
+    &:hover,
+    &:focus,
+    &:active {
+      z-index: 2;
+    }
+  } // Negative margin to only have a 1px border between the two
+  &:first-child {
+    >.btn,
+    >.btn-group {
+      margin-right: -1px;
+    }
+  }
+  &:last-child {
+    >.btn,
+    >.btn-group {
+      z-index: 2;
+      margin-left: -1px;
+    }
+  }
+}
+
+.password {
+  .rex-icon {
+    font-size: 1.5em;
+    height: 1em;
+    float: right;
+    margin-top: 2px;
+    color: $gray-medium-light;
+  }
+  &.show {
+    i.rex-icon:before {
+      content: $_32-eye-ban-l;
+    }
+  }
+  input[type="password"] {
+    max-width: 90%;
+  }
+  input[type="text"] {
+    max-width: 90%;
+  }
+}
+
+.has-success {
+  @include form-control-validation($brand-success, $state-success-border, $state-success-bg);
+  padding-right: 22px;
+  %success_text {
+    color: $brand-success;
+  }
+  .underline {
+    background: $brand-success;
+    height: 2px;
+  }
+  small {
+    color: $brand-success;
+  }
+  %success_line {
+    border-top: solid 2px $brand-success !important;
+  }
+  input {
+    &+label {
+      &+small {
+        @extend %success_text;
+        &:before {
+          @extend %success_line;
+        }
+      }
+    }
+    &:hover,
+    &.hover {
+      &+label {
+        &+small {
+          @extend %success_text;
+          &:before {
+            @extend %success_line;
+          }
+        }
+      }
+    }
+    &:focus,
+    &:active {
+      &+label {
+        @extend %success_text;
+        &+small {
+          @extend %success_text;
+          &:before {
+            @extend %success_line;
+          }
+        }
+      }
+    }
+  }
+}
+
+.has-error {
+  @include form-control-validation($brand-danger, $state-danger-border, $state-danger-bg);
+  padding-right: 22px;
+  .underline {
+    background: $brand-danger;
+    height: 2px;
+  }
+  small {
+    color: $brand-danger;
+    &.remaining,
+    &.resolved {
+      margin-top: 0;
+      .rex-icon {
+        margin-right: 4px;
+        &.plus {
+          transform: rotate(45deg);
+          top: 4px;
+        }
+        &.check {
+          top: 3px;
+        }
+      }
+      &:first-of-type {
+        margin-top: 8px;
+      }
+    }
+    &.resolved {
+      color: $brand-success;
+    }
+  }
+  %error_text {
+    color: $brand-danger;
+  }
+  input {
+    &+label {
+      &+small {
+        @extend %error_text;
+      }
+    }
+    &:hover,
+    &.hover {
+      &+label {
+        &+small {
+          @extend %error_text;
+        }
+      }
+    }
+    &:focus,
+    &:active {
+      &+label {
+        @extend %error_text;
+        &+small {
+          @extend %error_text;
+        }
+      }
+    }
+  }
+}
+
+.text-area {
+  textarea {
+    background: $white;
+    overflow-x: hidden;
+    &:active,
+    &:focus {
+      @extend %textarea_thick_border;
+      label {
+        color: $brand-primary;
+      }
+    }
+  }
+  position: relative;
+  label {
+    font-size: $font-size-extra-small;
+    top: $font-size-base / 2;
+    left: $font-size-base;
+    font-weight: 500;
+    color: $gray-medium;
+  }
+  small {
+    @extend %small_base;
+    margin-top: 7px;
+  }
+  &.active,
+  &.focus {
+    textarea {
+      @extend %textarea_thick_border;
+      @extend %textarea-focus;
+    }
+    label {
+      color: $brand-primary;
+    }
+  }
+  &.disabled {
+    label {
+      color: $gray-light;
+    }
+    textarea {
+      border: dotted 2px $gray-light;
+      background: transparent;
+      color: $gray-light;
+      &,
+      &:active,
+      &:focus {
+        @extend %textarea_thin_border;
+      }
+    }
+    small {
+      color: $gray-light;
+    }
+  }
+  &.has-success {
+    textarea {
+      border: solid 2px $brand-success;
+      @extend %textarea_thick_border;
+    }
+  }
+  &.has-error {
+    textarea {
+      border: solid 2px $brand-danger;
+      @extend %textarea_thick_border;
+    }
+    small {
+      &.remaining {
+        position: relative;
+        .rex-icon {
+          position: absolute;
+          font-size: 20px;
+          &.sign-warning-f {
+            top: -1px;
+          }
+        }
+      }
+      span {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+%textarea-focus {
+  background-color: $overlay-grey;
+  border: solid 2px $brand-focus;
+  margin-bottom: 0px;
+}
+
+textarea {
+  width: 100%;
+  padding: $font-size-base;
+  border-radius: 4px;
+  margin-bottom: 1px; //stops border jiggle
+  border: solid 1px $gray-medium-light;
+  resize: none;
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    @extend %textarea-focus;
+  }
+}
+
+.active-textarea-div,
+.idle-filled-textarea-div {
+  label {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: $gray;
+  }
+  textarea {
+    padding-top: 32px;
+  }
+}
+
+.label-and-checkbox {
+  label {
+    color: $gray;
+    font-weight: 300;
+    margin-bottom: 8px;
+    span {
+      margin: 0;
+      padding-left: 16px;
+    }
+  }
+}
+
+.checkbox-checked {
+  label {
+    span {
+      color: $gray-darker;
+    }
+  }
+}
+
+.checkbox-disabled {
+  label {
+    span {
+      color: $gray-light;
+    }
+  }
+}
+
+.label-and-checkbox.inline-block {
+  display: inline-block;
+  span {
+    margin-right: 48px;
+  }
+}
+
+span.required-kome {
+  color: $brand-danger;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+p.required-text {
+  font-size: $font-size-button-sm;
+  color: $gray;
+  margin-top: 1em;
+  &.required-text-jp {
+    color: $brand-danger;
+    margin-top: 0em;
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+.input-area-addon {
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  font-size: 22px;
+  padding-top: 0px;
+  vertical-align: text-bottom;
+  &+input {
+    border-bottom: 1px solid $gray-medium-light;
+    &:hover {
+      border-bottom: 2px solid $gray-medium-light
+    }
+    &:active,
+    &:focus {
+      border-bottom: 2px solid $brand-focus
+    }
+  }
+}
+
+.required-field {
+  color: $gray-medium;
+  font-size: $font-size-extra-small;
+}

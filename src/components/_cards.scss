@@ -1,0 +1,257 @@
+%card-menu-base {
+  position: absolute;
+  border-radius: 3px;
+  background-color: $white;
+  border: 1px solid $gray-lighter;
+}
+
+.card {
+  position: relative;
+  @include transition(all .2s cubic-bezier(.25,0,.45,1));
+  &.border {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  }
+  &:hover {
+    box-shadow: 0 20px 12px -12px rgba(0, 0, 0, 0.12);
+  }
+  &.landscape {
+    @include cardBaseStyle(296px, 377px);
+    > img {
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+    }
+    .content {
+      @include contentStyle('landscape');
+    }
+  }
+  &.square {
+    @include cardBaseStyle(296px, 377px);
+    > img {
+      width: 100%;
+      height: 296px;
+      border-radius: 4px 4px 0 0;
+    }
+    .content {
+      @include contentStyle('square');
+    }
+  }
+  &.portrait {
+    @include cardBaseStyle(296px, 473px);
+    > img {
+      width: 100%;
+      height: 342px;
+      border-radius: 4px 4px 0 0;
+    }
+    .content {
+      @include contentStyle('portrait');
+    }
+  }
+  &.wide {
+    @include cardBaseStyle(616px, 377px);
+    > img {
+      width: 100%;
+      height: 296px;
+      object-fit: cover;
+      border-radius: 4px 4px 0 0;
+    }
+    .content {
+      @include contentStyle('wide');
+    }
+  }
+  // Full Image Style
+  &.image {
+    width: 376px;
+    height: 200px;
+    color: $white;
+    .media {
+      width: inherit;
+      height: inherit;
+      border-radius: 4px;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+      .overlay {
+        position: absolute;
+        font-size: 12px;
+        line-height: 1.2;
+        left: 24px;
+        bottom: 16px;
+        font-weight: lighter;
+        .title {
+          font-size: 16px;
+          margin-bottom: 4px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  &.text {
+    &.colored {
+      border-top: 4px solid $brand-primary;
+    }
+    @include cardBaseStyle(376px, auto);
+    padding: 32px 32px 32px 32px;
+    color: $black;
+    .header {
+      margin-bottom: 24px;
+      font-weight: bold;
+    }
+    .description {
+      line-height: 1.4;
+    }
+    .extra.contents {
+      @include extraContents('text');
+    }
+  }
+  &.panel {
+    width: 296px;
+    min-height: 410px;
+    background-color: $white;
+
+    border-radius: 4px;
+    > img {
+      width: 100%;
+      height: 200px;
+      border-radius: 4px 4px 0 0;
+    }
+    .content {
+      @include contentStyle('panel');
+      .top {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        > .label {
+          background-color: $brand-primary;
+          color: $white;
+        }
+      }
+      .badge {
+        position: absolute;
+        right: 16px;
+        top: 172px;
+      }
+      .price {
+        font-size: 24px;
+        color: $gray-darkest;
+        font-weight: bold;
+        margin-bottom: 8px;
+        .currency {
+          font-size: 18px;
+        }
+      }
+      .title {
+        color: $gray-darkest;
+      }
+      .rating-wrapper {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: inline-block;
+        position: relative;
+        > .rating {
+          display: inline-block;
+        }
+        .count {
+          color: $gray;
+          font-size: 14px;
+          margin-left: 4px;
+          position: absolute;
+          top: 1px;
+        }
+      }
+      .divider {
+        border-top: 1px solid $gray-lighter;
+      }
+    }
+  }
+  &.landscape,
+  &.square,
+  &.portrait,
+  &.wide,
+  &.panel {
+    .card-menu.small {
+      @extend %card-menu-base;
+      @include list-unstyled;
+      width: 140px;
+      top: 232px;
+      right: 18.5px;
+      font-size: 16px;
+      margin-bottom: 14px;
+      > li, div, span {
+        margin-bottom: 0;
+        line-height: 1.5;
+        padding: 8px 16px;
+        color: $gray-medium;
+        cursor: pointer;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $brand-primary;
+          background-color: $gray-lightest;
+        }
+      }
+    }
+    .card-menu-wrapper {
+      @extend %card-menu-base;
+      width: 262px;
+      top: 164px;
+      left: 16px;
+      &.full {
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        .close::before {
+          content: $_32-x;
+          font-family: rex-icon;
+          position: absolute;
+          top: 24px;
+          right: 24px;
+          cursor: pointer;
+          color: $panel-close-button;
+        }
+        .card-menu {
+          > li, div, span {
+            margin-bottom: 8px;
+          }
+        }
+        .separeted-link {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+        }
+      }
+      .card-menu {
+        @include list-unstyled;
+        margin-bottom: 14px;
+        > li, div, span {
+          margin-bottom: 0;
+          line-height: 1.5;
+          padding: 8px 16px;
+          color: $gray-medium;
+          cursor: pointer;
+          &:hover,
+          &:active,
+          &:focus {
+            color: $brand-primary;
+            background-color: $gray-lightest;
+          }
+        }
+      }
+      .separeted-link {
+        padding: 16px;
+        line-height: 1.5;
+        border-top: 1px solid $gray-lighter;
+        color: $gray-medium;
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

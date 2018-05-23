@@ -1,0 +1,39 @@
+@include keyframes('rex-growWidth') {
+  from {
+    @include scale(0,1);
+  }
+
+  to {
+     @include scale(1,1);
+  }
+}
+.rex-motion.growWidth {
+  @include animation-name(rex-growWidth);
+  @include animation-fill-mode(forwards);
+}
+@include keyframes('rex-growHeight') {
+  from {
+    @include scale(1,0);
+  }
+
+  to {
+     @include scale(1,1);
+  }
+}
+.rex-motion.growHeight {
+  @include animation-name(rex-growHeight);
+  @include transform-origin(bottom);
+}
+@include keyframes('rex-skrinkHeight') {
+  from {
+    @include scale(1,1);
+  }
+
+  to {
+     @include scale(1,0);
+  }
+}
+.rex-motion.skrinkHeight {
+  @include animation-name(rex-skrinkHeight);
+  @include transform-origin(top);
+}

@@ -1,0 +1,12 @@
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+.container {
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+}
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}

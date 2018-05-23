@@ -1,0 +1,83 @@
+/*=============================================
+=           Rex Frontend Framework           =
+=============================================*/
+// Core variables and mixins
+@import "core/rex_colors";
+$icon-font-path: "../fonts/";
+$noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/";
+/*==============================
+=      Customization          =
+==============================*/
+@import "colors/default";
+/*==========================
+=       Variables         =
+===========================*/
+@import "core/variables";
+@import "core/mixins";
+/*============================
+=   Reset and dependencies   =
+=============================*/
+@import "core/normalize";
+@import "core/print";
+@import "core/glyphicons";
+/*============================
+=         Core           =
+=============================*/
+// Grid Control
+@import "core/grid";
+@import "core/grid/sm";
+@import "core/grid/md";
+@import "core/grid/lg";
+@import "core/grid/xl";
+@import "core/responsive-utilities/sm";
+@import "core/responsive-utilities/md";
+@import "core/responsive-utilities/lg";
+@import "core/responsive-utilities/xl";
+@import "core/responsive-utilities/print";
+// scaffolding
+@import "core/scaffolding";
+@import "core/type";
+@import "core/tables";
+@import "core/forms";
+@import "core/buttons";
+/*===========================
+=    Utility classes       =
+===========================*/
+@import "core/utilities";
+@import "core/responsive-utilities";
+/*======================================================
+=  Called last to override fallbacks =
+=======================================================*/
+@import "core/overrides";
+/*============================
+=         Components         =
+=============================*/
+@import "components/input-fields";
+@import "components/list-wrapper";
+@import "components/selects";
+@import "components/track";
+@import "components/language-switcher";
+@import "components/color-picker/color-picker";
+@import "components/_search";
+@import "components/_tags";
+@import "components/_labels";
+@import "components/_pagination";
+@import "components/_breadcrumbs";
+@import "components/_tabs";
+@import "components/_rating";
+@import "components/_cards";
+@import "components/_dropdowns";
+@import "components/_alerts";
+@import "components/_checkbox";
+@import "components/_switch";
+@import "components/_stepper";
+@import "components/_slider";
+@import "components/_tooltips";
+@import "components/_lists";
+@import "components/_badges";
+/*============================
+=         Animations         =
+=============================*/
+@import "animation/bounce";
+@import "animation/fade";
+@import "animation/grow";
