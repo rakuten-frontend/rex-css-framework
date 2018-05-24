@@ -229,7 +229,7 @@ $_32-zoom-out-l: '\f1d9';
   position: relative;
   top: 1px;
   display: inline-block;
-  font: normal 16px/1 rex-icon;
+  font: normal 1em rex-icon;
 
   @if variable-exists('_32-arrow-down') {
     &.arrow-down {
