@@ -114,20 +114,41 @@ $font-family-serif:       'Arial', sans-serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          16px !default;
+//** English
+//**** Desktop
+$font-size-base:          16px !default; // Assumes the browser default, typically `16px`
+//**** Mobile
+$font-size-base-mobile:   14px !default;
+
+//** Japanese
+//**** Desktop
+$font-size-base-ja:          14px !default; // Assumes the browser default, typically `16px`
+//**** Mobile
+$font-size-base-mobile-ja:   12px !default;
+
+
 $font-size-large:         ceil(($font-size-base * 1.375)) !default; // ~22px
 $font-size-small:         ceil(($font-size-base * 0.857)) !default; // ~14px
 $font-size-extra-small:   ceil(($font-size-base * 0.75)) !default; // ~14px
-$font-size-lead:          ceil(($font-size-base * 1.45)) !default; //28px WRONG
-$font-size-lead-sm:       ceil(($font-size-base * 1.45)) !default;
+$font-size-lead:          ceil(($font-size-base * 1.375)) !default; //22px
+$font-size-lead-sm:       ceil(($font-size-base * 1.25)) !default; //20px
 
+//** Heading size for Desktop JA and EN
+$font-size-h1:            floor(($font-size-base * 1.75)) !default; // ~38px
+$font-size-h2:            floor(($font-size-base * 1.5)) !default; // ~24px
+$font-size-h3:            ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-h4:            $font-size-base !default;
+$font-size-h5:            ceil(($font-size-base * 0.875)) !default; // ~14px
+$font-size-h6:            ceil(($font-size-base * 0.75)) !default; // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2)) !default; // ~32px
-$font-size-h2:            floor(($font-size-base * 1.75)) !default; // ~28px
-$font-size-h3:            ceil(($font-size-base * 1.5)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~20px
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.875)) !default; // ~14px
+//** Heading size for Mobile JA and EN
+$font-size-h1-mobile:     floor(($font-size-base * 1.25)) !default; // ~20px
+$font-size-h2-mobile:     floor(($font-size-base * 1.14)) !default; // ~16px
+$font-size-h3-mobile:     ceil(($font-size-base * 0.875)) !default; // ~14px mobile base font size
+$font-size-h4-mobile:     ceil(($font-size-base * 0.75)) !default; // ~12px
+$font-size-h5-mobile:     ceil(($font-size-base * 0.6875)) !default; // ~11px
+$font-size-h6-mobile:     ceil(($font-size-base * 0.625)) !default; // ~10px
+
 
 $font-weight-h1:          600 !default;
 $font-weight-h2:          600 !default;
@@ -150,6 +171,26 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 $headings-font-family:    inherit !default;
 $headings-line-height:    1.5 !default;
 $headings-color:          $gray-darkest !default;
+
+$display1-size:               5rem !default;
+$display2-size:               4.6rem !default;
+$display3-size:               4.0rem !default;
+$display4-size:               3.6rem !default;
+$display5-size:               3.2rem !default;
+
+$display1-size-ja:            4.8rem !default;
+$display2-size-ja:            4.4rem !default;
+$display3-size-ja:            4.0rem !default;
+$display4-size-ja:            3.6rem !default;
+$display5-size-ja:            3.2rem !default;
+
+$display1-weight:             600 !default;
+$display2-weight:             600 !default;
+$display3-weight:             600 !default;
+$display4-weight:             600 !default;
+$display5-weight:             600 !default;
+$display-line-height:         $headings-line-height !default;
+
 
 
 //== Iconography

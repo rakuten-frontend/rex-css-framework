@@ -30,6 +30,18 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
+  @media (max-width: $screen-xs-min) {
+    font-size: $font-size-base-mobile;
+  }
+}
+
+:lang(ja) {
+  body {
+    font-size: $font-size-base-ja;
+    @media (max-width: $screen-xs-min) {
+      font-size: $font-size-base-mobile-ja;
+    }
+  }
 }
 
 // Reset fonts for relevant elements
