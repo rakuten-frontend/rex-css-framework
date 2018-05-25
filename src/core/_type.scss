@@ -283,6 +283,41 @@ ol {
   @include list-unstyled;
 }
 
+.list-asterisk {
+  @include list-unstyled;
+  li:before {
+    content: "※";
+    margin-right: 1em; 
+  }
+}
+
+.list-asterisk-en {
+  @include list-unstyled;
+  li:before {
+    content: "*";
+    margin-right: 1em; 
+  }
+}
+
+.list-asterisk-ordered {
+  @include list-unstyled;
+  counter-reset: num;
+  li:before {
+    counter-increment: num;
+    content:'※' counter(num, decimal);
+    margin-right: 1em; 
+  }
+}
+
+.list-asterisk-ordered-en {
+  @include list-unstyled;
+  counter-reset: num;
+  li:before {
+    counter-increment: num;
+    content:'*' counter(num, decimal);
+    margin-right: 1em; 
+  }
+}
 
 // Inline turns list items into inline-block
 .list-inline {
