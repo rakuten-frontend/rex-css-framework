@@ -117,28 +117,23 @@ $font-family-base:        $font-family-sans-serif !default;
 //** English
 //**** Desktop
 $font-size-base:          16px !default; // Assumes the browser default, typically `16px`
-//**** Mobile
-$font-size-base-mobile:   14px !default;
 
 //** Japanese  
 //**** Desktop
 $font-size-base-ja:          14px !default; // Assumes the browser default, typically `16px`
-//**** Mobile
-$font-size-base-mobile-ja:   12px !default;
 
 
 $font-size-large:         ceil(($font-size-base * 1.375)) !default; // ~22px
 $font-size-small:         ceil(($font-size-base * 0.857)) !default; // ~14px
 $font-size-extra-small:   ceil(($font-size-base * 0.75)) !default; // ~14px
-$font-size-lead:          ceil(($font-size-base * 1.375)) !default; //22px
-$font-size-lead-sm:       ceil(($font-size-base * 1.25)) !default; //20px
+$font-size-lead:          2.0rem; //20px
 
 //** Heading size for Desktop JA and EN
-$font-size-h1:            floor(($font-size-base * 1.75)) !default; // ~38px
-$font-size-h2:            floor(($font-size-base * 1.5)) !default; // ~24px
-$font-size-h3:            ceil(($font-size-base * 1.25)) !default; // ~20px
-$font-size-h4:            $font-size-base !default;
-$font-size-h5:            ceil(($font-size-base * 0.875)) !default; // ~14px
+$font-size-h1:            floor(($font-size-base * 1.5)) !default; // ~24px
+$font-size-h2:            floor(($font-size-base * 1.25)) !default; // ~20px
+$font-size-h3:            $font-size-base !default; // ~16px
+$font-size-h4:            ceil(($font-size-base * 0.875)) !default; // ~14px
+$font-size-h5:            ceil(($font-size-base * 0.75)) !default; // ~12px
 $font-size-h6:            ceil(($font-size-base * 0.75)) !default; // ~12px
 
 //** Heading size for Mobile JA and EN
@@ -157,10 +152,10 @@ $font-weight-h4:          600 !default;
 $font-weight-h5:          600 !default;
 $font-weight-h6:          600 !default;
 
-$font-size-button-xl:       26px !default;
-$font-size-button-large:    22px !default;
-$font-size-button-default:  16px !default;
-$font-size-button-sm:       12px !default;
+$font-size-button-xl:       2.6rem !default;
+$font-size-button-large:    2.2rem !default;
+$font-size-button-default:  1.6rem !default;
+$font-size-button-sm:       1.2rem !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.75 !default; // 20/14?
@@ -172,17 +167,17 @@ $headings-font-family:    inherit !default;
 $headings-line-height:    1.5 !default;
 $headings-color:          $gray-darkest !default;
 
-$display1-size:               5rem !default;
-$display2-size:               4.6rem !default;
-$display3-size:               4.0rem !default;
-$display4-size:               3.6rem !default;
-$display5-size:               3.2rem !default;
+$display1-size:               4.6rem !default; // ~46px
+$display2-size:               4.0rem !default; // ~40px
+$display3-size:               3.6rem !default; // ~36px
+$display4-size:               3.2rem !default; // ~32px
+$display5-size:               2.8rem !default; // ~28px
 
-$display1-size-ja:            4.8rem !default;
-$display2-size-ja:            4.4rem !default;
-$display3-size-ja:            4.0rem !default;
-$display4-size-ja:            3.6rem !default;
-$display5-size-ja:            3.2rem !default;
+$display1-size-mobile:        4.0rem !default; // ~40px
+$display2-size-mobile:        3.6rem !default; // ~36px
+$display3-size-mobile:        3.2rem !default; // ~32px
+$display4-size-mobile:        2.8rem !default; // ~28px
+$display5-size-mobile:        2.4rem !default; // ~24px
 
 $display1-weight:             600 !default;
 $display2-weight:             600 !default;
