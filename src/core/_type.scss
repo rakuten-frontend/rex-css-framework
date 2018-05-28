@@ -354,18 +354,17 @@
         margin-bottom: $line-height-computed;
     }
     
-    dt,
-    dd {
-        line-height: $line-height-base;
-    }
-    
     dt {
         font-weight: bold;
-        margin-bottom: .8rem;
+        margin-top: .8rem;
     }
     
     dd {
         margin-left: 0; // Undo browser default
+    }
+    
+    dd+dd {
+        margin-bottom: 0;
     }
     
     // Horizontal description lists
@@ -382,6 +381,7 @@
                 width: ($dl-horizontal-offset - 20);
                 clear: left;
                 text-align: right;
+                margin-top: 0;
                 @include text-overflow;
             }
             dd {
