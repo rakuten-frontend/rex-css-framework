@@ -122,10 +122,10 @@ $font-size-h5: ceil(($font-size-base * 0.75)) !default; // ~12px
 $font-size-h6: ceil(($font-size-base * 0.75)) !default; // ~12px
 //** Heading size for Mobile JA and EN
 $font-size-h1-mobile: floor(($font-size-base * 1.25)) !default; // ~20px
-$font-size-h2-mobile: floor(($font-size-base * 1.14)) !default; // ~16px
-$font-size-h3-mobile: ceil(($font-size-base * 0.875)) !default; // ~14px mobile base font size
+$font-size-h2-mobile: $font-size-base; // ~16px
+$font-size-h3-mobile: ceil(($font-size-base * 0.875)) !default; // ~14px
 $font-size-h4-mobile: ceil(($font-size-base * 0.75)) !default; // ~12px
-$font-size-h5-mobile: ceil(($font-size-base * 0.6875)) !default; // ~11px
+$font-size-h5-mobile: ceil(($font-size-base * 0.625)) !default; // ~10px
 $font-size-h6-mobile: ceil(($font-size-base * 0.625)) !default; // ~10px
 $font-weight-h1: 600 !default;
 $font-weight-h2: 600 !default;
@@ -152,10 +152,10 @@ $display3-size: 3.6rem !default; // ~36px
 $display4-size: 3.2rem !default; // ~32px
 $display5-size: 2.8rem !default; // ~28px
 $display1-size-mobile: 3.6rem !default; // ~36px
-$display2-size-mobile: 3.2rem !default; // ~32px
-$display3-size-mobile: 2.8rem !default; // ~28px
-$display4-size-mobile: 2.4rem !default; // ~24px
-$display5-size-mobile: 2.0rem !default; // ~20px
+$display2-size-mobile: 3.4rem !default; // ~34px
+$display3-size-mobile: 3.2rem !default; // ~32px
+$display4-size-mobile: 3.0rem !default; // ~30px
+$display5-size-mobile: 2.8rem !default; // ~28px
 $display1-weight: 600 !default;
 $display2-weight: 600 !default;
 $display3-weight: 600 !default;
@@ -812,5 +812,4 @@ $hr-border: $gray-lighter !default;
 $blockquote-padding-y: 0;
 $blockquote-padding-x: 40px;
 //** Blockquote font size.
-$blockquote-font-size: 26px;
 $search-input-active: #f9f9f9;
