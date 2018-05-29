@@ -58,8 +58,14 @@
     .h1 {
         font-size: $font-size-h1;
         font-weight: $font-weight-h1;
+        .secondary-text {
+            font-size: 2.0rem;
+        }
         @media (max-width: $screen-xs-min) {
             font-size: $font-size-h1-mobile;
+            .secondary-text {
+                font-size: 1.6rem;
+            }
         }
     }
     
@@ -67,8 +73,14 @@
     .h2 {
         font-size: $font-size-h2;
         font-weight: $font-weight-h2;
+        .secondary-text {
+            font-size: 1.6rem;
+        }
         @media (max-width: $screen-xs-min) {
             font-size: $font-size-h2-mobile;
+            .secondary-text {
+                font-size: 1.2rem;
+            }
         }
     }
     
@@ -76,8 +88,14 @@
     .h3 {
         font-size: $font-size-h3;
         font-weight: $font-weight-h3;
+        .secondary-text {
+            font-size: 1.2rem;
+        }
         @media (max-width: $screen-xs-min) {
             font-size: $font-size-h3-mobile;
+            .secondary-text {
+                font-size: 1.2rem;
+            }
         }
     }
     
@@ -85,8 +103,14 @@
     .h4 {
         font-size: $font-size-h4;
         font-weight: $font-weight-h4;
+        .secondary-text {
+            font-size: 1.2rem;
+        }
         @media (max-width: $screen-xs-min) {
             font-size: $font-size-h4-mobile;
+            .secondary-text {
+                font-size: 1.0rem;
+            }
         }
     }
     
@@ -103,8 +127,14 @@
     .h6 {
         font-size: $font-size-h6;
         font-weight: $font-weight-h6;
+        .secondary-text {
+            font-size: 1.0rem;
+        }
         @media (max-width: $screen-xs-min) {
             font-size: $font-size-h6-mobile;
+            .secondary-text {
+                font-size: .8rem;
+            }
         }
     }
     
@@ -119,6 +149,9 @@
         font-size: $font-size-lead;
         font-weight: 200;
         line-height: $line-height-base;
+        &:lang(ja) {
+            font-size: $font-size-lead-ja;
+        }
     }
     
     // Type display
@@ -176,15 +209,18 @@
     // Ex: (12px small font / 14px base font) * 100% = about 85%
     small,
     .small {
-        font-size: (100% * $font-size-small / $font-size-base);
+        font-size: $font-size-small;
     }
     
     .extra-small {
-        font-size: floor((100% * $font-size-extra-small / $font-size-base));
+        font-size: calc((100% * $font-size-extra-small / $font-size-base));
     }
     
     .large {
-        font-size: (100% * $font-size-large / $font-size-base);
+        font-size: $font-size-large;
+        &:lang(ja) {
+            font-size: $font-size-large-ja;
+        }
     }
     
     mark,
@@ -255,7 +291,7 @@
     // -------------------------
     .page-header {
         padding-bottom: (($line-height-computed / 2) - 1);
-        margin: ($line-height-computed * 2) 0 $line-height-computed;
+        margin: calc($line-height-computed * 2) 0 $line-height-computed;
         border-bottom: 1px solid $page-header-border-color;
     }
     
