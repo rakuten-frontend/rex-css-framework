@@ -118,8 +118,14 @@
     .h5 {
         font-size: $font-size-h5;
         font-weight: $font-weight-h5;
+        .secondary-text {
+            font-size: 1.0rem;
+        }
         @media (max-width: $screen-xs-min) {
-            font-size: $font-size-h5-mobile;
+            font-size: $font-size-h6-mobile;
+            .secondary-text {
+                font-size: .8rem;
+            }
         }
     }
     
@@ -138,20 +144,14 @@
         }
     }
     
+    .secondary-text {
+        margin-left: .25em;
+    }
+    
     // Body text
     // -------------------------
     p {
         margin: 0 0 ($line-height-computed / 2);
-    }
-    
-    .lead {
-        margin-bottom: $line-height-computed;
-        font-size: $font-size-lead;
-        font-weight: 200;
-        line-height: $line-height-base;
-        &:lang(ja) {
-            font-size: $font-size-lead-ja;
-        }
     }
     
     // Type display
@@ -206,20 +206,45 @@
     
     // Emphasis & misc
     // -------------------------
-    // Ex: (12px small font / 14px base font) * 100% = about 85%
+    .lead {
+        margin-bottom: $line-height-computed;
+        font-size: $font-size-lead;
+        font-weight: 200;
+        line-height: $line-height-base;
+    }
+    
+    .large {
+        font-size: $font-size-large;
+    }
+    
     small,
     .small {
         font-size: $font-size-small;
     }
     
     .extra-small {
-        font-size: calc((100% * $font-size-extra-small / $font-size-base));
+        font-size: $font-size-extra-small;
     }
     
-    .large {
-        font-size: $font-size-large;
-        &:lang(ja) {
+    .xx-small {
+        font-size: $font-size-xx-small;
+    }
+    
+     :lang(ja) {
+        .lead {
+            margin-bottom: $line-height-computed;
+            font-size: $font-size-lead-ja;
+            font-weight: 200;
+            line-height: $line-height-base;
+        }
+        .large {
             font-size: $font-size-large-ja;
+        }
+        .extra-small {
+            font-size: $font-size-extra-small-ja;
+        }
+        .xx-small {
+            font-size: $font-size-xx-small-ja;
         }
     }
     
@@ -304,7 +329,7 @@
         margin-bottom: ($line-height-computed / 2);
         padding-left: 2rem;
         li {
-            margin-bottom: 16px;
+            margin-bottom: 1.6rem;
         }
         ul,
         ol {
@@ -312,10 +337,10 @@
             padding-left: 2.4rem;
             font-size: $font-size-small;
             li {
-                margin-bottom: 16px;
+                margin-bottom: 1.6rem;
             }
             li:first-child {
-                margin-top: 16px;
+                margin-top: 1.6rem;
             }
         }
     }
@@ -451,10 +476,10 @@
         font-weight: $blockquote-font-weight;
         position: relative;
         padding: 0;
-        max-width: 576px;
+        max-width: 57.6rem;
         span {
             position: absolute !important;
-            font-size: calc( 16/10 * 18.4px);
+            font-size: calc( 16/10 * 1.84rem);
             &:before {
                 color: $gray-lighter;
             }
@@ -473,7 +498,7 @@
         p {
             padding: $blockquote-padding-y $blockquote-padding-x;
             margin: 0;
-            margin-bottom: 8px !important;
+            margin-bottom: .8rem !important;
         }
         p,
         ul,
@@ -490,14 +515,14 @@
             font-size: 80%;
             line-height: $line-height-base;
             text-align: right;
-            margin-right: 40px;
+            margin-right: 4rem;
             &:before {
                 content: '\2014 \00A0'; // em dash, nbsp
                 color: $gray-lighter;
             }
         }
         footer {
-            padding: 0 40px;
+            padding: 0 4rem;
             margin: 0;
             cite {
                 font-style: normal;
