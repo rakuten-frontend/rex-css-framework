@@ -1,0 +1,31 @@
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block {
+    display: none !important;
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    @include responsive-visibility('.visible-xs');
+}
+
+.visible-xs-block {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        display: block !important;
+    }
+}
+
+.visible-xs-inline {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        display: inline !important;
+    }
+}
+
+.visible-xs-inline-block {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        display: inline-block !important;
+    }
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    @include responsive-invisibility('.hidden-xs');
+}

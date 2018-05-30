@@ -34,7 +34,7 @@ $brand-info-darken: darken($brand-info, 8%) !default;
 $brand-warning-darken: darken($brand-warning, 8%) !default;
 $brand-danger-darken: darken($brand-danger, 8%) !default;
 //Animations
-$shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+$shadow: 0 .5rem .8rem 0 rgba(0, 0, 0, 0.2);
 $bg_curve: 0.20s cubic-bezier(0, 0, .58, 1) background-color;
 $shadow_up: 0.20s cubic-bezier(0, 0, .58, 1) box-shadow;
 $shadow_down: 0.1s cubic-bezier(0, 0, .58, 1) box-shadow;
@@ -50,7 +50,7 @@ $duration: 0.4s;
 //** Background color for `<body>`.
 $body-bg: #fff !default;
 //** Global text color on `<body>`.
-$text-color: $gray-darker !default;
+$text-color: $gray-darkest !default;
 //** Global textual link color.
 $link-color: $brand-primary !default;
 //** Link hover color set via `lighten()` function.
@@ -103,29 +103,44 @@ Consolas,
 "Courier New",
 monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-$font-size-base: 16px !default;
+//** English
+$font-size-base: 1.6rem !default;
+$font-size-large: 1.8rem !default;
+$font-size-small: 1.4rem !default;
+$font-size-extra-small: 1.2rem !default;
+$font-size-xx-small: 1.0rem !default;
+$font-size-lead: 2.2rem !default;
+//** Japanese
 $font-size-base-ja: 1.4rem !default;
-$font-size-large: ceil(($font-size-base * 1.375)) !default; // ~22px
-$font-size-small: ceil(($font-size-base * 0.857)) !default; // ~14px
-$font-size-extra-small: ceil(($font-size-base * 0.75)) !default; // ~14px
-$font-size-lead: ceil(($font-size-base * 1.45)) !default; //28px WRONG
-$font-size-lead-sm: ceil(($font-size-base * 1.45)) !default;
-$font-size-h1: floor(($font-size-base * 2)) !default; // ~32px
-$font-size-h2: floor(($font-size-base * 1.75)) !default; // ~28px
-$font-size-h3: ceil(($font-size-base * 1.5)) !default; // ~24px
-$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~20px
-$font-size-h5: $font-size-base !default;
-$font-size-h6: ceil(($font-size-base * 0.875)) !default; // ~14px
+$font-size-large-ja: 1.6rem !default;
+$font-size-small-ja: 1.2rem !default;
+$font-size-extra-small-ja: 1.0rem !default;
+$font-size-xx-small-ja: 0.8rem !default;
+$font-size-lead-ja: 2.0rem !default;
+//** Heading size for Desktop JA and EN
+$font-size-h1: 2.4rem !default;
+$font-size-h2: 2.0rem !default;
+$font-size-h3: $font-size-base !default;
+$font-size-h4: 1.4rem !default;
+$font-size-h5: 1.2rem !default;
+$font-size-h6: 1.2rem !default;
+//** Heading size for Mobile JA and EN
+$font-size-h1-mobile: 2.0rem !default;
+$font-size-h2-mobile: $font-size-base !default;
+$font-size-h3-mobile: 1.4rem !default;
+$font-size-h4-mobile: 1.2rem !default;
+$font-size-h5-mobile: 1.0rem !default;
+$font-size-h6-mobile: 1.0rem !default;
 $font-weight-h1: 600 !default;
 $font-weight-h2: 600 !default;
 $font-weight-h3: 600 !default;
 $font-weight-h4: 600 !default;
 $font-weight-h5: 600 !default;
 $font-weight-h6: 600 !default;
-$font-size-button-xl: 26px !default;
-$font-size-button-large: 22px !default;
-$font-size-button-default: 16px !default;
-$font-size-button-sm: 12px !default;
+$font-size-button-xl: 2.6rem !default;
+$font-size-button-large: 2.2rem !default;
+$font-size-button-default: 1.6rem !default;
+$font-size-button-sm: 1.2rem !default;
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base: 1.75 !default; // 20/14?
 $btn-lineheight: 1.5 !default;
@@ -135,6 +150,22 @@ $line-height-computed: floor(($font-size-base * $line-height-base)) !default; //
 $headings-font-family: inherit !default;
 $headings-line-height: 1.5 !default;
 $headings-color: $gray-darkest !default;
+$display1-size: 4.6rem !default;
+$display2-size: 4.0rem !default;
+$display3-size: 3.6rem !default;
+$display4-size: 3.2rem !default;
+$display5-size: 2.8rem !default;
+$display1-size-mobile: 3.6rem !default;
+$display2-size-mobile: 3.4rem !default;
+$display3-size-mobile: 3.2rem !default;
+$display4-size-mobile: 3.0rem !default;
+$display5-size-mobile: 2.8rem !default;
+$display1-weight: 600 !default;
+$display2-weight: 600 !default;
+$display3-weight: 600 !default;
+$display4-weight: 600 !default;
+$display5-weight: 600 !default;
+$display-line-height: $headings-line-height !default;
 //== Iconography
 //
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including rex via Bower.
@@ -152,23 +183,23 @@ $icon-font-path: '../fonts/' !default;
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
-$padding-base-vertical: 8px !default;
-$padding-base-horizontal: 24px !default;
-$padding-xl-vertical: 16px !default;
-$padding-xl-horizontal: 40px !default;
-$padding-large-vertical: 8px !default;
-$padding-large-horizontal: 32px !default;
-$padding-large: 32px !default;
-$padding-small-vertical: 0px !default;
-$padding-small-horizontal: 0px !default;
-$padding-xs-vertical: 8px !default;
-$padding-xs-horizontal: 12px !default;
+$padding-base-vertical: .8rem !default;
+$padding-base-horizontal: 2.4rem !default;
+$padding-xl-vertical: 1.6rem !default;
+$padding-xl-horizontal: 4rem !default;
+$padding-large-vertical: .8rem !default;
+$padding-large-horizontal: 3.2rem !default;
+$padding-large: 3.2rem !default;
+$padding-small-vertical: 0rem !default;
+$padding-small-horizontal: 0rem !default;
+$padding-xs-vertical: .8rem !default;
+$padding-xs-horizontal: 1.2rem !default;
 $line-height-xl: 1.5 !default; // extra decimals for Win 8.1 Chrome
 $line-height-large: 1.5 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small: 1.5 !default;
-$border-radius-base: 4px !default;
-$border-radius-large: 4px !default;
-$border-radius-small: 2px !default;
+$border-radius-base: .4rem !default;
+$border-radius-large: .4rem !default;
+$border-radius-small: .2rem !default;
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color: #fff !default;
 //** Global background color for active items (e.g., navs or dropdowns).
@@ -176,14 +207,15 @@ $component-active-bg: $brand-primary !default;
 //** Width of the `border` for generating carets that indicate dropdowns.
 $caret-width-base: 4px !default;
 //** Carets increase slightly in size for larger components.
-$caret-width-large: 5px !default;
+$caret-width-large: .5rem !default;
 //== Tables
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding: 18px !default;
 //** Padding for cells in `.table-condensed`.
-$table-condensed-cell-padding: 8px !default;
+$table-cell-padding: 1.8rem !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding: 0.8rem !default;
 //** Default background color used for all tables.
 $table-bg: transparent !default;
 //** Background color used for `.table-striped`.
@@ -222,8 +254,8 @@ $btn-disabled-bg: #ebebeb !default;
 $btn-link-disabled-color: $gray-light !default;
 $btn-split-color: lighten($brand-primary, 7%);
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius-base: 3px !default;
-$btn-pill-border-radius: 100px;
+$btn-border-radius-base: .3rem !default;
+$btn-pill-border-radius: 10rem;
 $btn-border-radius-large: $border-radius-large !default;
 $btn-border-radius-small: $border-radius-small !default;
 //== Forms
@@ -261,7 +293,7 @@ $input-height-large: (ceil($font-size-large * $line-height-large) + ($padding-la
 //** Small `.form-control` height
 $input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
 //** `.form-group` margin
-$form-group-margin-bottom: 15px !default;
+$form-group-margin-bottom: 1.5rem !default;
 $legend-color: $gray-dark !default;
 $legend-border-color: #e5e5e5 !default;
 //** Background color for textual input addons
@@ -348,6 +380,7 @@ $screen-xs-max: ($screen-sm-min - 1) !default;
 $screen-sm-max: ($screen-md-min - 1) !default;
 $screen-md-max: ($screen-lg-min - 1) !default;
 $screen-xl-max: ($screen-xl-min - 1) !default;
+$screen-lg-max: ($screen-xl-min - 1) !default;
 //== Grid system
 //
 //## Define your custom responsive grid.
@@ -387,12 +420,12 @@ $container-xl: $container-xlarge-desktop !default; //1140px
 //
 //##
 // Basics of a navbar
-$navbar-height: 50px !default;
+$navbar-height: 5rem !default;
 $navbar-margin-bottom: $line-height-computed !default;
 $navbar-border-radius: $border-radius-base !default;
 $navbar-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
-$navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2) !default;
-$navbar-collapse-max-height: 340px !default;
+$navbar-padding-vertical: calc(($navbar-height - $line-height-computed) / 2) !default;
+$navbar-collapse-max-height: 34rem !default;
 $navbar-default-color: #777 !default;
 $navbar-default-bg: #f8f8f8 !default;
 $navbar-default-border: darken($navbar-default-bg, 6.5%) !default;
@@ -437,7 +470,7 @@ $navbar-inverse-toggle-border-color: #333 !default;
 //
 //##
 //=== Shared nav styles
-$nav-link-padding: 8px 15px !default;
+$nav-link-padding: .8rem 1.5rem !default;
 $nav-link-hover-bg: $gray-lighter !default;
 $nav-disabled-link-color: $gray-light !default;
 $nav-disabled-link-hover-color: $gray-light !default;
@@ -473,7 +506,7 @@ $pagination-disabled-border: #ddd !default;
 //##
 $pager-bg: $pagination-bg !default;
 $pager-border: $pagination-border !default;
-$pager-border-radius: 15px !default;
+$pager-border-radius: 1.5rem !default;
 $pager-hover-bg: $pagination-hover-bg !default;
 $pager-active-bg: $pagination-active-bg !default;
 $pager-active-color: $pagination-active-color !default;
@@ -481,7 +514,7 @@ $pager-disabled-color: $pagination-disabled-color !default;
 //== Jumbotron
 //
 //##
-$jumbotron-padding: 32px !default;
+$jumbotron-padding: 3.2rem !default;
 $jumbotron-color: inherit !default;
 $jumbotron-bg: $gray-lighter !default;
 $jumbotron-heading-color: inherit !default;
@@ -506,14 +539,14 @@ $state-danger-border: $brand-danger-darken !default;
 //
 //##
 //** Tooltip max width
-$tooltip-max-width: 200px !default;
+$tooltip-max-width: 20rem !default;
 //** Tooltip text color
 $tooltip-color: #fff !default;
 //** Tooltip background color
 $tooltip-bg: #000 !default;
 $tooltip-opacity: .9 !default;
 //** Tooltip arrow width
-$tooltip-arrow-width: 5px !default;
+$tooltip-arrow-width: .5rem !default;
 //** Tooltip arrow color
 $tooltip-arrow-color: $tooltip-bg !default;
 //== Popovers
@@ -522,7 +555,7 @@ $tooltip-arrow-color: $tooltip-bg !default;
 //** Popover body background color
 $popover-bg: #fff !default;
 //** Popover maximum width
-$popover-max-width: 276px !default;
+$popover-max-width: 27.6rem !default;
 //** Popover border color
 $popover-border-color: rgba(0, 0, 0, .2) !default;
 //** Popover fallback border color
@@ -530,7 +563,7 @@ $popover-fallback-border-color: #ccc !default;
 //** Popover title background color
 $popover-title-bg: darken($popover-bg, 3%) !default;
 //** Popover arrow width
-$popover-arrow-width: 8px !default;
+$popover-arrow-width: .8rem !default;
 //** Popover arrow color
 $popover-arrow-color: $popover-bg !default;
 //** Popover outer arrow width
@@ -562,9 +595,9 @@ $label-link-hover-color: #fff !default;
 //
 //##
 //** Padding applied to the modal body
-$modal-inner-padding: 15px !default;
+$modal-inner-padding: 1.5rem !default;
 //** Padding applied to the modal title
-$modal-title-padding: 15px !default;
+$modal-title-padding: 1.5rem !default;
 //** Modal title line-height
 $modal-title-line-height: $line-height-base !default;
 //** Background color of modal content area
@@ -581,13 +614,13 @@ $modal-backdrop-opacity: .5 !default;
 $modal-header-border-color: #e5e5e5 !default;
 //** Modal footer border color
 $modal-footer-border-color: $modal-header-border-color !default;
-$modal-lg: 900px !default;
-$modal-md: 600px !default;
-$modal-sm: 300px !default;
 //== Alerts
 //
 //## Define alert colors, border radius, and padding.
-$alert-padding: 15px !default;
+$alert-padding: 1.5rem !default;
+$modal-lg: 90rem !default;
+$modal-md: 60rem !default;
+$modal-sm: 30rem !default;
 $alert-border-radius: $border-radius-base !default;
 $alert-link-font-weight: bold !default;
 $alert-success-bg: $state-success-bg !default;
@@ -653,8 +686,8 @@ $list-group-link-heading-color: #333 !default;
 //
 //##
 $panel-bg: #fff !default;
-$panel-body-padding: 15px !default;
-$panel-heading-padding: 8px 15px !default;
+$panel-body-padding: 1.5rem !default;
+$panel-heading-padding: .8rem 1.5rem !default;
 $panel-footer-padding: $panel-heading-padding !default;
 $panel-border-radius: $border-radius-base !default;
 //** Border color for elements within panels
@@ -683,7 +716,7 @@ $panel-close-button: #e60000;
 //
 //##
 //** Padding around the thumbnail image
-$thumbnail-padding: 8px !default;
+$thumbnail-padding: .8rem !default;
 //** Thumbnail background color
 $thumbnail-bg: $body-bg !default;
 //** Thumbnail border color
@@ -693,7 +726,7 @@ $thumbnail-border-radius: $border-radius-base !default;
 //** Custom text color for thumbnail captions
 $thumbnail-caption-color: $text-color !default;
 //** Padding around the thumbnail caption
-$thumbnail-caption-padding: 8px !default;
+$thumbnail-caption-padding: .8rem !default;
 //== Wells
 //
 //##
@@ -712,12 +745,12 @@ $badge-active-color: $link-color !default;
 $badge-active-bg: #fff !default;
 $badge-font-weight: bold !default;
 $badge-line-height: 1 !default;
-$badge-border-radius: 8px !default;
+$badge-border-radius: .8rem !default;
 //== Breadcrumbs
 //
 //##
-$breadcrumb-padding-vertical: 8px !default;
-$breadcrumb-padding-horizontal: 15px !default;
+$breadcrumb-padding-vertical: .8rem !default;
+$breadcrumb-padding-horizontal: 1.5rem !default;
 //** Breadcrumb background color
 $breadcrumb-bg: #f5f5f5 !default;
 //** Breadcrumb text color
@@ -753,12 +786,11 @@ $kbd-bg: #333 !default;
 $pre-bg: #f5f5f5 !default;
 $pre-color: $gray-dark !default;
 $pre-border-color: #ccc !default;
-$pre-scrollable-max-height: 340px !default;
-//== Type
+$pre-scrollable-max-height: 3.4rem !default;
 //
 //##
 //** Horizontal offset for forms and lists.
-$component-offset-horizontal: 180px !default;
+$component-offset-horizontal: 1.8rem !default;
 //** Text muted color
 $text-muted: $gray-light !default;
 //** Abbreviations and acronyms border color
@@ -786,7 +818,9 @@ $hr-border: $gray-lighter !default;
 //##
 //** Blockquote padding x.
 $blockquote-padding-y: 0;
-$blockquote-padding-x: 40px;
+$blockquote-padding-x: 4rem;
 //** Blockquote font size.
-$blockquote-font-size: 26px;
+$blockquote-font-size: 2.6rem;
+$blockquote-padding-x: 4.0rem;
+//** Blockquote font size.
 $search-input-active: #f9f9f9;

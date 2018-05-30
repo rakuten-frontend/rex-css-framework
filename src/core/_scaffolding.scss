@@ -27,7 +27,7 @@ body {
     line-height: $line-height-base;
     color: $text-color;
     background-color: $body-bg;
-    [lang=ja] & {
+    &:lang(ja) {
         font-size: $font-size-base-ja;
     }
 }
