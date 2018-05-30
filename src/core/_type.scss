@@ -122,7 +122,7 @@
             font-size: 1.0rem;
         }
         @media (max-width: $screen-xs-min) {
-            font-size: $font-size-h6-mobile;
+            font-size: $font-size-h5-mobile;
             .secondary-text {
                 font-size: .8rem;
             }
@@ -232,10 +232,7 @@
     
      :lang(ja) {
         .lead {
-            margin-bottom: $line-height-computed;
             font-size: $font-size-lead-ja;
-            font-weight: 200;
-            line-height: $line-height-base;
         }
         .large {
             font-size: $font-size-large-ja;
