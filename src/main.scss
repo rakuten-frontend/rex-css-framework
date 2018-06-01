@@ -1,28 +1,37 @@
 /*=============================================
 =           Rex Frontend Framework           =
 =============================================*/
+
 // Core variables and mixins
 @import "core/rex_colors";
 $icon-font-path: "../fonts/";
 $noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/";
+
 /*==============================
 =      Customization          =
 ==============================*/
+
 @import "colors/default";
+
 /*==========================
 =       Variables         =
 ===========================*/
+
 @import "core/variables";
 @import "core/mixins";
+
 /*============================
 =   Reset and dependencies   =
 =============================*/
+
 @import "core/normalize";
 @import "core/print";
 @import "core/glyphicons";
+
 /*============================
 =         Core           =
 =============================*/
+
 // Grid Control
 @import "core/grid";
 @import "core/grid/sm";
@@ -40,18 +49,25 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/";
 @import "core/tables";
 @import "core/forms";
 @import "core/buttons";
+@import "core/button-groups";
+
 /*===========================
 =    Utility classes       =
 ===========================*/
+
 @import "core/utilities";
 @import "core/responsive-utilities";
+
 /*======================================================
 =  Called last to override fallbacks =
 =======================================================*/
+
 @import "core/overrides";
+
 /*============================
 =         Components         =
 =============================*/
+
 @import "components/input-fields";
 @import "components/list-wrapper";
 @import "components/selects";
@@ -75,9 +91,11 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/";
 @import "components/_tooltips";
 @import "components/_lists";
 @import "components/_badges";
+
 /*============================
 =         Animations         =
 =============================*/
+
 @import "animation/bounce";
 @import "animation/fade";
 @import "animation/grow";
