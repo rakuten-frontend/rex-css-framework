@@ -1,53 +1,34 @@
 //
 // Grid system
 // --------------------------------------------------
+
+
 // Container widths
 //
 // Set the container width, and override it for fixed navbars in media queries.
+
 .container {
-    @include container-fixed;
+  @include container-fixed;
 }
 
 // Fluid container
 //
 // Utilizes the mixin meant for fixed width containers, but without any defined
 // width for fluid, full width layouts.
-.container-fluid {
-    @include container-fixed;
-}
 
+.container-fluid {
+  @include container-fixed;
+}
 // Row
 //
 // Rows contain and clear the floats of your columns.
 .row {
-    @include make-row;
+  @include make-row;
 }
-
-@media (min-width: $screen-xl-min) {
-    .container {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
-    .row {
-        margin-left: -1.6rem;
-        margin-right: -1.6rem;
-    }
-}
-
-@media (min-width: $screen-sm-min) {
-    .container {
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
-    }
-    .row {
-        margin-left: -1.2rem;
-        margin-right: -1.2rem;
-    }
-}
-
 // Columns
 //
 // Common styles for small and large grid columns
+
 @include make-grid-columns;
 // Extra small grid
 //
