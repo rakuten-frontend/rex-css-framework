@@ -386,7 +386,7 @@ $screen-lg-max: ($screen-xl-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns: 12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width: 32px !default;
+$grid-gutter-width: 10px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint: $screen-sm-min !default;
@@ -395,24 +395,20 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
-// Extra Small screen / mobile
-$container-mobile: (400px + $grid-gutter-width) !default;
-//** For `$screen-sm-min` and up.
-$container-xs: $container-mobile !default; //Should be removed!!
 // Small screen / tablet
-$container-tablet: (508px + $grid-gutter-width) !default; //576px(540px + 32px)
+$container-tablet: (554px + $grid-gutter-width) !default; //576px(540px + 32px)
 //** Max container width 576px
 $container-sm: $container-tablet !default; //576px
 // Medium screen / desktop
-$container-desktop: (720px + $grid-gutter-width) !default; //768px(720px + 32px)
+$container-desktop: (746px + $grid-gutter-width) !default; //768px(720px + 32px)
 //** Max container width 768px
 $container-md: $container-desktop !default; //768px
 // Large screen / wide desktop
-$container-large-desktop: (940px + $grid-gutter-width) !default; //960px(940x + 32px)
+$container-large-desktop: (960px + $grid-gutter-width) !default; //960px(940x + 32px)
 //** Max container width 960px
 $container-lg: $container-large-desktop !default; //960px
 // 27 inch screen and larger
-$container-xlarge-desktop: (1140px + $grid-gutter-width) !default; //1140px(1140 + 32px)
+$container-xlarge-desktop: (1152px + $grid-gutter-width) !default; //1140px(1140 + 32px)
 //** Max container width 1140px
 $container-xl: $container-xlarge-desktop !default; //1140px
 //== Navbar
