@@ -12,7 +12,10 @@
     "build": "webpack --config webpack.config.prod.js --color -p --progress",
     "postbuild": "cp -r ./src/fonts ./build/"
   },
-  "author": "Josh Worley, Claudio Moya, Alexander King, Linmic, Shugo Sasito, Akinori Noguchi",
+  "author": "REX Css Framework Authors (https://github.com/rakuten-frontend/rex-css-framework/graphs/contributors)",
+  "contributors": [
+    "Rakuten, Inc."
+  ],
   "license": "MIT",
   "browserslist": [
     ">1%",
