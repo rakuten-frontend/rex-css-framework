@@ -1,7 +1,7 @@
 {
   "name": "rex-css-framework",
   "version": "0.0.1-alpha",
-  "description": "Rakuten Experience Project, UX/UI Design CoE Section",
+  "description": "The ReX CSS Framework is the base for all Front-end Technology stack provided by the ReX project.",
   "main": "index.js",
   "repository": {
     "type": "git",
