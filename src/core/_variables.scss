@@ -249,7 +249,7 @@ $btn-warning-border: darken($btn-warning-bg, 5%) !default;
 $btn-danger-color: #fff !default;
 $btn-danger-bg: $brand-danger !default;
 $btn-danger-border: darken($btn-danger-bg, 5%) !default;
-$btn-disabled-color: #d1d1d1 !default;
+$btn-disabled-color: $gray-light !default;
 $btn-disabled-bg: #ebebeb !default;
 $btn-link-disabled-color: $gray-light !default;
 $btn-split-color: lighten($brand-primary, 7%);
@@ -264,7 +264,7 @@ $btn-border-radius-small: $border-radius-small !default;
 //** `<input>` background color
 $input-bg: #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled: $gray-lighter !default;
+$input-bg-disabled: transparent !default;
 //** Text color for `<input>`s
 $input-color: $gray !default;
 //** `<input>` border color
@@ -287,7 +287,7 @@ $input-border-focus: #66afe9 !default;
 //** Placeholder text color
 $input-color-placeholder: #999 !default;
 //** Default `.form-control` height
-$input-height-base: ($font-size-base * 1.375) !default; // 22px
+$input-height-base: ($font-size-base * 1.571) !default; // 22px
 //** Large `.form-control` height
 $input-height-large: (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 //** Small `.form-control` height
