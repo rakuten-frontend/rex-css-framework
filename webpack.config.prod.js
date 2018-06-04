@@ -15,7 +15,7 @@ const entry = {
 };
 
 const plugins = [
-  new CleanWebpackPlugin(['build']),
+  new CleanWebpackPlugin(['dist']),
 ];
 
 const rules = [

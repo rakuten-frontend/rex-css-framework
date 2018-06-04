@@ -40,18 +40,13 @@ const rules = [
   },
 ];
 
-
 module.exports = {
-
   cache: true,
-
   output: {
-    path: path.resolve(__dirname, 'build/themes/'),
+    path: path.resolve(__dirname, 'dist/css/'),
     filename: '[name].css',
   },
-
   resolve: {
-
     modules: [
       path.resolve('node_modules'),
       path.resolve('src'),
@@ -62,7 +57,6 @@ module.exports = {
       '.sass',
     ],
   },
-
   plugins,
   module: {
     rules,
