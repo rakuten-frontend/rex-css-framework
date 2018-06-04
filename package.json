@@ -38,6 +38,9 @@
     "ios >= 8",
     "android >= 4.1"
   ],
+  "engines": {
+    "node": ">=6"
+  },
   "devDependencies": {
     "autoprefixer": "^8.1.0",
     "clean-webpack-plugin": "^0.1.19",
