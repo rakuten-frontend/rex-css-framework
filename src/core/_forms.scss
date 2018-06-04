@@ -356,9 +356,9 @@ input[type="checkbox"] {
 }
 
 // Feedback icon (requires .glyphicon classes)
-.form-control-feedback {
+.rex-icon.form-control-feedback {
     position: absolute;
-    top: $line-height-computed;
+    top: $line-height-computed !important;
     right: 0;
     z-index: 2; // Ensure icon is above input groups
     display: block;
