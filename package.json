@@ -21,6 +21,15 @@
     "Rakuten, Inc."
   ],
   "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
   "browserslist": [
     ">1%",
     "last 4 versions",
