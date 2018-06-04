@@ -1,0 +1,14 @@
+/*Custom CSS for document*/
+
+section {
+    margin-bottom: 0rem;
+}
+
+.row {
+    margin-bottom: 5rem;
+}
+
+img.logo {
+    width: 16px;
+    margin-bottom: 0.1em;
+}
