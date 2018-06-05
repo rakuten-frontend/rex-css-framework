@@ -1,0 +1,6 @@
+RewriteEngine on
+
+# Set the base server directory to / to get test the content from the url /rex-css-framework/
+# Example: http://localhost:8888/rex-css-framework/
+# Based on the production url on gitpages https://rakuten-frontend.github.io/rex-css-framework/
+RewriteRule ^rex-css-framework/(.*)$ /$1 [L]
