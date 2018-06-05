@@ -12,3 +12,7 @@ img.logo {
     width: 16px;
     margin-bottom: 0.1em;
 }
+
+.code-example {
+    display: none;
+}
