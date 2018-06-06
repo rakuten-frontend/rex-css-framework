@@ -400,7 +400,7 @@ input[type="checkbox"] {
     label {
         float: left;
     }
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-xs-min) {
         // Inline-block all the things for "inline"
         .form-group {
             display: inline-block;
