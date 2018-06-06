@@ -27,9 +27,12 @@
 }
 
 .checkbox-area,
-.radio-area {
+.radio-area,
+.radio,
+.radio-inline {
     position: relative;
     display: inline-block;
+    margin-right: 1em;
     .rex-icon {
         display: none;
         position: absolute;
@@ -63,7 +66,7 @@
         position: relative;
         top: 0;
         left: 0;
-        padding-left: 24px + 16px;
+        padding-left: 3rem;
     }
      :checked+.checkbox-label {
         color: $gray-darker;
@@ -113,7 +116,9 @@
     }
 }
 
-.radio-area {
+.radio-area,
+.radio-inline,
+.radio {
     .radio-label {
         position: relative;
         top: 0;
@@ -123,7 +128,7 @@
             @extend %radio-checkbox-base;
             border-radius: 100%;
             position: absolute;
-            top: .2em;
+            top: .18em;
             left: 4px;
         }
     }

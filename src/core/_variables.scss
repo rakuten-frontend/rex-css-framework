@@ -189,10 +189,10 @@ $padding-base-horizontal: 2.4rem !default;
 $padding-xl-vertical: 1.6rem !default;
 $padding-xl-horizontal: 4rem !default;
 $padding-large-vertical: .8rem !default;
-$padding-large-horizontal: 3.2rem !default;
+$padding-large-horizontal: 0 !default;
 $padding-large: 3.2rem !default;
 $padding-small-vertical: .25rem !default;
-$padding-small-horizontal: .5rem !default;
+$padding-small-horizontal: 0 !default;
 $padding-xs-vertical: .175rem !default;
 $padding-xs-horizontal: .25rem !default;
 $line-height-xl: 1.5 !default; // extra decimals for Win 8.1 Chrome
@@ -287,12 +287,11 @@ $input-border-focus: #66afe9 !default;
 //** Placeholder text color
 $input-color-placeholder: $gray-medium !default;
 //** Default `.form-control` height
-$input-height-base: 3rem !default;
+$input-height-base: 2em !default;
 //** Large `.form-control` height
-$input-height-large: (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-large: (ceil($font-size-large * $line-height-large)+1) !default;
 //** Small `.form-control` height
-$input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
-//$input-height-small: (calc($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+$input-height-small: (floor($font-size-small * $line-height-small)) !default;
 //** `.form-group` margin
 $form-group-margin-bottom: 1.5rem !default;
 $legend-color: $gray-dark !default;
@@ -398,19 +397,19 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //
 //## Define the maximum width of `.container` for different screen sizes.
 // Small screen / tablet
-$container-tablet: (73.6rem + $grid-gutter-width) !default;
+$container-tablet: (73.6rem+$grid-gutter-width) !default;
 //** For `$screen-sm-min` and up.
 $container-sm: $container-tablet !default;
 // Medium screen / desktop
-$container-desktop: (96rem + $grid-gutter-width) !default;
+$container-desktop: (96rem+$grid-gutter-width) !default;
 //** For `$screen-md-min` and up.
 $container-md: $container-desktop !default;
 // Large screen / wide desktop
-$container-large-desktop: (121.6rem + $grid-gutter-width) !default;
+$container-large-desktop: (121.6rem+$grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg: $container-large-desktop !default;
 // 27 inch screen and larger
-$container-xlarge-desktop: (140.8rem + $grid-gutter-width) !default;
+$container-xlarge-desktop: (140.8rem+$grid-gutter-width) !default;
 //** For `$screen-xl-min` and up.
 $container-xl: $container-xlarge-desktop !default;
 //== Navbar
@@ -564,7 +563,7 @@ $popover-arrow-width: .8rem !default;
 //** Popover arrow color
 $popover-arrow-color: $popover-bg !default;
 //** Popover outer arrow width
-$popover-arrow-outer-width: ($popover-arrow-width + 1) !default;
+$popover-arrow-outer-width: ($popover-arrow-width+1) !default;
 //** Popover outer arrow color
 $popover-arrow-outer-color: fade_in($popover-border-color, 0.05) !default;
 //** Popover outer arrow fallback color
