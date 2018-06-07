@@ -27,6 +27,10 @@
             background-color: $white;
             color: $white !important;
         }
+        &:disabled {
+            border: 1px dashed $gray-light;
+            border-width: 0 0 1px 0;
+        }
     }
     label {
         width: 100%;

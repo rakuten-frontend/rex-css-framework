@@ -29,6 +29,10 @@ label {
     font-weight: bold;
 }
 
+label.control-label {
+    font-size: 1.2rem;
+}
+
 // Normalize form controls
 //
 // While most of our form styles require extra classes, some basic normalization
@@ -124,6 +128,12 @@ output {
     &[disabled],
     fieldset[disabled] & {
         cursor: $cursor-disabled;
+        select {
+            border-color: $gray-light;
+        }
+    }
+    label.control-label {
+        font-size: 1em;
     }
     // [converter] extracted textarea& to textarea.form-control
 }
