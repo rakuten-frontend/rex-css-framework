@@ -98,7 +98,8 @@ textarea {
     input[type='password'],
     input[type='number'],
     input[type='email'],
-    textarea {
+    textarea,
+    select {
         margin-bottom: .5em;
     }
     .input-group-disabled {
