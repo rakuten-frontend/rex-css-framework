@@ -404,6 +404,7 @@ textarea {
 }
 
 .has-success {
+    position: relative;
     input[type='text'],
     input[type='url'],
     input[type='tel'],
@@ -483,6 +484,7 @@ textarea {
 }
 
 .has-error {
+    position: relative;
     @include form-control-validation($brand-danger, $state-danger-border, $state-danger-bg);
     // padding-right: 22px;
     input[type='text'],
