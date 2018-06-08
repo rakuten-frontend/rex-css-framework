@@ -387,7 +387,7 @@ $screen-lg-max: ($screen-xl-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns: 12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width: 1.6rem !default;
+$grid-gutter-width: 3rem !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint: $screen-sm-min !default;
