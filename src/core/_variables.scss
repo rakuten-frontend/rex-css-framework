@@ -66,27 +66,36 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/" !default;
     font-family: 'Noto Sans Japanese';
     font-style: normal;
     font-weight: 400;
-    src: url(#{$noto-font-path}NotoSansJP-Regular.woff2) format('woff2'),
+    src: local('NotoSansJP-Regular.otf'),
+    url(#{$noto-font-path}NotoSansJP-Regular.woff2) format('woff2'),
     url(#{$noto-font-path}NotoSansJP-Regular.woff) format('woff'),
     url(#{$noto-font-path}NotoSansJP-Regular.otf) format('opentype');
+    unicode-range: U+3000-9FFF, U+ff??;
+    /* Japanese glyphs */
 }
 
 @font-face {
     font-family: 'Noto Sans Japanese';
     font-style: normal;
     font-weight: 700;
-    src: url(#{$noto-font-path}NotoSansJP-Bold.woff2) format('woff2'),
+    src: local('NotoSansJP-Regular.otf'),
+    url(#{$noto-font-path}NotoSansJP-Bold.woff2) format('woff2'),
     url(#{$noto-font-path}NotoSansJP-Bold.woff) format('woff'),
     url(#{$noto-font-path}NotoSansJP-Bold.otf) format('opentype');
+    unicode-range: U+3000-9FFF, U+ff??;
+    /* Japanese glyphs */
 }
 
 @font-face {
     font-family: 'Noto Sans Japanese';
     font-style: normal;
     font-weight: 100;
-    src: url(#{$noto-font-path}NotoSansJP-Light.woff2) format('woff2'),
+    src: local('NotoSansJP-Regular.otf'),
+    url(#{$noto-font-path}NotoSansJP-Light.woff2) format('woff2'),
     url(#{$noto-font-path}NotoSansJP-Light.woff) format('woff'),
     url(#{$noto-font-path}NotoSansJP-Light.otf) format('opentype');
+    unicode-range: U+3000-9FFF, U+ff??;
+    /* Japanese glyphs */
 }
 
 //## Font, line-height, and color for body text, headings, and more.
@@ -108,14 +117,12 @@ $font-size-base: 1.6rem !default;
 $font-size-large: 1.8rem !default;
 $font-size-small: 1.4rem !default;
 $font-size-extra-small: 1.2rem !default;
-$font-size-xx-small: 1.0rem !default;
 $font-size-lead: 2.2rem !default;
 //** Japanese
 $font-size-base-ja: 1.4rem !default;
 $font-size-large-ja: 1.6rem !default;
 $font-size-small-ja: 1.2rem !default;
 $font-size-extra-small-ja: 1.0rem !default;
-$font-size-xx-small-ja: 0.8rem !default;
 $font-size-lead-ja: 2.0rem !default;
 //** Heading size for Desktop JA and EN
 $font-size-h1: 2.4rem !default;
