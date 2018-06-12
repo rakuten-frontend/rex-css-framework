@@ -60,42 +60,42 @@ $link-active-color: darken($link-color, 10%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 //== Typography
-//
-$noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/" !default;
+$noto-font-path: "//fonts.gstatic.com/ea/notosansjp/v5/" !default;
+
+/**
+ * Noto Sans CJK JP: https://www.google.com/get/noto/#sans-jpan
+ * Noto Sans JP: https://fonts.google.com/earlyaccess#Noto+Sans+JP
+ */
+
 @font-face {
-    font-family: 'Noto Sans Japanese';
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 300;
+    src: local("Noto Sans CJK JP Light"),
+    url(#{$noto-font-path}NotoSansJP-Light.woff2) format('woff2'),
+    url(#{$noto-font-path}v5/NotoSansJP-Light.woff) format('woff'),
+    url(#{$noto-font-path}v5/NotoSansJP-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 400;
-    src: local('NotoSansJP-Regular.otf'),
+    src: local("Noto Sans CJK JP Regular"),
     url(#{$noto-font-path}NotoSansJP-Regular.woff2) format('woff2'),
     url(#{$noto-font-path}NotoSansJP-Regular.woff) format('woff'),
     url(#{$noto-font-path}NotoSansJP-Regular.otf) format('opentype');
-    unicode-range: U+3000-9FFF, U+ff??;
-    /* Japanese glyphs */
 }
 
 @font-face {
-    font-family: 'Noto Sans Japanese';
+    font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 700;
-    src: local('NotoSansJP-Regular.otf'),
+    src: local("Noto Sans CJK JP Bold"),
     url(#{$noto-font-path}NotoSansJP-Bold.woff2) format('woff2'),
     url(#{$noto-font-path}NotoSansJP-Bold.woff) format('woff'),
     url(#{$noto-font-path}NotoSansJP-Bold.otf) format('opentype');
-    unicode-range: U+3000-9FFF, U+ff??;
-    /* Japanese glyphs */
-}
-
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 100;
-    src: local('NotoSansJP-Regular.otf'),
-    url(#{$noto-font-path}NotoSansJP-Light.woff2) format('woff2'),
-    url(#{$noto-font-path}NotoSansJP-Light.woff) format('woff'),
-    url(#{$noto-font-path}NotoSansJP-Light.otf) format('opentype');
-    unicode-range: U+3000-9FFF, U+ff??;
-    /* Japanese glyphs */
+    unicode-range: U+3000-30FF, U+4E00-9FFF, U+FF00-FFEF;
 }
 
 //## Font, line-height, and color for body text, headings, and more.
