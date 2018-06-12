@@ -1,15 +1,8 @@
 // This is to improve font loading and replace Arial
 %overrides {
-    font-family: 'Noto Sans Japanese', 'Arial', sans-serif;
-}
-
-%overrides-en {
-    font-family: 'Noto Sans', 'Arial', sans-serif;
+    font-family: 'Noto Sans JP', 'HiraKakuProN-W3', 'Arial', sans-serif;
 }
 
 body {
-    @extend %overrides-en;
-    &:lang(ja) {
-        @extend %overrides
-    }
+    @extend %overrides;
 }
