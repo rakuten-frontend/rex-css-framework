@@ -209,7 +209,6 @@
     .lead {
         margin-bottom: $line-height-computed;
         font-size: $font-size-lead;
-        font-weight: 200;
         line-height: $line-height-base;
     }
     
@@ -219,22 +218,21 @@
     
     small,
     .small {
-        font-size: $font-size-small;
+        font-size: 86%;
+    }
+    
+    .thinner {
+        font-weight: lighter;
     }
     
     .extra-small {
         font-size: $font-size-extra-small;
     }
     
-    .xx-small {
-        font-size: $font-size-xx-small;
-    }
-    
      :lang(ja) {
         .lead {
             margin-bottom: $line-height-computed;
             font-size: $font-size-lead-ja;
-            font-weight: 200;
             line-height: $line-height-base;
         }
         .large {
@@ -242,9 +240,6 @@
         }
         .extra-small {
             font-size: $font-size-extra-small-ja;
-        }
-        .xx-small {
-            font-size: $font-size-xx-small-ja;
         }
     }
     
