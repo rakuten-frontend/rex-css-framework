@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Light"), local("Yu Gothic");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium"), local('YuGothic-Regular');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Yu Gothic', 'Yu Gothic Medium', YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    font-weight: 500;
+}
