@@ -73,8 +73,8 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjp/v5/" !default;
     font-weight: 300;
     src: local("Noto Sans CJK JP Light"),
     url(#{$noto-font-path}NotoSansJP-Light.woff2) format('woff2'),
-    url(#{$noto-font-path}v5/NotoSansJP-Light.woff) format('woff'),
-    url(#{$noto-font-path}v5/NotoSansJP-Light.otf) format('opentype');
+    url(#{$noto-font-path}NotoSansJP-Light.woff) format('woff'),
+    url(#{$noto-font-path}NotoSansJP-Light.otf) format('opentype');
 }
 
 @font-face {
