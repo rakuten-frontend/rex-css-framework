@@ -1,8 +1,0 @@
-// This is to improve font loading and replace Arial
-%overrides {
-    font-family: 'Noto Sans JP', 'HiraKakuProN-W3', 'Arial', sans-serif;
-}
-
-body {
-    @extend %overrides;
-}

@@ -58,10 +58,11 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjp/v5/";
 @import "core/responsive-utilities";
 
 /*======================================================
-=  Called last to override fallbacks =
+=  Font Family Setting =
 =======================================================*/
 
-@import "core/overrides";
+//@import "core/default-fontfamily";
+@import "core/notosans-fontfamily";
 
 /*============================
 =         Components         =
