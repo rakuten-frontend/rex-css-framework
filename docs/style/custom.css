@@ -13,6 +13,6 @@ img.logo {
     margin-bottom: 0.1em;
 }
 
-.code-example {
-    display: none;
+.icon-samples .rex-icon {
+    font-size: 4rem;
 }
