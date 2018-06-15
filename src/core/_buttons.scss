@@ -195,48 +195,6 @@ a.btn {
     }
 }
 
-// // Info appears as blue-green
-.btn-info {
-    $color: $btn-info-bg;
-    $light: $brand-info-lighten;
-    $dark: $brand-info-darken;
-    @include button-variant($color, $light);
-    &.btn-outline {
-        @include button-variant-outline($white, $color, $light, $dark, $white);
-    }
-    &.btn-pill {
-        border-radius: $btn-pill-border-radius;
-    }
-}
-
-// // Warning appears as orange
-.btn-warning {
-    $color: $btn-warning-bg;
-    $light: $brand-warning-lighten;
-    $dark: $brand-warning-darken;
-    @include button-variant($color, $light);
-    &.btn-outline {
-        @include button-variant-outline($white, $color, $light, $dark, $white);
-    }
-    &.btn-pill {
-        border-radius: $btn-pill-border-radius;
-    }
-}
-
-// // Danger and error appear as red
-.btn-danger {
-    $color: $btn-danger-bg;
-    $light: $brand-danger-lighten;
-    $dark: $brand-danger-darken;
-    @include button-variant($color, $light);
-    &.btn-outline {
-        @include button-variant-outline($white, $color, $light, $dark, $white);
-    }
-    &.btn-pill {
-        border-radius: $btn-pill-border-radius;
-    }
-}
-
 .btn-text {
     @include button-variant-text($btn-primary-bg, $gray-lightest, $gray-light);
     font-weight: 300;
