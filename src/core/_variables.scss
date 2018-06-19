@@ -209,15 +209,6 @@ $btn-primary-border: darken($btn-primary-bg, 5%) !default;
 $btn-success-color: #fff !default;
 $btn-success-bg: $brand-success !default;
 $btn-success-border: darken($btn-success-bg, 5%) !default;
-$btn-info-color: #fff !default;
-$btn-info-bg: $brand-info !default;
-$btn-info-border: darken($btn-info-bg, 5%) !default;
-$btn-warning-color: #fff !default;
-$btn-warning-bg: $brand-warning !default;
-$btn-warning-border: darken($btn-warning-bg, 5%) !default;
-$btn-danger-color: #fff !default;
-$btn-danger-bg: $brand-danger !default;
-$btn-danger-border: darken($btn-danger-bg, 5%) !default;
 $btn-disabled-color: #d1d1d1 !default;
 $btn-disabled-bg: #ebebeb !default;
 $btn-link-disabled-color: $gray-light !default;
@@ -316,35 +307,35 @@ $zindex-modal: 1050 !default;
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 // Extra small screen / phone
-//** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs: 4.8rem !default; //480px
-//** Deprecated `$screen-xs-min` as of v3.2.0
+//** Deprecated `$screen-xs`
+$screen-xs: 480px !default;
+//** Deprecated `$screen-xs-min`
 $screen-xs-min: $screen-xs !default;
-//** Deprecated `$screen-phone` as of v3.0.1
+//** Deprecated `$screen-phone`
 $screen-phone: $screen-xs-min !default;
 // Small screen / tablet
-//** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm: 76.8rem !default;
+//** Deprecated `$screen-sm`
+$screen-sm: 576px !default;
 $screen-sm-min: $screen-sm !default;
-//** Deprecated `$screen-tablet` as of v3.0.1
+//** Deprecated `$screen-tablet`
 $screen-tablet: $screen-sm-min !default;
 // Medium screen / desktop
-//** Deprecated `$screen-md` as of v3.0.1
-$screen-md: 99.2rem !default; //992px
+//** Deprecated `$screen-md`
+$screen-md: 768px !default; //992px
 $screen-md-min: $screen-md !default;
-//** Deprecated `$screen-desktop` as of v3.0.1
+//** Deprecated `$screen-desktop`
 $screen-desktop: $screen-md-min !default;
 // Large screen / wide desktop
-//** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg: 128rem !default; //1280px
+//** Deprecated `$screen-lg`
+$screen-lg: 992px !default; //1280px
 $screen-lg-min: $screen-lg !default;
-//** Deprecated `$screen-lg-desktop` as of v3.0.1
+//** Deprecated `$screen-lg-desktop`
 $screen-lg-desktop: $screen-lg-min !default;
 // XL screen / wide desktop
-//** Deprecated `$screen-lg` as of v3.0.1
-$screen-xl: 1440px !default;
+//** Deprecated `$screen-lg`
+$screen-xl: 1200px !default;
 $screen-xl-min: $screen-xl !default;
-//** Deprecated `$screen-lg-desktop` as of v3.0.1
+//** Deprecated `$screen-lg-desktop`
 $screen-xl-desktop: $screen-xl-min !default;
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max: ($screen-sm-min - 1) !default;
@@ -357,29 +348,27 @@ $screen-lg-max: ($screen-xl-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns: 12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width: 3.2rem !default;
+$grid-gutter-width: 30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint: $screen-sm-min !default;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
-//== Container sizes
-//
 //## Define the maximum width of `.container` for different screen sizes.
 // Small screen / tablet
-$container-tablet: (73.6rem + $grid-gutter-width) !default;
+$container-tablet: (480px + $grid-gutter-width) !default;
 //** For `$screen-sm-min` and up.
 $container-sm: $container-tablet !default;
 // Medium screen / desktop
-$container-desktop: (96rem + $grid-gutter-width) !default;
+$container-desktop: (720px + $grid-gutter-width) !default;
 //** For `$screen-md-min` and up.
 $container-md: $container-desktop !default;
 // Large screen / wide desktop
-$container-large-desktop: (121.6rem + $grid-gutter-width) !default;
+$container-large-desktop: (940px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg: $container-large-desktop !default;
 // 27 inch screen and larger
-$container-xlarge-desktop: (140.8rem + $grid-gutter-width) !default;
+$container-xlarge-desktop: (1140px + $grid-gutter-width) !default;
 //** For `$screen-xl-min` and up.
 $container-xl: $container-xlarge-desktop !default;
 //== Navbar
@@ -389,7 +378,7 @@ $container-xl: $container-xlarge-desktop !default;
 $navbar-height: 5rem !default;
 $navbar-margin-bottom: $line-height-computed !default;
 $navbar-border-radius: $border-radius-base !default;
-$navbar-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
+$navbar-padding-horizontal: ($grid-gutter-width / 2) !default;
 $navbar-padding-vertical: calc(($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height: 34rem !default;
 $navbar-default-color: #777 !default;
@@ -436,7 +425,7 @@ $navbar-inverse-toggle-border-color: #333 !default;
 //
 //##
 //=== Shared nav styles
-$nav-link-padding: .8rem 15px !default;
+$nav-link-padding: .8rem 1.5rem !default;
 $nav-link-hover-bg: $gray-lighter !default;
 $nav-disabled-link-color: $gray-light !default;
 $nav-disabled-link-hover-color: $gray-light !default;

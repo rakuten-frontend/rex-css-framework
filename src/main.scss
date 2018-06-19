@@ -5,7 +5,7 @@
 // Core variables and mixins
 @import "core/rex_colors";
 $icon-font-path: "../fonts/";
-$noto-font-path: "//fonts.gstatic.com/ea/notosansjp/v5/";
+$noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 
 /*==============================
 =      Customization          =
@@ -34,6 +34,7 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjp/v5/";
 
 // Grid Control
 @import "core/grid";
+@import "core/grid/xs";
 @import "core/grid/sm";
 @import "core/grid/md";
 @import "core/grid/lg";
@@ -62,8 +63,8 @@ $noto-font-path: "//fonts.gstatic.com/ea/notosansjp/v5/";
 =  Font Family Setting =
 =======================================================*/
 
-//@import "core/default-fontfamily";
-@import "core/notosans-fontfamily";
+//@import "core/fontfamily-default";
+@import "core/fontfamily-notosans";
 
 /*============================
 =         Components         =
