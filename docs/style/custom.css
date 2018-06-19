@@ -1,18 +1,44 @@
-/*Custom CSS for document*/
-
-section {
-    margin-bottom: 0rem;
-}
-
-.row {
-    margin-bottom: 5rem;
-}
-
-img.logo {
-    width: 16px;
-    margin-bottom: 0.1em;
-}
-
-.icon-samples .rex-icon {
-    font-size: 4rem;
-}
+    /*Custom CSS for document*/
+    
+    section {
+        margin-bottom: 0rem;
+    }
+    
+    .row {
+        margin-bottom: 5rem;
+    }
+    
+    img.logo {
+        width: 16px;
+        margin-bottom: 0.1em;
+    }
+    
+    .grid-sample [class*="col-"] {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-color: #eee;
+        background-color: rgba(189, 0, 0, 0.19);
+        border: 1px solid #fff;
+    }
+    
+    #icon .icon-samples .rex-icon {
+        font-size: 3.2rem;
+    }
+    
+    #icon .icon-samples-m .rex-icon {
+        font-size: 2.4rem;
+    }
+    
+    #icon .icon-samples-s .rex-icon {
+        font-size: 1.6rem;
+    }
+    
+    @media screen and (max-width:600px) {
+        #button .btn {
+            display: inline-block;
+            margin-bottom: .5em;
+        }
+        #button .btn-group .btn {
+            display: inline;
+        }
+    }
