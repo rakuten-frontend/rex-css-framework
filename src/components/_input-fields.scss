@@ -162,7 +162,7 @@ textarea {
             margin-bottom: .5em;
             &:focus {
                 border-color: $brand-primary;
-                border-width: 2px;
+                border-width: 1px;
             }
         }
     }
@@ -413,7 +413,7 @@ textarea {
     input[type='email'],
     textarea {
         border-color: #069907;
-        border-width: 2px;
+        border-width: 1px;
     }
     @include form-control-validation($brand-success, $state-success-border, $state-success-bg);
     %success_text {
@@ -495,7 +495,7 @@ textarea {
     input[type='email'],
     textarea {
         border-color: $brand-danger;
-        border-width: 2px;
+        border-width: 1px;
     }
     small {
         color: $brand-danger;
