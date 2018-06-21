@@ -145,7 +145,7 @@ textarea.form-control {
     border-radius: .4rem;
     &:active,
     &:focus {
-        border-width: 2px;
+        border-width: 1px;
         border-color: $brand-primary;
     }
 }
