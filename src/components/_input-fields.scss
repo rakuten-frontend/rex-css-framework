@@ -35,12 +35,6 @@ textarea {
     border-radius: 4px;
     border: solid 1px $gray-medium;
     resize: none;
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
-        @extend %textarea-focus;
-    }
     &:disabled {
         @include placeholder {
             color: $gray-light;
@@ -412,10 +406,9 @@ textarea {
     input[type='number'],
     input[type='email'],
     textarea {
-        border-color: #069907;
+        border-color: #069907 !important;
         border-width: 1px;
     }
-    @include form-control-validation($brand-success, $state-success-border, $state-success-bg);
     %success_text {
         color: $brand-success;
     }
@@ -423,7 +416,7 @@ textarea {
         color: $brand-success;
     }
     %success_line {
-        border-top: solid 2px $brand-success !important;
+        border-top: solid 1px $brand-success !important;
     }
     input {
         &+label {
@@ -458,10 +451,6 @@ textarea {
             }
         }
     }
-    %textarea-focus {
-        background-color: $overlay-grey;
-        border: solid 2px $brand-focus;
-    }
     &.active,
     &.focus {
         label {
@@ -473,7 +462,7 @@ textarea {
             color: $gray-light;
         }
         textarea {
-            border: dashed 2px $gray-light;
+            border: dashed 1px $gray-light;
             background: transparent;
             color: $gray-light;
         }
@@ -485,8 +474,6 @@ textarea {
 
 .has-error {
     position: relative;
-    @include form-control-validation($brand-danger, $state-danger-border, $state-danger-bg);
-    // padding-right: 22px;
     input[type='text'],
     input[type='url'],
     input[type='tel'],
@@ -494,7 +481,7 @@ textarea {
     input[type='number'],
     input[type='email'],
     textarea {
-        border-color: $brand-danger;
+        border-color: $brand-danger !important;
         border-width: 1px;
     }
     small {
@@ -626,11 +613,11 @@ p.required-text {
     &+input {
         border-bottom: 1px solid $gray-medium-light;
         &:hover {
-            border-bottom: 2px solid $gray-medium-light
+            border-bottom: 1px solid $gray-medium-light
         }
         &:active,
         &:focus {
-            border-bottom: 2px solid $brand-focus
+            border-bottom: 1px solid $brand-focus
         }
     }
 }
