@@ -1,7 +1,7 @@
 $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/" !default;
 
 /**
- * Noto Sans CJK JP: http: //fonts.googleapis.com/earlyaccess/notosansjp.css
+ * Noto Sans CJK JP: http://fonts.googleapis.com/earlyaccess/notosansjp.css
  */
 
 
@@ -15,7 +15,8 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/" !default;
     local('NotoSansJapanese-Regular'),
     url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYyQgP-FVth9IU.woff2) format('woff2'),
     url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYyQgJ-FVth9IU.woff) format('woff'),
-    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgM-FVthw.otf) format('opentype');
+    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgM-FVthw.otf) format('opentype'),
+    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgL.eot);
     unicode-range: U+3000-30FF, U+4E00-9FFF, U+FF00-FFEF;
 }
 
@@ -30,7 +31,8 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/" !default;
     local('NotoSansJapanese-Regular'),
     url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgP-FVthw.woff2) format('woff2'),
     url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgJ-FVthw.woff) format('woff'),
-    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgM-FVthw.otf) format('opentype');
+    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgM-FVthw.otf) format('opentype'),
+    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgL.eot);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -45,7 +47,8 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/" !default;
     local('NotoSansJapanese-Bold'),
     url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a3XdgregdFOFh.woff2) format('woff2'),
     url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1Xdm.woff) format('woff'),
-    url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1XdjregdFA.otf) format('opentype');
+    url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1XdjregdFA.otf) format('opentype'),
+    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgL.eot);
     unicode-range: U+3000-30FF, U+4E00-9FFF, U+FF00-FFEF;
 }
 
@@ -60,7 +63,8 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/" !default;
     local('NotoSansJapanese-Bold'),
     url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1XdgregdFA.woff2) format('woff2'),
     url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1Xdm.woff) format('woff'),
-    url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1XdjregdFA.otf) format('opentype');
+    url(#{$noto-font-path}-F6pfjtqLzI2JPCgQBnw7HFQei0a1XdjregdFA.otf) format('opentype'),
+    url(#{$noto-font-path}-F62fjtqLzI2JPCgQBnw7HFYwQgL.eot);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
