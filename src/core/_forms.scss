@@ -294,7 +294,7 @@ input[type="checkbox"] {
 //
 // The `.form-group-* form-control` variations are sadly duplicated to avoid the
 .form-group-sm {
-    @include input-size('.form-control', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small);
+    @include input-size('.form-control', $input-height-small, $padding-small-vertical, $padding-zero, $font-size-small, $line-height-small);
     // select.form-control {
     //     height: $input-height-small;
     //     line-height: $input-height-small;
@@ -313,11 +313,7 @@ input[type="checkbox"] {
 }
 
 .form-group-lg {
-    @include input-size('.form-control', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large);
-    // select.form-control {
-    //     min-height: $input-height-large;
-    //     line-height: $input-height-large;
-    // }
+    @include input-size('.form-control', $input-height-large, $padding-large-vertical, $padding-zero, $font-size-large, $line-height-large);
     textarea.form-control,
     select[multiple].form-control {
         height: auto;
@@ -403,7 +399,11 @@ input[type="checkbox"] {
         float: left;
         width: auto;
     }
-    @media (min-width: $screen-xs-min) {
+    .form-control {
+        display: block;
+        width: 100%;
+    }
+    @media (min-width: $screen-md-min) {
         // Inline-block all the things for "inline"
         .form-group {
             display: inline-block;
@@ -460,10 +460,6 @@ input[type="checkbox"] {
             }
         }
     }
-    // [converter] extracted as `@mixin form-inline` for libsass compatibility
-    .form-inline {
-        @include form-inline;
-    }
     // Horizontal forms
     //
     // Horizontal forms are built on grid classes and allow you to create forms with
@@ -492,7 +488,7 @@ input[type="checkbox"] {
         }
         // Reset spacing and right align labels, but scope to media queries so that
         // labels on narrow viewports stack the same as a default form example.
-        @media (min-width: $screen-sm-min) {
+        @media (min-width: $screen-xs-min) {
             .control-label {
                 margin-bottom: .8rem;
                 //padding-top: ($padding-base-vertical + 1); // Default padding plus a border
@@ -526,4 +522,9 @@ input[type="checkbox"] {
             }
         }
     }
+}
+
+// [converter] extracted as `@mixin form-inline` for libsass compatibility
+.form-inline {
+    @include form-inline;
 }
