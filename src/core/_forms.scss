@@ -68,7 +68,7 @@ select[size] {
 }
 
 // Focus for file, radio, and checkbox
-input[type="file"]:focus,
+input[type="file"]:x,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
     @include tab-focus;
@@ -145,7 +145,7 @@ textarea.form-control {
     border-radius: .4rem;
     &:active,
     &:focus {
-        border-width: 2px;
+        border-width: 1px;
         border-color: $brand-primary;
     }
 }
@@ -354,22 +354,15 @@ input[type="checkbox"] {
     line-height: $line-height-computed;
     text-align: center;
     pointer-events: none;
+    .has-success & {
+        color: #069907;
+    }
+    .has-error & {
+        color: #ff3939;
+    }
     &:before {
         font-size: 16px;
     }
-}
-
-// Feedback states
-.has-success {
-    @include form-control-validation($state-success-text, $state-success-border, $state-success-bg);
-}
-
-.has-warning {
-    @include form-control-validation($state-warning-text, $state-warning-border, $state-warning-bg);
-}
-
-.has-error {
-    @include form-control-validation($state-danger-text, $state-danger-border, $state-danger-bg);
 }
 
 // Reposition feedback icon if input has visible label above
