@@ -8,7 +8,7 @@ $rex-sass-asset-helper: false !default;
 $black: #000 !default;
 $gray-darkest: lighten(#000, 20%) !default; //333
 $gray-darker: lighten(#000, 30%) !default; //4d4d4d
-$gray-dark: lighten(#000, 41%)!default; //686868
+$gray-dark: lighten(#000, 40%)!default; //686868
 $gray: lighten(#000, 51%) !default; //828282
 $gray-medium: lighten(#000, 61%) !default; //9c9c9c
 $gray-medium-light: lighten(#000, 71%) !default; //b6b6b6
@@ -50,7 +50,7 @@ $duration: 0.4s;
 //** Background color for `<body>`.
 $body-bg: #fff !default;
 //** Global text color on `<body>`.
-$text-color: $gray-darkest !default;
+$text-color: #333333 !default;
 //** Global textual link color.
 $link-color: $brand-primary !default;
 //** Link hover color set via `lighten()` function.
@@ -224,9 +224,9 @@ $btn-border-radius-small: $border-radius-small !default;
 //** `<input>` background color
 $input-bg: #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled: $gray-lighter !default;
+$input-bg-disabled: transparent !default;
 //** Text color for `<input>`s
-$input-color: $gray !default;
+$input-color: $text-color !default;
 //** `<input>` border color
 $input-border: #ccc !default;
 //** Line Location Calculation
@@ -245,14 +245,13 @@ $input-border-radius-small: $border-radius-small !default;
 //** Border color for inputs on focus
 $input-border-focus: #66afe9 !default;
 //** Placeholder text color
-$input-color-placeholder: #999 !default;
+$input-color-placeholder: $gray-medium !default;
 //** Default `.form-control` height
-$input-height-base: ($font-size-base * 1.375) !default; // 22px
+$input-height-base: 2em !default;
 //** Large `.form-control` height
-$input-height-large: (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+$input-height-large: (ceil($font-size-large * $line-height-large)+1) !default;
 //** Small `.form-control` height
-$input-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
-//$input-height-small: (calc($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+$input-height-small: (floor($font-size-small * $line-height-small)) !default;
 //** `.form-group` margin
 $form-group-margin-bottom: 1.5rem !default;
 $legend-color: $gray-dark !default;
@@ -522,7 +521,7 @@ $popover-arrow-width: .8rem !default;
 //** Popover arrow color
 $popover-arrow-color: $popover-bg !default;
 //** Popover outer arrow width
-$popover-arrow-outer-width: ($popover-arrow-width + 1) !default;
+$popover-arrow-outer-width: ($popover-arrow-width+1) !default;
 //** Popover outer arrow color
 $popover-arrow-outer-color: fade_in($popover-border-color, 0.05) !default;
 //** Popover outer arrow fallback color
