@@ -354,6 +354,12 @@ input[type="checkbox"] {
     line-height: $line-height-computed;
     text-align: center;
     pointer-events: none;
+    .has-success & {
+        color: #069907;
+    }
+    .has-error & {
+        color: #ff3939;
+    }
     &:before {
         font-size: 16px;
     }
