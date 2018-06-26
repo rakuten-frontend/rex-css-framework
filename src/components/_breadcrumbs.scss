@@ -1,27 +1,29 @@
 .breadcrumbs {
-  padding-left: 0;
-  color: $gray-medium;
-  & > li {
-    display: inline-block;
-    &:not(:first-child)::before {
-      font-family: rex-icon;  // TODO: make it variable or mixin
-      content: $_32-chevron-right;
-      font-size: 14px;
-      margin-right: 8px;
-      margin-left: 8px;
+    padding-left: 0;
+    color: $gray-medium;
+    &>li {
+        display: inline-block;
+        &:not(:first-child)::before {
+            font-family: rex-icon; // TODO: make it variable or mixin
+            content: $_32-chevron-right;
+            font-size: 1em;
+            margin-right: .8rem;
+            margin-left: .8rem;
+            vertical-align: middle;
+        }
+        &>a {
+            color: $brand-primary;
+            text-decoration: none;
+            &:hover,
+            &:focus {
+                color: $brand-primary-lighten;
+            }
+            &:active {
+                color: $brand-primary-darken;
+            }
+        }
+        &.active>a {
+            color: $gray-medium;
+        }
     }
-    & > a {
-      color: $gray-medium;
-      text-decoration: none;
-      &:hover, &:focus {
-        color: $brand-primary-lighten;
-      }
-      &:active {
-        color: $brand-primary-darken;
-      }
-    }
-    &.active > a {
-      color: $brand-primary-darken;
-    }
-  }
 }
