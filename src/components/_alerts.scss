@@ -8,14 +8,6 @@
     }
 }
 
-@mixin alertlink($link-color) {
-    color: $link-color;
-    .alert-link {
-        color: $link-color;
-        text-decoration: underline;
-    }
-}
-
 .alert {
     border-radius: 4px;
     display: block;
@@ -46,18 +38,6 @@
     }
     &.alert-danger {
         @include alertcolor(#FFF0F0, #FFCFCF, #DF0101);
-    }
-    &.alert-text-success {
-        @include alertlink(#B2DE81);
-    }
-    &.alert-text-info {
-        @include alertlink(#3CBDFF);
-    }
-    &.alert-text-warning {
-        @include alertlink(#FF9644);
-    }
-    &.alert-text-danger {
-        @include alertlink(#FF8B8B);
     }
     &.alert-list {
         @include alertcolor($red-lighter, $red-light, $danger);
@@ -98,4 +78,7 @@
     background-color: transparent;
     border: 0;
     -webkit-appearance: none;
+    &:focus {
+        outline: 0;
+    }
 }
