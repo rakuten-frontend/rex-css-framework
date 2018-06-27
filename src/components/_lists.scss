@@ -4,148 +4,36 @@
     background-color: $white;
     padding: 1.6rem 0;
     border-radius: 4px;
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.12);
-    >.item {
-        color: $gray-medium;
-        text-decoration: none;
-        display: list-item;
-        line-height: 1.5;
-        margin-bottom: 0;
-        padding: 0 1.6rem;
-        width: 100%;
-        padding-top: .8rem;
-        padding-bottom: .8rem;
-        cursor: pointer;
-        >.link {
-            color: inherit;
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.12);
+    li {
+        a,
+        span {
+            color: $gray-medium;
             text-decoration: none;
+            display: list-item;
+            margin-bottom: 0;
+            padding: 0 1.6rem;
+            width: 100%;
+            box-sizing: border-box;
+            cursor: pointer;
+            &:hover {
+                color: #FF1212;
+            }
+        }
+        &.active {
             position: relative;
-            // left border
-            &::before {
+            &:before {
                 content: "";
                 position: absolute;
-                border-left: 2px solid transparent;
+                background: $brand-primary;
                 top: 0;
-                left: -1.6rem;
-                bottom: 0;
+                left: 0;
+                width: .2rem;
+                height: 2.4rem;
             }
-        }
-        &:hover {
-            color: lighten($brand-primary, 16%);
-        }
-        &:active,
-        &.active {
-            color: darken($brand-primary, 8%);
-            >.link {
-                &::before {
-                    border-left-color: $brand-primary;
-                }
-            }
-        }
-    }
-    &.menu {
-        >.item {
-            position: relative;
-            &:hover {
-                color: lighten($brand-primary, 16%);
-                .submenu {
-                    color: $gray-medium;
-                }
-            }
-            &:active {
-                color: darken($brand-primary, 8%);
-                border-left-color: $brand-primary;
-                .submenu {
-                    color: $gray-medium;
-                }
-            }
-            &::after {
-                font-family: 'rex-icon';
-                content: $_32-chevron-right;
-                transform: rotate(90deg);
-                position: absolute;
-                right: 1.25em;
-                top: 1em;
-                font-size: 0.75em;
-            }
-            &.active {
-                color: darken($brand-primary, 8%);
-                border-left-color: $brand-primary;
-                &::after {
-                    transform: rotate(270deg);
-                }
-                .link {
-                    &::before {
-                        border-left-color: $brand-primary;
-                    }
-                }
-            }
-            .submenu {
-                @extend .list-unstyled;
-                >.item {
-                    font-size: 1.4rem;
-                    margin: 8px 0 0 8px;
-                    color: $gray-medium;
-                    &:hover {
-                        >.link {
-                            color: lighten($brand-primary, 16%);
-                        }
-                    }
-                    &:active,
-                    &.active {
-                        >.link {
-                            color: darken($brand-primary, 8%);
-                            text-decoration: underline;
-                        }
-                    }
-                    >.link {
-                        display: block;
-                        color: $gray-medium;
-                    }
-                }
-            }
-        }
-    }
-    &.menu.icon {
-        >.item {
-            padding-top: 1.2rem;
-            padding-bottom: 1.2rem;
-            margin: 0;
-            &::after {
-                top: 1.4em;
-                transform: rotate(0deg);
-            }
-            >.link {
-                .rex-icon {
-                    margin-right: 16px;
-                }
-            }
-        }
-    }
-    &.menu.icon.divider {
-        padding-bottom: 0;
-        >.item {
-            padding-top: 1.6rem;
-            padding-bottom: 1.6rem;
-            padding-left: 1.4rem;
-            border-bottom: 1px solid $gray-lighter;
-            // left border for list with icon and divider
-            border-left: 2px solid transparent;
-            &::after {
-                top: 1.6em;
-            }
-            &:hover {
-                background-color: $gray-lightest;
-            }
-            &:active,
-            &.active {
-                background-color: inherit;
-                border-left-color: $brand-primary;
-            }
-            >.link {
-                &::before {
-                    border: none;
-                }
+            span {
+                color: $brand-primary;
+                display: block;
             }
         }
     }
