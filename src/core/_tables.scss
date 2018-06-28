@@ -78,12 +78,6 @@ td {
             }
         }
     }
-    >thead>tr {
-        >th,
-        >td {
-            border-bottom-width: 2px;
-        }
-    }
 }
 
 // Zebra-striping
@@ -186,10 +180,23 @@ table {
 
 .table {
     &.table-title {
-        >tbody {
-            >tr {
-                th {
-                    width: 8em;
+        tr {
+            th {
+                word-break: normal;
+            }
+            th,
+            td {
+                @media (max-width: $screen-sm-min) {
+                    width: 100%;
+                    display: block;
+                    border-bottom: 0;
+                }
+            }
+            &:last-child {
+                @media (max-width: $screen-sm-min) {
+                    td {
+                        border-bottom: 1px solid #ddd;
+                    }
                 }
             }
         }
