@@ -1,10 +1,13 @@
-@mixin alertcolor($bg-color, $border, $color) {
+@mixin alertcolor($bg-color, $border, $color, $hover) {
     background-color: $bg-color;
     border: 1px solid $border;
     color: $color;
     .alert-link {
         color: $color;
         text-decoration: underline;
+        &:hover {
+            color: $hover;
+        }
     }
 }
 
@@ -28,40 +31,16 @@
         }
     }
     &.alert-success {
-        @include alertcolor(#EBF7EC, #C2E6C2, #047205);
+        @include alertcolor(#EBF7EC, #C2E6C2, #047205, #07c108);
     }
     &.alert-info {
-        @include alertcolor(#EBF7FE, #C1E6FA, #006497);
+        @include alertcolor(#EBF7FE, #C1E6FA, #006497, #009ae9);
     }
     &.alert-warning {
-        @include alertcolor(#FEF3EB, #FBDAC1, #9F4600);
+        @include alertcolor(#FEF3EB, #FBDAC1, #9F4600, #f16a00);
     }
     &.alert-danger {
-        @include alertcolor(#FFF0F0, #FFCFCF, #DF0101);
-    }
-    &.alert-list {
-        @include alertcolor($red-lighter, $red-light, $danger);
-        word-break: break-all;
-        list-style: none;
-        display: block;
-        padding: 16px;
-        .title {
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .message {
-            position: relative;
-            margin-bottom: 8px;
-            padding-left: 2em;
-            &:before {
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-family: rex-icon; // TODO: make it variable or mixin
-                content: $_32-chevron-right;
-                margin-right: 16px;
-            }
-        }
+        @include alertcolor(#FFF0F0, #FFCFCF, #DF0101, #fe3434);
     }
 }
 
