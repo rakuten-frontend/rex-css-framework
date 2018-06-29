@@ -1,124 +1,69 @@
 .track {
-  &.mobile {
-    .track-step {
-      width: 64px;
-      &.current {
-        .check-indicator {
-          width: 24px;
-          height: 24px;
-          top: 4px;
-          left: 0;
-          right: 0;
-          .check-indicator-inner {
-            width: 10px;
-            height: 10px;
-            left: 6px;
-            top: 6px;
-          }
+    @include list-unstyled;
+    counter-reset: step;
+    li {
+        display: inline-block;
+        width: 16.66666%; // Change the size depends on how many steps
+        position: relative;
+        text-align: center;
+        color: #D1D1D1;
+        &:before {
+            width: 3rem;
+            height: 3rem;
+            content: " ";
+            counter-increment: step;
+            line-height: 3rem;
+            border: 2px solid #D1D1D1;
+            display: block;
+            text-align: center;
+            margin: 0 auto 1.8rem auto;
+            border-radius: 50%;
+            background-color: white;
         }
-      }
-    }
-    .track-step-connector {
-      width: 32px;
-      left: 40px;
-    }
-  }
-}
-
-.track-step {
-  display: inline-block;
-  min-height: 32px;
-  height: 96px;
-  width: 160px;
-  position: relative;
-
-  &.condition-met {
-    .check-indicator {
-      background: $brand-primary;
-      border: solid 1px $brand-primary;
-    }
-    .track-step-connector {
-      .track-line {
-        background: $brand-primary;
-      }
-    }
-    &.current {
-      .track-step-connector {
-        .track-line {
-          background: $gray-light;
+        &:after {
+            width: 100%;
+            height: 2px;
+            content: '';
+            position: absolute;
+            background-color: #D1D1D1;
+            top: 1.5rem;
+            left: -50%;
+            z-index: -1;
         }
-      }
+        &:first-child:after {
+            content: none;
+        }
+        &.visited {
+            &+li:after {
+                background-color: $brand-primary;
+            }
+            &:before {
+                color: #fff;
+                background-color: $brand-primary;
+                border: none;
+                content: $_32-check;
+                font-family: rex-icon;
+                vertical-align: middle;
+            }
+        }
+        &.current {
+            &:before {
+                background-color: $brand-primary;
+                border: none;
+                color: #fff;
+                content: '\25CF';
+                font-size: 1.6rem;
+            }
+            span {
+                color: $brand-primary;
+            }
+        }
+        a,
+        span {
+            color: #D1D1D1;
+            display: block;
+            text-align: center;
+            line-height: 1.5;
+        }
     }
-  }
-
-  &.current {
-    .check-indicator {
-      width: 32px;
-      height: 32px;
-      top: 0;
-      .track-text {
-        top: 46px;
-        left: -41px;
-        color: $brand-primary;
-      }
-    }
-  }
-
-  
-  .check-indicator {
-    text-align: center;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 4px;
-    background: $white;
-    display: inline-block;
-    border-radius: 100%;
-    border: solid 1px $gray-light;    
-    .check-indicator-inner {
-      background: $white;
-      width: 14px;
-      height: 14px;
-      border-radius: 100%;
-      display: inline-block;
-      position: absolute;
-      left: 8px;
-      top: 8px;
-    }
-    .rex-icon {
-      color: $white;
-      top: -2px;
-    }
-  }
-  .track-text {
-    color: $gray;
-    font-size: 14px;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.5;
-    position: absolute;
-    left: 0;
-    top: 40px;
-    width: 112px;
-    left: -45px;
-  }
-  .track-step-connector {
-    width: 120px;
-    position: absolute;
-    left: 92px;
-    height: 24px;
-    margin: 0 8px;
-    .track-line {
-      height: 2px;
-      background: $gray-light;
-      position: absolute;
-      top: 15px;
-      width: 100%;
-    }
-    display: inline-block;
-  }
 }
