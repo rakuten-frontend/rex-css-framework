@@ -1,19 +1,35 @@
 .track {
     @include list-unstyled;
+    width: 100%;
     counter-reset: step;
+    &.five-steps {
+        li {
+            width: 19%;
+        }
+    }
+    &.four-steps {
+        li {
+            width: 24%;
+        }
+    }
+    &.three-steps {
+        li {
+            width: 32%;
+        }
+    }
     li {
         display: inline-block;
-        width: 16.66666%; // Change the size depends on how many steps
+        width: 19%; // Change the size depends on how many steps
         position: relative;
         text-align: center;
-        color: #D1D1D1;
+        color: #d1d1d1;
         &:before {
             width: 3rem;
             height: 3rem;
             content: " ";
             counter-increment: step;
             line-height: 3rem;
-            border: 2px solid #D1D1D1;
+            border: 2px solid #d1d1d1;
             display: block;
             text-align: center;
             margin: 0 auto 1.8rem auto;
@@ -25,7 +41,7 @@
             height: 2px;
             content: '';
             position: absolute;
-            background-color: #D1D1D1;
+            background-color: #d1d1d1;
             top: 1.5rem;
             left: -50%;
             z-index: -1;
@@ -61,10 +77,13 @@
         }
         a,
         span {
-            color: #D1D1D1;
+            color: #d1d1d1;
             display: block;
             text-align: center;
             line-height: 1.5;
+            @media (max-width: $screen-xs-max) {
+                visibility: hidden;
+            }
         }
     }
 }
