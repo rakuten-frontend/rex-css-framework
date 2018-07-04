@@ -5,7 +5,7 @@
     height: 0;
     position: absolute;
     right: 0;
-    top: 1.2rem;
+    top: 1.5rem;
     border-top: solid 8px $gray-medium-light;
     border-left: .6rem solid transparent;
     border-right: .6rem solid transparent;
@@ -35,9 +35,9 @@
     label {
         width: 100%;
         margin-bottom: 0;
-        &:after {
-            @extend %select_arrow;
-        }
+    }
+    &:after {
+        @extend %select_arrow;
     }
 }
 
@@ -79,7 +79,7 @@ select {
         }
     }
     .current-value {
-        padding-bottom: 8px;
+        padding-bottom: 8rem;
         border-bottom: solid 1px $gray-medium-light;
     }
     .underline {

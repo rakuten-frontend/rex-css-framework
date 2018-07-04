@@ -12,18 +12,18 @@
             vertical-align: middle;
         }
         &>a {
-            color: $brand-primary;
+            color: #9C9C9C;
             text-decoration: none;
             &:hover,
             &:focus {
-                color: $brand-primary-lighten;
-            }
-            &:active {
-                color: $brand-primary-darken;
+                color: #FF1212;
             }
         }
-        &.active>a {
-            color: $gray-medium;
+        &.active {
+            span {
+                color: $brand-primary;
+                text-decoration: underline;
+            }
         }
     }
 }
