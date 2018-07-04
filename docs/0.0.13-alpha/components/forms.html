@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReX CSS Framework</title>
+    <meta name="description" content="ReX Css Framework Website">
+    <meta name="author" content="REX Css Framework Authors (https://github.com/rakuten-frontend/rex-css-framework/graphs/contributors)">
+    <link rel="prefetch" as="font" type="font/woff2" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff2" crossorigin>
+    <link rel="prefetch" as="font" type="font/woff" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff" crossorigin>
+    <link rel="prefetch" as="font" type="font/otf" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf" crossorigin>
+
+    <!-- Rex core CSS -->
+    <link rel="stylesheet" href="/rex-css-framework/0.0.13-alpha/dist/css/rex-default.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="display-2">フォーム</h1>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-sm-12">
+        <h2>input要素</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2" for="InputText">text</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="プレースホルダー" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2" for="InputPassword">password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="InputPassword" placeholder="パスワード" autocomplete="current-password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 " for="InputEmail1">email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="InputEmail1" placeholder="name@rakuten.com" autocomplete="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2" for="phone">phone</label>
+                <div class="col-sm-10">
+                    <input type="tel" id="phone" class="form-control" placeholder="000-0000-0000" required autocomplete="tel-national">
+                    <small>※必須項目</small>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2" for="cardnumber">credit card</label>
+                <div class="col-sm-10">
+                    <input type="number" id="cardnumber" class="form-control" placeholder="4159-0000-0000-0000" required autocomplete="cc-number">
+                    <small>※必須項目</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+        <div class="row">
+    <div class="col-sm-12">
+        <h2>状態変化</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <span class="col-sm-2">基本スタイル</span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="exampleInput00">名前</label>
+                    <input type="text" class="form-control" id="exampleInput00" placeholder="プレースホルダー" />
+                    <small>補足テキスト</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">ラベル付き</span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="exampleInput01">名前</label>
+                    <input type="text" class="form-control" id="exampleInput01" placeholder="プレースホルダー" />
+                    <small>※必須項目</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">Disabled　無効</span>
+                <div class="col-sm-10">
+                    <div class="input-group-disabled">
+                        <label class="control-label" for="exampleInput03">メールアドレス</label>
+                        <input type="text" class="form-control" id="exampleInput03" placeholder="プレースホルダー" disabled="disabled" />
+                        <small>※必須項目</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">サクセス</span>
+                <div class="col-sm-10">
+                    <div class="has-success">
+                        <label class="control-label" for="exampleInput04">電話番号</label>
+                        <input type="text" class="form-control" id="exampleInput04" placeholder="プレースホルダー" />
+                        <span class="rex-icon check form-control-feedback" aria-hidden="true"></span>
+                        <small>
+            <span class="rex-icon check" aria-hidden="true"></span>成功</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">エラー</span>
+                <div class="col-sm-10">
+                    <div class="has-error">
+                        <label class="control-label" for="exampleInput05">住所</label>
+                        <input type="text" class="form-control" id="exampleInput05" placeholder="プレースホルダー" />
+                        <span class="rex-icon sign-warning-f form-control-feedback" aria-hidden="true"></span>
+                        <small>
+            <span class="rex-icon sign-warning-f" aria-hidden="true"></span>エラー:全角で入力してください。</small>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+            <div class="row">
+    <div class="col-sm-12">
+        <h2>textarea要素</h2>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">基本スタイル</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <label class="control-label" for="exampleTextarea00">ラベル：コメントを入力してください。（rows="1"）</label>
+                <textarea class="form-control" placeholder="テキストを入力" rows="1" id="exampleTextarea00"></textarea>
+                <small>※補足コメント</small>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="exampleTextarea01">ラベル：コメントを入力してください。（rows="3"）</label>
+                <textarea class="form-control" placeholder="複数行のテキストを入力できる。" rows="3" id="exampleTextarea01"></textarea>
+                <small>※補足コメント</small>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">成功時</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="has-success">
+                    <label class="control-label" for="exampleTextarea02">ラベル：コメントを入力してください。</label>
+                    <textarea class="form-control" placeholder="複数行のテキストを入力できる。" rows="3" id="exampleTextarea02"></textarea>
+                    <small class="resolved">
+            <i class="rex-icon check"></i>成功</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">エラー時</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="has-error">
+                    <label class="control-label" for="exampleTextarea03">ラベル：コメントを入力してください。</label>
+                    <textarea class="form-control" placeholder="複数行のテキストを入力できる。" rows="3" id="exampleTextarea03"></textarea>
+                    <small>
+            <i class="rex-icon sign-warning-f"></i>エラー</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">Disabled時</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="input-group-disabled">
+                    <label class="control-label" for="exampleTextarea04">ラベル：コメントを入力してください。</label>
+                    <textarea class="form-control" disabled placeholder="複数行のテキストを入力できる。" rows="3" id="exampleTextarea04"></textarea>
+                    <small>※必須項目</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="row">
+    <div class="col-sm-12">
+        <h2>セレクトボックス</h2>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+<label>シングル</label>
+</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="select-wrapper">
+                    <select name="select-1" class="form-control">
+        <option value="" disabled selected>選択してください</option>
+        <option value="選択肢1">選択肢1</option>
+        <option value="選択肢2">選択肢2</option>
+        <option value="選択肢3">選択肢3</option>
+    </select>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+<label>マルチ</label>
+</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="select-wrapper">
+                    <select multiple name="select-2" class="form-control">
+<option value="" disabled selected>選択してください</option>
+          <option value="選択肢1">選択肢1</option>
+          <option value="選択肢2">選択肢2</option>
+          <option value="選択肢3">選択肢3</option>
+        </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+<label>セレクトボックス Disabled 無効</label>
+</span>
+    <div class="col-sm-10">
+        <form>
+            <fieldset class="form-group">
+                <div class="select-wrapper">
+
+                    <select name="select-1" class="form-control" disabled>
+              <option value="" disabled selected>選択してください</option>
+              <option value="選択肢1">選択肢1</option>
+              <option value="選択肢2">選択肢2</option>
+              <option value="選択肢3">選択肢3</option>
+            </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+                    <div class="row">
+    <div class="col-sm-12">
+        <h2>ラジオボタン</h2>
+        <form class="form-group">
+            <fieldset>
+                <legend class="control-label">
+                    <strong>性別</strong>
+                </legend>
+                <div class="radio-form">
+                    <div class="radio-area">
+                        <input type="radio" value="1" name="gender" id="man" checked>
+                        <label class="radio-label" for="man">男性</label>
+                    </div>
+                    <div class="radio-area">
+                        <input type="radio" value="2" name="gender" id="woman">
+                        <label class="radio-label" for="woman">女性</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2>チェックボックス</h2>
+        <form class="form-group">
+            <fieldset>
+                <legend class="control-label">
+                    <strong>好きなスポーツ</strong>
+                </legend>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample1" checked />
+                    <label for="CheckBoxSample1" class="checkbox-label">サッカー</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample2" />
+                    <label for="CheckBoxSample2" class="checkbox-label">テニス</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample3" />
+                    <label for="CheckBoxSample3" class="checkbox-label">卓球</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2>Disabled 無効</h2>
+        <form class="form-group">
+            <div class="radio-form">
+                <div class="radio-area disabled">
+                    <input type="radio" value="2" name="gender" id="noanswer" disabled>
+                    <label class="radio-label" for="noanswer">無回答</label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+                        <div class="row">
+    <div class="col-sm-12">
+        <h2>Switch</h2>
+        <div class="switch-area ">
+            <input type="checkbox" id="rex-switch" />
+            <label for="rex-switch" class="switch-label"></label>
+        </div>
+        <div class="switch-area rounded">
+            <input type="checkbox" id="rex-switch-rounded" />
+            <label for="rex-switch-rounded" class="switch-label"></label>
+        </div>
+        <div class="switch-area selected">
+            <input type="checkbox" id="rex-switch-selected" checked="" />
+            <label for="rex-switch-selected" class="switch-label"></label>
+        </div>
+        <div class="switch-area rounded selected">
+            <input type="checkbox" id="rex-switch-rounded-selected" checked="" />
+            <label for="rex-switch-rounded-selected" class="switch-label"></label>
+        </div>
+        <div class="switch-area disabled">
+            <input type="checkbox" id="rex-switch-disabled" />
+            <label for="rex-switch-disabled" class="switch-label"></label>
+        </div>
+        <div class="switch-area rounded disabled">
+            <input type="checkbox" id="rex-switch-rounded-disabled" />
+            <label for="rex-switch-rounded-disabled" class="switch-label"></label>
+        </div>
+
+    </div>
+</div>
+                            <div class="row">
+    <div class="col-sm-12">
+        <h2>サイズ・バリエーション</h2>
+        <form class="form-horizontal">
+            <div class="form-group form-group-lg">
+                <span class="col-sm-2">input大</span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="InputTextL">ラベル</label>
+                    <input type="text" id="InputTextL" class="form-control" placeholder="大きなテキストサイズ" />
+                </div>
+            </div>
+            <div class="form-group">
+                <span class="col-sm-2">input標準</span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="InputTextM">ラベル</label>
+                    <input type="text" id="InputTextM" class="form-control" placeholder="通常のテキストサイズ">
+                </div>
+            </div>
+
+            <div class="form-group form-group-sm">
+                <span class="col-sm-2">input小</span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="InputTextS">ラベル</label>
+                    <input type="text" id="InputTextS" class="form-control" placeholder="小さなテキストサイズ" />
+                </div>
+            </div>
+            <div class="form-group form-group-lg">
+                <span class="col-sm-2">
+<label>セレクトボックス大 </label>
+</span>
+                <div class="col-sm-10">
+                    <div class="select-wrapper">
+                        <select class="form-control" id="InputSelectL">
+              <option>選択肢１</option>
+              <option>選択肢２</option>
+              <option>選択肢３</option>
+            </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <span class="col-sm-2">
+<label>セレクトボックス標準</label>
+</span>
+                <div class="col-sm-10">
+                    <div class="select-wrapper">
+
+                        <select class="form-control" id="InputSelectM">
+            <option>選択肢１</option>
+            <option>選択肢２</option>
+            <option>選択肢３</option>
+          </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group form-group-sm">
+                <span class="col-sm-2">
+<label>セレクトボックス小
+</label>
+        </span>
+                <div class="col-sm-10">
+                    <div class="select-wrapper form-group-sm">
+                        <select class="form-control" id="InputSelectS">
+              <option>選択肢１</option>
+              <option>選択肢２</option>
+              <option>選択肢３</option>
+            </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+                                <div class="row">
+    <div class="col-sm-12">
+        <h2>Horizontal　水平フォーム</h2>
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>お客様情報</legend>
+                <div class="form-group">
+                    <label for="inputEmail2" class="col-sm-2">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail2" placeholder="name@rakuten.com" autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword2" class="col-sm-2">パスワード</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="パスワード" autocomplete="new-password">
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <legend class="col-sm-2">性別</legend>
+                    <div class="col-sm-10">
+                        <div class="radio-area">
+                            <input type="radio" value="1" name="gender" id="man2" checked>
+                            <label class="radio-label" for="man2">男性</label>
+                        </div>
+                        <div class="radio-area">
+                            <input type="radio" value="2" name="gender" id="woman2">
+                            <label class="radio-label" for="woman2">女性</label>
+                        </div>
+                        <div class="radio-area">
+                            <input type="radio" value="3" name="gender" id="noanswer2">
+                            <label class="radio-label" for="noanswer2">無回答</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend class="col-sm-2">好きなスポーツ</legend>
+                    <div class="col-sm-10">
+                        <div class="checkbox-area">
+                            <input type="checkbox" id="CheckBoxSample4" checked />
+                            <label for="CheckBoxSample4" class="checkbox-label">サッカー</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" id="CheckBoxSample5" />
+                            <label for="CheckBoxSample5" class="checkbox-label">テニス</label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" id="CheckBoxSample6" />
+                            <label for="CheckBoxSample6" class="checkbox-label">卓球</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label class="col-sm-2" for="InputSelect3">選択</label>
+                    <div class="col-sm-10">
+                        <div class="select-wrapper">
+                            <select class="form-control" id="InputSelect3">
+            <option>選択肢１</option>
+            <option>選択肢２</option>
+            <option>選択肢３</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">送信</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+                                    <div class="row">
+    <div class="col-sm-12">
+        <h2>インラインフォーム</h2>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="InputEmail3">メール・アドレス</label>
+                <input type="email" class="form-control" id="InputEmail3" placeholder="name@rakuten.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="InputPassword3">パスワード</label>
+                <input type="password" class="form-control" id="InputPassword3" placeholder="パスワード" autocomplete="current-password">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="InputSelect">選択</label>
+                <div class="select-wrapper">
+                    <select class="form-control" id="InputSelect">
+<option>選択肢１</option>
+          <option>選択肢２</option>
+          <option>選択肢３</option>
+        </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample7" checked />
+                    <label for="CheckBoxSample7" class="checkbox-label">A</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample10" />
+                    <label for="CheckBoxSample10" class="checkbox-label">B</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default">送信</button>
+        </form>
+    </div>
+</div>
+                                        <div class="row">
+    <div class="col-sm-12">
+        <h2>フォームグループ</h2>
+        <form>
+            <div class="form-group">
+                <label class="control-label" for="formGroupExampleInput">名前</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ラクテン　タロウ">
+                <small>*全角カタカナで入力ください</small>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@rakuten.com" autocomplete="email">
+                <small>※入力の間違いにご注意ください</small>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="exampleInputPassword1">パスワード</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード" autocomplete="new-password">
+            </div>
+            <div class="form-group checkbox-area">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="checkbox-label" for="exampleCheck1">同意する</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">送信する</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</section>
+</body>
+
+</html>
