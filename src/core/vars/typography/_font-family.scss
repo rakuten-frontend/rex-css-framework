@@ -1,0 +1,14 @@
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: 'Arial',
+sans-serif !default;
+$font-family-serif: 'Arial',
+sans-serif !default;
+// $font-family-sans-serif:  'Noto Sans Japanese', sans-serif !default;
+// $font-family-serif:       'Noto Sans Japanese', sans-serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo,
+Monaco,
+Consolas,
+"Courier New",
+monospace !default;
+$font-family-base: $font-family-sans-serif !default;

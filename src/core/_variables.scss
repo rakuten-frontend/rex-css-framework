@@ -1,148 +1,26 @@
-@import "~core/vars/colors/base";
-@import "~core/vars/colors/state";
-@import "~core/vars/fonts";
-@import "~core/vars/utils";
-
-// $rex-sass-asset-helper: false !default;
 //
 // Variables
 // --------------------------------------------------
-//== Colors
-//
-//## Gray and brand colors for use across rex.
-// $black: #000 !default;
+@import "~core/vars/utils";
+@import "~core/vars/fonts";
+@import "~core/vars/colors/state";
 @import "~core/vars/colors/basics";
 @import "~core/vars/colors/gray";
-// $gray-darkest: lighten(#000, 20%) !default; //333
-// $gray-darker: lighten(#000, 30%) !default; //4d4d4d
-// $gray-dark: lighten(#000, 40%)!default; //686868
-// $gray: lighten(#000, 51%) !default; //828282
-// $gray-medium: lighten(#000, 61%) !default; //9c9c9c
-// $gray-medium-light: lighten(#000, 71%) !default; //b6b6b6
-// $gray-light: lighten(#000, 82%) !default; //d1d1d1
-// $gray-lighter: lighten(#000, 92%) !default; //ebebeb
-// $gray-lightest: lighten(#000, 97%) !default; //f7f7f7
-// $overlay-grey: rgba(0, 0, 0, 0.03) !default; //overlay onto color
-// $white: #fff !default;
-$brand-primary: $crimson-red !default;
-$brand-success: $success;
-$brand-info: $info;
-$brand-warning: $warning;
-$brand-danger: $danger;
-$brand-focus: $brand-primary !default;
-$brand-primary-lighten: if($brand-primary==$green, lighten($brand-primary, 6%), lighten($brand-primary, 16%)) !default;
-$brand-success-lighten: lighten($brand-success, 6%) !default;
-$brand-info-lighten: lighten($brand-info, 16%) !default;
-$brand-warning-lighten: lighten($brand-warning, 16%) !default;
-$brand-danger-lighten: lighten($brand-danger, 16%) !default;
-$brand-primary-darken: darken($brand-primary, 8%) !default;
-$brand-success-darken: darken($brand-success, 8%) !default;
-$brand-info-darken: darken($brand-info, 8%) !default;
-$brand-warning-darken: darken($brand-warning, 8%) !default;
-$brand-danger-darken: darken($brand-danger, 8%) !default;
-//Animations
-$shadow: 0 .5rem .8rem 0 rgba(0, 0, 0, 0.2);
-$bg_curve: 0.20s cubic-bezier(0, 0, .58, 1) background-color;
-$shadow_up: 0.20s cubic-bezier(0, 0, .58, 1) box-shadow;
-$shadow_down: 0.1s cubic-bezier(0, 0, .58, 1) box-shadow;
-$no_animation: 0s linear background-color;
-$standard-curve: cubic-bezier(0.25, 0, 0.45, 1);
-$deceleration-curve: cubic-bezier(0, 0, 0.55, 1);
-$acceleration-curve: cubic-bezier(0.45, 0, 1, 1);
-$sharp-curve: cubic-bezier(0.45, 0, 0.55, 1);
-$duration: 0.4s;
-//== Scaffolding
-//
-//## Settings for some of the most global styles.
-//** Background color for `<body>`.
-$body-bg: #fff !default;
-//** Global text color on `<body>`.
-$text-color: #333333 !default;
-//** Global textual link color.
-$link-color: $brand-primary !default;
-//** Link hover color set via `lighten()` function.
-$link-hover-color: lighten($link-color, 10%) !default;
-//** Link active color set via `darken()` function.
-$link-active-color: darken($link-color, 10%) !default;
-//** Link hover decoration.
-$link-hover-decoration: underline !default;
-//== Typography
-//## Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: 'Arial',
-sans-serif !default;
-$font-family-serif: 'Arial',
-sans-serif !default;
-// $font-family-sans-serif:  'Noto Sans Japanese', sans-serif !default;
-// $font-family-serif:       'Noto Sans Japanese', sans-serif !default;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace: Menlo,
-Monaco,
-Consolas,
-"Courier New",
-monospace !default;
-$font-family-base: $font-family-sans-serif !default;
-//** English
-$font-size-base: 1.6rem !default;
-$font-size-large: 1.8rem !default;
-$font-size-small: 1.4rem !default;
-$font-size-extra-small: 1.2rem !default;
-$font-size-lead: 2.2rem !default;
-//** Japanese
-$font-size-base-ja: 1.4rem !default;
-$font-size-large-ja: 1.6rem !default;
-$font-size-small-ja: 1.2rem !default;
-$font-size-extra-small-ja: 1.0rem !default;
-$font-size-lead-ja: 2.0rem !default;
-//** Heading size for Desktop JA and EN
-$font-size-h1: 2.4rem !default;
-$font-size-h2: 2.0rem !default;
-$font-size-h3: $font-size-base !default;
-$font-size-h4: 1.4rem !default;
-$font-size-h5: 1.2rem !default;
-$font-size-h6: 1.2rem !default;
-//** Heading size for Mobile JA and EN
-$font-size-h1-mobile: 2.0rem !default;
-$font-size-h2-mobile: $font-size-base !default;
-$font-size-h3-mobile: 1.4rem !default;
-$font-size-h4-mobile: 1.2rem !default;
-$font-size-h5-mobile: 1.0rem !default;
-$font-size-h6-mobile: 1.0rem !default;
-$font-weight-h1: 600 !default;
-$font-weight-h2: 600 !default;
-$font-weight-h3: 600 !default;
-$font-weight-h4: 600 !default;
-$font-weight-h5: 600 !default;
-$font-weight-h6: 600 !default;
-$font-size-button-xl: 2.6rem !default;
-$font-size-button-large: 2.2rem !default;
-$font-size-button-default: 1.6rem !default;
-$font-size-button-sm: 1.2rem !default;
-$font-size-button-xs: 1.1rem !default;
-//** Unit-less `line-height` for use in components like buttons.
-$line-height-base: 1.75 !default; // 20/14?
-$btn-lineheight: 1.5 !default;
-//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-$line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
-//** By default, this inherits from the `<body>`.
-$headings-font-family: inherit !default;
-$headings-line-height: 1.5 !default;
-$headings-color: $gray-darkest !default;
-$display1-size: 4.6rem !default;
-$display2-size: 4.0rem !default;
-$display3-size: 3.6rem !default;
-$display4-size: 3.2rem !default;
-$display5-size: 2.8rem !default;
-$display1-size-mobile: 3.6rem !default;
-$display2-size-mobile: 3.4rem !default;
-$display3-size-mobile: 3.2rem !default;
-$display4-size-mobile: 3.0rem !default;
-$display5-size-mobile: 2.8rem !default;
-$display1-weight: 600 !default;
-$display2-weight: 600 !default;
-$display3-weight: 600 !default;
-$display4-weight: 600 !default;
-$display5-weight: 600 !default;
-$display-line-height: $headings-line-height !default;
+@import "~core/vars/colors/brand";
+@import "~core/vars/animations";
+@import "~core/vars/typography/scafolding";
+@import "~core/vars/typography/font-family";
+@import "~core/vars/typography/font-size";
+@import "~core/vars/typography/headings_default";
+@import "~core/vars/typography/headings_weight";
+@import "~core/vars/typography/headings_desktop";
+@import "~core/vars/typography/headings_mobile";
+@import "~core/vars/typography/buttons";
+@import "~core/vars/typography/line-height";
+@import "~core/vars/typography/display_desktop";
+@import "~core/vars/typography/display_mobile";
+@import "~core/vars/typography/display";
+
 //== Iconography
 //
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including rex via Bower.
