@@ -11,14 +11,14 @@
 @import "~core/vars/typography/scafolding";
 @import "~core/vars/typography/font-family";
 @import "~core/vars/typography/font-size";
-@import "~core/vars/typography/headings_default";
-@import "~core/vars/typography/headings_weight";
-@import "~core/vars/typography/headings_desktop";
-@import "~core/vars/typography/headings_mobile";
+@import "~core/vars/typography/headings-default";
+@import "~core/vars/typography/headings-weight";
+@import "~core/vars/typography/headings-desktop";
+@import "~core/vars/typography/headings-mobile";
 @import "~core/vars/typography/buttons";
 @import "~core/vars/typography/line-height";
-@import "~core/vars/typography/display_desktop";
-@import "~core/vars/typography/display_mobile";
+@import "~core/vars/typography/display-desktop";
+@import "~core/vars/typography/display-mobile";
 @import "~core/vars/typography/display";
 @import "~core/vars/icons";
 @import "~core/vars/components/padding";
@@ -33,52 +33,17 @@
 @import "~core/vars/buttons/primary";
 @import "~core/vars/buttons/success";
 @import "~core/vars/buttons/disabled";
-@import "~core/vars/buttons/color";
+@import "~core/vars/buttons/colors";
+@import "~core/vars/forms/colors";
+@import "~core/vars/forms/line-location";
+@import "~core/vars/forms/border";
+@import "~core/vars/forms/placeholder";
+@import "~core/vars/forms/height";
+@import "~core/vars/forms/margin";
+@import "~core/vars/forms/legend";
+@import "~core/vars/forms/addons";
+@import "~core/vars/forms/cursor";
 
-//== Forms
-//
-//##
-//** `<input>` background color
-$input-bg: #fff !default;
-//** `<input disabled>` background color
-$input-bg-disabled: transparent !default;
-//** Text color for `<input>`s
-$input-color: $text-color !default;
-//** `<input>` border color
-$input-border: #ccc !default;
-//** Line Location Calculation
-$input-border-distance: floor(($font-size-base * $line-height-base)) !default;
-$input-area-label-size: $font-size-extra-small !default;
-$input-area-focus-label-size: floor($font-size-base / 1.28)!default;
-$input-area-label-distance: floor($font-size-base + 3) !default;
-// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
-//** Default `.form-control` border radius
-// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius: 2px !default;
-//** Large `.form-control` border radius
-$input-border-radius-large: $border-radius-large !default;
-//** Small `.form-control` border radius
-$input-border-radius-small: $border-radius-small !default;
-//** Border color for inputs on focus
-$input-border-focus: #66afe9 !default;
-//** Placeholder text color
-$input-color-placeholder: $gray-medium !default;
-//** Default `.form-control` height
-$input-height-base: 2em !default;
-//** Large `.form-control` height
-$input-height-large: (ceil($font-size-large * $line-height-large)+1) !default;
-//** Small `.form-control` height
-$input-height-small: (floor($font-size-small * $line-height-small)) !default;
-//** `.form-group` margin
-$form-group-margin-bottom: 1.5rem !default;
-$legend-color: $gray-dark !default;
-$legend-border-color: #e5e5e5 !default;
-//** Background color for textual input addons
-$input-area-addon-bg: $gray-lighter !default;
-//** Border color for textual input addons
-$input-area-addon-border-color: $input-border !default;
-//** Disabled cursor for form controls and buttons.
-$cursor-disabled: not-allowed !default;
 //== Dropdowns
 //
 //## Dropdown menu container and contents.
