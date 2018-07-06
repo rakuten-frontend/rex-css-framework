@@ -3,19 +3,24 @@
 =============================================*/
 
 // Core variables and mixins
-@import "core/rex_colors";
-$icon-font-path: "../fonts/";
-$noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
+
+// $icon-font-path: "../fonts/";
+// $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 
 /*==============================
 =      Customization          =
 ==============================*/
 
-@import "colors/default";
+// @import "colors/default";
 
 /*==========================
 =       Variables         =
 ===========================*/
+
+// @import "~core/vars/colors/base";
+// @import "~core/vars/colors/state";
+// @import "~core/vars/fonts";
+// @import "~core/vars/utils";
 
 @import "core/variables";
 @import "core/mixins";

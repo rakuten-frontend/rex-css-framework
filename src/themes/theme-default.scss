@@ -3,7 +3,11 @@
 //////////
 
 // Color settings
-@import "../core/rex_colors";
+// @import "~core/rex-colors/base";
+// @import "~core/rex-colors/state";
+// @import "~core/rex_colors";
+@import "~core/vars/colors/base";
+@import "~core/vars/colors/state";
 @import "./colors/default";
 
 // Main

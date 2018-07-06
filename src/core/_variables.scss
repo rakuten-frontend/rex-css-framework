@@ -1,22 +1,29 @@
-$rex-sass-asset-helper: false !default;
+@import "~core/vars/colors/base";
+@import "~core/vars/colors/state";
+@import "~core/vars/fonts";
+@import "~core/vars/utils";
+
+// $rex-sass-asset-helper: false !default;
 //
 // Variables
 // --------------------------------------------------
 //== Colors
 //
 //## Gray and brand colors for use across rex.
-$black: #000 !default;
-$gray-darkest: lighten(#000, 20%) !default; //333
-$gray-darker: lighten(#000, 30%) !default; //4d4d4d
-$gray-dark: lighten(#000, 40%)!default; //686868
-$gray: lighten(#000, 51%) !default; //828282
-$gray-medium: lighten(#000, 61%) !default; //9c9c9c
-$gray-medium-light: lighten(#000, 71%) !default; //b6b6b6
-$gray-light: lighten(#000, 82%) !default; //d1d1d1
-$gray-lighter: lighten(#000, 92%) !default; //ebebeb
-$gray-lightest: lighten(#000, 97%) !default; //f7f7f7
-$overlay-grey: rgba(0, 0, 0, 0.03) !default; //overlay onto color
-$white: #fff !default;
+// $black: #000 !default;
+@import "~core/vars/colors/basics";
+@import "~core/vars/colors/gray";
+// $gray-darkest: lighten(#000, 20%) !default; //333
+// $gray-darker: lighten(#000, 30%) !default; //4d4d4d
+// $gray-dark: lighten(#000, 40%)!default; //686868
+// $gray: lighten(#000, 51%) !default; //828282
+// $gray-medium: lighten(#000, 61%) !default; //9c9c9c
+// $gray-medium-light: lighten(#000, 71%) !default; //b6b6b6
+// $gray-light: lighten(#000, 82%) !default; //d1d1d1
+// $gray-lighter: lighten(#000, 92%) !default; //ebebeb
+// $gray-lightest: lighten(#000, 97%) !default; //f7f7f7
+// $overlay-grey: rgba(0, 0, 0, 0.03) !default; //overlay onto color
+// $white: #fff !default;
 $brand-primary: $crimson-red !default;
 $brand-success: $success;
 $brand-info: $info;
