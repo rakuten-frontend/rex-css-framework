@@ -27,29 +27,14 @@
 @import "~core/vars/components/active-color";
 @import "~core/vars/components/caret-width";
 @import "~core/vars/table";
+@import "~core/vars/buttons/font-weight";
+@import "~core/vars/buttons/border";
+@import "~core/vars/buttons/default";
+@import "~core/vars/buttons/primary";
+@import "~core/vars/buttons/success";
+@import "~core/vars/buttons/disabled";
+@import "~core/vars/buttons/color";
 
-//== Buttons
-//
-//## For each of rex's buttons, define text, background and border color.
-$btn-font-weight: normal !default;
-$btn-default-color: rgba(0, 0, 0, .59) !default;
-$btn-default-bg: #fff !default;
-$btn-default-border: rgba(0, 0, 0, .59) !default;
-$btn-primary-color: #fff !default;
-$btn-primary-bg: $brand-primary !default;
-$btn-primary-border: darken($btn-primary-bg, 5%) !default;
-$btn-success-color: #fff !default;
-$btn-success-bg: $brand-success !default;
-$btn-success-border: darken($btn-success-bg, 5%) !default;
-$btn-disabled-color: #d1d1d1 !default;
-$btn-disabled-bg: #ebebeb !default;
-$btn-link-disabled-color: $gray-light !default;
-$btn-split-color: lighten($brand-primary, 7%);
-// Allows for customizing button radius independently from global border radius
-$btn-border-radius-base: .3rem !default;
-$btn-pill-border-radius: 10rem;
-$btn-border-radius-large: $border-radius-large !default;
-$btn-border-radius-small: $border-radius-small !default;
 //== Forms
 //
 //##
