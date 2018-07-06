@@ -2,6 +2,66 @@
 // Button groups
 // --------------------------------------------------
 // Make the div behave like a button
+.search-bar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    &:focus {
+        border-color: $brand-primary;
+    }
+    .form-control {
+        border-radius: $border-radius-base;
+        background-color: $white;
+        padding: .8rem 4rem .8rem 1.6rem;
+        height: 4rem;
+        width: 100%;
+        @include placeholder {
+            color: #DADADA;
+        }
+        &:focus {
+            border: 1px solid $brand-primary;
+        }
+    }
+    &.search-brandcolor {
+        .form-control {
+            border: 1px solid #D1D1D1;
+            &:focus {
+                border: 1px solid $brand-primary;
+            }
+        }
+        .input-group-btn {
+            background-color: $brand-primary;
+            border-radius: 0 .3rem .3rem 0;
+            .rex-icon {
+                color: $white;
+            }
+        }
+        &.rounded {
+            .input-group-btn {
+                border-radius: 0 10rem 10rem 0;
+            }
+        }
+    }
+    .input-group-btn {
+        display: inline-block;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        color: #dadada;
+        background-color: transparent;
+        border-radius: $border-radius-base;
+        .btn {
+            background: transparent;
+            padding: .6rem 1rem;
+        }
+    }
+    &.rounded {
+        .form-control {
+            border-radius: 10rem;
+        }
+    }
+}
+
 .btn-group,
 .btn-group-vertical {
     position: relative;
