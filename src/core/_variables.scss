@@ -21,36 +21,12 @@
 @import "~core/vars/typography/display_mobile";
 @import "~core/vars/typography/display";
 @import "~core/vars/icons";
+@import "~core/vars/components/padding";
+@import "~core/vars/components/line-height";
+@import "~core/vars/components/border";
+@import "~core/vars/components/active-color";
+@import "~core/vars/components/caret-width";
 
-//== Components
-//
-//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
-$padding-zero: 0 !default;
-$padding-base-vertical: .8rem !default;
-$padding-base-horizontal: 2.4rem !default;
-$padding-xl-vertical: 1.6rem !default;
-$padding-xl-horizontal: 4rem !default;
-$padding-large-vertical: .8rem !default;
-$padding-large-horizontal: 3.2rem !default;
-$padding-large: 3.2rem !default;
-$padding-small-vertical: .25rem !default;
-$padding-small-horizontal: .5rem !default;
-$padding-xs-vertical: .175rem !default;
-$padding-xs-horizontal: .25rem !default;
-$line-height-xl: 1.5 !default; // extra decimals for Win 8.1 Chrome
-$line-height-large: 1.5 !default; // extra decimals for Win 8.1 Chrome
-$line-height-small: 1.5 !default;
-$border-radius-base: .4rem !default;
-$border-radius-large: .4rem !default;
-$border-radius-small: .2rem !default;
-//** Global color for active items (e.g., navs or dropdowns).
-$component-active-color: #fff !default;
-//** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg: $brand-primary !default;
-//** Width of the `border` for generating carets that indicate dropdowns.
-$caret-width-base: .4rem !default;
-//** Carets increase slightly in size for larger components.
-$caret-width-large: .5rem !default;
 //== Tables
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
