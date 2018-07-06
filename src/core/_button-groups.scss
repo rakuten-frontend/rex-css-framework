@@ -15,6 +15,7 @@
         padding: .8rem 4rem .8rem 1.6rem;
         height: 4rem;
         width: 100%;
+        border: 1px solid $white;
         @include placeholder {
             color: #DADADA;
         }
