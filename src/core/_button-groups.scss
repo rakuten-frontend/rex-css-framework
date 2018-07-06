@@ -25,6 +25,7 @@
     &.search-brandcolor {
         .form-control {
             border: 1px solid #D1D1D1;
+            padding-right: 6rem;
             &:focus {
                 border: 1px solid $brand-primary;
             }
