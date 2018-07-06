@@ -1,0 +1,12 @@
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including rex via Bower.
+//** Load fonts from this directory.
+// [converter] If $rex-sass-asset-helper if used, provide path relative to the assets load path.
+// [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
+//** File name for all font files.
+// $icon-font-name:          "rex-icons" !default;
+$icon-font-name: "rex-icon" !default;
+//** Element ID within SVG icon file.
+$icon-font-svg-id: "rex-icons" !default;
+$icon-size: 13;
+// ReX icon
+$icon-font-path: '../fonts/' !default;
