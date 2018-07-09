@@ -1,0 +1,4 @@
+// Large screen / wide desktop
+$container-large-desktop: (940px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg: $container-large-desktop !default;

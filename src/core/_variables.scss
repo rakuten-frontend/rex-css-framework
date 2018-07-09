@@ -50,36 +50,13 @@
 @import "~core/vars/media-queries/md";
 @import "~core/vars/media-queries/lg";
 @import "~core/vars/media-queries/xl";
+@import "~core/vars/grid-system/navbar";
+@import "~core/vars/grid-system/columns";
+@import "~core/vars/grid-system/sm";
+@import "~core/vars/grid-system/md";
+@import "~core/vars/grid-system/lg";
+@import "~core/vars/grid-system/xl";
 
-//== Grid system
-//
-//## Define your custom responsive grid.
-//** Number of columns in the grid.
-$grid-columns: 12 !default;
-//** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width: 30px !default;
-// Navbar collapse
-//** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint: $screen-sm-min !default;
-//** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
-//## Define the maximum width of `.container` for different screen sizes.
-// Small screen / tablet
-$container-tablet: (480px + $grid-gutter-width) !default;
-//** For `$screen-sm-min` and up.
-$container-sm: $container-tablet !default;
-// Medium screen / desktop
-$container-desktop: (720px + $grid-gutter-width) !default;
-//** For `$screen-md-min` and up.
-$container-md: $container-desktop !default;
-// Large screen / wide desktop
-$container-large-desktop: (940px + $grid-gutter-width) !default;
-//** For `$screen-lg-min` and up.
-$container-lg: $container-large-desktop !default;
-// 27 inch screen and larger
-$container-xlarge-desktop: (1140px + $grid-gutter-width) !default;
-//** For `$screen-xl-min` and up.
-$container-xl: $container-xlarge-desktop !default;
 //== Navbar
 //
 //##
