@@ -70,22 +70,11 @@
 @import "~core/vars/pagination";
 @import "~core/vars/pager";
 @import "~core/vars/jumbotron";
+@import "~core/vars/state/success";
+@import "~core/vars/state/info";
+@import "~core/vars/state/warning";
+@import "~core/vars/state/danger";
 
-//== Form states and alerts
-//
-//## Define colors for form feedback states and, by default, alerts.
-$state-success-text: $brand-success !default;
-$state-success-bg: rgba(35, 178, 38, 0.05) !default;
-$state-success-border: $brand-success-darken !default;
-$state-info-text: $brand-info !default;
-$state-info-bg: rgba(63, 181, 240, 0.05) !default;
-$state-info-border: $brand-info-darken !default;
-$state-warning-text: $brand-warning !default;
-$state-warning-bg: rgba(253, 179, 43, 0.05) !default;
-$state-warning-border: $brand-warning-darken !default;
-$state-danger-text: $brand-danger !default;
-$state-danger-bg: rgba(220, 0, 0, 0.05) !default;
-$state-danger-border: $brand-danger-darken !default;
 //== Tooltips
 //
 //##

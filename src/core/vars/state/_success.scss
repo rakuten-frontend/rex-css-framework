@@ -1,0 +1,4 @@
+//## Define colors for form feedback states and, by default, alerts.
+$state-success-text: $brand-success !default;
+$state-success-bg: rgba(35, 178, 38, 0.05) !default;
+$state-success-border: $brand-success-darken !default;
