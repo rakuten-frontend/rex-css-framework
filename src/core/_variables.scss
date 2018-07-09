@@ -35,7 +35,7 @@
 @import "~core/vars/typography/muted";
 @import "~core/vars/typography/abbr";
 @import "~core/vars/typography/headings-small";
-@import "~core/vars/typography/blockquote";
+@import "~core/vars/typography/blockquotes";
 @import "~core/vars/typography/page-header";
 @import "~core/vars/typography/dl";
 @import "~core/vars/typography/hr";
@@ -107,12 +107,3 @@
 @import "~core/vars/carousel";
 @import "~core/vars/close";
 @import "~core/vars/code";
-
-//== Blockquotes
-//
-//##
-//** Blockquote padding x.
-$blockquote-padding-y: 0;
-$blockquote-padding-x: 4.0rem;
-//** Blockquote font size.
-$search-input-active: #f9f9f9;
