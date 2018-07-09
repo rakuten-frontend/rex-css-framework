@@ -93,26 +93,9 @@
 @import "~core/vars/panels/warning";
 @import "~core/vars/panels/danger";
 @import "~core/vars/thumbnails";
+@import "~core/vars/wells";
+@import "~core/vars/badges";
 
-//== Wells
-//
-//##
-$well-bg: #f5f5f5 !default;
-$well-border: darken($well-bg, 7%) !default;
-//== Badges
-//
-//##
-$badge-color: #fff !default;
-//** Linked badge text color on hover
-$badge-link-hover-color: #fff !default;
-$badge-bg: $gray-light !default;
-//** Badge text color in active nav link
-$badge-active-color: $link-color !default;
-//** Badge background color in active nav link
-$badge-active-bg: #fff !default;
-$badge-font-weight: bold !default;
-$badge-line-height: 1 !default;
-$badge-border-radius: .8rem !default;
 //== Breadcrumbs
 //
 //##
