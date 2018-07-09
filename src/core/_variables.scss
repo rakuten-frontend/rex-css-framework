@@ -64,61 +64,13 @@
 @import "~core/vars/navbar/inverted-links";
 @import "~core/vars/navbar/inverted-brand-label";
 @import "~core/vars/navbar/inverted-toggle";
+@import "~core/vars/navbar/shared";
+@import "~core/vars/tabs";
+@import "~core/vars/pills";
+@import "~core/vars/pagination";
+@import "~core/vars/pager";
+@import "~core/vars/jumbotron";
 
-//== Navs
-//
-//##
-//=== Shared nav styles
-$nav-link-padding: .8rem 1.5rem !default;
-$nav-link-hover-bg: $gray-lighter !default;
-$nav-disabled-link-color: $gray-light !default;
-$nav-disabled-link-hover-color: $gray-light !default;
-//== Tabs
-$nav-tabs-border-color: #ddd !default;
-$nav-tabs-link-hover-border-color: $gray-lighter !default;
-$nav-tabs-active-link-hover-bg: $body-bg !default;
-$nav-tabs-active-link-hover-color: $gray !default;
-$nav-tabs-active-link-hover-border-color: #ddd !default;
-$nav-tabs-justified-link-border-color: #ddd !default;
-$nav-tabs-justified-active-link-border-color: $body-bg !default;
-//== Pills
-$nav-pills-border-radius: $border-radius-base !default;
-$nav-pills-active-link-hover-bg: $component-active-bg !default;
-$nav-pills-active-link-hover-color: $component-active-color !default;
-//== Pagination
-//
-//##
-$pagination-color: $link-color !default;
-$pagination-bg: #fff !default;
-$pagination-border: #ddd !default;
-$pagination-hover-color: $link-hover-color !default;
-$pagination-hover-bg: $gray-lighter !default;
-$pagination-hover-border: #ddd !default;
-$pagination-active-color: #fff !default;
-$pagination-active-bg: $brand-primary !default;
-$pagination-active-border: $brand-primary !default;
-$pagination-disabled-color: $gray-light !default;
-$pagination-disabled-bg: #fff !default;
-$pagination-disabled-border: #ddd !default;
-//== Pager
-//
-//##
-$pager-bg: $pagination-bg !default;
-$pager-border: $pagination-border !default;
-$pager-border-radius: 1.5rem !default;
-$pager-hover-bg: $pagination-hover-bg !default;
-$pager-active-bg: $pagination-active-bg !default;
-$pager-active-color: $pagination-active-color !default;
-$pager-disabled-color: $pagination-disabled-color !default;
-//== Jumbotron
-//
-//##
-$jumbotron-padding: 3.2rem !default;
-$jumbotron-color: inherit !default;
-$jumbotron-bg: $gray-lighter !default;
-$jumbotron-heading-color: inherit !default;
-$jumbotron-font-size: ceil(($font-size-base * 1.5)) !default;
-$jumbotron-heading-font-size: ceil(($font-size-base * 4.5)) !default;
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
