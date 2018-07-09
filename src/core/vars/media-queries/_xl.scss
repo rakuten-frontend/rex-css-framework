@@ -1,0 +1,8 @@
+// XL screen / wide desktop
+//** Deprecated `$screen-lg`
+$screen-xl: 1200px !default;
+$screen-xl-min: $screen-xl !default;
+//** Deprecated `$screen-lg-desktop`
+$screen-xl-desktop: $screen-xl-min !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-lg-max: ($screen-xl-min - 1) !default;

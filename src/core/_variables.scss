@@ -45,46 +45,12 @@
 @import "~core/vars/forms/cursor";
 @import "~core/vars/forms/dropdowns";
 @import "~core/vars/z-index";
+@import "~core/vars/media-queries/xs";
+@import "~core/vars/media-queries/sm";
+@import "~core/vars/media-queries/md";
+@import "~core/vars/media-queries/lg";
+@import "~core/vars/media-queries/xl";
 
-//== Media queries breakpoints
-//
-//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
-// Extra small screen / phone
-//** Deprecated `$screen-xs`
-$screen-xs: 480px !default;
-//** Deprecated `$screen-xs-min`
-$screen-xs-min: $screen-xs !default;
-//** Deprecated `$screen-phone`
-$screen-phone: $screen-xs-min !default;
-// Small screen / tablet
-//** Deprecated `$screen-sm`
-$screen-sm: 576px !default;
-$screen-sm-min: $screen-sm !default;
-//** Deprecated `$screen-tablet`
-$screen-tablet: $screen-sm-min !default;
-// Medium screen / desktop
-//** Deprecated `$screen-md`
-$screen-md: 768px !default; //992px
-$screen-md-min: $screen-md !default;
-//** Deprecated `$screen-desktop`
-$screen-desktop: $screen-md-min !default;
-// Large screen / wide desktop
-//** Deprecated `$screen-lg`
-$screen-lg: 992px !default; //1280px
-$screen-lg-min: $screen-lg !default;
-//** Deprecated `$screen-lg-desktop`
-$screen-lg-desktop: $screen-lg-min !default;
-// XL screen / wide desktop
-//** Deprecated `$screen-lg`
-$screen-xl: 1200px !default;
-$screen-xl-min: $screen-xl !default;
-//** Deprecated `$screen-lg-desktop`
-$screen-xl-desktop: $screen-xl-min !default;
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max: ($screen-sm-min - 1) !default;
-$screen-sm-max: ($screen-md-min - 1) !default;
-$screen-md-max: ($screen-lg-min - 1) !default;
-$screen-lg-max: ($screen-xl-min - 1) !default;
 //== Grid system
 //
 //## Define your custom responsive grid.

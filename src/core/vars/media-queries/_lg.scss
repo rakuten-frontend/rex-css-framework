@@ -1,0 +1,8 @@
+// Large screen / wide desktop
+//** Deprecated `$screen-lg`
+$screen-lg: 992px !default; //1280px
+$screen-lg-min: $screen-lg !default;
+//** Deprecated `$screen-lg-desktop`
+$screen-lg-desktop: $screen-lg-min !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-md-max: ($screen-lg-min - 1) !default;
