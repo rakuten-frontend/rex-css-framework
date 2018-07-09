@@ -74,21 +74,8 @@
 @import "~core/vars/state/info";
 @import "~core/vars/state/warning";
 @import "~core/vars/state/danger";
+@import "~core/vars/tooltips";
 
-//== Tooltips
-//
-//##
-//** Tooltip max width
-$tooltip-max-width: 20rem !default;
-//** Tooltip text color
-$tooltip-color: #fff !default;
-//** Tooltip background color
-$tooltip-bg: #000 !default;
-$tooltip-opacity: .9 !default;
-//** Tooltip arrow width
-$tooltip-arrow-width: .5rem !default;
-//** Tooltip arrow color
-$tooltip-arrow-color: $tooltip-bg !default;
 //== Popovers
 //
 //##
