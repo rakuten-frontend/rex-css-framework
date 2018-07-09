@@ -1,0 +1,10 @@
+// Basics of a navbar
+$navbar-height: 5rem !default;
+$navbar-margin-bottom: $line-height-computed !default;
+$navbar-border-radius: $border-radius-base !default;
+$navbar-padding-horizontal: ($grid-gutter-width / 2) !default;
+$navbar-padding-vertical: calc(($navbar-height - $line-height-computed) / 2) !default;
+$navbar-collapse-max-height: 34rem !default;
+$navbar-default-color: #777 !default;
+$navbar-default-bg: #f8f8f8 !default;
+$navbar-default-border: darken($navbar-default-bg, 6.5%) !default;
