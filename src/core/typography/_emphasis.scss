@@ -1,0 +1,39 @@
+// Emphasis & misc
+// -------------------------
+.lead {
+  margin-bottom: $line-height-computed;
+  font-size: $font-size-lead;
+  line-height: $line-height-base;
+}
+
+.large {
+  font-size: $font-size-large;
+}
+
+small,
+.small {
+  font-size: 86%;
+}
+
+.extra-small {
+  font-size: $font-size-extra-small;
+}
+
+:lang(ja) {
+  .lead {
+    font-size: $font-size-lead-ja;
+    line-height: $line-height-base;
+  }
+  .large {
+    font-size: $font-size-large-ja;
+  }
+  .extra-small {
+    font-size: $font-size-extra-small-ja;
+  }
+}
+
+mark,
+.mark {
+  background-color: $state-warning-bg;
+  padding: .2em;
+}
