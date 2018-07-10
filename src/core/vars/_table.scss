@@ -1,0 +1,16 @@
+//## Customizes the `.table` component with basic values, each used across all table variations.
+//** Padding for `<th>`s and `<td>`s.
+$table-cell-padding: 1.6rem !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding: 0.8rem !default;
+//** Default background color used for all tables.
+$table-bg: transparent !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent: #f9f9f9 !default;
+//** Background color used for `.table-hover`.
+$table-bg-hover: #f5f5f5 !default;
+$table-bg-active: $table-bg-hover !default;
+//** Table font color
+$table-td-font-color: rgba(0, 0, 0, 0.59);
+//** Border color for table and cell borders.
+$table-border-color: #ddd !default;

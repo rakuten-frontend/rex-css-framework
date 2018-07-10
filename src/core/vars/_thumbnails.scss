@@ -1,0 +1,15 @@
+//== Thumbnails
+//
+//##
+//** Padding around the thumbnail image
+$thumbnail-padding: .8rem !default;
+//** Thumbnail background color
+$thumbnail-bg: $body-bg !default;
+//** Thumbnail border color
+$thumbnail-border: #ddd !default;
+//** Thumbnail border radius
+$thumbnail-border-radius: $border-radius-base !default;
+//** Custom text color for thumbnail captions
+$thumbnail-caption-color: $text-color !default;
+//** Padding around the thumbnail caption
+$thumbnail-caption-padding: .8rem !default;

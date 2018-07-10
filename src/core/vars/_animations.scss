@@ -1,0 +1,10 @@
+$shadow: 0 .5rem .8rem 0 rgba(0, 0, 0, 0.2);
+$bg_curve: 0.20s cubic-bezier(0, 0, .58, 1) background-color;
+$shadow_up: 0.20s cubic-bezier(0, 0, .58, 1) box-shadow;
+$shadow_down: 0.1s cubic-bezier(0, 0, .58, 1) box-shadow;
+$no_animation: 0s linear background-color;
+$standard-curve: cubic-bezier(0.25, 0, 0.45, 1);
+$deceleration-curve: cubic-bezier(0, 0, 0.55, 1);
+$acceleration-curve: cubic-bezier(0.45, 0, 1, 1);
+$sharp-curve: cubic-bezier(0.45, 0, 0.55, 1);
+$duration: 0.4s;

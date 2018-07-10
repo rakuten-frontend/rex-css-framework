@@ -1,0 +1,5 @@
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base: .3rem !default;
+$btn-pill-border-radius: 10rem;
+$btn-border-radius-large: $border-radius-large !default;
+$btn-border-radius-small: $border-radius-small !default;
