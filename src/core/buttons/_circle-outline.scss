@@ -1,0 +1,25 @@
+%btn-circle-outline {
+  color: $brand-primary;
+  background-color: transparent;
+  border: solid 1px $brand-primary; // replace with mixin
+  // add animation to vars
+  transition: 0.2s cubic-bezier(0, 0, 0.58, 1) background-color, 0.1s cubic-bezier(0, 0, 0.58, 1) box-shadow;
+  &:hover,
+  &.hover {
+    border: solid 1px $brand-primary-lighten;
+    color: $white;
+    background-color: $brand-primary-lighten;
+  }
+  &:focus,
+  &.focus {
+    border: solid 1px $brand-primary-lighten;
+    color: $white;
+    background-color: $brand-primary-lighten;
+  }
+  &:active,
+  &.active {
+    border: solid 1px $brand-primary-darken;
+    color: $white;
+    background-color: $brand-primary-darken;
+  }
+}

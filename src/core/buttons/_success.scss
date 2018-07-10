@@ -1,0 +1,13 @@
+.btn-success {
+  $color: $btn-success-bg;
+  $light: $brand-success-lighten;
+  $dark: $brand-success-darken;
+  color: $btn-success-bg;
+  @include button-variant($color, $light);
+  &.btn-outline {
+    @include button-variant-outline(transparent, $color, $light, $dark, $white);
+  }
+  &.btn-pill {
+    border-radius: $btn-pill-border-radius;
+  }
+}

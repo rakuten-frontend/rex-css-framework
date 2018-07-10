@@ -1,0 +1,20 @@
+// Block button
+// --------------------------------------------------
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block+.btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
