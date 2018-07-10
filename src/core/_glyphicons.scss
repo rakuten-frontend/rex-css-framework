@@ -1,8 +1,8 @@
 @font-face {
   font-family: rex-icon;
-  src: url("../fonts/rex-icon.eot?bf5e286cc68ff419ba4a281906f18aaa?#iefix") format("embedded-opentype"),
-url("../fonts/rex-icon.woff2?bf5e286cc68ff419ba4a281906f18aaa") format("woff2"),
-url("../fonts/rex-icon.woff?bf5e286cc68ff419ba4a281906f18aaa") format("woff");
+  src: url("#{$icon-font-path}#{$icon-font-name}.eot?bf5e286cc68ff419ba4a281906f18aaa?#iefix") format("embedded-opentype"),
+url("#{$icon-font-path}#{$icon-font-name}.woff2?bf5e286cc68ff419ba4a281906f18aaa") format("woff2"),
+url("#{$icon-font-path}#{$icon-font-name}.woff?bf5e286cc68ff419ba4a281906f18aaa") format("woff");
 }
 
 $_32-arrow-down-l: '\f101';
@@ -229,9 +229,8 @@ $_32-zoom-out-l: '\f1db';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  top: 1px;
   display: inline-block;
-  font: normal 16px/1 rex-icon;
+  font: normal 1em rex-icon;
 
   @if variable-exists('_32-arrow-down') {
     &.arrow-down {
