@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <title>rexicon-32-new-window-f</title>
-  <g>
-    <g>
-      <path d="M6,11H4a2,2,0,0,0-2,2V26a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V23H6Z" style="fill: #333"/>
-      <path d="M8,19a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10H8Z" style="fill: #333"/>
-      <path d="M28,4H10A2,2,0,0,0,8,6V8H30V6A2,2,0,0,0,28,4Z" style="fill: #333"/>
-    </g>
-    <rect width="32" height="32" style="fill: none"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g fill="#333"><path d="M6 11H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2v-3H6z"/><path d="M8 19a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2v-9H8zM28 4H10a2 2 0 0 0-2 2v2h22V6a2 2 0 0 0-2-2z"/></g><path fill="none" d="M0 0h32v32H0z"/></svg>

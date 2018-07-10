@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <title>rexicon-32-new-window-l</title>
-  <g>
-    <g>
-      <path d="M22,28H4V10H14V8H4a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H22a2,2,0,0,0,2-2V18H22Z" style="fill: #333"/>
-      <polygon points="28 2 18 2 18 4 26.586 4 13 17.586 14.415 19 28 5.414 28 14 30 14 30 4 30 2 28 2" style="fill: #333"/>
-    </g>
-    <rect width="32" height="32" style="fill: none"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g fill="#333"><path d="M22 28H4V10h10V8H4a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V18h-2z"/><path d="M28 2H18v2h8.586L13 17.586 14.415 19 28 5.414V14h2V2h-2z"/></g><path fill="none" d="M0 0h32v32H0z"/></svg>
