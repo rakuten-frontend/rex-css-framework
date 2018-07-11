@@ -1,0 +1,134 @@
+// Inline forms
+//
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
+// [converter] extracted from `.form-inline` for libsass compatibility
+@mixin form-inline {
+  // Kick in the inline
+  label {
+    float: left;
+    width: auto;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+  }
+  @media (min-width: $screen-md-min) {
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+      margin-right: 1em; // In navbar-form, allow folks to *not* use `.form-group`
+      .form-control {
+        display: inline-block;
+        width: auto !important; // Prevent labels from stacking above inputs in `.form-group`
+        vertical-align: middle;
+      } // Make static controls behave like regular ones
+      .form-control-static {
+        display: inline-block;
+      }
+      .input-area {
+        display: inline-table;
+        vertical-align: middle;
+        .input-area-addon,
+        .input-area-btn,
+        .form-control {
+          width: auto;
+        }
+      } // Input groups need that 100% width though
+      .input-area>.form-control {
+        width: 100%;
+      }
+      .control-label {
+        //margin-bottom: 0;
+        vertical-align: middle;
+      } // Remove default margin on radios/checkboxes that were used for stacking, and
+      // then undo the floating of radios and checkboxes to match.
+      .radio,
+      .checkbox {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+        label {
+          padding-left: 0;
+        }
+      }
+      .radio input[type="radio"],
+      .checkbox input[type="checkbox"] {
+        position: relative;
+        margin-left: 0;
+      } // Re-override the feedback icon.
+      .has-feedback .form-control-feedback {
+        top: 0;
+      }
+    }
+  } // Horizontal forms
+  //
+  // Horizontal forms are built on grid classes and allow you to create forms with
+  // labels on the left and inputs on the right.
+  .form-horizontal {
+    // Consistent vertical alignment of radios and checkboxes
+    //
+    // Labels also get some reset styles, but that is scoped to a media query below.
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: ($padding-base-vertical + 1); // Default padding plus a border
+    } // Account for padding we're adding to ensure the alignment and of help text
+    // and other content below items
+    .radio,
+    .checkbox {
+      min-height: ($line-height-computed + ($padding-base-vertical + 1));
+    } // Make form groups behave like rows
+    .form-group {
+      @include make-row;
+    } // Reset spacing and right align labels, but scope to media queries so that
+    // labels on narrow viewports stack the same as a default form example.
+    @media (min-width: $screen-xs-min) {
+      .control-label {
+        margin-bottom: .8rem; //padding-top: ($padding-base-vertical + 1); // Default padding plus a border
+      }
+    } // Validation states
+    //
+    // Reposition the icon because it's now within a grid column and columns have
+    // `position: relative;` on them. Also accounts for the grid gutter padding.
+    .has-feedback .form-control-feedback {
+      right: ($grid-gutter-width / 2);
+    } // Form group sizes
+    //
+    // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
+    // inputs and labels within a `.form-group`.
+    .form-group-lg {
+      @media (min-width: $screen-sm-min) {
+        .control-label {
+          //padding-top: ($padding-large-vertical + 1);
+          font-size: 1.5em;
+        }
+      }
+    }
+    .form-group-sm {
+      @media (min-width: $screen-sm-min) {
+        .control-label {
+          //padding-top: ($padding-small-vertical + 1);
+          font-size: .8em;
+        }
+      }
+    }
+  }
+}
+
+// [converter] extracted as `@mixin form-inline` for libsass compatibility
+.form-inline {
+  @include form-inline;
+}

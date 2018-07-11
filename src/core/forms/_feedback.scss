@@ -1,0 +1,42 @@
+// Form control feedback states
+//
+// Apply contextual and semantic states to individual form controls.
+.has-feedback {
+  // Enable absolute positioning
+  position: relative; // Ensure icons don't overlap text
+  .form-control {
+    padding-right: ($input-height-base * 1.25);
+  }
+}
+
+// Reposition feedback icon if input has visible label above
+.has-feedback label {
+  &~.form-control-feedback {
+    top: ($line-height-computed + 5); // Height of the `label` and its margin
+  }
+  &.sr-only~.form-control-feedback {
+    top: 0;
+  }
+}
+
+// Feedback icon (requires .glyphicon classes)
+.rex-icon.form-control-feedback {
+  position: absolute;
+  top: 2.5em;
+  right: 0;
+  z-index: 2; // Ensure icon is above input groups
+  display: block;
+  height: $line-height-computed;
+  line-height: $line-height-computed;
+  text-align: center;
+  pointer-events: none;
+  .has-success & {
+    color: #069907;
+  }
+  .has-error & {
+    color: #ff3939;
+  }
+  &:before {
+    font-size: 16px;
+  }
+}

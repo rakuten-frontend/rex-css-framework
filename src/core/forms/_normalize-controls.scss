@@ -1,0 +1,49 @@
+// Normalize form controls
+//
+// While most of our form styles require extra classes, some basic normalization
+// is required to ensure optimum display with or without those classes to better
+// address browser inconsistencies.
+// Override content-box in Normalize (* isn't specific enough)
+input[type="search"] {
+  @include box-sizing(border-box);
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+// Make range inputs behave like textual form controls
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+// Focus for file, radio, and checkbox
+input[type="file"]:x,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  @include tab-focus;
+}
+
+// Adjust output element
+output {
+  display: block;
+  padding-top: ($padding-base-vertical + 1);
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $input-color;
+}

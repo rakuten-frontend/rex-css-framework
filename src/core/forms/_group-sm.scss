@@ -1,0 +1,24 @@
+// Form control sizing
+//
+// Build on `.form-control` with modifier classes to decrease or increase the
+// height and font-size of form controls.
+//
+// The `.form-group-* form-control` variations are sadly duplicated to avoid the
+.form-group-sm {
+  @include input-size('.form-control', $input-height-small, $padding-small-vertical, $padding-zero, $font-size-small, $line-height-small); 
+  // select.form-control {
+  //     height: $input-height-small;
+  //     line-height: $input-height-small;
+  // }
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+  .form-control-static {
+    height: $input-height-small;
+    min-height: ($line-height-computed + $font-size-small);
+    padding: ($padding-small-vertical + 1) $padding-small-horizontal;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+  }
+}
