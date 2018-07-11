@@ -34,16 +34,6 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 
 // Grid Control
 @import "core/grid";
-@import "core/grid/xs";
-@import "core/grid/sm";
-@import "core/grid/md";
-@import "core/grid/lg";
-@import "core/grid/xl";
-@import "core/responsive-utilities/sm";
-@import "core/responsive-utilities/md";
-@import "core/responsive-utilities/lg";
-@import "core/responsive-utilities/xl";
-@import "core/responsive-utilities/print";
 // scaffolding
 @import "core/scaffolding";
 @import "core/type";
