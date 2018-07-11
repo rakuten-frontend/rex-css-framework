@@ -6,6 +6,7 @@
     width: $container-lg;
   }
 }
+
 @media (min-width: $screen-xl-min) {
   @include make-grid(xl);
 }

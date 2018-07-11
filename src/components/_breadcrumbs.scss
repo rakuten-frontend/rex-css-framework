@@ -1,29 +1,29 @@
 .breadcrumbs {
-    padding-left: 0;
-    color: $gray-medium;
-    &>li {
-        display: inline-block;
-        &:not(:first-child)::before {
-            font-family: rex-icon; // TODO: make it variable or mixin
-            content: $_32-chevron-right;
-            font-size: 1em;
-            margin-right: .8rem;
-            margin-left: .8rem;
-            vertical-align: middle;
-        }
-        &>a {
-            color: #9C9C9C;
-            text-decoration: none;
-            &:hover,
-            &:focus {
-                color: #FF1212;
-            }
-        }
-        &.active {
-            span {
-                color: $brand-primary;
-                text-decoration: underline;
-            }
-        }
+  padding-left: 0;
+  color: $gray-medium;
+  &>li {
+    display: inline-block;
+    &:not(:first-child)::before {
+      font-family: rex-icon; // TODO: make it variable or mixin
+      content: $_32-chevron-right;
+      font-size: 1em;
+      margin-right: .8rem;
+      margin-left: .8rem;
+      vertical-align: middle;
     }
+    &>a {
+      color: #9C9C9C;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: #FF1212;
+      }
+    }
+    &.active {
+      span {
+        color: $brand-primary;
+        text-decoration: underline;
+      }
+    }
+  }
 }

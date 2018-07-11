@@ -1,7 +1,6 @@
 .tab {
   position: relative;
-  display: inline-block;
-  // underline
+  display: inline-block; // underline
   &:before {
     position: absolute;
     content: "";
@@ -32,7 +31,8 @@
     border-bottom: 1px solid $brand-primary;
     outline: none;
   }
-  .selected, .item:hover {
+  .selected,
+  .item:hover {
     background-color: $gray-lightest;
     border-radius: 4px 4px 0 0;
   }
@@ -106,7 +106,8 @@
       &.active {
         border-top: 1px solid $brand-primary;
       }
-      &.selected, &.item:hover {
+      &.selected,
+      &.item:hover {
         border-radius: 0 0 4px 4px;
       }
     }
@@ -122,7 +123,8 @@
       &.active {
         border-bottom: 1px solid $brand-primary;
       }
-      &.selected, &:hover {
+      &.selected,
+      &:hover {
         background-color: transparent;
       }
     }
@@ -131,7 +133,7 @@
       height: 40px;
       padding-top: 8px;
       display: inline-block;
-      .item > .rex-icon {
+      .item>.rex-icon {
         font-size: 24px;
       }
       .item {

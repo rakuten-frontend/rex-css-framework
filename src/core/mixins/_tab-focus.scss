@@ -1,5 +1,4 @@
 // WebKit-style focus
-
 @mixin tab-focus() {
   // WebKit-specific. Other browsers will keep their default outline style.
   // (Initially tried to also force default via `outline: initial`,

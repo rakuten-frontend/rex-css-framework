@@ -23,14 +23,13 @@
       transition: .2s;
     }
   }
-  :checked + .switch-label {
+  :checked+.switch-label {
     background-color: $brand-primary;
     &:before {
       left: 27px;
       transition: .2s;
     }
   }
-
   &.rounded {
     .switch-label {
       border-radius: 14px;

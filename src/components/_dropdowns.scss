@@ -6,7 +6,8 @@
     background-color: $btn-disabled-bg;
     color: $btn-disabled-color;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $btn-disabled-bg;
   }
 }
@@ -30,7 +31,8 @@
       right: 14px;
       top: 19px;
     }
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $brand-primary-lighten;
     }
     &:active {
@@ -41,7 +43,9 @@
     &::after {
       border-top-color: $brand-primary;
     }
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       &::after {
         border-top-color: $white;
       }
@@ -59,7 +63,8 @@
   position: relative;
   padding-right: 32px;
   &.disabled {
-    .btn, .btn-split {
+    .btn,
+    .btn-split {
       cursor: $cursor-disabled;
       background-color: $btn-disabled-bg;
       color: $btn-disabled-color;
@@ -68,7 +73,8 @@
     }
   }
   &.outline {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .btn {
         border-right-color: $brand-primary-lighten;
       }
@@ -82,7 +88,8 @@
       border-color: $brand-primary;
       background-color: $white;
       color: $brand-primary;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: $brand-primary-lighten;
         border-color: $brand-primary-lighten;
         color: $white;
@@ -95,7 +102,8 @@
     }
     .btn-split {
       background-color: $brand-primary;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: $brand-primary-lighten;
       }
       &:active {
@@ -120,7 +128,8 @@
     top: 0;
     background-color: $btn-split-color;
     cursor: pointer;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $brand-primary-lighten;
     }
     &:active {

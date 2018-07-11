@@ -89,18 +89,18 @@
         li {
           border-bottom: solid 1px $gray-lighter;
           span {
-          &.active {
-            border-left: none;
-            .rex-icon,
-            .icon {
-              border-left: solid 2px $gray-dark;
-              padding-left: 14px;
-              margin-left: 0;
-              &.chevron-right {
-                border: none;
+            &.active {
+              border-left: none;
+              .rex-icon,
+              .icon {
+                border-left: solid 2px $gray-dark;
+                padding-left: 14px;
+                margin-left: 0;
+                &.chevron-right {
+                  border: none;
+                }
               }
             }
-          } 
           }
         }
       }

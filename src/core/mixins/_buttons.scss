@@ -2,40 +2,33 @@
 //
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-
-
-
 @mixin button-variant($color, $color-light, $text-color: $white) {
   background-color: $color;
   border-color: $color;
   border-radius: $btn-border-radius-base;
   color: $text-color;
   @include transition($bg_curve, $shadow_up);
-
   &:focus,
   &.focus {
     color: $text-color;
     background-color: $color-light;
     border-color: transparent;
-  @include transition($bg_curve, $shadow_down);
-
+    @include transition($bg_curve, $shadow_down);
   }
   &:hover,
-	&.hover {
+  &.hover {
     color: $text-color;
     border-color: transparent;
-    background-color: $color-light;
-    // @include box-shadow($shadow);
+    background-color: $color-light; // @include box-shadow($shadow);
     @include transition($bg_curve, $shadow_down);
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     color: $text-color;
     border-color: transparent;
-
     &:hover,
-		&.hover,
+    &.hover,
     &:focus,
     &.focus {
       color: $text-color;
@@ -44,9 +37,9 @@
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     background-image: none;
-    color:$text-color;
+    color: $text-color;
     background-color: darken($color, 8%);
   }
   &.disabled,
@@ -66,33 +59,28 @@
   border-radius: $btn-border-radius-base;
   color: $color;
   @include transition($bg_curve);
-
   &:focus,
   &.focus {
     color: $new-text-color;
     background-color: $color-light;
     border-color: transparent;
     font-weight: 100;
-
   }
   &:hover,
-	&.hover {
+  &.hover {
     color: $new-text-color;
     border-color: transparent;
-    background-color: $color-light;
-    // @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2));
+    background-color: $color-light; // @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2));
     // @include transition($no_animation, $shadow_up);
-
     font-weight: 100;
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     color: $new-text-color;
     border-color: transparent;
-
     &:hover,
-		&.hover,
+    &.hover,
     &:focus,
     &.focus {
       color: $new-text-color;
@@ -102,9 +90,9 @@
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     background-image: none;
-    color:$new-text-color;
+    color: $new-text-color;
     background-color: $color-dark;
     font-weight: 100;
   }
@@ -129,8 +117,6 @@
   border-radius: $btn-border-radius-base;
   color: $text-color;
   @include transition($no_animation);
-
-
   &:focus,
   &.focus {
     color: lighten($text-color, 10%);
@@ -138,7 +124,7 @@
     border-color: transparent;
   }
   &:hover,
-	&.hover {
+  &.hover {
     color: lighten($text-color, 10%);
     border-color: transparent;
     background-color: $new-background-color;
@@ -146,12 +132,11 @@
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     color: darken($text-color, 10%);
     border-color: transparent;
-
     &:hover,
-		&.hover,
+    &.hover,
     &:focus,
     &.focus {
       color: lighten($text-color, 10%);
@@ -160,7 +145,7 @@
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     background-image: none;
     color: darken($text-color, 10%);
     background-color: $new-background-color;
@@ -187,35 +172,31 @@
   border-radius: $border-radius;
 }
 
-
 @mixin button-variant-circle($color) {
   background-color: transparent;
   border: transparent;
   color: $color;
-
   &:focus,
   &.focus {
     color: lighten($color, 16%);
     background-color: transparent;
-
   }
   &:hover,
-	&.hover {
+  &.hover {
     color: lighten($color, 16%);
     border-color: transparent;
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
-
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     color: darken($color, 8%);
     background-color: transparent;
     border-color: transparent;
     &:hover,
-		&.hover,
+    &.hover,
     &:focus,
     &.focus {
       color: lighten($color, 16%);
@@ -225,7 +206,7 @@
   }
   &:active,
   &.active,
-  .open > &.dropdown-toggle {
+  .open>&.dropdown-toggle {
     background-image: none;
     color: darken($color, 8%);
     background-color: transparent;
@@ -237,10 +218,10 @@
     background-color: transparent;
     border-color: transparent;
   }
-};
+}
 
 @mixin chevron-horizontal-style($direction, $right, $outlineRight) {
-  @if $direction == 'right' {
+  @if $direction=='right' {
     &::before {
       right: $right !important;
     }
@@ -249,7 +230,8 @@
         right: $outlineRight !important;
       }
     }
-  } @else if $direction == 'left' {
+  }
+  @else if $direction=='left' {
     &::before {
       left: $right !important;
     }
@@ -259,4 +241,4 @@
       }
     }
   }
-};
+}
