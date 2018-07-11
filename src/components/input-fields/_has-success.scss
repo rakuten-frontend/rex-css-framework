@@ -1,0 +1,74 @@
+.has-success {
+  position: relative;
+  input[type='text'],
+  input[type='url'],
+  input[type='tel'],
+  input[type='password'],
+  input[type='number'],
+  input[type='email'],
+  textarea {
+    border-color: #069907 !important;
+    border-width: 1px;
+  }
+  %success_text {
+    color: $brand-success;
+  }
+  small {
+    color: $brand-success;
+  }
+  %success_line {
+    border-top: solid 1px $brand-success !important;
+  }
+  input {
+    &+label {
+      &+small {
+        @extend %success_text;
+        &:before {
+          @extend %success_line;
+        }
+      }
+    }
+    &:hover,
+    &.hover {
+      &+label {
+        &+small {
+          @extend %success_text;
+          &:before {
+            @extend %success_line;
+          }
+        }
+      }
+    }
+    &:focus,
+    &:active {
+      &+label {
+        @extend %success_text;
+        &+small {
+          @extend %success_text;
+          &:before {
+            @extend %success_line;
+          }
+        }
+      }
+    }
+  }
+  &.active,
+  &.focus {
+    label {
+      color: $brand-primary;
+    }
+  }
+  &.disabled {
+    label {
+      color: $gray-light;
+    }
+    textarea {
+      border: dashed 1px $gray-light;
+      background: transparent;
+      color: $gray-light;
+    }
+    small {
+      color: $gray-light;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.has-error {
+  position: relative;
+  input[type='text'],
+  input[type='url'],
+  input[type='tel'],
+  input[type='password'],
+  input[type='number'],
+  input[type='email'],
+  textarea {
+    border-color: $brand-danger !important;
+    border-width: 1px;
+  }
+  small {
+    color: $brand-danger;
+    &.remaining,
+    &.resolved {
+      margin-top: 0;
+      .rex-icon {
+        margin-right: .4rem;
+        &.plus {
+          transform: rotate(45deg);
+          top: .4rem;
+        }
+        &.check {
+          top: .3rem;
+        }
+      }
+      &:first-of-type {
+        margin-top: .8rem;
+      }
+    }
+    &.resolved {
+      color: $brand-success;
+    }
+  }
+  %error_text {
+    color: $brand-danger;
+  }
+  input {
+    &+label {
+      &+small {
+        @extend %error_text;
+      }
+    }
+    &:hover,
+    &.hover {
+      &+label {
+        &+small {
+          @extend %error_text;
+        }
+      }
+    }
+    &:focus,
+    &:active {
+      &+label {
+        @extend %error_text;
+        &+small {
+          @extend %error_text;
+        }
+      }
+    }
+  }
+}

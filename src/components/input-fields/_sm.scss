@@ -1,0 +1,13 @@
+// Text input groups
+// -------------------------
+.input-sm {
+  padding: $padding-small-vertical $padding-small-horizontal;
+  label {
+    font-size: $font-size-base;
+    margin-bottom: 2px;
+  }
+  input {
+    transform: scale(0.8);
+    padding-bottom: 4px;
+  }
+}
