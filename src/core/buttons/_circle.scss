@@ -1,89 +1,42 @@
 .btn-circle {
-  padding: 0;
-  position: relative;
-  border: none;
-  border-radius: 100%;
-  line-height: 40px;
-  font-size: 24px;
-  width: 40px;
-  height: 40px; // icon center alignment
-  &:before {
-    position: absolute;
-  }
-  &.plus,
-  &.minus {
-    @extend %plus-minus-btn;
-  }
-  &.chevron-top {
-    &::after {
-      @extend %backToTopStyle;
-    }
-  }
-  &.chevron-left,
-  &.chevron-right {
+    padding: 0;
+    position: relative;
+    border: none;
+    border-radius: 100%;
+    line-height: 40px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px; // icon center alignment
     &:before {
-      top: 0;
+        position: absolute;
     }
+    &.plus,
+    &.minus {
+        @extend %plus-minus-btn;
+    }
+    &.chevron-top {
+        &::after {
+            @extend %backToTopStyle;
+        }
+    }
+    &.chevron-left,
+    &.chevron-right {
+        &:before {
+            top: 0;
+        }
+        &.btn-outline {
+            &:before {
+                top: -1px;
+            }
+        }
+    }
+    &.chevron-left {
+        @include chevron-horizontal-style("left", 7px, 6px);
+    }
+    &.chevron-right {
+        @include chevron-horizontal-style("right", 7px, 6px);
+    } // colors
     &.btn-outline {
-      &:before {
-        top: -1px;
-      }
+        @extend %btn-circle-outline;
     }
-  }
-  &.chevron-left {
-    @include chevron-horizontal-style("left", 7px, 6px);
-  }
-  &.chevron-right {
-    @include chevron-horizontal-style("right", 7px, 6px);
-  } // colors
-  &.btn-outline {
-    @extend %btn-circle-outline;
-  } // other sizes
-  // &.btn-circle-xl {
-  //   font-size: ($font-size-base / $icon-size * 17);
-  //   line-height: 40px;
-  //   width: 40px;
-  //   height: 40px
-  // }
-  // &.btn-circle-lg {
-  //   line-height: 32px;
-  //   width: 32px;
-  //   height: 32px;
-  //   font-size: ($font-size-base / $icon-size * 16);
-  // }
-  // &.btn-circle-sm {
-  //   background-color: transparent;
-  //   border: none;
-  //   @include button-variant-circle($brand-primary);
-  //   font-size: ($font-size-base / $icon-size * 8);
-  // }
-  // &:hover,
-  // &.hover {
-  //   color: $white;
-  //   background-color: $brand-primary-lighten;
-  // }
-  // &:focus,
-  // &.focus {
-  //   color: $white;
-  //   background-color: $brand-primary-lighten;
-  // }
-  // &:active,
-  // &.active {
-  //   color: $white;
-  //   background-color: $brand-primary-darken;
-  // }
-  // &.disabled,
-  // &[disabled] {
-  //   cursor: $cursor-disabled;
-  //   background-color: $btn-disabled-color;
-  //   color: $white;
-  //   border: transparent;
-  //   &.btn-circle-sm {
-  //     color: $gray-light;
-  //   }
-  //   &:hover {
-  //     cursor: $cursor-disabled;
-  //     background: $white;
-  //   }
-  // }
 }
