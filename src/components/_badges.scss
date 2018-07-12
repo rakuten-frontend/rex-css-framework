@@ -7,9 +7,11 @@
   padding: 0 0.375em;
   font-size: 0.35em;
 }
+
 %icon_badge {
   left: 100%;
 }
+
 .badge {
   display: inline-block;
   font-size: 32px;
@@ -35,7 +37,7 @@
     }
   }
   &.link {
-    > a {
+    >a {
       font-size: 0.5em;
     }
     .empty,

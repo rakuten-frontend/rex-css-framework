@@ -1,0 +1,48 @@
+// ReX Colors
+.rex-color {
+  &.blue {
+    color: $blue;
+  }
+  &.dark-blue {
+    color: $dark-blue;
+  }
+  &.green {
+    color: $green;
+  }
+  &.pink {
+    color: $pink;
+  }
+  &.purple {
+    color: $purple;
+  }
+  &.crimson-red {
+    color: $crimson-red;
+  }
+  &.yellow {
+    color: $yellow;
+  }
+}
+
+.rex-bg {
+  &.blue {
+    background: $blue;
+  }
+  &.dark-blue {
+    background: $dark-blue;
+  }
+  &.green {
+    background: $green;
+  }
+  &.pink {
+    background: $pink;
+  }
+  &.purple {
+    background: $purple;
+  }
+  &.crimson-red {
+    background: $crimson-red;
+  }
+  &.yellow {
+    background: $yellow;
+  }
+}

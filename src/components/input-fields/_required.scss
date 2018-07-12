@@ -1,0 +1,23 @@
+span.required-kome {
+  color: $brand-danger;
+  font-size: 1.6rem;
+  margin-left: .4rem;
+}
+
+p.required-text {
+  font-size: $font-size-button-sm;
+  color: $gray;
+  margin-top: 1em;
+  &.required-text-jp {
+    color: $brand-danger;
+    margin-top: 0em;
+    span {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.required-field {
+  color: $gray-medium;
+  font-size: $font-size-extra-small;
+}

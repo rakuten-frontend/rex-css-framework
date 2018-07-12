@@ -1,0 +1,70 @@
+// Responsive tables
+//
+// Wrap your tables in `.table-responsive` and we'll make them mobile friendly
+// by enabling horizontal scrolling. Only applies <768px. Everything above that
+// will display normally.
+.table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%; // Workaround for IE9 bug
+  @media screen and (max-width: $screen-xs-max) {
+    width: 100%;
+    margin-bottom: $line-height-computed * 0.75;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar; // Tighten up spacing
+    >.table {
+      margin-bottom: 0; // Ensure the content doesn't wrap
+      >thead,
+      >tbody,
+      >tfoot {
+        >tr {
+          >th,
+          >td {
+            white-space: nowrap;
+          }
+        }
+      }
+    } // Special overrides for the bordered tables
+    >.table-bordered {
+      border: 0; // Nuke the appropriate borders so that the parent can handle them
+      >thead,
+      >tbody,
+      >tfoot {
+        >tr {
+          >th:first-child,
+          >td:first-child {
+            border-left: 0;
+          }
+          >th:last-child,
+          >td:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table {
+  &.table-title {
+    tr {
+      th {
+        word-break: normal;
+      }
+      th,
+      td {
+        @media (max-width: $screen-sm-min) {
+          width: 100%;
+          display: block;
+          border-bottom: 0;
+        }
+      }
+      &:last-child {
+        @media (max-width: $screen-sm-min) {
+          td {
+            border-bottom: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+}

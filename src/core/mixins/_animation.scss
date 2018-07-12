@@ -1,8 +1,16 @@
 @mixin keyframes($name) {
-  @-webkit-keyframes #{$name}{ @content; }
-  @-moz-keyframes #{$name}{ @content; }
-  @-o-keyframes #{$name}{ @content; }
-  @keyframes #{$name}{ @content; }
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
 }
 
 @mixin transition($args...) {
@@ -12,12 +20,13 @@
   -o-transition: $args;
   transition: $args;
 }
+
 @mixin transform($transforms) {
-	   -moz-transform: $transforms;
-	     -o-transform: $transforms;
-	    -ms-transform: $transforms;
-	-webkit-transform: $transforms;
-          transform: $transforms;
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
 }
 
 @mixin animation($str) {

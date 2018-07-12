@@ -1,0 +1,7 @@
+%backToTopStyle {
+  font-family: rex-icon; // TODO: make it variable or mixin
+  content: $_32-chevron-right;
+  transform: rotate(270deg);
+  display: inline-block;
+  padding-left: 2px;
+}

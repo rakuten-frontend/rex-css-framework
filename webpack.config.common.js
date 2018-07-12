@@ -17,8 +17,7 @@ const plugins = [
   }),
 ];
 
-const rules = [
-  {
+const rules = [{
     test: /\.scss$|\.sass$/,
     use: ExtractTextPlugin.extract({
       fallback: 'style-loader',

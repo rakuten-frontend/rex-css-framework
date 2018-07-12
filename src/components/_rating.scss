@@ -5,7 +5,9 @@
     margin-left: 1px;
     font-size: inherit;
   }
-  .active, .selected, .rex-icon:hover {
+  .active,
+  .selected,
+  .rex-icon:hover {
     color: $yellow-medium-light;
   }
   &.disabled {
@@ -17,6 +19,7 @@
     color: inherit;
   }
 }
-.rating > * {
+
+.rating>* {
   display: inline-block;
 }

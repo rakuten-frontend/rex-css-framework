@@ -4,7 +4,7 @@
     width: 100%;
     font-size: 16px;
     height: 40px;
-    padding-top:0px;
+    padding-top: 0px;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 0px;
@@ -24,7 +24,7 @@
         width: 100%;
         line-height: 3em;
         height: 40px;
-        float:left;
+        float: left;
         &:hover,
         &:active,
         &:focus {
@@ -86,7 +86,6 @@
       }
     }
   }
-
   &.rounded {
     .input-group {
       border-top-left-radius: 20px;
@@ -108,7 +107,6 @@
       }
     }
   }
-
   &.outline {
     .search-input-wrapper {
       input {
@@ -127,7 +125,8 @@
           color: $white;
         }
       }
-      &:hover, &.focus {
+      &:hover,
+      &.focus {
         background-color: $brand-primary-lighten;
         border-color: $brand-primary-lighten;
       }
@@ -137,7 +136,6 @@
       }
     }
   }
-
   &.scope {
     position: relative;
     .input-group {
@@ -169,7 +167,8 @@
           top: 1em;
           right: 0.6em;
         }
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           border-color: $brand-primary;
           background-color: $gray-lightest;
         }
@@ -185,10 +184,13 @@
         border-color: $gray-light;
         padding-right: 16px;
         padding-left: 16px;
-        &:focus, &:active {
+        &:focus,
+        &:active {
           background-color: $search-input-active;
         }
-        &:hover, &:focus, &:active {
+        &:hover,
+        &:focus,
+        &:active {
           border-color: $brand-primary;
         }
       }
@@ -235,13 +237,11 @@
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 99999;
-
   @extend .rex-motion;
   @include animation(rex-fadeInDown 0.2s $standard-curve forwards);
-
   .search-row {
     display: block;
-    clear:both;
+    clear: both;
     margin-bottom: 24px;
     padding-left: 16px;
     padding-right: 16px;

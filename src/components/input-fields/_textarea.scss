@@ -1,0 +1,12 @@
+.active-textarea-div,
+.idle-filled-textarea-div {
+  label {
+    position: absolute;
+    top: .8rem;
+    left: 1.6rem;
+    color: $gray;
+  }
+  textarea {
+    padding-top: 32px;
+  }
+}

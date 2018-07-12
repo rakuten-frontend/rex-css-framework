@@ -1,31 +1,35 @@
 @mixin getCardMerginTop($type) {
-  @if $type == 'square' {
+  @if $type=='square' {
     margin-top: 20px;
-  } @else if $type == 'panel' {
+  }
+  @else if $type=='panel' {
     margin-top: 6px;
-  } @else {
+  }
+  @else {
     margin-top: 22px;
   }
 }
 
 @mixin getCardJustifyContent($type) {
-  @if $type != 'panel' {
+  @if $type !='panel' {
     justify-content: flex-end;
   }
 }
 
 @mixin getCardPadding($type) {
-  @if $type == 'wide' {
+  @if $type=='wide' {
     padding: 22px 24px;
-  } @else if $type == 'panel' {
+  }
+  @else if $type=='panel' {
     padding: 16px;
-  } @else {
+  }
+  @else {
     padding: 16px 24px;
   }
 }
 
 @mixin extraContents($type) {
-  @if $type != 'text' {
+  @if $type !='text' {
     color: $brand-primary;
   }
   font-size: 14px;
@@ -34,15 +38,17 @@
   @include getCardJustifyContent($type);
   @include getCardMerginTop($type);
   .button {
-    @if $type == 'text' {
+    @if $type=='text' {
       color: $blue;
     }
     margin: 0px 16px;
     text-decoration: none;
-    &:hover, &:active {
-      @if $type == 'text' {
+    &:hover,
+    &:active {
+      @if $type=='text' {
         color: $blue;
-      } @else {
+      }
+      @else {
         color: $brand-primary;
       }
     }

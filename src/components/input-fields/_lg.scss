@@ -1,0 +1,11 @@
+.input-lg {
+  font-size: 1.5em;
+  padding: 0;
+  label {
+    font-size: $font-size-base;
+  }
+  input {
+    font-size: $font-size-large;
+    padding-bottom: .8rem;
+  }
+}

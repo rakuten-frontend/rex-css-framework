@@ -8,8 +8,9 @@
   padding: 8px 16px;
   border-radius: 4px;
   opacity: 0;
-	display: none;
+  display: none;
 }
+
 %popup_trigangle {
   content: '';
   width: 0;
@@ -17,8 +18,8 @@
   position: absolute;
   border-top: 8px solid transparent;
   border-bottom: 8px solid $gray;
-  border-right:6px solid transparent;
-  border-left:6px solid transparent;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
   top: -16px;
   left: 45%;
 }
@@ -28,10 +29,10 @@
   text-align: center;
   position: relative;
   min-width: 64px;
-  > small {
+  >small {
     color: $gray-light;
     line-height: 48px;
-		cursor: pointer;
+    cursor: pointer;
   }
   i {
     top: 11px;
@@ -53,7 +54,7 @@
   }
   &:hover {
     .coming-soon {
-			display: block;
+      display: block;
       @extend .rex-motion;
       @include animation(rex-fadeInDown 0.15s $standard-curve forwards);
       &:before {}
@@ -66,7 +67,7 @@
     left: 0;
     height: 100vh;
     display: none;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 1000;
     &.visible {
       display: block;
@@ -87,7 +88,7 @@
     @extend .rex-motion;
     @include animation(rex-fadeInDown 0.15s $standard-curve forwards);
     transition: 0.2s $standard-curve;
-    > p {
+    >p {
       margin-bottom: 8px !important;
     }
     &.visible {
@@ -140,8 +141,8 @@
         top: 0;
         float: right;
         .arrow-down {
-          width: 0; 
-          height: 0; 
+          width: 0;
+          height: 0;
           border-left: 6px solid transparent;
           border-right: 6px solid transparent;
           border-top: 8px solid $white;

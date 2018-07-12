@@ -23,6 +23,7 @@ $label-font: 12px;
     border-radius: 12px;
   }
 }
+
 $tag-close-width: 21px;
 .tag-wrapper.icon {
   display: inline-block;
@@ -47,7 +48,7 @@ $tag-close-width: 21px;
     cursor: pointer;
     background-color: $gray-light;
     &::after {
-      font-family: rex-icon;  // TODO: make it variable or mixin
+      font-family: rex-icon; // TODO: make it variable or mixin
       content: $_32-x;
       position: absolute;
       right: 8px;

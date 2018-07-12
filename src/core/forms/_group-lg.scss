@@ -1,0 +1,14 @@
+.form-group-lg {
+  @include input-size('.form-control', $input-height-large, $padding-large-vertical, $padding-zero, $font-size-large, $line-height-large);
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+  .form-control-static {
+    height: $input-height-large;
+    min-height: ($line-height-computed + $font-size-large);
+    padding: ($padding-large-vertical + 1) $padding-large-horizontal;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+  }
+}

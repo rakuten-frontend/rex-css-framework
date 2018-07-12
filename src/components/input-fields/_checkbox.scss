@@ -1,0 +1,15 @@
+.checkbox-checked {
+  label {
+    span {
+      color: $gray-darker;
+    }
+  }
+}
+
+.checkbox-disabled {
+  label {
+    span {
+      color: $gray-light;
+    }
+  }
+}
