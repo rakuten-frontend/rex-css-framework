@@ -3,14 +3,14 @@
 // -------------------------
 input,
 textarea {
-  border: 0;
-  background-color: transparent;
-  &:focus {
-    outline: none;
-  }
-  &::-ms-clear {
-    display: none;
-  }
+    border: 0;
+    background-color: transparent;
+    &:focus {
+        outline: none;
+    }
+    &::-ms-clear {
+        display: none;
+    }
 }
 
 input[type='text'],
@@ -20,222 +20,193 @@ input[type='password'],
 input[type='number'],
 input[type='email'],
 textarea {
-  font-size: $font-size-base;
-  color: $gray-darkest;
-  @include placeholder {
-    color: $gray-medium;
-  }
+    font-size: $font-size-base;
+    color: $gray-darkest;
+    @include placeholder {
+        color: $gray-medium;
+    }
 }
 
 textarea {
-  width: 100%;
-  padding: 1rem 1.4rem;
-  border-radius: .4rem;
-  border: solid 1px $gray-medium;
-  resize: none;
-  &:disabled {
-    @include placeholder {
-      color: $gray-light;
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border-radius: .4rem;
+    border: solid 1px $gray-medium;
+    resize: none;
+    &:disabled {
+        @include placeholder {
+            color: $gray-light;
+        }
     }
-  }
-}
-
-%textarea_thick_border {
-  margin-bottom: 1px;
-  padding: calc(#{$font-size-base} - 1px);
-}
-
-%textarea_thin_border {
-  margin-bottom: 1px;
-  padding: $font-size-base;
-  padding-top: $padding-large;
-}
-
-%small_base {
-  display: block;
-  color: $gray-medium;
-  font-size: $font-size-extra-small;
-  line-height: 1.5;
-  padding-left: .25em;
-}
-
-%focused_transition {
-  transition: 0.05s;
-}
-
-%label_base_text_input {
-  font-weight: normal;
-}
-
-%input_focused {
-  // border-bottom: solid 2px $brand-primary;
-  @extend %focused_transition;
 }
 
 %label_hover {
-  color: $brand-focus;
-  @extend %focused_transition;
+    color: $brand-focus;
+    @include transition(0.05s);
 }
 
 %underline_focused {
-  background: $brand-primary;
-  height: 2px;
+    background: $brand-primary;
+    height: 2px;
 }
 
 //.input-area {
 .form-group {
-  input[type='text'],
-  input[type='url'],
-  input[type='tel'],
-  input[type='password'],
-  input[type='number'],
-  input[type='email'],
-  textarea,
-  select {
-    margin-bottom: .5em;
-  }
-  .input-group-disabled {
-    label,
+    input[type='text'],
+    input[type='url'],
+    input[type='tel'],
+    input[type='password'],
+    input[type='number'],
+    input[type='email'],
+    textarea,
+    select {
+        margin-bottom: .5em;
+    }
+    .input-group-disabled {
+        label,
+        small {
+            color: $gray-light;
+        }
+    }
+    legend {
+        font-size: 1em;
+    }
+    @include clearfix;
+    position: relative; // For dropdowns
+    margin-bottom: 2em;
+    border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
+    label {
+        font-weight: normal;
+    }
     small {
-      color: $gray-light;
-    }
-  }
-  legend {
-    font-size: 1em;
-  }
-  @include clearfix;
-  position: relative; // For dropdowns
-  margin-bottom: 2em;
-  border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
-  label {
-    @extend %label_base_text_input;
-  }
-  small {
-    @extend %small_base;
-    &.blank-helper {
-      color: transparent;
-    }
-    .rex-icon {
-      padding-right: .3em;
-      padding-bottom: .3em;
-      vertical-align: middle;
-    }
-  }
-  input {
-    // line-height: $input-height-base; // border-bottom: 1px solid $gray-medium;
-    caret-color: $brand-primary;
-    padding: 0 0 .5em 0;
-    &:focus,
-    &:active {
-      @extend %input_focused;
-      &+label {
-        @extend %label_hover;
-      }
-      &+.underline {
-        @extend %underline_focused;
-      }
-    } //Move Label above input
-    &+label {
-      top: 0px;
-    }
-    &:disabled {
-      color: $gray-light;
-      @include placeholder {
-        color: $gray-light;
-      }
-    }
-    &[type='text'],
-    &[type='url'],
-    &[type='tel'],
-    &[type='password'],
-    &[type='number'],
-    &[type='email'] {
-      border-bottom: 1px solid $gray-medium;
-      margin-bottom: .5em;
-      &:focus {
-        border-color: $brand-primary;
-        border-width: 1px;
-      }
-    }
-  }
-  &.focused {
-    label {
-      font-size: $input-area-focus-label-size;
-      transition: 0.2s;
-      color: $brand-primary;
-      top: 0px;
-      left: 0px;
+        display: block;
+        color: $gray-medium;
+        font-size: $font-size-extra-small;
+        line-height: 1.5;
+        padding-left: .25em;
+        &.blank-helper {
+            color: transparent;
+        }
+        .rex-icon {
+            padding-right: .3em;
+            padding-bottom: .3em;
+            vertical-align: middle;
+        }
     }
     input {
-      @extend %input_focused;
-      &+.underline {
-        @extend %underline_focused;
-      }
+        caret-color: $brand-primary;
+        padding: 0 0 .5em 0;
+        &:focus,
+        &:active {
+            @include transition(0.05s);
+            &+label {
+                @extend %label_hover;
+            }
+            &+.underline {
+                @extend %underline_focused;
+            }
+        } //Move Label above input
+        &+label {
+            top: 0px;
+        }
+        &:disabled {
+            color: $gray-light;
+            @include placeholder {
+                color: $gray-light;
+            }
+        }
+        &[type='text'],
+        &[type='url'],
+        &[type='tel'],
+        &[type='password'],
+        &[type='number'],
+        &[type='email'] {
+            border-bottom: 1px solid $gray-medium;
+            margin-bottom: .5em;
+            &:focus {
+                border-color: $brand-primary;
+                border-width: 1px;
+            }
+        }
     }
-  } // Undo padding and float of grid classes
-  &[class*="col-"] {
-    float: none;
-    padding-left: 0;
-    padding-right: 0;
-  } // Disabled Input Group
-  .input-area-read-only {
-    input,
-    input:hover {
-      border-bottom: none;
-      pointer-events: none;
+    &.focused {
+        label {
+            font-size: $input-area-focus-label-size;
+            transition: 0.2s;
+            color: $brand-primary;
+            top: 0px;
+            left: 0px;
+        }
+        input {
+            @include transition(0.05s);
+            &+.underline {
+                @extend %underline_focused;
+            }
+        }
+    } // Undo padding and float of grid classes
+    &[class*="col-"] {
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    } // Disabled Input Group
+    .input-area-read-only {
+        input,
+        input:hover {
+            border-bottom: none;
+            pointer-events: none;
+        }
     }
-  }
-  .form-control {
-    // Ensure that the input is always above the *appended* addon button for
-    // proper border colors.
-    position: relative;
-    z-index: 2; // IE9 fubars the placeholder attribute in text inputs and the arrows on
-    // select elements in input groups. To fix it, we float the input. Details:
-    // https://github.com/twbs/rex/issues/11561#issuecomment-28936855
-    float: left;
-    width: 100%;
-    &:focus {
-      z-index: 3;
-      outline: none;
+    .form-control {
+        // Ensure that the input is always above the *appended* addon button for
+        // proper border colors.
+        position: relative;
+        z-index: 2; // IE9 fubars the placeholder attribute in text inputs and the arrows on
+        // select elements in input groups. To fix it, we float the input. Details:
+        // https://github.com/twbs/rex/issues/11561#issuecomment-28936855
+        float: left;
+        width: 100%;
+        &:focus {
+            z-index: 3;
+            outline: none;
+        }
     }
-  }
-  select.form-control {
-    padding-right: 1em;
-  }
-  .hover {
-    &+label,
-    &+label {
-      @extend %label_hover;
+    select.form-control {
+        padding-right: 1em;
     }
-  }
-  .active {
-    label {
-      color: $brand-focus;
+    .hover {
+        &+label,
+        &+label {
+            @extend %label_hover;
+        }
     }
-    &+label,
-    &+label {
-      @extend %label_hover;
+    .active {
+        label {
+            color: $brand-focus;
+        }
+        &+label,
+        &+label {
+            @extend %label_hover;
+        }
     }
-  }
-  .with-icon-label {
-    .rex-icon {
-      font-size: 2.4rem;
-      color: $gray-medium;
+    .with-icon-label {
+        .rex-icon {
+            font-size: 2.4rem;
+            color: $gray-medium;
+        }
+        .icon-container {
+            display: inline-block;
+            position: relative;
+            .rex-icon {
+                top: .4rem;
+            }
+        }
+        input,
+        .underline {
+            width: calc(100% - 32px);
+            right: 0;
+        }
+        input {
+            padding-left: .8rem;
+        }
     }
-    .icon-container {
-      display: inline-block;
-      position: relative;
-      .rex-icon {
-        top: .4rem;
-      }
-    }
-    input,
-    .underline {
-      width: calc(100% - 32px);
-      right: 0;
-    }
-    input {
-      padding-left: .8rem;
-    }
-  }
 }
