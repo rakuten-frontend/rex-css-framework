@@ -1,31 +1,31 @@
 .btn-square {
-  padding: 0;
-  position: relative;
-  border: none;
-  font-size: 24px;
-  line-height: 40px;
-  width: 40px;
-  height: 40px; // icon center alignment
-  border-radius: 4px;
-  &:before {
-    position: absolute;
-  }
-  &.chevron-top {
-    &::after {
-      @extend %backToTopStyle;
+    padding: 0;
+    position: relative;
+    border: none;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem; // icon center alignment
+    border-radius: $border-radius-base;
+    &:before {
+        position: absolute;
     }
-  }
-  &.chevron-left {
-    @include chevron-horizontal-style("right", 8px, 7px);
-  }
-  &.chevron-right {
-    @include chevron-horizontal-style("right", 6px, 5px);
-  }
-  &.plus,
-  &.minus {
-    @extend %plus-minus-btn;
-  }
-  &.btn-outline {
-    @extend %btn-circle-outline;
-  }
+    &.chevron-top {
+        &::after {
+            @extend %backToTopStyle;
+        }
+    }
+    &.chevron-left {
+        @include chevron-horizontal-style("right", .8rem, .7rem);
+    }
+    &.chevron-right {
+        @include chevron-horizontal-style("right", .6rem, .5rem);
+    }
+    &.plus,
+    &.minus {
+        @extend %plus-minus-btn;
+    }
+    &.btn-outline {
+        @extend %btn-circle-outline;
+    }
 }

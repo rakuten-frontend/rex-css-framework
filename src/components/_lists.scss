@@ -1,84 +1,84 @@
 .list {
-  @extend .list-unstyled;
-  width: 100%;
-  background-color: $white;
-  border-radius: .4rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
-  padding: 1.2rem 0;
-  li {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    a,
-    span {
-      color: $gray-medium;
-      text-decoration: none;
-      display: list-item;
-      padding: 0 1.6rem;
-      margin-bottom: 1.6rem;
-      width: 100%;
-      box-sizing: bord4r-box;
-      word-break: break-all;
-      cursor: pointer;
-      &:hover {
-        color: #FF1212;
-      }
-      .rex-icon {
-        margin-right: 1.6rem;
-        &:before {
-          vertical-align: middle;
+    @extend .list-unstyled;
+    width: 100%;
+    background-color: $white;
+    border-radius: $border-radius-base;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    padding: 1.2rem 0;
+    li {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        a,
+        span {
+            color: $gray-medium;
+            text-decoration: none;
+            display: list-item;
+            padding: 0 1.6rem;
+            margin-bottom: 1.6rem;
+            width: 100%;
+            box-sizing: bord4r-box;
+            word-break: break-all;
+            cursor: pointer;
+            &:hover {
+                color: #FF1212;
+            }
+            .rex-icon {
+                margin-right: 1.6rem;
+                &:before {
+                    vertical-align: middle;
+                }
+            }
         }
-      }
+        &.active {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                background: $brand-primary;
+                top: 0;
+                left: -1px;
+                width: .2rem;
+                height: 100%;
+            }
+            span {
+                color: $brand-primary;
+                display: block;
+            }
+        }
     }
-    &.active {
-      position: relative;
-      &:before {
-        content: "";
-        position: absolute;
-        background: $brand-primary;
-        top: 0;
-        left: -1px;
-        width: .2rem;
-        height: 100%;
-      }
-      span {
-        color: $brand-primary;
-        display: block;
-      }
-    }
-  }
 }
 
 .list-with-icon {
-  padding: 0;
-  li {
-    &.active {
-      background-color: #F7F7F7;
+    padding: 0;
+    li {
+        &.active {
+            background-color: #F7F7F7;
+        }
+        a,
+        span {
+            position: relative;
+            padding: 1.6rem 2.5rem 1.6rem 1.6rem;
+            margin: 0;
+            &:after {
+                font-family: rex-icon; // TODO: make it variable or mixin
+                content: $_32-chevron-right;
+                margin: 1.7rem 1.4rem 0 1.4rem;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        a:hover {
+            background-color: #F7F7F7;
+        }
     }
-    a,
-    span {
-      position: relative;
-      padding: 1.6rem 2.5rem 1.6rem 1.6rem;
-      margin: 0;
-      &:after {
-        font-family: rex-icon; // TODO: make it variable or mixin
-        content: $_32-chevron-right;
-        margin: 1.7rem 1.4rem 0 1.4rem;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    }
-    a:hover {
-      background-color: #F7F7F7;
-    }
-  }
 }
 
 .line-divider {
-  li {
-    border-bottom: 1px solid #EBEBEB;
-    &:last-child {
-      border: none;
+    li {
+        border-bottom: 1px solid #EBEBEB;
+        &:last-child {
+            border: none;
+        }
     }
-  }
 }
