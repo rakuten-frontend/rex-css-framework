@@ -9,7 +9,7 @@ textarea {
         outline: none;
     }
     &::-ms-clear {
-        display: none;
+        display: none; //Removing a clear button for IE10+ Browser. , supported only in Internet Explorer 10, Internet Explorer 11, and Microsoft Edge.
     }
 }
 
@@ -30,7 +30,7 @@ textarea {
 textarea {
     width: 100%;
     padding: 1rem 1.4rem;
-    border-radius: .4rem;
+    border-radius: $border-radius-base;
     border: solid 1px $gray-medium;
     resize: none;
     &:disabled {
@@ -38,16 +38,6 @@ textarea {
             color: $gray-light;
         }
     }
-}
-
-%label_hover {
-    color: $brand-focus;
-    @include transition(0.05s);
-}
-
-%underline_focused {
-    background: $brand-primary;
-    height: 2px;
 }
 
 //.input-area {
@@ -98,12 +88,9 @@ textarea {
         padding: 0 0 .5em 0;
         &:focus,
         &:active {
-            @include transition(0.05s);
             &+label {
-                @extend %label_hover;
-            }
-            &+.underline {
-                @extend %underline_focused;
+                color: $brand-focus;
+                @include transition(0.05s);
             }
         } //Move Label above input
         &+label {
@@ -129,21 +116,6 @@ textarea {
             }
         }
     }
-    &.focused {
-        label {
-            font-size: $input-area-focus-label-size;
-            transition: 0.2s;
-            color: $brand-primary;
-            top: 0px;
-            left: 0px;
-        }
-        input {
-            @include transition(0.05s);
-            &+.underline {
-                @extend %underline_focused;
-            }
-        }
-    } // Undo padding and float of grid classes
     &[class*="col-"] {
         float: none;
         padding-left: 0;
@@ -172,41 +144,5 @@ textarea {
     }
     select.form-control {
         padding-right: 1em;
-    }
-    .hover {
-        &+label,
-        &+label {
-            @extend %label_hover;
-        }
-    }
-    .active {
-        label {
-            color: $brand-focus;
-        }
-        &+label,
-        &+label {
-            @extend %label_hover;
-        }
-    }
-    .with-icon-label {
-        .rex-icon {
-            font-size: 2.4rem;
-            color: $gray-medium;
-        }
-        .icon-container {
-            display: inline-block;
-            position: relative;
-            .rex-icon {
-                top: .4rem;
-            }
-        }
-        input,
-        .underline {
-            width: calc(100% - 32px);
-            right: 0;
-        }
-        input {
-            padding-left: .8rem;
-        }
     }
 }
