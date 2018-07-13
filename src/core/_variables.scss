@@ -3,7 +3,6 @@
 // --------------------------------------------------
 @import "~core/vars/utils";
 @import "~core/vars/fonts";
-@import "~core/vars/colors/state";
 @import "~core/vars/colors/basics";
 @import "~core/vars/colors/gray";
 @import "~core/vars/colors/brand";
@@ -73,15 +72,12 @@
 @import "~core/vars/navbar/shared";
 @import "~core/vars/pills";
 @import "~core/vars/pagination";
-@import "~core/vars/pager";
 @import "~core/vars/jumbotron";
 @import "~core/vars/state/success";
 @import "~core/vars/state/info";
 @import "~core/vars/state/warning";
 @import "~core/vars/state/danger";
-@import "~core/vars/popovers";
 @import "~core/vars/labels";
-@import "~core/vars/modals";
 @import "~core/vars/alerts/base";
 @import "~core/vars/alerts/success";
 @import "~core/vars/alerts/info";
@@ -97,7 +93,6 @@
 @import "~core/vars/panels/warning";
 @import "~core/vars/panels/danger";
 @import "~core/vars/thumbnails";
-@import "~core/vars/wells";
 @import "~core/vars/breadcrumbs";
 @import "~core/vars/close";
 @import "~core/vars/code";
