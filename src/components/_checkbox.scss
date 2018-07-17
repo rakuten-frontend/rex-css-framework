@@ -1,5 +1,5 @@
 //extends
-%radio-checkbox-base {
+@mixin radio-checkbox-base {
     content: '';
     width: 2.4rem;
     height: 2.4rem;
@@ -10,7 +10,7 @@
     margin: 0 1.6rem 0 0;
 }
 
-%disabled {
+@mixin disabled {
     cursor: initial;
     .checkbox-label:before,
     .radio-label:before {
@@ -66,7 +66,15 @@
         position: relative;
         top: 0;
         left: 0;
-        padding-left: 3rem;
+        padding-left: 4rem;
+        &:before {
+            @include radio-checkbox-base;
+            position: absolute;
+            top: 50%;
+            left: 1.6rem;
+            transform: translate(-50%, -50%);
+            border-radius: $border-radius-base;
+        }
     }
      :checked+.checkbox-label {
         color: $gray-darker;
@@ -85,7 +93,7 @@
             color: $white;
             position: absolute;
             top: 50%;
-            left: 1.2rem;
+            left: 1.6rem;
             transform: translate(-50%, -50%);
             z-index: 3;
         }
@@ -96,7 +104,7 @@
         }
     }
     &.disabled {
-        @extend %disabled;
+        @include disabled;
          :checked+.checkbox-label {
             &:before {
                 background: transparent;
@@ -105,14 +113,6 @@
         input[type=checkbox] {
             cursor: initial;
         }
-    }
-    .checkbox-label:before {
-        @extend %radio-checkbox-base;
-        position: absolute;
-        top: 50%;
-        left: 1.2rem;
-        transform: translate(-50%, -50%);
-        border-radius: $border-radius-base;
     }
 }
 
@@ -125,7 +125,7 @@
         left: 0;
         padding-left: 4rem;
         &:before {
-            @extend %radio-checkbox-base;
+            @include radio-checkbox-base;
             border-radius: 50%;
             position: absolute;
             top: .18em;
@@ -148,8 +148,8 @@
             width: 1.2rem;
             height: 1.2rem;
             border-radius: 50%;
-            left: 1rem;
             top: .9rem;
+            left: 1rem;
             position: absolute;
             z-index: 2;
             background-color: $white;
@@ -161,7 +161,7 @@
         }
     }
     &.disabled {
-        @extend %disabled;
+        @include disabled;
         .radio-label {
             &:before {
                 background-color: transparent;
