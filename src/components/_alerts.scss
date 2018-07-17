@@ -1,16 +1,3 @@
-@mixin alertcolor($bg-color, $border, $color, $hover) {
-    background-color: $bg-color;
-    border: 1px solid $border;
-    color: $color;
-    .alert-link {
-        color: $color;
-        text-decoration: underline;
-        &:hover {
-            color: $hover;
-        }
-    }
-}
-
 .alert {
     border-radius: $border-radius-base;
     display: block;

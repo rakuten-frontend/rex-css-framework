@@ -99,6 +99,7 @@ textarea {
         }
         &:disabled {
             color: $gray-light;
+            border-bottom: dashed 1px $gray-light !important;
             @include placeholder {
                 color: $gray-light;
             }

@@ -3,128 +3,116 @@
 // Unordered and Ordered lists
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: ($line-height-computed / 2);
-  padding-left: 2rem;
-  li {
-    margin-bottom: 1.6rem;
-  }
-  ul,
-  ol {
-    margin-bottom: 0;
-    padding-left: 2.4rem;
-    font-size: $font-size-small;
+    margin-top: 0;
+    margin-bottom: ($line-height-computed / 2);
+    padding-left: 2rem;
     li {
-      margin-bottom: 1.6rem;
+        margin-bottom: 1.6rem;
     }
-    li:first-child {
-      margin-top: 1.6rem;
+    ul,
+    ol {
+        margin-bottom: 0;
+        padding-left: 2.4rem;
+        font-size: $font-size-small;
+        li {
+            margin-bottom: 1.6rem;
+        }
+        li:first-child {
+            margin-top: 1.6rem;
+        }
     }
-  }
-} 
+}
 
-// List options
-// [converter] extracted from `.list-unstyled` for libsass compatibility
-@mixin list-unstyled {
-  padding-left: 0;
-  list-style: none;
-  ul,
-  ol {
-    list-style: none;
-  }
-} 
-
-// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
 .list-unstyled {
-  @include list-unstyled;
+    @include list-unstyled;
 }
 
 .list-asterisk {
-  @include list-unstyled;
-  li:before {
-    content: "※";
-    margin-right: 1em;
-  }
+    @include list-unstyled;
+    li:before {
+        content: "※";
+        margin-right: 1em;
+    }
 }
 
 .list-asterisk-en {
-  @include list-unstyled;
-  li:before {
-    content: "*";
-    margin-right: 1em;
-  }
+    @include list-unstyled;
+    li:before {
+        content: "*";
+        margin-right: 1em;
+    }
 }
 
 .list-asterisk-ordered {
-  @include list-unstyled;
-  counter-reset: num;
-  li:before {
-    counter-increment: num;
-    content: '※' counter(num, decimal);
-    margin-right: 1em;
-  }
+    @include list-unstyled;
+    counter-reset: num;
+    li:before {
+        counter-increment: num;
+        content: '※' counter(num, decimal);
+        margin-right: 1em;
+    }
 }
 
 .list-asterisk-ordered-en {
-  @include list-unstyled;
-  counter-reset: num;
-  li:before {
-    counter-increment: num;
-    content: '*' counter(num, decimal);
-    margin-right: 1em;
-  }
-} 
+    @include list-unstyled;
+    counter-reset: num;
+    li:before {
+        counter-increment: num;
+        content: '*' counter(num, decimal);
+        margin-right: 1em;
+    }
+}
 
 // Inline turns list items into inline-block
 .list-inline {
-  @include list-unstyled;
-  >li {
-    display: inline-block;
-    padding-right: 2.4rem;
-  }
-  li:last-child {
-    padding-right: 0;
-  }
-} 
+    @include list-unstyled;
+    >li {
+        display: inline-block;
+        padding-right: 2.4rem;
+    }
+    li:last-child {
+        padding-right: 0;
+    }
+}
 
 // Description Lists
 dl {
-  margin-top: 0; // Remove browser default
-  margin-bottom: $line-height-computed;
+    margin-top: 0; // Remove browser default
+    margin-bottom: $line-height-computed;
 }
 
 dt {
-  font-weight: bold;
-  margin-top: .8rem;
+    font-weight: bold;
+    margin-top: .8rem;
 }
 
 dd {
-  margin-left: 0; // Undo browser default
+    margin-left: 0; // Undo browser default
 }
 
 dd+dd {
-  margin-bottom: 0;
-} 
+    margin-bottom: 0;
+}
 
 // Horizontal description lists
 //
 // Defaults to being stacked without any of the below styles applied, until the
 // grid breakpoint is reached (default of ~768px).
 .dl-horizontal {
-  dd {
-    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
-  }
-  @media (min-width: $dl-horizontal-breakpoint) {
-    dt {
-      float: left;
-      width: ($dl-horizontal-offset - 20);
-      clear: left;
-      text-align: right;
-      margin-top: 0;
-      @include text-overflow;
-    }
     dd {
-      margin-left: $dl-horizontal-offset;
+        @include clearfix; // Clear the floated `dt` if an empty `dd` is present
     }
-  }
+    @media (min-width: $dl-horizontal-breakpoint) {
+        dt {
+            float: left;
+            width: ($dl-horizontal-offset - 20);
+            clear: left;
+            text-align: right;
+            margin-top: 0;
+            @include text-overflow;
+        }
+        dd {
+            margin-left: $dl-horizontal-offset;
+        }
+    }
 }

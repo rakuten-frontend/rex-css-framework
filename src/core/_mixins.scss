@@ -2,13 +2,13 @@
 // --------------------------------------------------
 // Utilities
 @import "mixins/opacity";
+@import "mixins/alert";
+@import "mixins/pagination";
 @import "mixins/image";
 @import "mixins/responsive-visibility";
 @import "mixins/size";
-//@import "mixins/fontsize"; In case if browsers doesn't support rem
 @import "mixins/list";
 @import "mixins/tab-focus";
-@import "mixins/text-emphasis";
 @import "mixins/text-overflow";
 @import "mixins/vendor-prefixes";
 // Components
@@ -17,7 +17,6 @@
 @import "mixins/table-row";
 // Skins
 @import "mixins/border-radius";
-@import "mixins/gradients";
 // Layout
 @import "mixins/clearfix";
 // @import "mixins/center-block";
