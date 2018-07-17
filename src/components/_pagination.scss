@@ -1,110 +1,110 @@
 %pagination-link-style {
-  text-align: center;
-  margin-bottom: 0;
-  li {
-    display: inline-block;
-    a {
-      color: #828282;
-      &:hover {
-        color: #FF1212;
-        background-color: #F7F7F7;
-        border-bottom: none;
-        text-decoration: none;
-      }
-      .rex-icon {
-        cursor: pointer;
-        vertical-align: middle;
-      }
+    text-align: center;
+    margin-bottom: 0;
+    li {
+        display: inline-block;
+        a {
+            color: #828282;
+            &:hover {
+                color: #FF1212;
+                background-color: #F7F7F7;
+                border-bottom: none;
+                text-decoration: none;
+            }
+            .rex-icon {
+                cursor: pointer;
+                vertical-align: middle;
+            }
+        }
     }
-  }
-  &.disabled {
-    a {
-      color: #d1d1d1;
-      text-decoration: none;
-      cursor: not-allowed;
-      &:hover {
-        color: #d1d1d1;
-        background-color: transparent;
-      }
+    &.disabled {
+        a {
+            color: #d1d1d1;
+            text-decoration: none;
+            cursor: not-allowed;
+            &:hover {
+                color: #d1d1d1;
+                background-color: transparent;
+            }
+        }
     }
-  }
-  &~.text-center {
-    color: #828282;
-  }
+    &~.text-center {
+        color: #828282;
+    }
 }
 
 .pagination {
-  @extend .list-unstyled;
-  @extend %pagination-link-style;
-  li {
-    a {
-      color: #828282;
+    @include list-unstyled;
+    @extend %pagination-link-style;
+    li {
+        a {
+            color: #828282;
+        }
+        &.active {
+            span {
+                color: $brand-primary;
+                border-bottom: 1px solid $brand-primary;
+            }
+        }
+        a,
+        span {
+            padding: .3em .75em;
+        }
     }
-    &.active {
-      span {
-        color: $brand-primary;
-        border-bottom: 1px solid $brand-primary;
-      }
-    }
-    a,
-    span {
-      padding: .3em .75em;
-    }
-  }
 }
 
 .pager {
-  @extend .list-unstyled;
-  @extend %pagination-link-style;
-  li {
-    a {
-      color: $brand-primary;
-      padding: .5em .75em;
-      &.prev .rex-icon {
-        padding-right: 1em;
-      }
-      &.next .rex-icon {
-        padding-left: 1em;
-      }
-    }
-  }
-  &.pager-title {
+    @include list-unstyled;
+    @extend %pagination-link-style;
     li {
-      a:hover {
-        background-color: transparent;
-      }
-      .prev-title {
-        position: relative;
-        &:before {
-          content: 'Prev';
-          color: #686868;
-          position: absolute;
-          top: -1.5em;
-          left: 0;
-          font-size: 1.2rem;
+        a {
+            color: $brand-primary;
+            padding: .5em .75em;
+            &.prev .rex-icon {
+                padding-right: 1em;
+            }
+            &.next .rex-icon {
+                padding-left: 1em;
+            }
         }
-        &:lang(ja) {
-          &:before {
-            content: '前へ';
-          }
-        }
-      }
-      .next-title {
-        position: relative;
-        &:before {
-          content: 'Next';
-          color: #686868;
-          position: absolute;
-          top: -1.5em;
-          right: .5em;
-          font-size: 1.2rem;
-        }
-        &:lang(ja) {
-          &:before {
-            content: '次へ';
-          }
-        }
-      }
     }
-  }
+    &.pager-title {
+        li {
+            a:hover {
+                background-color: transparent;
+            }
+            .prev-title {
+                position: relative;
+                &:before {
+                    content: 'Prev';
+                    color: #686868;
+                    position: absolute;
+                    top: -1.5em;
+                    left: 0;
+                    font-size: 1.2rem;
+                }
+                &:lang(ja) {
+                    &:before {
+                        content: '前へ';
+                    }
+                }
+            }
+            .next-title {
+                position: relative;
+                &:before {
+                    content: 'Next';
+                    color: #686868;
+                    position: absolute;
+                    top: -1.5em;
+                    right: .5em;
+                    font-size: 1.2rem;
+                }
+                &:lang(ja) {
+                    &:before {
+                        content: '次へ';
+                    }
+                }
+            }
+        }
+    }
 }

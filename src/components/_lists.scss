@@ -1,5 +1,5 @@
 .list {
-    @extend .list-unstyled;
+    @include list-unstyled;
     width: 100%;
     background-color: $white;
     border-radius: $border-radius-base;
