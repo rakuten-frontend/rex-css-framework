@@ -1,92 +1,92 @@
 // placeholder selectors for extends 
-%select_arrow {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: 0;
-  top: 1.5rem;
-  border-top: solid 8px $gray-medium-light;
-  border-left: .6rem solid transparent;
-  border-right: .6rem solid transparent;
-  border-top: solid .7rem $gray-medium-light;
+@mixin select_arrow {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    border-top: solid 8px $gray-medium-light;
+    border-left: .6rem solid transparent;
+    border-right: .6rem solid transparent;
+    border-top: solid .7rem $gray-medium-light;
 }
 
-%arrow_disabled {
-  border-top: solid 7px $gray-light;
+@mixin arrow_disabled {
+    border-top: solid 7px $gray-light;
 }
 
 // declarations
 .select-wrapper {
-  position: relative;
-  select {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    option:checked:disabled {
-      background-color: $white;
-      color: $white !important;
+    position: relative;
+    select {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        option:checked:disabled {
+            background-color: $white;
+            color: $white !important;
+        }
+        &:disabled {
+            border: 1px dashed $gray-light;
+            border-width: 0 0 1px 0;
+        }
     }
-    &:disabled {
-      border: 1px dashed $gray-light;
-      border-width: 0 0 1px 0;
+    label {
+        width: 100%;
+        margin-bottom: 0;
     }
-  }
-  label {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  &:after {
-    @extend %select_arrow;
-  }
+    &:after {
+        @include select_arrow;
+    }
 }
 
 select {
-  border: 1px solid $white;
-  color: $gray-medium;
-  height: 40px;
-  -webkit-appearance: none;
-  background: transparent;
-  border-bottom: $gray-medium solid 1px;
-  border-radius: 0;
-  font-size: 1.6rem;
-  font-weight: normal;
-  margin: 0;
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  &:disabled {
-    +.select-arrow {
-      @extend %arrow_disabled;
+    border: 1px solid $white;
+    color: $gray-medium;
+    height: 40px;
+    -webkit-appearance: none;
+    background: transparent;
+    border-bottom: $gray-medium solid 1px;
+    border-radius: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    &:disabled {
+        +.select-arrow {
+            @include arrow_disabled;
+        }
     }
-  }
 }
 
 .select-component,
 select {
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-  &.disabled,
-  &:disabled {
-    cursor: initial;
-    color: $gray-light;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    &.disabled,
+    &:disabled {
+        cursor: initial;
+        color: $gray-light;
+        .current-value {
+            border-bottom: dashed 1px $gray-light;
+        }
+        &:after {
+            @include arrow_disabled;
+        }
+    }
     .current-value {
-      border-bottom: dashed 1px $gray-light;
+        padding-bottom: 8rem;
+        border-bottom: solid 1px $gray-medium-light;
+    }
+    .underline {
+        height: 1px;
+        width: 100%;
     }
     &:after {
-      @extend %arrow_disabled;
+        @include select_arrow;
     }
-  }
-  .current-value {
-    padding-bottom: 8rem;
-    border-bottom: solid 1px $gray-medium-light;
-  }
-  .underline {
-    height: 1px;
-    width: 100%;
-  }
-  &:after {
-    @extend %select_arrow;
-  }
 }
