@@ -1,4 +1,4 @@
-%pagination-link-style {
+@mixin pagination-link-style {
     text-align: center;
     margin-bottom: 0;
     li {
@@ -33,9 +33,13 @@
     }
 }
 
-.pagination {
+.pagination,
+.pager {
     @include list-unstyled;
-    @extend %pagination-link-style;
+    @include pagination-link-style;
+}
+
+.pagination {
     li {
         a {
             color: #828282;
@@ -54,8 +58,6 @@
 }
 
 .pager {
-    @include list-unstyled;
-    @extend %pagination-link-style;
     li {
         a {
             color: $brand-primary;
