@@ -34,6 +34,7 @@ textarea {
     border: solid 1px $gray-medium;
     resize: none;
     &:disabled {
+        border: 1px dashed $gray-light;
         @include placeholder {
             color: $gray-light;
         }
