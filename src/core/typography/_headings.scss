@@ -12,15 +12,15 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: $headings-font-family;
-  line-height: $headings-line-height;
-  color: $headings-color;
-  small,
-  .small {
-    font-weight: normal;
-    line-height: 1;
-    color: $headings-small-color;
-  }
+    font-family: $headings-font-family;
+    line-height: $headings-line-height;
+    color: $headings-color;
+    small,
+    .small {
+        font-weight: normal;
+        line-height: 1;
+        color: $headings-small-color;
+    }
 }
 
 h1,
@@ -29,12 +29,12 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 0;
-  margin-bottom: .5em;
-  small,
-  .small {
-    font-size: 80%;
-  }
+    margin-top: 0;
+    margin-bottom: .5em;
+    small,
+    .small {
+        font-size: 80%;
+    }
 }
 
 h4,
@@ -43,104 +43,104 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 0;
-  margin-bottom: .5em;
-  small,
-  .small {
-    font-size: 85%;
-  }
+    margin-top: 0;
+    margin-bottom: .5em;
+    small,
+    .small {
+        font-size: 85%;
+    }
 }
 
 h1,
 .h1 {
-  font-size: $font-size-h1;
-  font-weight: $font-weight-h1;
-  .secondary-text {
-    font-size: 2.0rem;
-  }
-  @media (max-width: $screen-xs-min) {
-    font-size: $font-size-h1-mobile;
+    font-size: $font-size-h1;
+    font-weight: $font-weight;
     .secondary-text {
-      font-size: 1.6rem;
+        font-size: 2.0rem;
     }
-  }
+    @media (max-width: $screen-xs-min) {
+        font-size: $font-size-h1-mobile;
+        .secondary-text {
+            font-size: 1.6rem;
+        }
+    }
 }
 
 h2,
 .h2 {
-  font-size: $font-size-h2;
-  font-weight: $font-weight-h2;
-  .secondary-text {
-    font-size: 1.6rem;
-  }
-  @media (max-width: $screen-xs-min) {
-    font-size: $font-size-h2-mobile;
+    font-size: $font-size-h2;
+    font-weight: $font-weight;
     .secondary-text {
-      font-size: 1.2rem;
+        font-size: 1.6rem;
     }
-  }
+    @media (max-width: $screen-xs-min) {
+        font-size: $font-size-h2-mobile;
+        .secondary-text {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 h3,
 .h3 {
-  font-size: $font-size-h3;
-  font-weight: $font-weight-h3;
-  .secondary-text {
-    font-size: 1.2rem;
-  }
-  @media (max-width: $screen-xs-min) {
-    font-size: $font-size-h3-mobile;
+    font-size: $font-size-h3;
+    font-weight: $font-weight;
     .secondary-text {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  }
+    @media (max-width: $screen-xs-min) {
+        font-size: $font-size-h3-mobile;
+        .secondary-text {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 h4,
 .h4 {
-  font-size: $font-size-h4;
-  font-weight: $font-weight-h4;
-  .secondary-text {
-    font-size: 1.2rem;
-  }
-  @media (max-width: $screen-xs-min) {
-    font-size: $font-size-h4-mobile;
+    font-size: $font-size-h4;
+    font-weight: $font-weight;
     .secondary-text {
-      font-size: 1.0rem;
+        font-size: 1.2rem;
     }
-  }
+    @media (max-width: $screen-xs-min) {
+        font-size: $font-size-h4-mobile;
+        .secondary-text {
+            font-size: 1.0rem;
+        }
+    }
 }
 
 h5,
 .h5 {
-  font-size: $font-size-h5;
-  font-weight: $font-weight-h5;
-  .secondary-text {
-    font-size: 1.0rem;
-  }
-  @media (max-width: $screen-xs-min) {
-    font-size: $font-size-h5-mobile;
+    font-size: $font-size-h5;
+    font-weight: $font-weight;
     .secondary-text {
-      font-size: .8rem;
+        font-size: 1.0rem;
     }
-  }
+    @media (max-width: $screen-xs-min) {
+        font-size: $font-size-h5-mobile;
+        .secondary-text {
+            font-size: .8rem;
+        }
+    }
 }
 
 h6,
 .h6 {
-  font-size: $font-size-h6;
-  font-weight: $font-weight-h6;
-  .secondary-text {
-    font-size: 1.0rem;
-  }
-  @media (max-width: $screen-xs-min) {
-    font-size: $font-size-h6-mobile;
+    font-size: $font-size-h6;
+    font-weight: $font-weight;
     .secondary-text {
-      font-size: .8rem;
+        font-size: 1.0rem;
     }
-  }
+    @media (max-width: $screen-xs-min) {
+        font-size: $font-size-h6-mobile;
+        .secondary-text {
+            font-size: .8rem;
+        }
+    }
 }
 
 .secondary-text {
-  margin-left: .25em;
+    margin-left: .25em;
 }
