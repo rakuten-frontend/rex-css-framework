@@ -12,11 +12,11 @@
     }
     &.plus,
     &.minus {
-        @extend %plus-minus-btn;
+        @include plus-minus-btn;
     }
     &.chevron-top {
         &::after {
-            @extend %backToTopStyle;
+            @include backToTopStyle;
         }
     }
     &.chevron-left,
@@ -37,6 +37,6 @@
         @include chevron-horizontal-style("right", .7rem, .6rem);
     } // colors
     &.btn-outline {
-        @extend %btn-circle-outline;
+        @include btn-circle-outline;
     }
 }

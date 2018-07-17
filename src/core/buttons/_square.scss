@@ -12,7 +12,7 @@
     }
     &.chevron-top {
         &::after {
-            @extend %backToTopStyle;
+            @include backToTopStyle;
         }
     }
     &.chevron-left {
@@ -23,9 +23,9 @@
     }
     &.plus,
     &.minus {
-        @extend %plus-minus-btn;
+        @include plus-minus-btn;
     }
     &.btn-outline {
-        @extend %btn-circle-outline;
+        @include btn-circle-outline;
     }
 }
