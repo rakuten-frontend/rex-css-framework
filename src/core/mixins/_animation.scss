@@ -21,17 +21,3 @@
     -webkit-animation: #{$str};
     animation: #{$str};
 }
-
-.rex-motion {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.rex-motion.infinite {
-    animation-iteration-count: infinite;
-}
-
-.rex-motion-close {
-    opacity: 0;
-    @include transition(all .2s);
-}
