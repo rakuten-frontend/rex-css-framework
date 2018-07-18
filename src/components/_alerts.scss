@@ -1,63 +1,50 @@
-@mixin alertcolor($bg-color, $border, $color, $hover) {
-  background-color: $bg-color;
-  border: 1px solid $border;
-  color: $color;
-  .alert-link {
-    color: $color;
-    text-decoration: underline;
-    &:hover {
-      color: $hover;
-    }
-  }
-}
-
 .alert {
-  border-radius: 4px;
-  display: block;
-  position: relative;
-  word-break: break-all;
-  margin-bottom: 1rem;
-  padding: 1.2rem 1.6rem;
-  &.alert-icon {
-    padding-left: 64px;
-  }
-  .rex-icon {
-    font-size: 1.6rem;
-    margin: 0 .5em 0 0;
+    border-radius: $border-radius-base;
+    display: block;
     position: relative;
-    top: .2rem;
-    &.close {
-      margin-right: 0;
+    word-break: break-all;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.6rem;
+    &.alert-icon {
+        padding-left: 64px;
     }
-  }
-  &.alert-success {
-    @include alertcolor(#EBF7EC, #C2E6C2, #047205, #07c108);
-  }
-  &.alert-info {
-    @include alertcolor(#EBF7FE, #C1E6FA, #006497, #009ae9);
-  }
-  &.alert-warning {
-    @include alertcolor(#FEF3EB, #FBDAC1, #9F4600, #f16a00);
-  }
-  &.alert-danger {
-    @include alertcolor(#FFF0F0, #FFCFCF, #DF0101, #fe3434);
-  }
+    .rex-icon {
+        font-size: 1.6rem;
+        margin: 0 .5em 0 0;
+        position: relative;
+        top: .2rem;
+        &.close {
+            margin-right: 0;
+        }
+    }
+    &.alert-success {
+        @include alertcolor(#EBF7EC, #C2E6C2, #047205, #07c108);
+    }
+    &.alert-info {
+        @include alertcolor(#EBF7FE, #C1E6FA, #006497, #009ae9);
+    }
+    &.alert-warning {
+        @include alertcolor(#FEF3EB, #FBDAC1, #9F4600, #f16a00);
+    }
+    &.alert-danger {
+        @include alertcolor(#FFF0F0, #FFCFCF, #DF0101, #fe3434);
+    }
 }
 
 .alert-dismissible {
-  padding-right: 3.8125rem;
+    padding-right: 3.8125rem;
 }
 
 .alert-dismissible .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1.6rem;
-  color: inherit;
-  background-color: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  &:focus {
-    outline: 0;
-  }
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.6rem;
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    &:focus {
+        outline: 0;
+    }
 }

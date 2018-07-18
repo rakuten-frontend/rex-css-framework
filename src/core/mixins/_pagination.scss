@@ -1,0 +1,36 @@
+@mixin pagination-link-style {
+    text-align: center;
+    margin-bottom: 0;
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            color: #828282;
+            border-radius: $border-radius-base;
+            &:hover {
+                color: #FF1212;
+                background-color: #F7F7F7;
+                border-bottom: none;
+                text-decoration: none;
+            }
+            &:active {
+                color: #960000;
+            }
+            .rex-icon {
+                cursor: pointer;
+                vertical-align: -2px;
+            }
+        }
+    }
+    &.disabled {
+        a {
+            color: #d1d1d1;
+            text-decoration: none;
+            cursor: not-allowed;
+            &:hover {
+                color: #d1d1d1;
+                background-color: transparent;
+            }
+        }
+    }
+}

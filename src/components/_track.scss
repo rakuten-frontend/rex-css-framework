@@ -1,90 +1,90 @@
 .track {
-  @include list-unstyled;
-  width: 100%;
-  counter-reset: step;
-  &.five-steps {
+    @include list-unstyled;
+    width: 100%;
+    counter-reset: step;
+    &.five-steps {
+        li {
+            width: 19%;
+        }
+    }
+    &.four-steps {
+        li {
+            width: 24%;
+        }
+    }
+    &.three-steps {
+        li {
+            width: 32%;
+        }
+    }
     li {
-      width: 19%;
+        display: inline-block;
+        width: 19%; // Change the size depends on how many steps
+        position: relative;
+        text-align: center;
+        color: #d1d1d1;
+        &:before {
+            width: 3rem;
+            height: 3rem;
+            content: " ";
+            counter-increment: step;
+            line-height: 3rem;
+            border: 2px solid #d1d1d1;
+            display: block;
+            text-align: center;
+            margin: 0 auto 1.7rem auto;
+            border-radius: 50%;
+            background-color: white;
+        }
+        &:after {
+            width: 100%;
+            height: .2rem;
+            content: '';
+            position: absolute;
+            background-color: #d1d1d1;
+            top: 1.5rem;
+            left: -50%;
+            z-index: -1;
+        }
+        &:first-child:after {
+            content: none;
+        }
+        &.visited {
+            &+li:after {
+                background-color: $brand-primary;
+            }
+            &:before {
+                color: $white;
+                background-color: $brand-primary;
+                border: none;
+                content: $_32-check;
+                font-family: rex-icon;
+                vertical-align: middle;
+            }
+        }
+        &.current {
+            &:before {
+                width: 3rem;
+                height: 3rem;
+                background-color: $white;
+                border: solid $brand-primary .7rem;
+                color: $white;
+                font-size: 1.7rem;
+                padding-bottom: 1px;
+            }
+            span {
+                color: $brand-primary;
+            }
+        }
+        a,
+        span {
+            color: #d1d1d1;
+            display: block;
+            text-align: center;
+            line-height: 1.5;
+            @media (max-width: $screen-xs-max) {
+                visibility: hidden;
+            }
+        }
     }
-  }
-  &.four-steps {
-    li {
-      width: 24%;
-    }
-  }
-  &.three-steps {
-    li {
-      width: 32%;
-    }
-  }
-  li {
-    display: inline-block;
-    width: 19%; // Change the size depends on how many steps
-    position: relative;
-    text-align: center;
-    color: #d1d1d1;
-    &:before {
-      width: 3rem;
-      height: 3rem;
-      content: " ";
-      counter-increment: step;
-      line-height: 3rem;
-      border: 2px solid #d1d1d1;
-      display: block;
-      text-align: center;
-      margin: 0 auto 1.7rem auto;
-      border-radius: 50%;
-      background-color: white;
-    }
-    &:after {
-      width: 100%;
-      height: .2rem;
-      content: '';
-      position: absolute;
-      background-color: #d1d1d1;
-      top: 1.5rem;
-      left: -50%;
-      z-index: -1;
-    }
-    &:first-child:after {
-      content: none;
-    }
-    &.visited {
-      &+li:after {
-        background-color: $brand-primary;
-      }
-      &:before {
-        color: $white;
-        background-color: $brand-primary;
-        border: none;
-        content: $_32-check;
-        font-family: rex-icon;
-        vertical-align: middle;
-      }
-    }
-    &.current {
-      &:before {
-        width: 3rem;
-        height: 3rem;
-        background-color: $white;
-        border: solid $brand-primary .7rem;
-        color: $white;
-        font-size: 1.7rem;
-        padding-bottom: 1px;
-      }
-      span {
-        color: $brand-primary;
-      }
-    }
-    a,
-    span {
-      color: #d1d1d1;
-      display: block;
-      text-align: center;
-      line-height: 1.5;
-      @media (max-width: $screen-xs-max) {
-        visibility: hidden;
-      }
-    }
-  }
 }

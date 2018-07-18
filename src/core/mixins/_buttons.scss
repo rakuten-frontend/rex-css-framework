@@ -3,242 +3,291 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 @mixin button-variant($color, $color-light, $text-color: $white) {
-  background-color: $color;
-  border-color: $color;
-  border-radius: $btn-border-radius-base;
-  color: $text-color;
-  @include transition($bg_curve, $shadow_up);
-  &:focus,
-  &.focus {
+    background-color: $color;
+    border-color: $color;
+    border-radius: $btn-border-radius-base;
     color: $text-color;
-    background-color: $color-light;
-    border-color: transparent;
-    @include transition($bg_curve, $shadow_down);
-  }
-  &:hover,
-  &.hover {
-    color: $text-color;
-    border-color: transparent;
-    background-color: $color-light; // @include box-shadow($shadow);
-    @include transition($bg_curve, $shadow_down);
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    color: $text-color;
-    border-color: transparent;
-    &:hover,
-    &.hover,
     &:focus,
     &.focus {
-      color: $text-color;
-      border-color: transparent;
+        color: $text-color;
+        background-color: $color-light;
+        border-color: transparent;
+        @include transition($curve, $shadow_down);
     }
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    background-image: none;
-    color: $text-color;
-    background-color: darken($color, 8%);
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
     &:hover,
-    &:focus,
-    &.focus {
-      border-color: transparent;
+    &.hover {
+        color: $text-color;
+        border-color: transparent;
+        background-color: $color-light; // @include box-shadow($shadow);
+        @include transition($curve, $shadow_down);
     }
-  }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        color: $text-color;
+        border-color: transparent;
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+            color: $text-color;
+            border-color: transparent;
+        }
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        background-image: none;
+        color: $text-color;
+        background-color: darken($color, 8%);
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            border-color: transparent;
+        }
+    }
 }
 
 @mixin button-variant-outline($initial-background, $color, $color-light, $color-dark, $new-text-color) {
-  background-color: $initial-background;
-  border-color: $color;
-  border-radius: $btn-border-radius-base;
-  color: $color;
-  @include transition($bg_curve);
-  &:focus,
-  &.focus {
-    color: $new-text-color;
-    background-color: $color-light;
-    border-color: transparent;
-    font-weight: 100;
-  }
-  &:hover,
-  &.hover {
-    color: $new-text-color;
-    border-color: transparent;
-    background-color: $color-light; // @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2));
-    // @include transition($no_animation, $shadow_up);
-    font-weight: 100;
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    color: $new-text-color;
-    border-color: transparent;
-    &:hover,
-    &.hover,
+    background-color: $initial-background;
+    border-color: $color;
+    border-radius: $btn-border-radius-base;
+    color: $color;
+    @include transition($curve);
     &:focus,
     &.focus {
-      color: $new-text-color;
-      border-color: transparent;
-      font-weight: 100;
+        color: $new-text-color;
+        background-color: $color-light;
+        border-color: transparent;
+        font-weight: 100;
     }
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    background-image: none;
-    color: $new-text-color;
-    background-color: $color-dark;
-    font-weight: 100;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
     &:hover,
-    &:focus,
-    &.focus {
-      border-color: transparent;
-      box-shadow: none;
+    &.hover {
+        color: $new-text-color;
+        border-color: transparent;
+        background-color: $color-light; // @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2));
+        // @include transition($no_animation, $shadow_up);
+        font-weight: 100;
     }
-    background-color: $btn-disabled-bg;
-    color: $btn-disabled-color;
-    font-weight: 100;
-  }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        color: $new-text-color;
+        border-color: transparent;
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+            color: $new-text-color;
+            border-color: transparent;
+            font-weight: 100;
+        }
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        background-image: none;
+        color: $new-text-color;
+        background-color: $color-dark;
+        font-weight: 100;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+        background-color: $btn-disabled-bg;
+        color: $btn-disabled-color;
+        font-weight: 100;
+    }
 }
 
 @mixin button-variant-text($text-color, $new-background-color, $disabled-text-color) {
-  background-color: white;
-  border: transparent;
-  border-radius: $btn-border-radius-base;
-  color: $text-color;
-  @include transition($no_animation);
-  &:focus,
-  &.focus {
-    color: lighten($text-color, 10%);
-    background-color: $new-background-color;
-    border-color: transparent;
-  }
-  &:hover,
-  &.hover {
-    color: lighten($text-color, 10%);
-    border-color: transparent;
-    background-color: $new-background-color;
-    box-shadow: none;
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    color: darken($text-color, 10%);
-    border-color: transparent;
-    &:hover,
-    &.hover,
+    background-color: white;
+    border: transparent;
+    border-radius: $btn-border-radius-base;
+    color: $text-color;
+    @include transition($no_animation);
     &:focus,
     &.focus {
-      color: lighten($text-color, 10%);
-      border-color: transparent;
+        color: lighten($text-color, 10%);
+        background-color: $new-background-color;
+        border-color: transparent;
     }
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    background-image: none;
-    color: darken($text-color, 10%);
-    background-color: $new-background-color;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] {
-    border-color: transparent;
-    background-color: #ffffff;
-    color: $disabled-text-color;
     &:hover,
-    &:focus,
-    &.focus {
-      background-color: #ffffff;
+    &.hover {
+        color: lighten($text-color, 10%);
+        border-color: transparent;
+        background-color: $new-background-color;
+        box-shadow: none;
     }
-  }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        color: darken($text-color, 10%);
+        border-color: transparent;
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+            color: lighten($text-color, 10%);
+            border-color: transparent;
+        }
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        background-image: none;
+        color: darken($text-color, 10%);
+        background-color: $new-background-color;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] {
+        border-color: transparent;
+        background-color: #ffffff;
+        color: $disabled-text-color;
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: #ffffff;
+        }
+    }
 }
 
-// Button sizes
+// Sizes
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
-  padding: $padding-vertical $padding-horizontal;
-  font-size: $font-size;
-  line-height: $line-height;
-  border-radius: $border-radius;
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
 }
 
+// Various Styles
 @mixin button-variant-circle($color) {
-  background-color: transparent;
-  border: transparent;
-  color: $color;
-  &:focus,
-  &.focus {
-    color: lighten($color, 16%);
     background-color: transparent;
-  }
-  &:hover,
-  &.hover {
-    color: lighten($color, 16%);
-    border-color: transparent;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: none;
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    color: darken($color, 8%);
-    background-color: transparent;
-    border-color: transparent;
-    &:hover,
-    &.hover,
+    border: transparent;
+    color: $color;
     &:focus,
     &.focus {
-      color: lighten($color, 16%);
-      background-color: transparent;
-      border-color: transparent;
+        color: lighten($color, 16%);
+        background-color: transparent;
     }
-  }
-  &:active,
-  &.active,
-  .open>&.dropdown-toggle {
-    background-image: none;
-    color: darken($color, 8%);
-    background-color: transparent;
-    border-color: transparent;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] {
-    background-color: transparent;
-    border-color: transparent;
-  }
+    &:hover,
+    &.hover {
+        color: lighten($color, 16%);
+        border-color: transparent;
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        color: darken($color, 8%);
+        background-color: transparent;
+        border-color: transparent;
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+            color: lighten($color, 16%);
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        background-image: none;
+        color: darken($color, 8%);
+        background-color: transparent;
+        border-color: transparent;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] {
+        background-color: transparent;
+        border-color: transparent;
+    }
 }
 
 @mixin chevron-horizontal-style($direction, $right, $outlineRight) {
-  @if $direction=='right' {
-    &::before {
-      right: $right !important;
+    @if $direction=='right' {
+        &::before {
+            right: $right !important;
+        }
+        &.btn-outline {
+            &::before {
+                right: $outlineRight !important;
+            }
+        }
+    }
+    @else if $direction=='left' {
+        &::before {
+            left: $right !important;
+        }
+        &.btn-outline {
+            &::before {
+                left: $outlineRight !important;
+            }
+        }
+    }
+}
+
+@mixin btn-circle-outline {
+    color: $brand-primary;
+    background-color: transparent;
+    border: solid 1px $brand-primary; // replace with mixin
+    // add animation to vars
+    transition: 0.2s cubic-bezier(0, 0, 0.58, 1) background-color, 0.1s cubic-bezier(0, 0, 0.58, 1) box-shadow;
+    &:hover,
+    &.hover {
+        border: solid 1px $brand-primary-lighten;
+        color: $white;
+        background-color: $brand-primary-lighten;
+    }
+    &:focus,
+    &.focus {
+        border: solid 1px $brand-primary-lighten;
+        color: $white;
+        background-color: $brand-primary-lighten;
+    }
+    &:active,
+    &.active {
+        border: solid 1px $brand-primary-darken;
+        color: $white;
+        background-color: $brand-primary-darken;
+    }
+}
+
+@mixin backToTopStyle {
+    font-family: rex-icon; // TODO: make it variable or mixin
+    content: $_32-chevron-right;
+    transform: rotate(270deg);
+    display: inline-block;
+    padding-left: 2px;
+}
+
+@mixin plus-minus-btn {
+    &:before {
+        left: 1px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
     &.btn-outline {
-      &::before {
-        right: $outlineRight !important;
-      }
+        &:before {
+            left: 1.5px;
+            top: -1px;
+        }
     }
-  }
-  @else if $direction=='left' {
-    &::before {
-      left: $right !important;
-    }
-    &.btn-outline {
-      &::before {
-        left: $outlineRight !important;
-      }
-    }
-  }
 }

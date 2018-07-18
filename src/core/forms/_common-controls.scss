@@ -20,44 +20,44 @@
 // input[type="tel"]
 // input[type="color"]
 .form-control {
-  display: block;
-  height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  background-image: none; // Reset unusual Firefox-on-Android default style;
-  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s); // Unstyle the caret on `<select>`s in IE10+.
-  &::-ms-expand {
-    border: 0;
-    background-color: transparent;
-  } // Disabled and read-only inputs
-  //
-  // HTML5 says that controls under a fieldset > legend:first-child won't be
-  // disabled if the fieldset is disabled. Due to implementation difficulty, we
-  // don't honor that edge case; we style them as disabled anyway.
-  &[disabled],
-  &[readonly],
-  fieldset[disabled] & {
-    background-color: $input-bg-disabled;
-    opacity: 1; // iOS fix for unreadable disabled content;
-  }
-  &[disabled],
-  fieldset[disabled] & {
-    cursor: $cursor-disabled;
-    select {
-      border-color: $gray-light;
+    display: block;
+    height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    background-image: none; // Reset unusual Firefox-on-Android default style;
+    @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s); // Unstyle the caret on `<select>`s in IE10+.
+    &::-ms-expand {
+        border: 0;
+        background-color: transparent;
+    } // Disabled and read-only inputs
+    //
+    // HTML5 says that controls under a fieldset > legend:first-child won't be
+    // disabled if the fieldset is disabled. Due to implementation difficulty, we
+    // don't honor that edge case; we style them as disabled anyway.
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        background-color: $input-bg-disabled;
+        opacity: 1; // iOS fix for unreadable disabled content;
     }
-  }
-  label.control-label {
-    font-size: 1em;
-  } // [converter] extracted textarea& to textarea.form-control
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: $cursor-disabled;
+        select {
+            border-color: $gray-light;
+        }
+    }
+    label.control-label {
+        font-size: 1em;
+    } // [converter] extracted textarea& to textarea.form-control
 }
 
 ////Rex Design
 // Reset height for `textarea`s
 textarea.form-control {
-  height: auto;
-  border-radius: .4rem;
-  &:active,
-  &:focus {
-    border-width: 1px;
-    border-color: $brand-primary;
-  }
+    height: auto;
+    border-radius: $border-radius-base;
+    &:active,
+    &:focus {
+        border-width: 1px;
+        border-color: $brand-primary;
+    }
 }

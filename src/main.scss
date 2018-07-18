@@ -6,17 +6,14 @@
 @import "core/rex_colors";
 $icon-font-path: "../fonts/";
 $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
-/*==============================
-=      Customization          =
-==============================*/
 
-@import "colors/default";
 /*==========================
 =       Variables         =
 ===========================*/
 
 @import "core/variables";
 @import "core/mixins";
+
 /*============================
 =   Reset and dependencies   =
 =============================*/
@@ -24,6 +21,7 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 @import "core/normalize";
 @import "core/print";
 @import "core/glyphicons";
+
 /*============================
 =         Core           =
 =============================*/
@@ -37,48 +35,30 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 @import "core/forms";
 @import "core/buttons";
 @import "core/button-groups";
+
 /*===========================
 =    Utility classes       =
 ===========================*/
 
 @import "core/utilities";
+
 /*======================================================
 =  Font Family Setting =
 =======================================================*/
 
 //@import "core/fontfamily-default";
 @import "core/fontfamily-notosans";
+
 /*============================
 =         Components         =
 =============================*/
 
 @import "components/input-fields";
-@import "components/list-wrapper";
 @import "components/selects";
 @import "components/track";
-@import "components/language-switcher";
-@import "components/color-picker/color-picker";
-@import "components/_search";
-@import "components/_tags";
-@import "components/_labels";
-@import "components/_pagination";
-@import "components/_breadcrumbs";
-@import "components/_tabs";
-@import "components/_rating";
-@import "components/_cards";
-@import "components/_dropdowns";
-@import "components/_alerts";
-@import "components/_checkbox";
-@import "components/_switch";
-@import "components/_stepper";
-@import "components/_slider";
-@import "components/_tooltips";
-@import "components/_lists";
-@import "components/_badges";
-/*============================
-=         Animations         =
-=============================*/
-
-@import "animation/bounce";
-@import "animation/fade";
-@import "animation/grow";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/alerts";
+@import "components/checkbox";
+@import "components/switch";
+@import "components/lists";

@@ -1,21 +1,13 @@
 //
 // Utility classes
 // --------------------------------------------------
-
 // Floats
 // -------------------------
 @import "~core/utilities/clearfix";
-@import "~core/utilities/center-block";
 @import "~core/utilities/pull-left";
 @import "~core/utilities/pull-right";
-
 // Toggling content
 // -------------------------
-@import "~core/utilities/hide";
 @import "~core/utilities/show";
 @import "~core/utilities/invisible";
 @import "~core/utilities/hidden";
-
-// For Affix plugin
-// -------------------------
-@import "~core/utilities/affix";

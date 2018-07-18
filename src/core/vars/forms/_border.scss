@@ -1,9 +1,5 @@
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
 $input-border-radius: 2px !default;
-//** Large `.form-control` border radius
-$input-border-radius-large: $border-radius-large !default;
-//** Small `.form-control` border radius
-$input-border-radius-small: $border-radius-small !default;
 //** Border color for inputs on focus
 $input-border-focus: #66afe9 !default;

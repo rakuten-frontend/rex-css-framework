@@ -1,33 +1,16 @@
 $brand-primary: $crimson-red !default;
 $brand-primary-lighten: if($brand-primary==$green, lighten($brand-primary, 6%), lighten($brand-primary, 16%)) !default;
 $brand-primary-darken: darken($brand-primary, 8%) !default;
-
 $brand-success: $success;
 $brand-success-lighten: lighten($brand-success, 6%) !default;
 $brand-success-darken: darken($brand-success, 8%) !default;
-
 $brand-info: $info;
 $brand-info-lighten: lighten($brand-info, 16%) !default;
 $brand-info-darken: darken($brand-info, 8%) !default;
-
 $brand-warning: $warning;
 $brand-warning-lighten: lighten($brand-warning, 16%) !default;
 $brand-warning-darken: darken($brand-warning, 8%) !default;
-
 $brand-danger: $danger;
 $brand-danger-lighten: lighten($brand-danger, 16%) !default;
 $brand-danger-darken: darken($brand-danger, 8%) !default;
-
 $brand-focus: $brand-primary !default;
-
-// $brand-primary-lighten: if($brand-primary==$green, lighten($brand-primary, 6%), lighten($brand-primary, 16%)) !default;
-// $brand-success-lighten: lighten($brand-success, 6%) !default;
-// $brand-info-lighten: lighten($brand-info, 16%) !default;
-// $brand-warning-lighten: lighten($brand-warning, 16%) !default;
-// $brand-danger-lighten: lighten($brand-danger, 16%) !default;
-
-// $brand-primary-darken: darken($brand-primary, 8%) !default;
-// $brand-success-darken: darken($brand-success, 8%) !default;
-// $brand-info-darken: darken($brand-info, 8%) !default;
-// $brand-warning-darken: darken($brand-warning, 8%) !default;
-// $brand-danger-darken: darken($brand-danger, 8%) !default;
