@@ -52,11 +52,19 @@
         .btn {
             background: transparent;
             padding: .6rem 1rem;
+            &:hover {
+                background-color: #ff1212;
+            }
         }
     }
     &.rounded {
         .form-control {
             @include border-right-radius($border-radius-large);
+        }
+        .btn {
+            &:hover {
+                @include border-right-radius($border-radius-large);
+            }
         }
     }
 }
