@@ -6,6 +6,13 @@
 
 .pagination {
     li {
+        a,
+        span {
+            padding: .4em 1em;
+            &.ic {
+                padding: .4em .75em;
+            }
+        }
         a {
             color: #828282;
         }
@@ -14,10 +21,6 @@
                 color: $brand-primary;
                 border-bottom: 1px solid $brand-primary;
             }
-        }
-        a,
-        span {
-            padding: .4em 1em;
         }
     }
 }
@@ -38,7 +41,7 @@
     &.pager-title {
         li {
             a {
-                padding-top: 1em;
+                background: transparent;
             }
             .prev-title {
                 position: relative;
