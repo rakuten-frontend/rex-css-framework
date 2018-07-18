@@ -17,7 +17,7 @@
         }
         a,
         span {
-            padding: .3em .75em;
+            padding: .4em 1em;
         }
     }
 }
@@ -37,8 +37,8 @@
     }
     &.pager-title {
         li {
-            a:hover {
-                background-color: transparent;
+            a {
+                padding-top: 1em;
             }
             .prev-title {
                 position: relative;
