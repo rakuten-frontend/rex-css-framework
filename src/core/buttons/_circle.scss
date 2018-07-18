@@ -1,0 +1,42 @@
+.btn-circle {
+    padding: 0;
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    line-height: 4rem;
+    font-size: 2.4rem;
+    width: 4rem;
+    height: 4rem; // icon center alignment
+    &:before {
+        position: absolute;
+    }
+    &.plus,
+    &.minus {
+        @include plus-minus-btn;
+    }
+    &.chevron-top {
+        &::after {
+            @include backToTopStyle;
+        }
+    }
+    &.chevron-left,
+    &.chevron-right {
+        &:before {
+            top: 0;
+        }
+        &.btn-outline {
+            &:before {
+                top: -1px;
+            }
+        }
+    }
+    &.chevron-left {
+        @include chevron-horizontal-style("left", .7rem, .6rem);
+    }
+    &.chevron-right {
+        @include chevron-horizontal-style("right", .7rem, .6rem);
+    } // colors
+    &.btn-outline {
+        @include btn-circle-outline;
+    }
+}

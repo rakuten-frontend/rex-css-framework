@@ -1,0 +1,85 @@
+// Misc
+// -------------------------
+abbr {
+    text-decoration: none;
+}
+
+// Abbreviations and acronyms
+abbr[title], // Add data-* attribute to help out our tooltip plugin,
+abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted $abbr-border-color;
+}
+
+.initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+// Blockquotes
+blockquote {
+    margin: 0 auto $line-height-computed;
+    font-size: $blockquote-font-size;
+    font-weight: $blockquote-font-weight;
+    position: relative;
+    padding: 0;
+    max-width: 57.6rem;
+    span {
+        position: absolute !important;
+        font-size: calc( 16/10 * 1.84rem);
+        &:before {
+            color: $gray-lighter;
+        }
+    }
+    span.blockquote-left {
+        left: 0 !important;
+        top: 4px;
+        font-size: $blockquote-font-size;
+    }
+    span.blockquote-right {
+        right: 0 !important;
+        top: initial;
+        bottom: 0;
+        font-size: $blockquote-font-size;
+    }
+    p {
+        padding: $blockquote-padding-y $blockquote-padding-x;
+        margin: 0;
+        margin-bottom: .8rem !important;
+    }
+    p,
+    ul,
+    ol {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    } // Note: Deprecated small and .small as of v3.1.0
+    footer,
+    small,
+    .small {
+        display: block;
+        font-size: 80%;
+        line-height: $line-height-base;
+        text-align: right;
+        margin-right: 4rem;
+        &:before {
+            content: '\2014 \00A0'; // em dash, nbsp
+            color: $gray-lighter;
+        }
+    }
+    footer {
+        padding: 0 4rem;
+        margin: 0;
+        cite {
+            font-style: normal;
+            font-weight: 300;
+        }
+    }
+}
+
+// Addresses
+address {
+    margin-bottom: $line-height-computed;
+    font-style: normal;
+    line-height: $line-height-base;
+}

@@ -1,0 +1,98 @@
+//
+// Buttons
+// --------------------------------------------------
+// Base styles
+// --------------------------------------------------
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-weight: 100;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $btn-lineheight, $btn-border-radius-base);
+  @include user-select(none);
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      outline: none !important;
+      @include tab-focus;
+    }
+  }
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+    outline: 0;
+  }
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    color: $btn-disabled-color;
+    background-color: $btn-disabled-bg;
+    border: transparent;
+    &:hover,
+    &:focus {
+      color: $btn-disabled-color;
+      background-color: $btn-disabled-bg;
+      box-shadow: none;
+    }
+    color: $btn-disabled-color;
+    background-color: $btn-disabled-bg;
+    box-shadow: none;
+  } // [converter] extracted a& to a.btn
+  &.btn-success {
+    position: relative;
+    padding-left: 48px;
+    &::before {
+      content: $_32-check;
+      font-size: 24px;
+      font-family: rex-icon;
+      position: absolute;
+      top: 3px;
+      left: 16px;
+    }
+  }
+  &.icon.loading {
+    width: 144px;
+    padding: 19px 0px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: $_32-loading-lg-l;
+      position: absolute;
+      font-family: rex-icon;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      z-index: 2;
+    }
+  }
+  .rex-icon {
+    margin: 0 .5rem;
+    top: -2px;
+    vertical-align: middle;
+  }
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}

@@ -1,0 +1,6 @@
+//** Default `.form-control` height
+$input-height-base: 2em !default;
+//** Large `.form-control` height
+$input-height-large: (ceil($font-size-large * $line-height-large)+1) !default;
+//** Small `.form-control` height
+$input-height-small: (floor($font-size-small * $line-height-small)) !default;

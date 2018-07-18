@@ -1,0 +1,4 @@
+// 27 inch screen and larger
+$container-xlarge-desktop: (1140px + $grid-gutter-width) !default;
+//** For `$screen-xl-min` and up.
+$container-xl: $container-xlarge-desktop !default;

@@ -1,0 +1,30 @@
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0; // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
+  // so we reset that to ensure it behaves more like a standard block element.
+  min-width: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $line-height-computed;
+  line-height: inherit;
+  border: 0;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%; // Force IE8 to wrap long content
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+label.control-label {
+  font-size: 1.2rem;
+}

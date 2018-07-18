@@ -7,12 +7,6 @@
 $icon-font-path: "../fonts/";
 $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 
-/*==============================
-=      Customization          =
-==============================*/
-
-@import "colors/default";
-
 /*==========================
 =       Variables         =
 ===========================*/
@@ -34,16 +28,6 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 
 // Grid Control
 @import "core/grid";
-@import "core/grid/xs";
-@import "core/grid/sm";
-@import "core/grid/md";
-@import "core/grid/lg";
-@import "core/grid/xl";
-@import "core/responsive-utilities/sm";
-@import "core/responsive-utilities/md";
-@import "core/responsive-utilities/lg";
-@import "core/responsive-utilities/xl";
-@import "core/responsive-utilities/print";
 // scaffolding
 @import "core/scaffolding";
 @import "core/type";
@@ -57,7 +41,6 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 ===========================*/
 
 @import "core/utilities";
-@import "core/responsive-utilities";
 
 /*======================================================
 =  Font Family Setting =
@@ -71,33 +54,11 @@ $noto-font-path: "//fonts.gstatic.com/s/notosansjp/v14/";
 =============================*/
 
 @import "components/input-fields";
-@import "components/list-wrapper";
 @import "components/selects";
 @import "components/track";
-@import "components/language-switcher";
-@import "components/color-picker/color-picker";
-@import "components/_search";
-@import "components/_tags";
-@import "components/_labels";
-@import "components/_pagination";
-@import "components/_breadcrumbs";
-@import "components/_tabs";
-@import "components/_rating";
-@import "components/_cards";
-@import "components/_dropdowns";
-@import "components/_alerts";
-@import "components/_checkbox";
-@import "components/_switch";
-@import "components/_stepper";
-@import "components/_slider";
-@import "components/_tooltips";
-@import "components/_lists";
-@import "components/_badges";
-
-/*============================
-=         Animations         =
-=============================*/
-
-@import "animation/bounce";
-@import "animation/fade";
-@import "animation/grow";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/alerts";
+@import "components/checkbox";
+@import "components/switch";
+@import "components/lists";

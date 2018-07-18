@@ -1,0 +1,8 @@
+// Medium screen / desktop
+//** Deprecated `$screen-md`
+$screen-md: 768px !default; //992px
+$screen-md-min: $screen-md !default;
+//** Deprecated `$screen-desktop`
+$screen-desktop: $screen-md-min !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-sm-max: ($screen-md-min - 1) !default;

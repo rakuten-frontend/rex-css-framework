@@ -5,7 +5,7 @@ const common = require('./webpack.config.common');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const entry = {
-  'rex-default': './src/themes/theme-default',
+  'rex': './src/themes/default',
 };
 
 const plugins = [
@@ -13,7 +13,7 @@ const plugins = [
   new HtmlWebpackPlugin({
     title: 'ReX CSS Framework',
     template: './dev/index.html',
-    chunks: ['rex-default'],
+    chunks: ['rex'],
     excludeChunks: ['js'],
   }),
 ];

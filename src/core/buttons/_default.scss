@@ -1,0 +1,13 @@
+.btn-default {
+  $color: $btn-primary-bg;
+  $light: $brand-primary-lighten;
+  $dark: $brand-primary-darken;
+  @include button-variant($color, $light);
+  &.btn-outline {
+    @include button-variant-outline(transparent, $color, $light, $dark, $white);
+    font-weight: 300;
+  }
+  &.btn-pill {
+    border-radius: $btn-pill-border-radius;
+  }
+}

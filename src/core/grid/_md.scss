@@ -6,6 +6,7 @@
     width: $container-md;
   }
 }
+
 @media (min-width: $screen-md-min) {
   @include make-grid(md);
 }

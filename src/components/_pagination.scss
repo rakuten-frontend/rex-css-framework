@@ -1,42 +1,18 @@
-%pagination-link-style {
-    text-align: center;
-    margin-bottom: 0;
-    li {
-        display: inline-block;
-        a {
-            color: #828282;
-            &:hover {
-                color: #FF1212;
-                background-color: #F7F7F7;
-                border-bottom: none;
-                text-decoration: none;
-            }
-            .rex-icon {
-                cursor: pointer;
-                vertical-align: middle;
-            }
-        }
-    }
-    &.disabled {
-        a {
-            color: #d1d1d1;
-            text-decoration: none;
-            cursor: not-allowed;
-            &:hover {
-                color: #d1d1d1;
-                background-color: transparent;
-            }
-        }
-    }
-    &~.text-center {
-        color: #828282;
-    }
+.pagination,
+.pager {
+    @include list-unstyled;
+    @include pagination-link-style;
 }
 
 .pagination {
-    @extend .list-unstyled;
-    @extend %pagination-link-style;
     li {
+        a,
+        span {
+            padding: .4em 1em;
+            &.ic {
+                padding: .4em .75em;
+            }
+        }
         a {
             color: #828282;
         }
@@ -46,16 +22,10 @@
                 border-bottom: 1px solid $brand-primary;
             }
         }
-        a,
-        span {
-            padding: .3em .75em;
-        }
     }
 }
 
 .pager {
-    @extend .list-unstyled;
-    @extend %pagination-link-style;
     li {
         a {
             color: $brand-primary;
@@ -70,8 +40,8 @@
     }
     &.pager-title {
         li {
-            a:hover {
-                background-color: transparent;
+            a {
+                background: transparent;
             }
             .prev-title {
                 position: relative;
