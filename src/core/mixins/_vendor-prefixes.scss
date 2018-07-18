@@ -260,3 +260,12 @@
     -ms-user-select: $select; // IE10+
     user-select: $select;
 }
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

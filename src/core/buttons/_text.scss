@@ -1,0 +1,4 @@
+.btn-text {
+  @include button-variant-text($btn-primary-bg, $gray-lightest, $gray-light);
+  font-weight: 300;
+}

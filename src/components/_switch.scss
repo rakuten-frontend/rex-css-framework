@@ -1,52 +1,51 @@
 .switch-area {
-  input {
-    display: none;
-  }
-  .switch-label {
-    width: 48px;
-    background: $gray-medium-light;
-    border-radius: 4px;
-    height: 24px;
-    position: relative;
-    cursor: pointer;
-    transition: .2s;
-    &:before {
-      content: "";
-      width: 18px;
-      height: 18px;
-      background: $white;
-      position: absolute;
-      left: 3px;
-      top: 3px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: .2s;
+    input {
+        display: none;
     }
-  }
-  :checked + .switch-label {
-    background-color: $brand-primary;
-    &:before {
-      left: 27px;
-      transition: .2s;
-    }
-  }
-
-  &.rounded {
     .switch-label {
-      border-radius: 14px;
-      &:before {
-        border-radius: 10px;
-      }
+        width: 4.8rem;
+        background: $gray-medium-light;
+        border-radius: $border-radius-base;
+        height: 2.4rem;
+        position: relative;
+        cursor: pointer;
+        transition: .2s;
+        &:before {
+            content: "";
+            width: 1.8rem;
+            height: 1.8rem;
+            background: $white;
+            position: absolute;
+            left: .3rem;
+            top: .3rem;
+            border-radius: $border-radius-base;
+            cursor: pointer;
+            transition: .2s;
+        }
     }
-  }
-  &.disabled {
-    .switch-label {
-      background: $gray-lighter;
-      cursor: initial;
-      &:before {
-        left: 3px;
-        cursor: initial;
-      }
+     :checked+.switch-label {
+        background-color: $brand-primary;
+        &:before {
+            left: 2.7rem;
+            transition: .2s;
+        }
     }
-  }
+    &.rounded {
+        .switch-label {
+            border-radius: 1.4rem;
+            &:before {
+                border-radius: 1rem;
+            }
+        }
+    }
+    &.disabled {
+        .switch-label {
+            background: $gray-lighter;
+            cursor: initial;
+            &:before {
+                left: 3px;
+                cursor: initial;
+            }
+        }
+    }
 }

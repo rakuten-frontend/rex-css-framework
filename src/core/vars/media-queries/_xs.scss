@@ -1,0 +1,7 @@
+// Extra small screen / phone
+//** Deprecated `$screen-xs`
+$screen-xs: 480px !default;
+//** Deprecated `$screen-xs-min`
+$screen-xs-min: $screen-xs !default;
+//** Deprecated `$screen-phone`
+$screen-phone: $screen-xs-min !default;

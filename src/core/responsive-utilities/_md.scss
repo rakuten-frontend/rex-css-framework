@@ -4,7 +4,6 @@
   display: none !important;
 }
 
-
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
   @include responsive-visibility('.visible-md');
 }

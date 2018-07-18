@@ -1,0 +1,49 @@
+// Type display
+.display-1 {
+  font-size: $display1-size;
+  line-height: $display-line-height;
+  @media (max-width: $screen-sm-min) {
+    font-size: $display1-size-mobile;
+  }
+}
+
+.display-2 {
+  font-size: $display2-size;
+  line-height: $display-line-height;
+  @media (max-width: $screen-sm-min) {
+    font-size: $display2-size-mobile;
+  }
+}
+
+.display-3 {
+  font-size: $display3-size;
+  line-height: $display-line-height;
+  @media (max-width: $screen-sm-min) {
+    font-size: $display3-size-mobile;
+  }
+}
+
+.display-4 {
+  font-size: $display4-size;
+  line-height: $display-line-height;
+  @media (max-width: $screen-sm-min) {
+    font-size: $display4-size-mobile;
+  }
+}
+
+.display-5 {
+  font-size: $display5-size;
+  line-height: $display-line-height;
+  @media (max-width: $screen-sm-min) {
+    font-size: $display5-size-mobile;
+  }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+  margin-bottom: .5em;
+  font-weight: normal !important;
+}

@@ -1,0 +1,4 @@
+// Medium screen / desktop
+$container-desktop: (720px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md: $container-desktop !default;

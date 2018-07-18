@@ -1,0 +1,25 @@
+////////////////////////////////////////////////////////////////////////////////
+// Link buttons
+// -------------------------
+// Make a button look and behave like a
+.btn {
+    &.link {
+        color: $link-color;
+        font-weight: normal;
+        border-radius: $border-radius-base;
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+        &:hover,
+        &:focus {
+            color: $link-hover-color;
+        }
+        &:active {
+            color: $link-active-color;
+        }
+        &[disabled],
+        &.disabled {
+            color: $btn-disabled-color;
+            background-color: transparent;
+        }
+    }
+}

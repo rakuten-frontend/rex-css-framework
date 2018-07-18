@@ -1,0 +1,8 @@
+//** `<input>` background color
+$input-bg: #fff !default;
+//** `<input disabled>` background color
+$input-bg-disabled: transparent !default;
+//** Text color for `<input>`s
+$input-color: $text-color !default;
+//** `<input>` border color
+$input-border: #ccc !default;
