@@ -1,0 +1,24 @@
+/*=============================================
+=           Rex Frontend Framework - BETA     =
+Grid Mobile (XS)
+=============================================*/
+
+// Core variables and mixins
+@import "core/rex_colors";
+
+// Core variables and mixins
+
+@import "core/variables";
+@import "core/mixins";
+
+//
+// Grid system
+// --------------------------------------------------
+@import "~core/grid/container";
+@import "~core/grid/container-fluid";
+@import "~core/grid/row";
+@import "~core/grid/columns";
+@import "~core/grid/xs";
+@import "~core/responsive-utilities/xs";
+@import "~core/responsive-utilities/print";
+@import "~core/responsive-utilities/ms-viewport";
