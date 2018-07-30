@@ -24,28 +24,26 @@ blockquote {
     position: relative;
     padding: 0;
     max-width: 57.6rem;
-    span {
-        position: absolute !important;
-        font-size: calc( 16/10 * 1.84rem);
-        &:before {
-            color: $gray-lighter;
-        }
+    &:before,
+    &:after {
+        font-family: rex-icon;
+        position: absolute;
+        font-size: 1.6rem;
+        color: #ebebeb;
     }
-    span.blockquote-left {
-        left: 0 !important;
-        top: 4px;
-        font-size: $blockquote-font-size;
+    &:before {
+        content: $_32-blockquote-left;
+        left: 0;
+        top: -.5rem;
     }
-    span.blockquote-right {
-        right: 0 !important;
-        top: initial;
-        bottom: 0;
-        font-size: $blockquote-font-size;
+    &:after {
+        content: $_32-blockquote-right;
+        right: 0;
+        bottom: -.5rem;
     }
     p {
         padding: $blockquote-padding-y $blockquote-padding-x;
-        margin: 0;
-        margin-bottom: .8rem !important;
+        margin: 0 0 .8rem 0;
     }
     p,
     ul,
