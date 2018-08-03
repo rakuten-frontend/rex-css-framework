@@ -10,7 +10,7 @@ Icons - CDN
 @import "core/variables";
 @import "core/mixins";
 // Overwrite default Font transformation from Base64 to CDN URL
-$icon-font-path: "https://r.r10s.jp/com/rex/css-framework/0.0.13-alpha/fonts/";
+$icon-font-path: "https://r.r10s.jp/com/rex/css-framework/0.1.2-beta/fonts/";
 
 // Reset and dependencies
 @import "core/glyphicons";
