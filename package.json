@@ -1,6 +1,6 @@
 {
   "name": "rex-css-framework",
-  "version": "0.1.1-beta",
+  "version": "0.1.2-beta",
   "description": "The ReX CSS Framework is the base for all Front-end Technology stack provided by the ReX project.",
   "main": "index.js",
   "repository": {

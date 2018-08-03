@@ -53,6 +53,10 @@ textarea {
     select {
         margin-bottom: .5em;
     }
+    input[type="date"] {
+        color: #9c9c9c;
+        display: inline-block;
+    }
     .input-group-disabled {
         label,
         small {
