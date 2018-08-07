@@ -44,7 +44,7 @@
         cursor: $cursor-disabled;
         color: $btn-disabled-color;
         background-color: $btn-disabled-bg;
-        border: 1px solid $btn-disabled-bg;
+        border-color: $btn-disabled-bg;
         &:hover,
         &:focus {
             color: $btn-disabled-color;
