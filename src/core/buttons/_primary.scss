@@ -1,12 +1,12 @@
 .btn-primary {
-  $color: $btn-primary-bg;
-  $light: $brand-primary-lighten;
-  $dark: $brand-primary-darken;
-  @include button-variant($color, $light);
-  &.btn-outline {
-    @include button-variant-outline($white, $color, $light, $dark, $white);
-  }
-  &.btn-pill {
-    border-radius: $btn-pill-border-radius;
-  }
+    $color: $btn-primary-bg;
+    $light: $brand-primary-lighten;
+    $dark: $brand-primary-darken;
+    @include button-variant($color, $light);
+    &.btn-outline {
+        @include button-variant-outline($white, $color, $light, $dark, $white);
+    }
+    &.btn-pill {
+        border-radius: $btn-pill-border-radius;
+    }
 }
