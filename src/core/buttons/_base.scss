@@ -17,6 +17,9 @@
     font-weight: 100;
     @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $btn-lineheight, $btn-border-radius-base);
     @include user-select(none);
+    input {
+        line-height: 1;
+    }
     &,
     &:active,
     &.active {
