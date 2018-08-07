@@ -20,11 +20,6 @@
     &:after {
         @include select_arrow;
     }
-    &.input-inline {
-        select {
-            padding-right: 2em;
-        }
-    }
 }
 
 select {

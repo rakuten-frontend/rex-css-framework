@@ -41,10 +41,17 @@ textarea {
     }
 }
 
-.input-inline {
-    display: inline;
+//.input-area {
+.form-group {
+    input[type='text'],
+    input[type='url'],
+    input[type='tel'],
+    input[type='password'],
+    input[type='number'],
+    input[type='email'],
+    textarea,
     select {
-        width: auto;
+        margin-bottom: .5em;
     }
     input[type="date"] {
         color: #9c9c9c;
@@ -61,16 +68,17 @@ textarea {
     }
     @include clearfix;
     position: relative; // For dropdowns
+    margin-bottom: 2em;
     border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
     label {
-        display: block;
+        font-weight: normal;
     }
     small {
-        display: inline-block;
+        display: block;
         color: $gray-medium;
         font-size: $font-size-extra-small;
         line-height: 1.5;
-        padding-left: .25em; // min-height: 1.75em;
+        padding-left: .25em;
         &.blank-helper {
             color: transparent;
         }
@@ -107,7 +115,7 @@ textarea {
         &[type='number'],
         &[type='email'] {
             border-bottom: 1px solid $gray-medium;
-            margin-bottom: 0;
+            margin-bottom: .5em;
             &:focus {
                 border-color: $brand-primary;
                 border-width: 1px;
