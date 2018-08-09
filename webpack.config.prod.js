@@ -21,6 +21,7 @@ const entry = {
   'rex-component/breadcrumbs': './src/rex-component-breadcrumbs.scss',
   'rex-component/pagination': './src/rex-component-pagination.scss',
   'rex-component/track': './src/rex-component-track.scss',
+  'rex-component/search': './src/rex-component-search.scss',
 };
 
 const plugins = [

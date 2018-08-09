@@ -1,0 +1,16 @@
+/*=============================================
+=           Rex Frontend Framework - BETA     =
+Search
+=============================================*/
+
+// Core variables and mixins
+@import "core/rex_colors";
+@import "core/variables";
+@import "core/mixins";
+@import "core/vars/glyphicons";
+// @import "core/glyphicons";
+@import "core/forms";
+@import "core/buttons";
+
+// Components
+@import "components/search-bar";
