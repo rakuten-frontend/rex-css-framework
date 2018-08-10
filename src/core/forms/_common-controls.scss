@@ -45,7 +45,7 @@
             border-color: $gray-light;
         }
     }
-    label.control-label {
+    .control-label {
         font-size: 1.2rem;
     } // [converter] extracted textarea& to textarea.form-control
 }
