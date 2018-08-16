@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>
+        Rex CSS Framework
+    </title>
+    <meta name="description" content="Rex CSS Framework is a responsive CSS framework based on Rakuten Rex design. ">
+    <meta name="author" content="REX Css Framework Authors (https://github.com/rakuten-frontend/rex-css-framework/graphs/contributors)">
+    <link rel="prefetch" as="font" type="font/woff2" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff2" crossorigin>
+    <link rel="prefetch" as="font" type="font/woff" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff" crossorigin>
+    <link rel="prefetch" as="font" type="font/otf" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf" crossorigin>
+
+    <!-- Rex core CSS -->
+    <link rel="stylesheet" href="/rex-css-framework/0.1.3-beta/dist/css/rex.css">
+    <link rel="stylesheet" href="/rex-css-framework/style/prism.css">
+    <link rel="stylesheet" href="/rex-css-framework/style/custom.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section id="pagination">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="display-1">
+                Pagination
+            </h1>
+            <h2>CDN</h2>
+            <pre class="language-html code-example"><code><!-- Dependencies -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-core.css" rel="stylesheet">
+<!-- Optional 
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-typography.css" rel="stylesheet" >
+-->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-icons.css" rel="stylesheet" >
+<!-- Static component: Pagination -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-component/pagination.css" rel="stylesheet" ></code></pre>
+            <h2>NPM</h2>
+            <pre class="language-js code-example"><code>//JavaScript Import
+import 'rex-css-framework/dist/css/rex-core.css';
+// import 'rex-css-framework/dist/css/rex-typography.css';//Optional
+import 'rex-css-framework/dist/css/rex-icons.css';
+import 'rex-css-framework/dist/css/rex-component/pagination.css';
+            </code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <h2>Working Examples</h2>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12">
+        <h2>
+            Basic Pagination
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <nav>
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <i aria-hidden="true" class="rex-icon chevron-left"></i>
+                    </a>
+                </li>
+                <li class="active">
+                    <span>1</span>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">...</a>
+                </li>
+                <li>
+                    <a href="#">8</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <i aria-hidden="true" class="rex-icon chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <pre class="language-html code-example"><code><ul class="pagination">
+    <li>
+<a href="#" aria-label="Previous">
+            <i aria-hidden="true" class="rex-icon chevron-left"></i>
+        </a>
+    </li>
+    <li class="active">
+        <span>1</span>
+    </li>
+    <li>
+        <a href="#">2</a>
+    </li>
+    <li>
+        <a href="#">3</a>
+    </li>
+    <li>
+        <a href="#">...</a>
+    </li>
+    <li>
+        <a href="#">8</a>
+    </li>
+    <li>
+<a href="#" aria-label="Next">
+            <i aria-hidden="true" class="rex-icon chevron-right"></i>
+        </a>
+    </li>
+</ul>
+</code></pre>
+    </div>
+</div>
+        <div class="row">
+    <div class="col-xs-12">
+        <h2>
+            Pagination with Page Numbers
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <nav>
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <i aria-hidden="true" class="rex-icon chevron-left"></i>
+                    </a>
+                </li>
+                <li class="active">
+                    <span>1</span>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">...</a>
+                </li>
+                <li>
+                    <a href="#">8</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <i aria-hidden="true" class="rex-icon chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center">
+                Page 1 to 100 of 1980
+            </p>
+        </nav>
+    </div>
+    <div class="col-xs-12">
+        <pre class="language-html code-example"><code><ul class="pagination">
+    <li>
+<a href="#" aria-label="Previous">
+            <i aria-hidden="true" class="rex-icon chevron-left"></i>
+        </a>
+    </li>
+    <li class="active">
+        <span>1</span>
+    </li>
+    <li>
+        <a href="#">2</a>
+    </li>
+    <li>
+        <a href="#">3</a>
+    </li>
+    <li>
+        <a href="#">...</a>
+    </li>
+    <li>
+        <a href="#">8</a>
+    </li>
+    <li>
+<a href="#" aria-label="Next">
+            <i aria-hidden="true" class="rex-icon chevron-right"></i>
+        </a>
+    </li>
+</ul>
+<p class="text-center">
+    Page 1 to 100 of 1980
+</p>
+</code></pre>
+    </div>
+</div>
+            <div class="row">
+    <div class="col-xs-12">
+        <nav>
+            <div class="sidebar-header">
+                <h2>
+                    Pagination with Previous and Next
+                </h2>
+            </div>
+            <ul class="pager">
+                <li>
+                    <a href="#" class="prev">
+                        <i aria-hidden="true" class="rex-icon chevron-left"></i>
+                        Previous
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="next">
+                        Next
+                            <i aria-hidden="true" class="rex-icon chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-xs-12">
+        <pre class="language-html code-example"><code><ul class="pager">
+    <li>
+        <a href="#" class="prev">
+<i aria-hidden="true" class="rex-icon chevron-left"></i>
+Previous
+        </a>
+    </li>
+    <li>
+<a href="#" class="next">
+    Next
+        <i aria-hidden="true" class="rex-icon chevron-right"></i>
+        </a>
+    </li>
+</ul>
+</code></pre>
+    </div>
+</div>
+                <div class="row">
+    <div class="col-xs-12">
+        <nav>
+            <div class="sidebar-header">
+                <h2>
+                    Pagination with Article
+                </h2>
+            </div>
+            <ul class="pager pager-title">
+                <li>
+                    <a href="#" class="prev">
+                        <i aria-hidden="true" class="rex-icon chevron-left"></i>
+                        <span class="prev-title">
+Article 1
+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="next">
+                        <span class="next-title">
+    Article 3
+</span>
+                        <i aria-hidden="true" class="rex-icon chevron-right">
+    </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-xs-12">
+        <pre class="language-html code-example"><code><ul class="pager pager-title">
+    <li>
+        <a href="#" class="prev">
+            <i aria-hidden="true" class="rex-icon chevron-left"></i>
+            <span class="prev-title">Article 1</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="next">
+            <span class="next-title">
+                Article 3
+            </span>
+            <i aria-hidden="true" class="rex-icon chevron-right">
+</i>
+        </a>
+    </li>
+</ul>
+</code></pre>
+    </div>
+</div>
+                    <div class="row">
+    <div class="col-xs-12">
+        <nav>
+            <div class="sidebar-header">
+                <h2>
+                    Disabled
+                </h2>
+            </div>
+            <ul class="pager disabled">
+                <li>
+                    <a href="#" class="prev">
+                        <i aria-hidden="true" class="rex-icon chevron-left"></i>
+                        Previous
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="next">
+                        Next
+                            <i aria-hidden="true" class="rex-icon chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-xs-12">
+        <pre class="language-html code-example"><code><ul class="pager disabled">
+    <li>
+        <a href="#" class="prev">
+<i aria-hidden="true" class="rex-icon chevron-left"></i>
+Previous
+        </a>
+    </li>
+    <li>
+        <a href="#" class="next">
+Next
+    <i aria-hidden="true" class="rex-icon chevron-right"></i>
+        </a>
+    </li>
+</ul>
+</code></pre>
+    </div>
+</div>
+
+</section>
+<script>
+    String.prototype.escape = function() {
+        var tagsToReplace = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;'
+        };
+        return this.replace(/[&<>]/g, function(tag) {
+            return tagsToReplace[tag] || tag;
+        });
+    };
+
+    String.prototype.replaceEmptyProp = function(prop, propFixed) {
+        return this.replace(prop, propFixed);
+    };
+
+    function setCodeExamples() {
+        var list = document.querySelectorAll('.code-example > code');
+        for (var i = 0; i < list.length; i++) {
+            var example = list[i];
+            var innerHTML = example.innerHTML;
+            var emptyPropFix_checked = innerHTML.replaceEmptyProp('checked=""', 'checked');
+            var emptyPropFix_required = emptyPropFix_checked.replaceEmptyProp('required=""', 'required');
+            var escapedSample = emptyPropFix_required.escape();
+            example.innerHTML = escapedSample;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        setCodeExamples();
+    });
+</script>
+<script src="/rex-css-framework/js/prism.js"></script>
+</body>
+
+</html>
