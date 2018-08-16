@@ -62,13 +62,13 @@
     &.focus {
         color: $new-text-color;
         background-color: $color-light;
-        border-color: transparent;
+        border: 1px solid transparent;
         font-weight: 100;
     }
     &:hover,
     &.hover {
         color: $new-text-color;
-        border-color: transparent;
+        border: 1px solid transparent;
         background-color: $color-light; // @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.2));
         // @include transition($no_animation, $shadow_up);
         font-weight: 100;
@@ -83,7 +83,7 @@
         &:focus,
         &.focus {
             color: $new-text-color;
-            border-color: transparent;
+            border: 1px solid transparent;
             font-weight: 100;
         }
     }
@@ -101,18 +101,19 @@
         &:hover,
         &:focus,
         &.focus {
-            border-color: transparent;
+            border: 1px solid $btn-disabled-bg;
             box-shadow: none;
         }
         background-color: $btn-disabled-bg;
         color: $btn-disabled-color;
         font-weight: 100;
+        border-color: $btn-disabled-bg;
     }
 }
 
 @mixin button-variant-text($text-color, $new-background-color, $disabled-text-color) {
     background-color: white;
-    border: transparent;
+    border: 1px solid transparent;
     border-radius: $btn-border-radius-base;
     color: $text-color;
     @include transition($no_animation);
@@ -216,7 +217,7 @@
     &[disabled],
     fieldset[disabled] {
         background-color: transparent;
-        border-color: transparent;
+        border-color: $btn-disabled-bg;
     }
 }
 
