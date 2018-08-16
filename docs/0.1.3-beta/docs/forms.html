@@ -1,0 +1,1498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ReX Css Framework Website">
+    <meta name="author" content="REX Css Framework Authors (https://github.com/rakuten-frontend/rex-css-framework/graphs/contributors)">
+
+    <title>ReX CSS Framework</title>
+    <!-- Rex core CSS -->
+    <link rel="stylesheet" href="/rex-css-framework/0.1.3-beta/dist/css/rex.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/rex-css-framework/style/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section id="form">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="display-1">
+                Forms
+            </h1>
+            <h2>CDN</h2>
+            <pre class="language-html code-example"><code><!-- Dependencies -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-core.css" rel="stylesheet">
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-typography.css" rel="stylesheet" >
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-grid-responsive.css" rel="stylesheet" >
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-icons.css" rel="stylesheet" >
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-buttons.css" rel="stylesheet" >
+<!-- Forms -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.3-beta/css/rex-forms.css" rel="stylesheet" ></code></pre>
+            <h2>NPM</h2>
+            <pre class="language-js code-example"><code>//JavaScript Import
+import 'rex-css-framework/dist/css/rex-core.css';
+import 'rex-css-framework/dist/css/rex-typography.css';
+import 'rex-css-framework/dist/css/rex-grid-responsive.css';
+import 'rex-css-framework/dist/css/rex-icons.css';
+import 'rex-css-framework/dist/css/rex-buttons.css';
+import 'rex-css-framework/dist/css/rex-forms.css';
+            </code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        <h2>Working Examples</h2>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Input
+        </h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-3" for="InputText">text</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="placeholder" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="InputPassword">
+                    password
+                </label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="InputPassword" placeholder="placeholder" autocomplete="current-password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="InputEmail1">
+                    Email
+                </label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="InputEmail1" placeholder="name@rakuten.com" autocomplete="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="phone">
+                    Phone*
+                </label>
+                <div class="col-sm-9">
+                    <input type="tel" id="phone" class="form-control" placeholder="000-0000-0000" required autocomplete="tel-national">
+                    <small>
+                        *This is a sample comment
+                    </small>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="phone">
+                    Phone*
+                </label>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input type="tel" name="phone" class="form-control" value="" size="3" maxlength="3" required autocomplete="tel-national">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="tel" name="phone" class="form-control" value="" size="4" maxlength="4" required autocomplete="tel-national">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="tel" name="phone" class="form-control" value="" size="4" maxlength="4" required autocomplete="tel-national">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="cardnumber">
+                    Credit Card
+                </label>
+                <div class="col-sm-9">
+                    <input type="text" id="cardnumber" class="form-control" name="card-number" placeholder="Debit/Credit Card Number" required
+                        autocomplete="cc-number">
+                    <small>
+                        *This is a sample comment
+                    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-3" for="InputText">text</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="placeholder" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="InputPassword">
+                    password
+                </label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="InputPassword" placeholder="placeholder" autocomplete="current-password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="InputEmail1">
+                    Email
+                </label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="InputEmail1" placeholder="name@rakuten.com" autocomplete="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="phone">
+                    Phone*
+                </label>
+                <div class="col-sm-9">
+                    <input type="tel" id="phone" class="form-control" placeholder="000-0000-0000" required autocomplete="tel-national">
+                    <small>
+                        *This is a sample comment
+                    </small>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="phone">
+                    Phone*
+                </label>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input type="tel" name="phone" class="form-control" value="" size="3" maxlength="3" required autocomplete="tel-national">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="tel" name="phone" class="form-control" value="" size="4" maxlength="4" required autocomplete="tel-national">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="tel" name="phone" class="form-control" value="" size="4" maxlength="4" required autocomplete="tel-national">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="cardnumber">
+                    Credit Card
+                </label>
+                <div class="col-sm-9">
+                    <input type="text" id="cardnumber" class="form-control" name="card-number" placeholder="Debit/Credit Card Number" required
+                        autocomplete="cc-number">
+                    <small>
+                        *This is a sample comment
+                    </small>
+                </div>
+            </div>
+        </form></code></pre>
+    </div>
+</div>
+        <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Status
+        </h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <span class="col-sm-2">
+                    Basic Style
+                </span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="exampleInput00">
+                        Name
+                    </label>
+                    <input type="text" class="form-control" id="exampleInput00" placeholder="placeholder" />
+                    <small>
+                        *An additional explanation
+                    </small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">
+                    With Label
+                </span>
+                <div class="col-sm-10">
+                    <label class="control-label" for="exampleInput01">
+                        Name*
+                    </label>
+                    <input type="text" class="form-control" id="exampleInput01" placeholder="placeholder" />
+                    <small>
+                        *An additional explanation
+                    </small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">
+                    Disabled
+                </span>
+                <div class="col-sm-10">
+                    <div class="input-group-disabled">
+                        <label class="control-label" for="exampleInput03">
+                            Email
+                        </label>
+                        <input type="text" class="form-control" id="exampleInput03" placeholder="placeholder" disabled="disabled"
+                        />
+                        <small>
+                            *An additional explanation
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">
+                    success
+                </span>
+                <div class="col-sm-10">
+                    <div class="has-success">
+                        <label class="control-label" for="exampleInput04">
+                            Phone
+                        </label>
+                        <input type="text" class="form-control" id="exampleInput04" placeholder="placeholder" />
+                        <span class="rex-icon check form-control-feedback" aria-hidden="true"></span>
+                        <small>
+                            <span class="rex-icon check" aria-hidden="true"></span>
+                            success
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span class="col-sm-2">
+                    error
+                </span>
+                <div class="col-sm-10">
+                    <div class="has-error">
+                        <label class="control-label" for="exampleInput05">
+                            Address
+                        </label>
+                        <input type="text" class="form-control" id="exampleInput05" placeholder="placeholder" />
+                        <span class="rex-icon sign-warning-f form-control-feedback" aria-hidden="true"></span>
+                        <small>
+                            <span class="rex-icon sign-warning-f" aria-hidden="true"></span>
+                            error
+                                label: Enter Comment
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-horizontal">
+    <div class="form-group">
+        <div class="col-sm-10">
+            <label class="control-label" for="exampleInput00">
+                Name
+            </label>
+            <input type="text" class="form-control" id="exampleInput00" placeholder="placeholder" />
+            <small>*An additional explanation</small>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <span class="col-sm-2">With Label</span>
+        <div class="col-sm-10">
+            <label class="control-label" for="exampleInput01">Name*</label>
+            <input type="text" class="form-control" id="exampleInput01" placeholder="placeholder" />
+            <small>*An additional explanation</small>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <span class="col-sm-2">Disabled</span>
+        <div class="col-sm-10">
+            <div class="input-group-disabled">
+                <label class="control-label" for="exampleInput03">
+                    Email
+                </label>
+                <input type="text" class="form-control" id="exampleInput03" placeholder="placeholder" disabled="disabled" />
+                <small>*An additional explanation</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <span class="col-sm-2">success</span>
+        <div class="col-sm-10">
+            <div class="has-success">
+                <label class="control-label" for="exampleInput04">
+                    Phone
+                </label>
+                <input type="text" class="form-control" id="exampleInput04" placeholder="placeholder" />
+                <span class="rex-icon check form-control-feedback" aria-hidden="true"></span>
+                <small>
+                    <span class="rex-icon check" aria-hidden="true"></span>
+                    success
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <span class="col-sm-2">error</span>
+        <div class="col-sm-10">
+            <div class="has-error">
+                <label class="control-label" for="exampleInput05">
+                    Address
+                </label>
+                <input type="text" class="form-control" id="exampleInput05" placeholder="placeholder" />
+                <span class="rex-icon sign-warning-f form-control-feedback" aria-hidden="true"></span>
+                <small>
+                    <span class="rex-icon sign-warning-f" aria-hidden="true"></span>
+                    error
+                    label: Enter Comment
+                </small>
+            </div>
+        </div>
+    </div>
+</form>
+</code></pre>
+    </div>
+</div>
+            <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            textarea
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+    textarea
+</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <label class="control-label" for="exampleTextarea00">label: Enter Comment（rows="1"）</label>
+                <textarea class="form-control" placeholder="*This is a sample comment" rows="1" id="exampleTextarea00"></textarea>
+                <small>*An additional explanation</small>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="exampleTextarea01">label: Enter Comment（rows="3"）</label>
+                <textarea class="form-control" placeholder="*This is a sample comment" rows="3" id="exampleTextarea01"></textarea>
+                <small>*An additional explanation</small>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code> <form>
+    <div class="form-group">
+        <label class="control-label" for="exampleTextarea00">label: Enter Comment（rows="1"）</label>
+<textarea class="form-control" rows="1" id="exampleTextarea00"></textarea>
+        <small>*An additional explanation</small>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="exampleTextarea01">label: Enter Comment（rows="3"）</label>
+<textarea class="form-control" rows="3" id="exampleTextarea01"></textarea>
+        <small>*An additional explanation</small>
+    </div>
+</form>
+</code></pre>
+    </div>
+
+
+
+
+
+</div>
+<div class="row">
+    <span class="col-sm-2">
+    success
+</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="has-success">
+                    <label class="control-label" for="exampleTextarea02">label: Enter Comment</label>
+                    <textarea class="form-control" placeholder="*This is a sample comment" rows="3" id="exampleTextarea02"></textarea>
+                    <small class="resolved">
+<i class="rex-icon check"></i>
+success
+    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <div class="form-group">
+        <div class="has-success">
+            <label class="control-label" for="exampleTextarea02">label: Enter Comment</label>
+<textarea class="form-control" placeholder="*This is a sample comment" rows="3" id="exampleTextarea02"></textarea>
+            <small class="resolved">
+<i class="rex-icon check"></i>
+success
+    </small>
+        </div>
+    </div>
+</form>
+</code></pre>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+    error
+</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="has-error">
+                    <label class="control-label" for="exampleTextarea03">label: Enter Comment</label>
+                    <textarea class="form-control" placeholder="*This is a sample comment" rows="3" id="exampleTextarea03"></textarea>
+                    <small>
+<i class="rex-icon sign-warning-f"></i>
+error
+    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <div class="form-group">
+        <div class="has-error">
+            <label class="control-label" for="exampleTextarea03">label: Enter Comment</label>
+<textarea class="form-control" placeholder="*This is a sample comment" rows="3" id="exampleTextarea03"></textarea>
+            <small>
+<i class="rex-icon sign-warning-f"></i>
+error
+    </small>
+        </div>
+    </div>
+</form>
+</code></pre>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+    Disabled
+</span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="input-group-disabled">
+                    <label class="control-label" for="exampleTextarea04">label: Enter Comment</label>
+                    <textarea class="form-control" disabled placeholder="*This is a sample comment" rows="3" id="exampleTextarea04"></textarea>
+                    <small>
+    *required
+</small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <div class="form-group">
+        <div class="input-group-disabled">
+            <label class="control-label" for="exampleTextarea04">label: Enter Comment</label>
+<textarea class="form-control" disabled placeholder="*This is a sample comment" rows="3" id="exampleTextarea04"></textarea>
+<small>
+    *required
+</small>
+        </div>
+    </div>
+</form>
+</code></pre>
+    </div>
+</div>
+                <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            SelectBox
+        </h2>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+        <label>
+            Single
+        </label>
+    </span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="select-wrapper">
+                    <select name="select-1" class="form-control">
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        <option value="One">
+                            One
+                        </option>
+                        <option value="Two">
+                            Two
+                        </option>
+                        <option value="Three">
+                            Three
+                        </option>
+                    </select>
+
+                </div>
+            </div>
+        </form>
+        <form>
+            <div class="form-group">
+                <div class="select-wrapper input-inline">
+                    <select name="select-1">
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        <option value="One">
+                            One
+                        </option>
+                        <option value="Two">
+                            Two
+                        </option>
+                        <option value="Three">
+                            Three
+                        </option>
+                    </select>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <div class="form-group">
+        <div class="select-wrapper">
+            <select name="select-1" class="form-control">
+<option value="" disabled selected>
+    Choose...
+</option>
+            <option value="One">One</option>
+            <option value="Two">Two</option>
+            <option value="Three">Three</option>
+            </select>
+        </div>
+    </div>
+</form></code></pre>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+        <label>
+            Multi
+        </label>
+    </span>
+    <div class="col-sm-10">
+        <form>
+            <div class="form-group">
+                <div class="select-wrapper">
+                    <select multiple name="select-2" class="form-control">
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        <option value="One">
+                            One
+                        </option>
+                        <option value="Two">
+                            Two
+                        </option>
+                        <option value="Three">
+                            Three
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <div class="form-group">
+        <div class="select-wrapper">
+            <select multiple name="select-2" class="form-control">
+<option value="" disabled selected>
+Choose...
+    </option>
+</option>
+    <option value="One">One</option>
+    <option value="Two">Two</option>
+    <option value="Three">Three</option>
+    </select>
+        </div>
+    </div>
+</form></code></pre>
+    </div>
+</div>
+<div class="row">
+    <span class="col-sm-2">
+        <label>
+            SelectBox
+                Disabled
+        </label>
+    </span>
+    <div class="col-sm-10">
+        <form>
+            <fieldset class="form-group">
+                <div class="select-wrapper">
+
+                    <select name="select-1" class="form-control" disabled>
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        </option>
+                        <option value="One">
+                            One
+                        </option>
+                        <option value="Two">
+                            Two
+                        </option>
+                        <option value="Three">
+                            Three
+                        </option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <fieldset class="form-group">
+        <div class="select-wrapper">
+            <select name="select-1" class="form-control" disabled>
+<option value="" disabled selected>
+    Choose...
+</option>
+</option>
+        <option value="One">One</option>
+        <option value="Two">Two</option>
+        <option value="Three">Three</option>
+    </select>
+        </div>
+    </fieldset>
+</form></code></pre>
+    </div>
+</div>
+                    <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Radio Button
+        </h2>
+        <form class="form-group">
+            <fieldset>
+                <legend class="control-label">
+                    <strong>
+Gender
+</strong>
+                </legend>
+                <div class="radio-form">
+                    <div class="radio-area">
+                        <input type="radio" value="1" name="gender" id="man" checked>
+                        <label class="radio-label" for="man">Male</label>
+                    </div>
+                    <div class="radio-area">
+                        <input type="radio" value="2" name="gender" id="woman">
+                        <label class="radio-label" for="woman">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-group">
+    <fieldset>
+        <legend class="control-label">
+<strong>
+    Gender
+</strong>
+        </legend>
+        <div class="radio-form">
+            <div class="radio-area">
+                <input type="radio" value="1" name="gender" id="man" checked>
+                <label class="radio-label" for="man">Male</label>
+            </div>
+            <div class="radio-area">
+                <input type="radio" value="2" name="gender" id="woman">
+                <label class="radio-label" for="woman">Female</label>
+            </div>
+        </div>
+    </fieldset>
+</form></code></pre>
+    </div>
+
+
+    <div class="col-sm-12">
+        <h2>
+            CheckBox
+        </h2>
+        <form class="form-group">
+            <fieldset>
+                <legend class="control-label">
+                    <strong>
+    What is your favorite sports?
+</strong>
+                </legend>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample1" checked />
+                    <label for="CheckBoxSample1" class="checkbox-label">Soccer</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample2" />
+                    <label for="CheckBoxSample2" class="checkbox-label">Tennis</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample3" />
+                    <label for="CheckBoxSample3" class="checkbox-label">Baseball</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-group">
+    <fieldset>
+        <legend class="control-label">
+<strong>
+    What is your favorite sports?
+</strong>
+        </legend>
+        <div class="checkbox-area">
+            <input type="checkbox" id="CheckBoxSample1" checked />
+            <label for="CheckBoxSample1" class="checkbox-label">Soccer</label>
+        </div>
+        <div class="checkbox-area">
+            <input type="checkbox" id="CheckBoxSample2" />
+            <label for="CheckBoxSample2" class="checkbox-label">Tennis</label>
+        </div>
+        <div class="checkbox-area">
+            <input type="checkbox" id="CheckBoxSample3" />
+            <label for="CheckBoxSample3" class="checkbox-label">Baseball</label>
+        </div>
+    </fieldset>
+</form>
+</code>
+</pre>
+    </div>
+
+
+    <div class="col-sm-12">
+        <h2>
+            Disabled
+        </h2>
+        <form class="form-group">
+            <div class="radio-form">
+                <div class="radio-area disabled">
+                    <input type="radio" value="2" name="gender" id="noanswer" disabled>
+                    <label class="radio-label" for="noanswer">
+    No Answer
+</label>
+                </div>
+            </div>
+            <div class="checkbox-area disabled">
+                <input type="checkbox" id="CheckNoanswer" checked />
+                <label for="CheckBoxSample1" class="checkbox-label">無回答</label>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-group">
+    <div class="radio-form">
+        <div class="radio-area disabled">
+            <input type="radio" value="2" name="gender" id="noanswer" disabled>
+<label class="radio-label" for="noanswer">
+    No Answer
+</label>
+        </div>
+    </div>
+</form></code></pre>
+    </div>
+</div>
+                        <div class="row">
+    <div class="col-sm-12">
+        <h2>Switch</h2>
+        <div class="switch-area">
+            <input type="checkbox" id="rex-switch" />
+            <label for="rex-switch" class="switch-label"></label>
+        </div>
+        <div class="switch-area rounded">
+            <input type="checkbox" id="rex-switch-rounded" />
+            <label for="rex-switch-rounded" class="switch-label"></label>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><div class="switch-area">
+    <input type="checkbox" id="rex-switch" />
+    <label for="rex-switch" class="switch-label"></label>
+</div>
+<div class="switch-area rounded">
+    <input type="checkbox" id="rex-switch-rounded" />
+    <label for="rex-switch-rounded" class="switch-label"></label>
+</div></code></pre>
+    </div>
+    <div class="col-sm-12">
+        <div class="switch-area selected">
+            <input type="checkbox" id="rex-switch-selected" checked="" />
+            <label for="rex-switch-selected" class="switch-label"></label>
+        </div>
+        <div class="switch-area rounded selected">
+            <input type="checkbox" id="rex-switch-rounded-selected" checked="" />
+            <label for="rex-switch-rounded-selected" class="switch-label"></label>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><div class="switch-area selected">
+    <input type="checkbox" id="rex-switch-selected" checked="" />
+    <label for="rex-switch-selected" class="switch-label"></label>
+</div>
+<div class="switch-area rounded selected">
+    <input type="checkbox" id="rex-switch-rounded-selected" checked="" />
+    <label for="rex-switch-rounded-selected" class="switch-label"></label>
+</div></code></pre>
+    </div>
+    <div class="col-sm-12">
+        <div class="switch-area disabled">
+            <input type="checkbox" id="rex-switch-disabled" />
+            <label for="rex-switch-disabled" class="switch-label"></label>
+        </div>
+        <div class="switch-area rounded disabled">
+            <input type="checkbox" id="rex-switch-rounded-disabled" />
+            <label for="rex-switch-rounded-disabled" class="switch-label"></label>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><div class="switch-area disabled">
+    <input type="checkbox" id="rex-switch-disabled" />
+    <label for="rex-switch-disabled" class="switch-label"></label>
+</div>
+<div class="switch-area rounded disabled">
+    <input type="checkbox" id="rex-switch-rounded-disabled" />
+    <label for="rex-switch-rounded-disabled" class="switch-label"></label>
+</div></code></pre>
+    </div>
+</div>
+                            <div class="row">
+    <div class="col-sm-12">
+    <h2>
+        Font-Size within Input Field
+    </h2>
+</div>
+<div class="col-sm-12">
+    <form class="form-horizontal">
+        <div class="form-group form-group-lg">
+            <label class="control-label" for="InputTextL">
+                input
+                large
+            </label>
+            <input type="text" id="InputTextL" class="form-control" placeholder="large text size"
+            />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="InputTextM">
+                input
+                default
+            </label>
+            <input type="text" id="InputTextM" class="form-control" placeholder="default text size">
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="control-label" for="InputTextS">
+                input
+                small
+            </label>
+            <input type="text" id="InputTextS" class="form-control" placeholder="small text size"
+            />
+        </div>
+    </form>
+</div>
+<div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="form-group form-group-lg">
+<label class="control-label" for="InputTextL">
+    input large
+</label>
+<input type="text" id="InputTextL" class="form-control" placeholder="large text size"
+/>
+</div>
+<div class="form-group">
+<label class="control-label" for="InputTextM">
+    input default
+</label>
+<input type="text" id="InputTextM" class="form-control" placeholder="default text size">
+</div>
+<div class="form-group form-group-sm">
+<label class="control-label" for="InputTextS">
+    input small
+</label>
+<input type="text" id="InputTextS" class="form-control" placeholder="small text size"
+/>
+</div></code></pre>
+</div>
+        <div class="col-sm-12">
+    <h2>
+        Font-Size within Select
+    </h2>
+</div>
+<div class="col-sm-12">
+    <div class="row">
+        <div class="form-group">
+            <span class="col-sm-4">
+                <label>
+                    SelectBox
+                        large
+                </label>
+            </span>
+            <div class="col-sm-8">
+                <div class="select-wrapper form-group-lg">
+                    <select class="form-control" id="InputSelectL">
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        <option>
+                            One
+                        </option>
+                        <option>
+                            Two
+                        </option>
+                        <option>
+                            Three
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="col-sm-4">
+                <label>
+                    SelectBox
+                        default
+                </label>
+            </span>
+            <div class="col-sm-8">
+                <div class="select-wrapper">
+                    <select class="form-control" id="InputSelectM">
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        <option>
+                            One
+                        </option>
+                        <option>
+                            Two
+                        </option>
+                        <option>
+                            Three
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="col-sm-4">
+                <label>
+                    SelectBox
+                        small
+                </label>
+            </span>
+            <div class="col-sm-8">
+                <div class="select-wrapper form-group-sm">
+                    <select class="form-control" id="InputSelectS">
+                        <option value="" disabled selected>
+                            Choose...
+                        </option>
+                        <option>
+                            One
+                        </option>
+                        <option>
+                            Two
+                        </option>
+                        <option>
+                            Three
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="select-wrapper form-group-lg">
+<select class="form-control" id="InputSelectL">
+    <option value="" disabled selected>Choose...</option>
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+</select>
+</div>
+
+<div class="select-wrapper">
+    <select class="form-control" id="InputSelectM">
+        <option value="" disabled selected>Choose...</option>
+        <option>One</option>
+        <option>Two</option>
+        <option>Three</option>
+    </select>
+</div>
+
+<div class="select-wrapper form-group-sm">
+    <select class="form-control" id="InputSelectS">
+        <option value="" disabled selected>Choose...</option>
+        <option>One</option>
+        <option>Two</option>
+        <option>Three</option>
+    </select>
+</div>
+</code></pre>
+    </code>
+</div>
+</div>
+                                <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Horizontal Form
+        </h2>
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>
+                    Customer Information Form
+                </legend>
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-3">
+                        Name
+                    </label>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="inputLastName" placeholder="First*">
+                                <small>
+                                    *An additional explanation
+                                </small>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="inputFirtsName" placeholder="Last*">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail2" class="col-sm-3">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="inputEmail2" placeholder="name@rakuten.com" autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword2" class="col-sm-3">
+                        password
+                    </label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="password" autocomplete="new-password">
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <legend class="col-sm-3">
+                        Gender
+                    </legend>
+                    <div class="col-sm-9">
+                        <div class="radio-area">
+                            <input type="radio" value="1" name="gender" id="man2" checked>
+                            <label class="radio-label" for="man2">
+                                Male
+                            </label>
+                        </div>
+                        <div class="radio-area">
+                            <input type="radio" value="2" name="gender" id="woman2">
+                            <label class="radio-label" for="woman2">
+                                Female
+                            </label>
+                        </div>
+                        <div class="radio-area">
+                            <input type="radio" value="3" name="gender" id="noanswer2">
+                            <label class="radio-label" for="noanswer2">
+                                No Answer
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <legend class="col-sm-3">
+                        What is your favorite sports?
+                    </legend>
+                    <div class="col-sm-9">
+                        <div class="checkbox-area">
+                            <input type="checkbox" id="CheckBoxSample4" checked />
+                            <label for="CheckBoxSample4" class="checkbox-label">
+                                Soccer
+                            </label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" id="CheckBoxSample5" />
+                            <label for="CheckBoxSample5" class="checkbox-label">
+                                Tennis
+                            </label>
+                        </div>
+                        <div class="checkbox-area">
+                            <input type="checkbox" id="CheckBoxSample6" />
+                            <label for="CheckBoxSample6" class="checkbox-label">
+                                Baseball
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label class="col-sm-3" for="InputSelect3">
+                        Choose...
+                    </label>
+                    <div class="col-sm-9">
+                        <div class="select-wrapper input-inline">
+                            <select id="InputSelect3">
+                                <option>
+                                    One
+                                </option>
+                                <option>
+                                    Two
+                                </option>
+                                <option>
+                                    Three
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-5 col-sm-7">
+                        <button type="submit" class="btn btn-primary">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-horizontal">
+<fieldset>
+    <legend>Customer Information Form</legend>
+    <div class="form-group">
+        <label for="inputName" class="col-sm-3">Name</label>
+        <div class="col-sm-9">
+            <div class="form-inline">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last">
+                <input type="text" class="form-control" id="inputFirtsName" placeholder="First">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail2" class="col-sm-3">Email</label>
+        <div class="col-sm-9">
+            <input type="email" class="form-control" id="inputEmail2" placeholder="name@rakuten.com" autocomplete="email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword2" class="col-sm-3">password</label>
+        <div class="col-sm-9">
+            <input type="password" class="form-control" id="inputPassword2" placeholder="password" autocomplete="new-password">
+        </div>
+    </div>
+    <fieldset class="form-group">
+        <legend class="col-sm-3">Gender</legend>
+        <div class="col-sm-9">
+            <div class="radio-area">
+                <input type="radio" value="1" name="gender" id="man2" checked>
+                <label class="radio-label" for="man2">Male</label>
+            </div>
+            <div class="radio-area">
+                <input type="radio" value="2" name="gender" id="woman2">
+                <label class="radio-label" for="woman2">Female</label>
+            </div>
+            <div class="radio-area">
+                <input type="radio" value="3" name="gender" id="noanswer2">
+                <label class="radio-label" for="noanswer2">No Answer</label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="form-group">
+        <legend class="col-sm-3">What is your favorite sports?
+        </legend>
+        <div class="col-sm-9">
+            <div class="checkbox-area">
+                <input type="checkbox" id="CheckBoxSample4" checked />
+                <label for="CheckBoxSample4" class="checkbox-label">Soccer</label>
+            </div>
+            <div class="checkbox-area">
+                <input type="checkbox" id="CheckBoxSample5" />
+                <label for="CheckBoxSample5" class="checkbox-label">Tennis</label>
+            </div>
+            <div class="checkbox-area">
+                <input type="checkbox" id="CheckBoxSample6" />
+                <label for="CheckBoxSample6" class="checkbox-label">Baseball</label>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <label class="col-sm-3" for="InputSelect3">Choose...</label>
+        <div class="col-sm-9">
+            <div class="select-wrapper input-inline">
+                <select id="InputSelect3">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-5 col-sm-7">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</fieldset></form></code></pre>
+    </div>
+</div>
+                                    <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Inline Form
+        </h2>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="InputEmail3">
+                    Email
+                </label>
+                <input type="email" class="form-control" id="InputEmail3" placeholder="name@rakuten.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="InputPassword3">
+                    password
+                </label>
+                <input type="password" class="form-control" id="InputPassword3" placeholder="password" autocomplete="current-password">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="InputSelect">
+                    Choose...
+                </label>
+                <div class="select-wrapper">
+                    <select class="form-control" id="InputSelect">
+                        <option>
+                            One
+                        </option>
+                        <option>
+                            Two
+                        </option>
+                        <option>
+                            Three
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample7" checked />
+                    <label for="CheckBoxSample7" class="checkbox-label">A</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="CheckBoxSample10" />
+                    <label for="CheckBoxSample10" class="checkbox-label">B</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default">
+                Submit
+            </button>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="InputEmail3">Email</label>
+        <input type="email" class="form-control" id="InputEmail3" placeholder="name@rakuten.com" autocomplete="email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="InputPassword3">password</label>
+        <input type="password" class="form-control" id="InputPassword3" placeholder="password" autocomplete="current-password">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="InputSelect">Choose...</label>
+        <div class="select-wrapper">
+            <select class="form-control" id="InputSelect">
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="checkbox-area">
+            <input type="checkbox" id="CheckBoxSample7" checked />
+            <label for="CheckBoxSample7" class="checkbox-label">A</label>
+        </div>
+        <div class="checkbox-area">
+            <input type="checkbox" id="CheckBoxSample10" />
+            <label for="CheckBoxSample10" class="checkbox-label">B</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form></code></pre>
+    </div>
+</div>
+                                        <div class="row">
+    <div class="col-sm-12">
+        <h2>
+            Form Group
+        </h2>
+        <form>
+            <fieldset>
+                <legend>
+                    Customer Information Form
+                </legend>
+                <div class="form-group">
+                    <label class="control-label" for="formGroupExampleInput">
+                        Name
+                    </label>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First*">
+                            <small>
+                                *An additional explanation
+                            </small>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last*">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="firstname_kana">
+                        Name
+                    </label>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="firstname_kana" placeholder="First*">
+                            <small>
+                                *An additional explanation
+                            </small>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="lastname_kana" placeholder="Last*">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label d-block" for="calendar">
+                        Date of birth*
+                    </label>
+                    <input type="date" name="calendar" id="bday" max="9999-12-31">
+                    <small>
+                        *An additional explanation
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+@[\w\.-]+\.\w{2,}$"
+                        placeholder="name@rakuten.com" required autocomplete="email">
+                    <small>
+                        *An additional explanation
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="exampleInputPassword1">
+                        password
+                    </label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password"
+                        autocomplete="new-password">
+                </div>
+                <div class="form-group checkbox-area">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="checkbox-label" for="exampleCheck1">
+                        I agree
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-sm-12">
+        <pre class="language-html code-example"><code><form>
+    <fieldset>
+        <legend>Customer Information Form</legend>
+        <div class="form-group">
+         <label class="control-label" for="formGroupExampleInput">Name*</label>
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First">
+                    <small>*An additional explanation</small>
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label d-block" for="calendar">Date of birth*</label>
+            <input type="date" name="calendar" id="bday" max="9999-12-31">
+            <small>*An additional explanation</small>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+@[\w\.-]+\.\w{2,}$" placeholder="name@rakuten.com" required autocomplete="email">
+            <small>*An additional explanation</small>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="exampleInputPassword1">password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" autocomplete="new-password">
+        </div>
+        <div class="form-group checkbox-area">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="checkbox-label" for="exampleCheck1">I agree</label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </fieldset>
+    </form></code></pre>
+    </div>
+</div>
+</section>
+<script>
+    String.prototype.escape = function() {
+        var tagsToReplace = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;'
+        };
+        return this.replace(/[&<>]/g, function(tag) {
+            return tagsToReplace[tag] || tag;
+        });
+    };
+
+    String.prototype.replaceEmptyProp = function(prop, propFixed) {
+        return this.replace(prop, propFixed);
+    };
+
+    function setCodeExamples() {
+        var list = document.querySelectorAll('.code-example > code');
+        for (var i = 0; i < list.length; i++) {
+            var example = list[i];
+            var innerHTML = example.innerHTML;
+            var emptyPropFix_checked = innerHTML.replaceEmptyProp('checked=""', 'checked');
+            var emptyPropFix_required = emptyPropFix_checked.replaceEmptyProp('required=""', 'required');
+            var escapedSample = emptyPropFix_required.escape();
+            example.innerHTML = escapedSample;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        setCodeExamples();
+    });
+</script>
+<script src="/rex-css-framework/js/prism.js"></script>
+</body>
+
+</html>
