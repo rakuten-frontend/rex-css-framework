@@ -1,8 +1,8 @@
 @font-face {
   font-family: rex-icon;
-  src: url("#{$icon-font-path}#{$icon-font-name}.eot?bf5e286cc68ff419ba4a281906f18aaa?#iefix") format("embedded-opentype"),
-url("#{$icon-font-path}#{$icon-font-name}.woff2?bf5e286cc68ff419ba4a281906f18aaa") format("woff2"),
-url("#{$icon-font-path}#{$icon-font-name}.woff?bf5e286cc68ff419ba4a281906f18aaa") format("woff");
+  src: url("#{$icon-font-path}/{#{icon-font-name}}.eot?c010a541951415cdb92248085e0b7d66?#iefix") format("embedded-opentype"),
+url("#{$icon-font-path}/{#{icon-font-name}}.woff2?c010a541951415cdb92248085e0b7d66") format("woff2"),
+url("#{$icon-font-path}/{#{icon-font-name}}.woff?c010a541951415cdb92248085e0b7d66") format("woff");
 }
 
 $_32-arrow-down-l: '\f101';
@@ -113,124 +113,129 @@ $_32-mail-f: '\f169';
 $_32-mail-l: '\f16a';
 $_32-map-f: '\f16b';
 $_32-map-l: '\f16c';
-$_32-menu: '\f16d';
-$_32-minus: '\f16e';
-$_32-mobile-phone-f: '\f16f';
-$_32-mobile-phone-l: '\f170';
-$_32-movie-f: '\f171';
-$_32-movie-l: '\f172';
-$_32-my-page-f: '\f173';
-$_32-my-page-l: '\f174';
-$_32-new-user-f: '\f175';
-$_32-new-window-f: '\f176';
-$_32-new-window-l: '\f177';
-$_32-notice-generic-f: '\f178';
-$_32-notice-generic-l: '\f179';
-$_32-notice-user-f: '\f17a';
-$_32-notice-user-l: '\f17b';
-$_32-overflow-button: '\f17c';
-$_32-paint-f: '\f17d';
-$_32-paint-l: '\f17e';
-$_32-paper-plane-f: '\f17f';
-$_32-paper-plane-l: '\f180';
-$_32-pdf-f: '\f181';
-$_32-pdf-l: '\f182';
-$_32-phone-f: '\f183';
-$_32-phone-l: '\f184';
-$_32-photograph-f: '\f185';
-$_32-photograph-l: '\f186';
-$_32-pin-f: '\f187';
-$_32-pin-l: '\f188';
-$_32-plane-f: '\f189';
-$_32-plane-l: '\f18a';
-$_32-plus: '\f18b';
-$_32-point-f: '\f18c';
-$_32-point-l: '\f18d';
-$_32-price-f: '\f18e';
-$_32-price-l: '\f18f';
-$_32-print-f: '\f190';
-$_32-print-l: '\f191';
-$_32-purchase-history-f: '\f192';
-$_32-purchase-history-l: '\f193';
-$_32-qrcode-f: '\f194';
-$_32-qrcode-l: '\f195';
-$_32-rakuten-account-f: '\f196';
-$_32-rakuten-account-l: '\f197';
-$_32-rakuten-close-account-f: '\f198';
-$_32-rakuten-close-account-l: '\f199';
-$_32-rakuten-registration-f: '\f19a';
-$_32-rakuten-registration-l: '\f19b';
-$_32-ranking-f: '\f19c';
-$_32-ranking-l: '\f19d';
-$_32-refresh: '\f19e';
-$_32-review-comment-f: '\f19f';
-$_32-review-comment-l: '\f1a0';
-$_32-review-edit-f: '\f1a1';
-$_32-review-edit-l: '\f1a2';
-$_32-rss-symbol-l: '\f1a3';
-$_32-rss-text-f: '\f1a4';
-$_32-rss-text-l: '\f1a5';
-$_32-save-f: '\f1a6';
-$_32-save-l: '\f1a7';
-$_32-search-history-f: '\f1a8';
-$_32-search-history-l: '\f1a9';
-$_32-search: '\f1aa';
-$_32-security-f: '\f1ab';
-$_32-security-l: '\f1ac';
-$_32-server-f: '\f1ad';
-$_32-server-l: '\f1ae';
-$_32-settings-f: '\f1af';
-$_32-settings-l: '\f1b0';
-$_32-share-f: '\f1b1';
-$_32-share-l: '\f1b2';
-$_32-shop-f: '\f1b3';
-$_32-shop-l: '\f1b4';
-$_32-sign-ban-f: '\f1b5';
-$_32-sign-ban-l: '\f1b6';
-$_32-sign-help-f: '\f1b7';
-$_32-sign-help-l: '\f1b8';
-$_32-sign-info-f: '\f1b9';
-$_32-sign-info-l: '\f1ba';
-$_32-sign-warning-f: '\f1bb';
-$_32-sign-warning-l: '\f1bc';
-$_32-sliders-f: '\f1bd';
-$_32-sliders-l: '\f1be';
-$_32-smartphone-f: '\f1bf';
-$_32-smartphone-l: '\f1c0';
-$_32-survey-f: '\f1c1';
-$_32-survey-l: '\f1c2';
-$_32-switch-language-f: '\f1c3';
-$_32-switch-language-l: '\f1c4';
-$_32-tablet-f: '\f1c5';
-$_32-tablet-l: '\f1c6';
-$_32-tag-f: '\f1c7';
-$_32-tag-l: '\f1c8';
-$_32-test: '\f1c9';
-$_32-time-f: '\f1ca';
-$_32-time-l: '\f1cb';
-$_32-train-f: '\f1cc';
-$_32-train-l: '\f1cd';
-$_32-upload-f: '\f1ce';
-$_32-upload-l: '\f1cf';
-$_32-voice-input-f: '\f1d0';
-$_32-voice-input-l: '\f1d1';
-$_32-walking-f: '\f1d2';
-$_32-world-f: '\f1d3';
-$_32-world-l: '\f1d4';
-$_32-x: '\f1d5';
-$_32-zip-f: '\f1d6';
-$_32-zip-l: '\f1d7';
-$_32-zoom-in-f: '\f1d8';
-$_32-zoom-in-l: '\f1d9';
-$_32-zoom-out-f: '\f1da';
-$_32-zoom-out-l: '\f1db';
+$_32-meatball-horizontal-f: '\f16d';
+$_32-meatball-horizontal-l: '\f16e';
+$_32-meatball-vertical-f: '\f16f';
+$_32-meatball-vertical-l: '\f170';
+$_32-menu: '\f171';
+$_32-minus: '\f172';
+$_32-mobile-phone-f: '\f173';
+$_32-mobile-phone-l: '\f174';
+$_32-movie-f: '\f175';
+$_32-movie-l: '\f176';
+$_32-my-page-f: '\f177';
+$_32-my-page-l: '\f178';
+$_32-new-user-f: '\f179';
+$_32-new-window-f: '\f17a';
+$_32-new-window-l: '\f17b';
+$_32-notice-generic-f: '\f17c';
+$_32-notice-generic-l: '\f17d';
+$_32-notice-user-f: '\f17e';
+$_32-notice-user-l: '\f17f';
+$_32-overflow-button: '\f180';
+$_32-paint-f: '\f181';
+$_32-paint-l: '\f182';
+$_32-paper-plane-f: '\f183';
+$_32-paper-plane-l: '\f184';
+$_32-pdf-f: '\f185';
+$_32-pdf-l: '\f186';
+$_32-phone-f: '\f187';
+$_32-phone-l: '\f188';
+$_32-photograph-f: '\f189';
+$_32-photograph-l: '\f18a';
+$_32-pin-f: '\f18b';
+$_32-pin-l: '\f18c';
+$_32-plane-f: '\f18d';
+$_32-plane-l: '\f18e';
+$_32-plus: '\f18f';
+$_32-point-f: '\f190';
+$_32-point-l: '\f191';
+$_32-price-f: '\f192';
+$_32-price-l: '\f193';
+$_32-print-f: '\f194';
+$_32-print-l: '\f195';
+$_32-purchase-history-f: '\f196';
+$_32-purchase-history-l: '\f197';
+$_32-qrcode-f: '\f198';
+$_32-qrcode-l: '\f199';
+$_32-rakuten-account-f: '\f19a';
+$_32-rakuten-account-l: '\f19b';
+$_32-rakuten-close-account-f: '\f19c';
+$_32-rakuten-close-account-l: '\f19d';
+$_32-rakuten-registration-f: '\f19e';
+$_32-rakuten-registration-l: '\f19f';
+$_32-ranking-f: '\f1a0';
+$_32-ranking-l: '\f1a1';
+$_32-refresh: '\f1a2';
+$_32-review-comment-f: '\f1a3';
+$_32-review-comment-l: '\f1a4';
+$_32-review-edit-f: '\f1a5';
+$_32-review-edit-l: '\f1a6';
+$_32-rss-symbol-l: '\f1a7';
+$_32-rss-text-f: '\f1a8';
+$_32-rss-text-l: '\f1a9';
+$_32-save-f: '\f1aa';
+$_32-save-l: '\f1ab';
+$_32-search-history-f: '\f1ac';
+$_32-search-history-l: '\f1ad';
+$_32-search: '\f1ae';
+$_32-security-f: '\f1af';
+$_32-security-l: '\f1b0';
+$_32-server-f: '\f1b1';
+$_32-server-l: '\f1b2';
+$_32-settings-f: '\f1b3';
+$_32-settings-l: '\f1b4';
+$_32-share-f: '\f1b5';
+$_32-share-l: '\f1b6';
+$_32-shop-f: '\f1b7';
+$_32-shop-l: '\f1b8';
+$_32-sign-ban-f: '\f1b9';
+$_32-sign-ban-l: '\f1ba';
+$_32-sign-help-f: '\f1bb';
+$_32-sign-help-l: '\f1bc';
+$_32-sign-info-f: '\f1bd';
+$_32-sign-info-l: '\f1be';
+$_32-sign-warning-f: '\f1bf';
+$_32-sign-warning-l: '\f1c0';
+$_32-sliders-f: '\f1c1';
+$_32-sliders-l: '\f1c2';
+$_32-smartphone-f: '\f1c3';
+$_32-smartphone-l: '\f1c4';
+$_32-survey-f: '\f1c5';
+$_32-survey-l: '\f1c6';
+$_32-switch-language-f: '\f1c7';
+$_32-switch-language-l: '\f1c8';
+$_32-tablet-f: '\f1c9';
+$_32-tablet-l: '\f1ca';
+$_32-tag-f: '\f1cb';
+$_32-tag-l: '\f1cc';
+$_32-test: '\f1cd';
+$_32-time-f: '\f1ce';
+$_32-time-l: '\f1cf';
+$_32-train-f: '\f1d0';
+$_32-train-l: '\f1d1';
+$_32-upload-f: '\f1d2';
+$_32-upload-l: '\f1d3';
+$_32-voice-input-f: '\f1d4';
+$_32-voice-input-l: '\f1d5';
+$_32-walking-f: '\f1d6';
+$_32-world-f: '\f1d7';
+$_32-world-l: '\f1d8';
+$_32-x: '\f1d9';
+$_32-zip-f: '\f1da';
+$_32-zip-l: '\f1db';
+$_32-zoom-in-f: '\f1dc';
+$_32-zoom-in-l: '\f1dd';
+$_32-zoom-out-f: '\f1de';
+$_32-zoom-out-l: '\f1df';
 
 .rex-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  top: 1px;
   display: inline-block;
-  font: normal 1em rex-icon;
+  font: normal 16px/1 rex-icon;
 
   @if variable-exists('_32-arrow-down') {
     &.arrow-down {
@@ -3577,6 +3582,130 @@ $_32-zoom-out-l: '\f1db';
     &.map-s {
       &::before {
         content: $_16-map;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal') {
+    &.meatball-horizontal {
+      &::before {
+        content: $_32-meatball-horizontal;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-horizontal-f') {
+    &.meatball-horizontal-f {
+      &::before {
+        content: $_32-meatball-horizontal-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-horizontal-l') {
+    &.meatball-horizontal-l {
+      &::before {
+        content: $_32-meatball-horizontal-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-meatball-horizontal') {
+    &.meatball-horizontal-s {
+      &::before {
+        content: $_16-meatball-horizontal;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal') {
+    &.meatball-horizontal {
+      &::before {
+        content: $_32-meatball-horizontal;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-horizontal-f') {
+    &.meatball-horizontal-f {
+      &::before {
+        content: $_32-meatball-horizontal-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-horizontal-l') {
+    &.meatball-horizontal-l {
+      &::before {
+        content: $_32-meatball-horizontal-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-meatball-horizontal') {
+    &.meatball-horizontal-s {
+      &::before {
+        content: $_16-meatball-horizontal;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical') {
+    &.meatball-vertical {
+      &::before {
+        content: $_32-meatball-vertical;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-vertical-f') {
+    &.meatball-vertical-f {
+      &::before {
+        content: $_32-meatball-vertical-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-vertical-l') {
+    &.meatball-vertical-l {
+      &::before {
+        content: $_32-meatball-vertical-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-meatball-vertical') {
+    &.meatball-vertical-s {
+      &::before {
+        content: $_16-meatball-vertical;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical') {
+    &.meatball-vertical {
+      &::before {
+        content: $_32-meatball-vertical;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-vertical-f') {
+    &.meatball-vertical-f {
+      &::before {
+        content: $_32-meatball-vertical-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-meatball-vertical-l') {
+    &.meatball-vertical-l {
+      &::before {
+        content: $_32-meatball-vertical-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-meatball-vertical') {
+    &.meatball-vertical-s {
+      &::before {
+        content: $_16-meatball-vertical;
       }
     }
   }
