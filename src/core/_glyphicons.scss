@@ -1,8 +1,8 @@
 @font-face {
   font-family: rex-icon;
-  src: url("#{$icon-font-path}#{$icon-font-name}.eot?bf5e286cc68ff419ba4a281906f18aaa?#iefix") format("embedded-opentype"),
-url("#{$icon-font-path}#{$icon-font-name}.woff2?bf5e286cc68ff419ba4a281906f18aaa") format("woff2"),
-url("#{$icon-font-path}#{$icon-font-name}.woff?bf5e286cc68ff419ba4a281906f18aaa") format("woff");
+  src: url("#{$icon-font-path}#{$icon-font-name}.eot?2874580f3481938ed3ec91caa2950e87?#iefix") format("embedded-opentype"),
+  url("#{$icon-font-path}#{$icon-font-name}.woff2?2874580f3481938ed3ec91caa2950e87") format("woff2"),
+  url("#{$icon-font-path}#{$icon-font-name}.woff?2874580f3481938ed3ec91caa2950e87") format("woff");
 }
 
 $_32-arrow-down-l: '\f101';
@@ -113,125 +113,128 @@ $_32-mail-f: '\f169';
 $_32-mail-l: '\f16a';
 $_32-map-f: '\f16b';
 $_32-map-l: '\f16c';
-$_32-menu: '\f16d';
-$_32-minus: '\f16e';
-$_32-mobile-phone-f: '\f16f';
-$_32-mobile-phone-l: '\f170';
-$_32-movie-f: '\f171';
-$_32-movie-l: '\f172';
-$_32-my-page-f: '\f173';
-$_32-my-page-l: '\f174';
-$_32-new-user-f: '\f175';
-$_32-new-window-f: '\f176';
-$_32-new-window-l: '\f177';
-$_32-notice-generic-f: '\f178';
-$_32-notice-generic-l: '\f179';
-$_32-notice-user-f: '\f17a';
-$_32-notice-user-l: '\f17b';
-$_32-overflow-button: '\f17c';
-$_32-paint-f: '\f17d';
-$_32-paint-l: '\f17e';
-$_32-paper-plane-f: '\f17f';
-$_32-paper-plane-l: '\f180';
-$_32-pdf-f: '\f181';
-$_32-pdf-l: '\f182';
-$_32-phone-f: '\f183';
-$_32-phone-l: '\f184';
-$_32-photograph-f: '\f185';
-$_32-photograph-l: '\f186';
-$_32-pin-f: '\f187';
-$_32-pin-l: '\f188';
-$_32-plane-f: '\f189';
-$_32-plane-l: '\f18a';
-$_32-plus: '\f18b';
-$_32-point-f: '\f18c';
-$_32-point-l: '\f18d';
-$_32-price-f: '\f18e';
-$_32-price-l: '\f18f';
-$_32-print-f: '\f190';
-$_32-print-l: '\f191';
-$_32-purchase-history-f: '\f192';
-$_32-purchase-history-l: '\f193';
-$_32-qrcode-f: '\f194';
-$_32-qrcode-l: '\f195';
-$_32-rakuten-account-f: '\f196';
-$_32-rakuten-account-l: '\f197';
-$_32-rakuten-close-account-f: '\f198';
-$_32-rakuten-close-account-l: '\f199';
-$_32-rakuten-registration-f: '\f19a';
-$_32-rakuten-registration-l: '\f19b';
-$_32-ranking-f: '\f19c';
-$_32-ranking-l: '\f19d';
-$_32-refresh: '\f19e';
-$_32-review-comment-f: '\f19f';
-$_32-review-comment-l: '\f1a0';
-$_32-review-edit-f: '\f1a1';
-$_32-review-edit-l: '\f1a2';
-$_32-rss-symbol-l: '\f1a3';
-$_32-rss-text-f: '\f1a4';
-$_32-rss-text-l: '\f1a5';
-$_32-save-f: '\f1a6';
-$_32-save-l: '\f1a7';
-$_32-search-history-f: '\f1a8';
-$_32-search-history-l: '\f1a9';
-$_32-search: '\f1aa';
-$_32-security-f: '\f1ab';
-$_32-security-l: '\f1ac';
-$_32-server-f: '\f1ad';
-$_32-server-l: '\f1ae';
-$_32-settings-f: '\f1af';
-$_32-settings-l: '\f1b0';
-$_32-share-f: '\f1b1';
-$_32-share-l: '\f1b2';
-$_32-shop-f: '\f1b3';
-$_32-shop-l: '\f1b4';
-$_32-sign-ban-f: '\f1b5';
-$_32-sign-ban-l: '\f1b6';
-$_32-sign-help-f: '\f1b7';
-$_32-sign-help-l: '\f1b8';
-$_32-sign-info-f: '\f1b9';
-$_32-sign-info-l: '\f1ba';
-$_32-sign-warning-f: '\f1bb';
-$_32-sign-warning-l: '\f1bc';
-$_32-sliders-f: '\f1bd';
-$_32-sliders-l: '\f1be';
-$_32-smartphone-f: '\f1bf';
-$_32-smartphone-l: '\f1c0';
-$_32-survey-f: '\f1c1';
-$_32-survey-l: '\f1c2';
-$_32-switch-language-f: '\f1c3';
-$_32-switch-language-l: '\f1c4';
-$_32-tablet-f: '\f1c5';
-$_32-tablet-l: '\f1c6';
-$_32-tag-f: '\f1c7';
-$_32-tag-l: '\f1c8';
-$_32-test: '\f1c9';
-$_32-time-f: '\f1ca';
-$_32-time-l: '\f1cb';
-$_32-train-f: '\f1cc';
-$_32-train-l: '\f1cd';
-$_32-upload-f: '\f1ce';
-$_32-upload-l: '\f1cf';
-$_32-voice-input-f: '\f1d0';
-$_32-voice-input-l: '\f1d1';
-$_32-walking-f: '\f1d2';
-$_32-world-f: '\f1d3';
-$_32-world-l: '\f1d4';
-$_32-x: '\f1d5';
-$_32-zip-f: '\f1d6';
-$_32-zip-l: '\f1d7';
-$_32-zoom-in-f: '\f1d8';
-$_32-zoom-in-l: '\f1d9';
-$_32-zoom-out-f: '\f1da';
-$_32-zoom-out-l: '\f1db';
-
+$_32-meatball-horizontal-f: '\f16d';
+$_32-meatball-horizontal-l: '\f16e';
+$_32-meatball-vertical-f: '\f16f';
+$_32-meatball-vertical-l: '\f170';
+$_32-menu: '\f171';
+$_32-minus: '\f172';
+$_32-mobile-phone-f: '\f173';
+$_32-mobile-phone-l: '\f174';
+$_32-movie-f: '\f175';
+$_32-movie-l: '\f176';
+$_32-my-page-f: '\f177';
+$_32-my-page-l: '\f178';
+$_32-new-user-f: '\f179';
+$_32-new-window-f: '\f17a';
+$_32-new-window-l: '\f17b';
+$_32-notice-generic-f: '\f17c';
+$_32-notice-generic-l: '\f17d';
+$_32-notice-user-f: '\f17e';
+$_32-notice-user-l: '\f17f';
+$_32-overflow-button: '\f180';
+$_32-paint-f: '\f181';
+$_32-paint-l: '\f182';
+$_32-paper-plane-f: '\f183';
+$_32-paper-plane-l: '\f184';
+$_32-pdf-f: '\f185';
+$_32-pdf-l: '\f186';
+$_32-phone-f: '\f187';
+$_32-phone-l: '\f188';
+$_32-photograph-f: '\f189';
+$_32-photograph-l: '\f18a';
+$_32-pin-f: '\f18b';
+$_32-pin-l: '\f18c';
+$_32-plane-f: '\f18d';
+$_32-plane-l: '\f18e';
+$_32-plus: '\f18f';
+$_32-point-f: '\f190';
+$_32-point-l: '\f191';
+$_32-price-f: '\f192';
+$_32-price-l: '\f193';
+$_32-print-f: '\f194';
+$_32-print-l: '\f195';
+$_32-purchase-history-f: '\f196';
+$_32-purchase-history-l: '\f197';
+$_32-qrcode-f: '\f198';
+$_32-qrcode-l: '\f199';
+$_32-rakuten-account-f: '\f19a';
+$_32-rakuten-account-l: '\f19b';
+$_32-rakuten-close-account-f: '\f19c';
+$_32-rakuten-close-account-l: '\f19d';
+$_32-rakuten-registration-f: '\f19e';
+$_32-rakuten-registration-l: '\f19f';
+$_32-ranking-f: '\f1a0';
+$_32-ranking-l: '\f1a1';
+$_32-refresh: '\f1a2';
+$_32-review-comment-f: '\f1a3';
+$_32-review-comment-l: '\f1a4';
+$_32-review-edit-f: '\f1a5';
+$_32-review-edit-l: '\f1a6';
+$_32-rss-symbol-l: '\f1a7';
+$_32-rss-text-f: '\f1a8';
+$_32-rss-text-l: '\f1a9';
+$_32-save-f: '\f1aa';
+$_32-save-l: '\f1ab';
+$_32-search-history-f: '\f1ac';
+$_32-search-history-l: '\f1ad';
+$_32-search: '\f1ae';
+$_32-security-f: '\f1af';
+$_32-security-l: '\f1b0';
+$_32-server-f: '\f1b1';
+$_32-server-l: '\f1b2';
+$_32-settings-f: '\f1b3';
+$_32-settings-l: '\f1b4';
+$_32-share-f: '\f1b5';
+$_32-share-l: '\f1b6';
+$_32-shop-f: '\f1b7';
+$_32-shop-l: '\f1b8';
+$_32-sign-ban-f: '\f1b9';
+$_32-sign-ban-l: '\f1ba';
+$_32-sign-help-f: '\f1bb';
+$_32-sign-help-l: '\f1bc';
+$_32-sign-info-f: '\f1bd';
+$_32-sign-info-l: '\f1be';
+$_32-sign-warning-f: '\f1bf';
+$_32-sign-warning-l: '\f1c0';
+$_32-sliders-f: '\f1c1';
+$_32-sliders-l: '\f1c2';
+$_32-smartphone-f: '\f1c3';
+$_32-smartphone-l: '\f1c4';
+$_32-survey-f: '\f1c5';
+$_32-survey-l: '\f1c6';
+$_32-switch-language-f: '\f1c7';
+$_32-switch-language-l: '\f1c8';
+$_32-tablet-f: '\f1c9';
+$_32-tablet-l: '\f1ca';
+$_32-tag-f: '\f1cb';
+$_32-tag-l: '\f1cc';
+$_32-test: '\f1cd';
+$_32-time-f: '\f1ce';
+$_32-time-l: '\f1cf';
+$_32-train-f: '\f1d0';
+$_32-train-l: '\f1d1';
+$_32-upload-f: '\f1d2';
+$_32-upload-l: '\f1d3';
+$_32-voice-input-f: '\f1d4';
+$_32-voice-input-l: '\f1d5';
+$_32-walking-f: '\f1d6';
+$_32-world-f: '\f1d7';
+$_32-world-l: '\f1d8';
+$_32-x: '\f1d9';
+$_32-zip-f: '\f1da';
+$_32-zip-l: '\f1db';
+$_32-zoom-in-f: '\f1dc';
+$_32-zoom-in-l: '\f1dd';
+$_32-zoom-out-f: '\f1de';
+$_32-zoom-out-l: '\f1df';
 .rex-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  top: 1px;
   display: inline-block;
   font: normal 1em rex-icon;
-
   @if variable-exists('_32-arrow-down') {
     &.arrow-down {
       &::before {
@@ -239,7 +242,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-down-f') {
     &.arrow-down-f {
       &::before {
@@ -247,7 +249,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-down-l') {
     &.arrow-down-l {
       &::before {
@@ -255,7 +256,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-arrow-down') {
     &.arrow-down-s {
       &::before {
@@ -270,7 +270,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-left-f') {
     &.arrow-left-f {
       &::before {
@@ -278,7 +277,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-left-l') {
     &.arrow-left-l {
       &::before {
@@ -286,7 +284,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-arrow-left') {
     &.arrow-left-s {
       &::before {
@@ -301,7 +298,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-right-f') {
     &.arrow-right-f {
       &::before {
@@ -309,7 +305,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-right-l') {
     &.arrow-right-l {
       &::before {
@@ -317,7 +312,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-arrow-right') {
     &.arrow-right-s {
       &::before {
@@ -332,7 +326,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-right-f') {
     &.arrow-right-f {
       &::before {
@@ -340,7 +333,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-right-l') {
     &.arrow-right-l {
       &::before {
@@ -348,7 +340,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-arrow-right') {
     &.arrow-right-s {
       &::before {
@@ -363,7 +354,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-up-f') {
     &.arrow-up-f {
       &::before {
@@ -371,7 +361,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-arrow-up-l') {
     &.arrow-up-l {
       &::before {
@@ -379,7 +368,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-arrow-up') {
     &.arrow-up-s {
       &::before {
@@ -394,7 +382,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-barcode-f') {
     &.barcode-f {
       &::before {
@@ -402,7 +389,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-barcode-l') {
     &.barcode-l {
       &::before {
@@ -410,7 +396,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-barcode') {
     &.barcode-s {
       &::before {
@@ -425,7 +410,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-barcode-f') {
     &.barcode-f {
       &::before {
@@ -433,7 +417,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-barcode-l') {
     &.barcode-l {
       &::before {
@@ -441,7 +424,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-barcode') {
     &.barcode-s {
       &::before {
@@ -456,7 +438,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-blockquote-left-f') {
     &.blockquote-left-f {
       &::before {
@@ -464,7 +445,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-blockquote-left-l') {
     &.blockquote-left-l {
       &::before {
@@ -472,7 +452,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-blockquote-left') {
     &.blockquote-left-s {
       &::before {
@@ -487,7 +466,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-blockquote-right-f') {
     &.blockquote-right-f {
       &::before {
@@ -495,7 +473,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-blockquote-right-l') {
     &.blockquote-right-l {
       &::before {
@@ -503,7 +480,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-blockquote-right') {
     &.blockquote-right-s {
       &::before {
@@ -518,7 +494,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-browsing-history-f') {
     &.browsing-history-f {
       &::before {
@@ -526,7 +501,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-browsing-history-l') {
     &.browsing-history-l {
       &::before {
@@ -534,7 +508,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-browsing-history') {
     &.browsing-history-s {
       &::before {
@@ -549,7 +522,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-browsing-history-f') {
     &.browsing-history-f {
       &::before {
@@ -557,7 +529,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-browsing-history-l') {
     &.browsing-history-l {
       &::before {
@@ -565,7 +536,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-browsing-history') {
     &.browsing-history-s {
       &::before {
@@ -580,7 +550,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-building-f') {
     &.building-f {
       &::before {
@@ -588,7 +557,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-building-l') {
     &.building-l {
       &::before {
@@ -596,7 +564,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-building') {
     &.building-s {
       &::before {
@@ -611,7 +578,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-building-f') {
     &.building-f {
       &::before {
@@ -619,7 +585,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-building-l') {
     &.building-l {
       &::before {
@@ -627,7 +592,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-building') {
     &.building-s {
       &::before {
@@ -642,7 +606,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-bus-f') {
     &.bus-f {
       &::before {
@@ -650,7 +613,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-bus-l') {
     &.bus-l {
       &::before {
@@ -658,7 +620,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-bus') {
     &.bus-s {
       &::before {
@@ -673,7 +634,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-bus-f') {
     &.bus-f {
       &::before {
@@ -681,7 +641,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-bus-l') {
     &.bus-l {
       &::before {
@@ -689,7 +648,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-bus') {
     &.bus-s {
       &::before {
@@ -704,7 +662,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-left-f') {
     &.button-chevron-left-f {
       &::before {
@@ -712,7 +669,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-left-l') {
     &.button-chevron-left-l {
       &::before {
@@ -720,7 +676,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-chevron-left') {
     &.button-chevron-left-s {
       &::before {
@@ -735,7 +690,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-left-f') {
     &.button-chevron-left-f {
       &::before {
@@ -743,7 +697,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-left-l') {
     &.button-chevron-left-l {
       &::before {
@@ -751,7 +704,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-chevron-left') {
     &.button-chevron-left-s {
       &::before {
@@ -766,7 +718,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-right-f') {
     &.button-chevron-right-f {
       &::before {
@@ -774,7 +725,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-right-l') {
     &.button-chevron-right-l {
       &::before {
@@ -782,7 +732,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-chevron-right') {
     &.button-chevron-right-s {
       &::before {
@@ -797,7 +746,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-right-f') {
     &.button-chevron-right-f {
       &::before {
@@ -805,7 +753,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-chevron-right-l') {
     &.button-chevron-right-l {
       &::before {
@@ -813,7 +760,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-chevron-right') {
     &.button-chevron-right-s {
       &::before {
@@ -828,7 +774,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-minus-f') {
     &.button-minus-f {
       &::before {
@@ -836,7 +781,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-minus-l') {
     &.button-minus-l {
       &::before {
@@ -844,7 +788,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-minus') {
     &.button-minus-s {
       &::before {
@@ -859,7 +802,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-minus-f') {
     &.button-minus-f {
       &::before {
@@ -867,7 +809,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-minus-l') {
     &.button-minus-l {
       &::before {
@@ -875,7 +816,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-minus') {
     &.button-minus-s {
       &::before {
@@ -890,7 +830,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-plus-f') {
     &.button-plus-f {
       &::before {
@@ -898,7 +837,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-plus-l') {
     &.button-plus-l {
       &::before {
@@ -906,7 +844,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-plus') {
     &.button-plus-s {
       &::before {
@@ -921,7 +858,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-plus-f') {
     &.button-plus-f {
       &::before {
@@ -929,7 +865,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-button-plus-l') {
     &.button-plus-l {
       &::before {
@@ -937,7 +872,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-button-plus') {
     &.button-plus-s {
       &::before {
@@ -952,7 +886,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calculator-f') {
     &.calculator-f {
       &::before {
@@ -960,7 +893,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calculator-l') {
     &.calculator-l {
       &::before {
@@ -968,7 +900,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-calculator') {
     &.calculator-s {
       &::before {
@@ -983,7 +914,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calculator-f') {
     &.calculator-f {
       &::before {
@@ -991,7 +921,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calculator-l') {
     &.calculator-l {
       &::before {
@@ -999,7 +928,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-calculator') {
     &.calculator-s {
       &::before {
@@ -1014,7 +942,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calendar-f') {
     &.calendar-f {
       &::before {
@@ -1022,7 +949,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calendar-l') {
     &.calendar-l {
       &::before {
@@ -1030,7 +956,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-calendar') {
     &.calendar-s {
       &::before {
@@ -1045,7 +970,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calendar-f') {
     &.calendar-f {
       &::before {
@@ -1053,7 +977,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-calendar-l') {
     &.calendar-l {
       &::before {
@@ -1061,7 +984,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-calendar') {
     &.calendar-s {
       &::before {
@@ -1076,7 +998,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-campaign-f') {
     &.campaign-f {
       &::before {
@@ -1084,7 +1005,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-campaign-l') {
     &.campaign-l {
       &::before {
@@ -1092,7 +1012,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-campaign') {
     &.campaign-s {
       &::before {
@@ -1107,7 +1026,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-campaign-f') {
     &.campaign-f {
       &::before {
@@ -1115,7 +1033,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-campaign-l') {
     &.campaign-l {
       &::before {
@@ -1123,7 +1040,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-campaign') {
     &.campaign-s {
       &::before {
@@ -1138,7 +1054,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-car-f') {
     &.car-f {
       &::before {
@@ -1146,7 +1061,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-car-l') {
     &.car-l {
       &::before {
@@ -1154,7 +1068,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-car') {
     &.car-s {
       &::before {
@@ -1169,7 +1082,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-car-f') {
     &.car-f {
       &::before {
@@ -1177,7 +1089,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-car-l') {
     &.car-l {
       &::before {
@@ -1185,7 +1096,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-car') {
     &.car-s {
       &::before {
@@ -1200,7 +1110,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cart-f') {
     &.cart-f {
       &::before {
@@ -1208,7 +1117,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cart-l') {
     &.cart-l {
       &::before {
@@ -1216,7 +1124,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-cart') {
     &.cart-s {
       &::before {
@@ -1231,7 +1138,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cart-f') {
     &.cart-f {
       &::before {
@@ -1239,7 +1145,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cart-l') {
     &.cart-l {
       &::before {
@@ -1247,7 +1152,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-cart') {
     &.cart-s {
       &::before {
@@ -1262,7 +1166,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-change-order-f') {
     &.change-order-f {
       &::before {
@@ -1270,7 +1173,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-change-order-l') {
     &.change-order-l {
       &::before {
@@ -1278,7 +1180,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-change-order') {
     &.change-order-s {
       &::before {
@@ -1293,7 +1194,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chat-f') {
     &.chat-f {
       &::before {
@@ -1301,7 +1201,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chat-l') {
     &.chat-l {
       &::before {
@@ -1309,7 +1208,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-chat') {
     &.chat-s {
       &::before {
@@ -1324,7 +1222,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chat-f') {
     &.chat-f {
       &::before {
@@ -1332,7 +1229,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chat-l') {
     &.chat-l {
       &::before {
@@ -1340,7 +1236,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-chat') {
     &.chat-s {
       &::before {
@@ -1355,7 +1250,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-check-f') {
     &.check-f {
       &::before {
@@ -1363,7 +1257,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-check-l') {
     &.check-l {
       &::before {
@@ -1371,7 +1264,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-check') {
     &.check-s {
       &::before {
@@ -1386,7 +1278,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chevron-left-f') {
     &.chevron-left-f {
       &::before {
@@ -1394,7 +1285,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chevron-left-l') {
     &.chevron-left-l {
       &::before {
@@ -1402,7 +1292,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-chevron-left') {
     &.chevron-left-s {
       &::before {
@@ -1417,7 +1306,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chevron-right-f') {
     &.chevron-right-f {
       &::before {
@@ -1425,7 +1313,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-chevron-right-l') {
     &.chevron-right-l {
       &::before {
@@ -1433,7 +1320,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-chevron-right') {
     &.chevron-right-s {
       &::before {
@@ -1448,7 +1334,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cloud-f') {
     &.cloud-f {
       &::before {
@@ -1456,7 +1341,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cloud-l') {
     &.cloud-l {
       &::before {
@@ -1464,7 +1348,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-cloud') {
     &.cloud-s {
       &::before {
@@ -1479,7 +1362,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cloud-f') {
     &.cloud-f {
       &::before {
@@ -1487,7 +1369,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-cloud-l') {
     &.cloud-l {
       &::before {
@@ -1495,7 +1376,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-cloud') {
     &.cloud-s {
       &::before {
@@ -1510,7 +1390,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-code-f') {
     &.code-f {
       &::before {
@@ -1518,7 +1397,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-code-l') {
     &.code-l {
       &::before {
@@ -1526,7 +1404,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-code') {
     &.code-s {
       &::before {
@@ -1541,7 +1418,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-code-f') {
     &.code-f {
       &::before {
@@ -1549,7 +1425,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-code-l') {
     &.code-l {
       &::before {
@@ -1557,7 +1432,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-code') {
     &.code-s {
       &::before {
@@ -1572,7 +1446,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-comment-f') {
     &.comment-f {
       &::before {
@@ -1580,7 +1453,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-comment-l') {
     &.comment-l {
       &::before {
@@ -1588,7 +1460,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-comment') {
     &.comment-s {
       &::before {
@@ -1603,7 +1474,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-comment-f') {
     &.comment-f {
       &::before {
@@ -1611,7 +1481,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-comment-l') {
     &.comment-l {
       &::before {
@@ -1619,7 +1488,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-comment') {
     &.comment-s {
       &::before {
@@ -1634,7 +1502,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-compare-f') {
     &.compare-f {
       &::before {
@@ -1642,7 +1509,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-compare-l') {
     &.compare-l {
       &::before {
@@ -1650,7 +1516,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-compare') {
     &.compare-s {
       &::before {
@@ -1665,7 +1530,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-compare-f') {
     &.compare-f {
       &::before {
@@ -1673,7 +1537,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-compare-l') {
     &.compare-l {
       &::before {
@@ -1681,7 +1544,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-compare') {
     &.compare-s {
       &::before {
@@ -1696,7 +1558,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-coupon-f') {
     &.coupon-f {
       &::before {
@@ -1704,7 +1565,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-coupon-l') {
     &.coupon-l {
       &::before {
@@ -1712,7 +1572,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-coupon') {
     &.coupon-s {
       &::before {
@@ -1727,7 +1586,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-coupon-f') {
     &.coupon-f {
       &::before {
@@ -1735,7 +1593,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-coupon-l') {
     &.coupon-l {
       &::before {
@@ -1743,7 +1600,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-coupon') {
     &.coupon-s {
       &::before {
@@ -1758,7 +1614,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-credit-card-f') {
     &.credit-card-f {
       &::before {
@@ -1766,7 +1621,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-credit-card-l') {
     &.credit-card-l {
       &::before {
@@ -1774,7 +1628,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-credit-card') {
     &.credit-card-s {
       &::before {
@@ -1789,7 +1642,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-credit-card-f') {
     &.credit-card-f {
       &::before {
@@ -1797,7 +1649,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-credit-card-l') {
     &.credit-card-l {
       &::before {
@@ -1805,7 +1656,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-credit-card') {
     &.credit-card-s {
       &::before {
@@ -1820,7 +1670,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-currency-f') {
     &.currency-f {
       &::before {
@@ -1828,7 +1677,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-currency-l') {
     &.currency-l {
       &::before {
@@ -1836,7 +1684,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-currency') {
     &.currency-s {
       &::before {
@@ -1851,7 +1698,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-currency-f') {
     &.currency-f {
       &::before {
@@ -1859,7 +1705,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-currency-l') {
     &.currency-l {
       &::before {
@@ -1867,7 +1712,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-currency') {
     &.currency-s {
       &::before {
@@ -1882,7 +1726,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delete-f') {
     &.delete-f {
       &::before {
@@ -1890,7 +1733,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delete-l') {
     &.delete-l {
       &::before {
@@ -1898,7 +1740,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-delete') {
     &.delete-s {
       &::before {
@@ -1913,7 +1754,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delete-f') {
     &.delete-f {
       &::before {
@@ -1921,7 +1761,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delete-l') {
     &.delete-l {
       &::before {
@@ -1929,7 +1768,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-delete') {
     &.delete-s {
       &::before {
@@ -1944,7 +1782,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delivery-f') {
     &.delivery-f {
       &::before {
@@ -1952,7 +1789,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delivery-l') {
     &.delivery-l {
       &::before {
@@ -1960,7 +1796,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-delivery') {
     &.delivery-s {
       &::before {
@@ -1975,7 +1810,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delivery-f') {
     &.delivery-f {
       &::before {
@@ -1983,7 +1817,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-delivery-l') {
     &.delivery-l {
       &::before {
@@ -1991,7 +1824,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-delivery') {
     &.delivery-s {
       &::before {
@@ -2006,7 +1838,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-desktop-f') {
     &.desktop-f {
       &::before {
@@ -2014,7 +1845,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-desktop-l') {
     &.desktop-l {
       &::before {
@@ -2022,7 +1852,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-desktop') {
     &.desktop-s {
       &::before {
@@ -2037,7 +1866,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-desktop-f') {
     &.desktop-f {
       &::before {
@@ -2045,7 +1873,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-desktop-l') {
     &.desktop-l {
       &::before {
@@ -2053,7 +1880,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-desktop') {
     &.desktop-s {
       &::before {
@@ -2068,7 +1894,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-domestic-area-f') {
     &.domestic-area-f {
       &::before {
@@ -2076,7 +1901,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-domestic-area-l') {
     &.domestic-area-l {
       &::before {
@@ -2084,7 +1908,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-domestic-area') {
     &.domestic-area-s {
       &::before {
@@ -2099,7 +1922,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-domestic-area-f') {
     &.domestic-area-f {
       &::before {
@@ -2107,7 +1929,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-domestic-area-l') {
     &.domestic-area-l {
       &::before {
@@ -2115,7 +1936,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-domestic-area') {
     &.domestic-area-s {
       &::before {
@@ -2130,7 +1950,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-download-f') {
     &.download-f {
       &::before {
@@ -2138,7 +1957,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-download-l') {
     &.download-l {
       &::before {
@@ -2146,7 +1964,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-download') {
     &.download-s {
       &::before {
@@ -2161,7 +1978,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-download-f') {
     &.download-f {
       &::before {
@@ -2169,7 +1985,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-download-l') {
     &.download-l {
       &::before {
@@ -2177,7 +1992,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-download') {
     &.download-s {
       &::before {
@@ -2192,7 +2006,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-external-link-f') {
     &.external-link-f {
       &::before {
@@ -2200,7 +2013,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-external-link-l') {
     &.external-link-l {
       &::before {
@@ -2208,7 +2020,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-external-link') {
     &.external-link-s {
       &::before {
@@ -2223,7 +2034,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-ban-f') {
     &.eye-ban-f {
       &::before {
@@ -2231,7 +2041,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-ban-l') {
     &.eye-ban-l {
       &::before {
@@ -2239,7 +2048,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-eye-ban') {
     &.eye-ban-s {
       &::before {
@@ -2254,7 +2062,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-ban-f') {
     &.eye-ban-f {
       &::before {
@@ -2262,7 +2069,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-ban-l') {
     &.eye-ban-l {
       &::before {
@@ -2270,7 +2076,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-eye-ban') {
     &.eye-ban-s {
       &::before {
@@ -2285,7 +2090,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-f') {
     &.eye-f {
       &::before {
@@ -2293,7 +2097,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-l') {
     &.eye-l {
       &::before {
@@ -2301,7 +2104,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-eye') {
     &.eye-s {
       &::before {
@@ -2316,7 +2118,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-f') {
     &.eye-f {
       &::before {
@@ -2324,7 +2125,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-eye-l') {
     &.eye-l {
       &::before {
@@ -2332,7 +2132,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-eye') {
     &.eye-s {
       &::before {
@@ -2347,7 +2146,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-favorite-f') {
     &.favorite-f {
       &::before {
@@ -2355,7 +2153,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-favorite-l') {
     &.favorite-l {
       &::before {
@@ -2363,7 +2160,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-favorite') {
     &.favorite-s {
       &::before {
@@ -2378,7 +2174,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-favorite-half-f') {
     &.favorite-half-f {
       &::before {
@@ -2386,7 +2181,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-favorite-half-l') {
     &.favorite-half-l {
       &::before {
@@ -2394,7 +2188,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-favorite-half') {
     &.favorite-half-s {
       &::before {
@@ -2409,7 +2202,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-favorite-f') {
     &.favorite-f {
       &::before {
@@ -2417,7 +2209,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-favorite-l') {
     &.favorite-l {
       &::before {
@@ -2425,7 +2216,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-favorite') {
     &.favorite-s {
       &::before {
@@ -2440,7 +2230,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ferry-f') {
     &.ferry-f {
       &::before {
@@ -2448,7 +2237,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ferry-l') {
     &.ferry-l {
       &::before {
@@ -2456,7 +2244,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-ferry') {
     &.ferry-s {
       &::before {
@@ -2471,7 +2258,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ferry-f') {
     &.ferry-f {
       &::before {
@@ -2479,7 +2265,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ferry-l') {
     &.ferry-l {
       &::before {
@@ -2487,7 +2272,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-ferry') {
     &.ferry-s {
       &::before {
@@ -2502,7 +2286,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-fill-color-f') {
     &.fill-color-f {
       &::before {
@@ -2510,7 +2293,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-fill-color-l') {
     &.fill-color-l {
       &::before {
@@ -2518,7 +2300,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-fill-color') {
     &.fill-color-s {
       &::before {
@@ -2533,7 +2314,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-fill-color-f') {
     &.fill-color-f {
       &::before {
@@ -2541,7 +2321,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-fill-color-l') {
     &.fill-color-l {
       &::before {
@@ -2549,7 +2328,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-fill-color') {
     &.fill-color-s {
       &::before {
@@ -2564,7 +2342,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-folder-f') {
     &.folder-f {
       &::before {
@@ -2572,7 +2349,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-folder-l') {
     &.folder-l {
       &::before {
@@ -2580,7 +2356,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-folder') {
     &.folder-s {
       &::before {
@@ -2595,7 +2370,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-folder-f') {
     &.folder-f {
       &::before {
@@ -2603,7 +2377,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-folder-l') {
     &.folder-l {
       &::before {
@@ -2611,7 +2384,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-folder') {
     &.folder-s {
       &::before {
@@ -2626,7 +2398,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-gift-f') {
     &.gift-f {
       &::before {
@@ -2634,7 +2405,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-gift-l') {
     &.gift-l {
       &::before {
@@ -2642,7 +2412,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-gift') {
     &.gift-s {
       &::before {
@@ -2657,7 +2426,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-gift-f') {
     &.gift-f {
       &::before {
@@ -2665,7 +2433,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-gift-l') {
     &.gift-l {
       &::before {
@@ -2673,7 +2440,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-gift') {
     &.gift-s {
       &::before {
@@ -2688,7 +2454,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-heart-f') {
     &.heart-f {
       &::before {
@@ -2696,7 +2461,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-heart-l') {
     &.heart-l {
       &::before {
@@ -2704,7 +2468,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-heart') {
     &.heart-s {
       &::before {
@@ -2719,7 +2482,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-heart-f') {
     &.heart-f {
       &::before {
@@ -2727,7 +2489,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-heart-l') {
     &.heart-l {
       &::before {
@@ -2735,7 +2496,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-heart') {
     &.heart-s {
       &::before {
@@ -2750,7 +2510,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-home-f') {
     &.home-f {
       &::before {
@@ -2758,7 +2517,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-home-l') {
     &.home-l {
       &::before {
@@ -2766,7 +2524,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-home') {
     &.home-s {
       &::before {
@@ -2781,7 +2538,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-home-f') {
     &.home-f {
       &::before {
@@ -2789,7 +2545,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-home-l') {
     &.home-l {
       &::before {
@@ -2797,7 +2552,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-home') {
     &.home-s {
       &::before {
@@ -2812,7 +2566,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-image-f') {
     &.image-f {
       &::before {
@@ -2820,7 +2573,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-image-l') {
     &.image-l {
       &::before {
@@ -2828,7 +2580,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-image') {
     &.image-s {
       &::before {
@@ -2843,7 +2594,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-image-f') {
     &.image-f {
       &::before {
@@ -2851,7 +2601,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-image-l') {
     &.image-l {
       &::before {
@@ -2859,7 +2608,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-image') {
     &.image-s {
       &::before {
@@ -2874,7 +2622,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-keyboard-f') {
     &.keyboard-f {
       &::before {
@@ -2882,7 +2629,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-keyboard-l') {
     &.keyboard-l {
       &::before {
@@ -2890,7 +2636,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-keyboard') {
     &.keyboard-s {
       &::before {
@@ -2905,7 +2650,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-keyboard-f') {
     &.keyboard-f {
       &::before {
@@ -2913,7 +2657,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-keyboard-l') {
     &.keyboard-l {
       &::before {
@@ -2921,7 +2664,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-keyboard') {
     &.keyboard-s {
       &::before {
@@ -2936,7 +2678,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-language-f') {
     &.language-f {
       &::before {
@@ -2944,7 +2685,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-language-l') {
     &.language-l {
       &::before {
@@ -2952,7 +2692,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-language') {
     &.language-s {
       &::before {
@@ -2967,7 +2706,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-language-f') {
     &.language-f {
       &::before {
@@ -2975,7 +2713,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-language-l') {
     &.language-l {
       &::before {
@@ -2983,7 +2720,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-language') {
     &.language-s {
       &::before {
@@ -2998,7 +2734,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-laptop-f') {
     &.laptop-f {
       &::before {
@@ -3006,7 +2741,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-laptop-l') {
     &.laptop-l {
       &::before {
@@ -3014,7 +2748,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-laptop') {
     &.laptop-s {
       &::before {
@@ -3029,7 +2762,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-laptop-f') {
     &.laptop-f {
       &::before {
@@ -3037,7 +2769,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-laptop-l') {
     &.laptop-l {
       &::before {
@@ -3045,7 +2776,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-laptop') {
     &.laptop-s {
       &::before {
@@ -3060,7 +2790,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-like-f') {
     &.like-f {
       &::before {
@@ -3068,7 +2797,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-like-l') {
     &.like-l {
       &::before {
@@ -3076,7 +2804,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-like') {
     &.like-s {
       &::before {
@@ -3091,7 +2818,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-like-f') {
     &.like-f {
       &::before {
@@ -3099,7 +2825,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-like-l') {
     &.like-l {
       &::before {
@@ -3107,7 +2832,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-like') {
     &.like-s {
       &::before {
@@ -3122,7 +2846,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-list-f') {
     &.list-f {
       &::before {
@@ -3130,7 +2853,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-list-l') {
     &.list-l {
       &::before {
@@ -3138,7 +2860,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-list') {
     &.list-s {
       &::before {
@@ -3153,7 +2874,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-list-f') {
     &.list-f {
       &::before {
@@ -3161,7 +2881,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-list-l') {
     &.list-l {
       &::before {
@@ -3169,7 +2888,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-list') {
     &.list-s {
       &::before {
@@ -3184,7 +2902,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-loading-f') {
     &.loading-f {
       &::before {
@@ -3192,7 +2909,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-loading-l') {
     &.loading-l {
       &::before {
@@ -3200,7 +2916,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-loading') {
     &.loading-s {
       &::before {
@@ -3215,7 +2930,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-loading-lg-f') {
     &.loading-lg-f {
       &::before {
@@ -3223,7 +2937,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-loading-lg-l') {
     &.loading-lg-l {
       &::before {
@@ -3231,7 +2944,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-loading-lg') {
     &.loading-lg-s {
       &::before {
@@ -3246,7 +2958,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-location-f') {
     &.location-f {
       &::before {
@@ -3254,7 +2965,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-location-l') {
     &.location-l {
       &::before {
@@ -3262,7 +2972,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-location') {
     &.location-s {
       &::before {
@@ -3277,7 +2986,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-location-f') {
     &.location-f {
       &::before {
@@ -3285,7 +2993,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-location-l') {
     &.location-l {
       &::before {
@@ -3293,7 +3000,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-location') {
     &.location-s {
       &::before {
@@ -3308,7 +3014,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-login-f') {
     &.login-f {
       &::before {
@@ -3316,7 +3021,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-login-l') {
     &.login-l {
       &::before {
@@ -3324,7 +3028,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-login') {
     &.login-s {
       &::before {
@@ -3339,7 +3042,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-logo-f') {
     &.logo-f {
       &::before {
@@ -3347,7 +3049,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-logo-l') {
     &.logo-l {
       &::before {
@@ -3355,7 +3056,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-logo') {
     &.logo-s {
       &::before {
@@ -3370,7 +3070,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-logout-f') {
     &.logout-f {
       &::before {
@@ -3378,7 +3077,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-logout-l') {
     &.logout-l {
       &::before {
@@ -3386,7 +3084,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-logout') {
     &.logout-s {
       &::before {
@@ -3401,7 +3098,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-lucky-kuji-f') {
     &.lucky-kuji-f {
       &::before {
@@ -3409,7 +3105,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-lucky-kuji-l') {
     &.lucky-kuji-l {
       &::before {
@@ -3417,7 +3112,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-lucky-kuji') {
     &.lucky-kuji-s {
       &::before {
@@ -3432,7 +3126,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-lucky-kuji-f') {
     &.lucky-kuji-f {
       &::before {
@@ -3440,7 +3133,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-lucky-kuji-l') {
     &.lucky-kuji-l {
       &::before {
@@ -3448,7 +3140,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-lucky-kuji') {
     &.lucky-kuji-s {
       &::before {
@@ -3463,7 +3154,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mail-f') {
     &.mail-f {
       &::before {
@@ -3471,7 +3161,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mail-l') {
     &.mail-l {
       &::before {
@@ -3479,7 +3168,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-mail') {
     &.mail-s {
       &::before {
@@ -3494,7 +3182,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mail-f') {
     &.mail-f {
       &::before {
@@ -3502,7 +3189,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mail-l') {
     &.mail-l {
       &::before {
@@ -3510,7 +3196,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-mail') {
     &.mail-s {
       &::before {
@@ -3525,7 +3210,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-map-f') {
     &.map-f {
       &::before {
@@ -3533,7 +3217,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-map-l') {
     &.map-l {
       &::before {
@@ -3541,7 +3224,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-map') {
     &.map-s {
       &::before {
@@ -3556,7 +3238,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-map-f') {
     &.map-f {
       &::before {
@@ -3564,7 +3245,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-map-l') {
     &.map-l {
       &::before {
@@ -3572,11 +3252,122 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-map') {
     &.map-s {
       &::before {
         content: $_16-map;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal') {
+    &.meatball-horizontal {
+      &::before {
+        content: $_32-meatball-horizontal;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal-f') {
+    &.meatball-horizontal-f {
+      &::before {
+        content: $_32-meatball-horizontal-f;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal-l') {
+    &.meatball-horizontal-l {
+      &::before {
+        content: $_32-meatball-horizontal-l;
+      }
+    }
+  }
+  @if variable-exists('_16-meatball-horizontal') {
+    &.meatball-horizontal-s {
+      &::before {
+        content: $_16-meatball-horizontal;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal') {
+    &.meatball-horizontal {
+      &::before {
+        content: $_32-meatball-horizontal;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal-f') {
+    &.meatball-horizontal-f {
+      &::before {
+        content: $_32-meatball-horizontal-f;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-horizontal-l') {
+    &.meatball-horizontal-l {
+      &::before {
+        content: $_32-meatball-horizontal-l;
+      }
+    }
+  }
+  @if variable-exists('_16-meatball-horizontal') {
+    &.meatball-horizontal-s {
+      &::before {
+        content: $_16-meatball-horizontal;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical') {
+    &.meatball-vertical {
+      &::before {
+        content: $_32-meatball-vertical;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical-f') {
+    &.meatball-vertical-f {
+      &::before {
+        content: $_32-meatball-vertical-f;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical-l') {
+    &.meatball-vertical-l {
+      &::before {
+        content: $_32-meatball-vertical-l;
+      }
+    }
+  }
+  @if variable-exists('_16-meatball-vertical') {
+    &.meatball-vertical-s {
+      &::before {
+        content: $_16-meatball-vertical;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical') {
+    &.meatball-vertical {
+      &::before {
+        content: $_32-meatball-vertical;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical-f') {
+    &.meatball-vertical-f {
+      &::before {
+        content: $_32-meatball-vertical-f;
+      }
+    }
+  }
+  @if variable-exists('_32-meatball-vertical-l') {
+    &.meatball-vertical-l {
+      &::before {
+        content: $_32-meatball-vertical-l;
+      }
+    }
+  }
+  @if variable-exists('_16-meatball-vertical') {
+    &.meatball-vertical-s {
+      &::before {
+        content: $_16-meatball-vertical;
       }
     }
   }
@@ -3587,7 +3378,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-menu-f') {
     &.menu-f {
       &::before {
@@ -3595,7 +3385,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-menu-l') {
     &.menu-l {
       &::before {
@@ -3603,7 +3392,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-menu') {
     &.menu-s {
       &::before {
@@ -3618,7 +3406,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-minus-f') {
     &.minus-f {
       &::before {
@@ -3626,7 +3413,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-minus-l') {
     &.minus-l {
       &::before {
@@ -3634,7 +3420,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-minus') {
     &.minus-s {
       &::before {
@@ -3649,7 +3434,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mobile-phone-f') {
     &.mobile-phone-f {
       &::before {
@@ -3657,7 +3441,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mobile-phone-l') {
     &.mobile-phone-l {
       &::before {
@@ -3665,7 +3448,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-mobile-phone') {
     &.mobile-phone-s {
       &::before {
@@ -3680,7 +3462,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mobile-phone-f') {
     &.mobile-phone-f {
       &::before {
@@ -3688,7 +3469,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-mobile-phone-l') {
     &.mobile-phone-l {
       &::before {
@@ -3696,7 +3476,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-mobile-phone') {
     &.mobile-phone-s {
       &::before {
@@ -3711,7 +3490,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-movie-f') {
     &.movie-f {
       &::before {
@@ -3719,7 +3497,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-movie-l') {
     &.movie-l {
       &::before {
@@ -3727,7 +3504,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-movie') {
     &.movie-s {
       &::before {
@@ -3742,7 +3518,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-movie-f') {
     &.movie-f {
       &::before {
@@ -3750,7 +3525,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-movie-l') {
     &.movie-l {
       &::before {
@@ -3758,7 +3532,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-movie') {
     &.movie-s {
       &::before {
@@ -3773,7 +3546,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-my-page-f') {
     &.my-page-f {
       &::before {
@@ -3781,7 +3553,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-my-page-l') {
     &.my-page-l {
       &::before {
@@ -3789,7 +3560,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-my-page') {
     &.my-page-s {
       &::before {
@@ -3804,7 +3574,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-my-page-f') {
     &.my-page-f {
       &::before {
@@ -3812,7 +3581,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-my-page-l') {
     &.my-page-l {
       &::before {
@@ -3820,7 +3588,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-my-page') {
     &.my-page-s {
       &::before {
@@ -3835,7 +3602,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-new-user-f') {
     &.new-user-f {
       &::before {
@@ -3843,7 +3609,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-new-user-l') {
     &.new-user-l {
       &::before {
@@ -3851,7 +3616,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-new-user') {
     &.new-user-s {
       &::before {
@@ -3866,7 +3630,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-new-window-f') {
     &.new-window-f {
       &::before {
@@ -3874,7 +3637,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-new-window-l') {
     &.new-window-l {
       &::before {
@@ -3882,7 +3644,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-new-window') {
     &.new-window-s {
       &::before {
@@ -3897,7 +3658,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-new-window-f') {
     &.new-window-f {
       &::before {
@@ -3905,7 +3665,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-new-window-l') {
     &.new-window-l {
       &::before {
@@ -3913,7 +3672,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-new-window') {
     &.new-window-s {
       &::before {
@@ -3928,7 +3686,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-generic-f') {
     &.notice-generic-f {
       &::before {
@@ -3936,7 +3693,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-generic-l') {
     &.notice-generic-l {
       &::before {
@@ -3944,7 +3700,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-notice-generic') {
     &.notice-generic-s {
       &::before {
@@ -3959,7 +3714,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-generic-f') {
     &.notice-generic-f {
       &::before {
@@ -3967,7 +3721,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-generic-l') {
     &.notice-generic-l {
       &::before {
@@ -3975,7 +3728,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-notice-generic') {
     &.notice-generic-s {
       &::before {
@@ -3990,7 +3742,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-user-f') {
     &.notice-user-f {
       &::before {
@@ -3998,7 +3749,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-user-l') {
     &.notice-user-l {
       &::before {
@@ -4006,7 +3756,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-notice-user') {
     &.notice-user-s {
       &::before {
@@ -4021,7 +3770,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-user-f') {
     &.notice-user-f {
       &::before {
@@ -4029,7 +3777,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-notice-user-l') {
     &.notice-user-l {
       &::before {
@@ -4037,7 +3784,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-notice-user') {
     &.notice-user-s {
       &::before {
@@ -4052,7 +3798,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-overflow-button-f') {
     &.overflow-button-f {
       &::before {
@@ -4060,7 +3805,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-overflow-button-l') {
     &.overflow-button-l {
       &::before {
@@ -4068,7 +3812,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-overflow-button') {
     &.overflow-button-s {
       &::before {
@@ -4083,7 +3826,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paint-f') {
     &.paint-f {
       &::before {
@@ -4091,7 +3833,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paint-l') {
     &.paint-l {
       &::before {
@@ -4099,7 +3840,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-paint') {
     &.paint-s {
       &::before {
@@ -4114,7 +3854,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paint-f') {
     &.paint-f {
       &::before {
@@ -4122,7 +3861,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paint-l') {
     &.paint-l {
       &::before {
@@ -4130,7 +3868,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-paint') {
     &.paint-s {
       &::before {
@@ -4145,7 +3882,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paper-plane-f') {
     &.paper-plane-f {
       &::before {
@@ -4153,7 +3889,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paper-plane-l') {
     &.paper-plane-l {
       &::before {
@@ -4161,7 +3896,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-paper-plane') {
     &.paper-plane-s {
       &::before {
@@ -4176,7 +3910,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paper-plane-f') {
     &.paper-plane-f {
       &::before {
@@ -4184,7 +3917,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-paper-plane-l') {
     &.paper-plane-l {
       &::before {
@@ -4192,7 +3924,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-paper-plane') {
     &.paper-plane-s {
       &::before {
@@ -4207,7 +3938,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pdf-f') {
     &.pdf-f {
       &::before {
@@ -4215,7 +3945,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pdf-l') {
     &.pdf-l {
       &::before {
@@ -4223,7 +3952,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-pdf') {
     &.pdf-s {
       &::before {
@@ -4238,7 +3966,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pdf-f') {
     &.pdf-f {
       &::before {
@@ -4246,7 +3973,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pdf-l') {
     &.pdf-l {
       &::before {
@@ -4254,7 +3980,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-pdf') {
     &.pdf-s {
       &::before {
@@ -4269,7 +3994,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-phone-f') {
     &.phone-f {
       &::before {
@@ -4277,7 +4001,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-phone-l') {
     &.phone-l {
       &::before {
@@ -4285,7 +4008,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-phone') {
     &.phone-s {
       &::before {
@@ -4300,7 +4022,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-phone-f') {
     &.phone-f {
       &::before {
@@ -4308,7 +4029,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-phone-l') {
     &.phone-l {
       &::before {
@@ -4316,7 +4036,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-phone') {
     &.phone-s {
       &::before {
@@ -4331,7 +4050,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-photograph-f') {
     &.photograph-f {
       &::before {
@@ -4339,7 +4057,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-photograph-l') {
     &.photograph-l {
       &::before {
@@ -4347,7 +4064,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-photograph') {
     &.photograph-s {
       &::before {
@@ -4362,7 +4078,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-photograph-f') {
     &.photograph-f {
       &::before {
@@ -4370,7 +4085,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-photograph-l') {
     &.photograph-l {
       &::before {
@@ -4378,7 +4092,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-photograph') {
     &.photograph-s {
       &::before {
@@ -4393,7 +4106,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pin-f') {
     &.pin-f {
       &::before {
@@ -4401,7 +4113,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pin-l') {
     &.pin-l {
       &::before {
@@ -4409,7 +4120,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-pin') {
     &.pin-s {
       &::before {
@@ -4424,7 +4134,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pin-f') {
     &.pin-f {
       &::before {
@@ -4432,7 +4141,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-pin-l') {
     &.pin-l {
       &::before {
@@ -4440,7 +4148,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-pin') {
     &.pin-s {
       &::before {
@@ -4455,7 +4162,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-plane-f') {
     &.plane-f {
       &::before {
@@ -4463,7 +4169,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-plane-l') {
     &.plane-l {
       &::before {
@@ -4471,7 +4176,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-plane') {
     &.plane-s {
       &::before {
@@ -4486,7 +4190,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-plane-f') {
     &.plane-f {
       &::before {
@@ -4494,7 +4197,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-plane-l') {
     &.plane-l {
       &::before {
@@ -4502,7 +4204,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-plane') {
     &.plane-s {
       &::before {
@@ -4517,7 +4218,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-plus-f') {
     &.plus-f {
       &::before {
@@ -4525,7 +4225,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-plus-l') {
     &.plus-l {
       &::before {
@@ -4533,7 +4232,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-plus') {
     &.plus-s {
       &::before {
@@ -4548,7 +4246,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-point-f') {
     &.point-f {
       &::before {
@@ -4556,7 +4253,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-point-l') {
     &.point-l {
       &::before {
@@ -4564,7 +4260,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-point') {
     &.point-s {
       &::before {
@@ -4579,7 +4274,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-point-f') {
     &.point-f {
       &::before {
@@ -4587,7 +4281,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-point-l') {
     &.point-l {
       &::before {
@@ -4595,7 +4288,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-point') {
     &.point-s {
       &::before {
@@ -4610,7 +4302,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-price-f') {
     &.price-f {
       &::before {
@@ -4618,7 +4309,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-price-l') {
     &.price-l {
       &::before {
@@ -4626,7 +4316,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-price') {
     &.price-s {
       &::before {
@@ -4641,7 +4330,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-price-f') {
     &.price-f {
       &::before {
@@ -4649,7 +4337,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-price-l') {
     &.price-l {
       &::before {
@@ -4657,7 +4344,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-price') {
     &.price-s {
       &::before {
@@ -4672,7 +4358,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-print-f') {
     &.print-f {
       &::before {
@@ -4680,7 +4365,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-print-l') {
     &.print-l {
       &::before {
@@ -4688,7 +4372,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-print') {
     &.print-s {
       &::before {
@@ -4703,7 +4386,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-print-f') {
     &.print-f {
       &::before {
@@ -4711,7 +4393,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-print-l') {
     &.print-l {
       &::before {
@@ -4719,7 +4400,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-print') {
     &.print-s {
       &::before {
@@ -4734,7 +4414,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-purchase-history-f') {
     &.purchase-history-f {
       &::before {
@@ -4742,7 +4421,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-purchase-history-l') {
     &.purchase-history-l {
       &::before {
@@ -4750,7 +4428,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-purchase-history') {
     &.purchase-history-s {
       &::before {
@@ -4765,7 +4442,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-purchase-history-f') {
     &.purchase-history-f {
       &::before {
@@ -4773,7 +4449,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-purchase-history-l') {
     &.purchase-history-l {
       &::before {
@@ -4781,7 +4456,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-purchase-history') {
     &.purchase-history-s {
       &::before {
@@ -4796,7 +4470,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-qrcode-f') {
     &.qrcode-f {
       &::before {
@@ -4804,7 +4477,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-qrcode-l') {
     &.qrcode-l {
       &::before {
@@ -4812,7 +4484,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-qrcode') {
     &.qrcode-s {
       &::before {
@@ -4827,7 +4498,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-qrcode-f') {
     &.qrcode-f {
       &::before {
@@ -4835,7 +4505,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-qrcode-l') {
     &.qrcode-l {
       &::before {
@@ -4843,7 +4512,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-qrcode') {
     &.qrcode-s {
       &::before {
@@ -4858,7 +4526,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-account-f') {
     &.rakuten-account-f {
       &::before {
@@ -4866,7 +4533,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-account-l') {
     &.rakuten-account-l {
       &::before {
@@ -4874,7 +4540,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rakuten-account') {
     &.rakuten-account-s {
       &::before {
@@ -4889,7 +4554,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-account-f') {
     &.rakuten-account-f {
       &::before {
@@ -4897,7 +4561,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-account-l') {
     &.rakuten-account-l {
       &::before {
@@ -4905,7 +4568,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rakuten-account') {
     &.rakuten-account-s {
       &::before {
@@ -4920,7 +4582,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-close-account-f') {
     &.rakuten-close-account-f {
       &::before {
@@ -4928,7 +4589,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-close-account-l') {
     &.rakuten-close-account-l {
       &::before {
@@ -4936,7 +4596,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rakuten-close-account') {
     &.rakuten-close-account-s {
       &::before {
@@ -4951,7 +4610,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-close-account-f') {
     &.rakuten-close-account-f {
       &::before {
@@ -4959,7 +4617,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-close-account-l') {
     &.rakuten-close-account-l {
       &::before {
@@ -4967,7 +4624,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rakuten-close-account') {
     &.rakuten-close-account-s {
       &::before {
@@ -4982,7 +4638,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-registration-f') {
     &.rakuten-registration-f {
       &::before {
@@ -4990,7 +4645,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-registration-l') {
     &.rakuten-registration-l {
       &::before {
@@ -4998,7 +4652,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rakuten-registration') {
     &.rakuten-registration-s {
       &::before {
@@ -5013,7 +4666,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-registration-f') {
     &.rakuten-registration-f {
       &::before {
@@ -5021,7 +4673,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rakuten-registration-l') {
     &.rakuten-registration-l {
       &::before {
@@ -5029,7 +4680,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rakuten-registration') {
     &.rakuten-registration-s {
       &::before {
@@ -5044,7 +4694,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ranking-f') {
     &.ranking-f {
       &::before {
@@ -5052,7 +4701,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ranking-l') {
     &.ranking-l {
       &::before {
@@ -5060,7 +4708,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-ranking') {
     &.ranking-s {
       &::before {
@@ -5075,7 +4722,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ranking-f') {
     &.ranking-f {
       &::before {
@@ -5083,7 +4729,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-ranking-l') {
     &.ranking-l {
       &::before {
@@ -5091,7 +4736,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-ranking') {
     &.ranking-s {
       &::before {
@@ -5106,7 +4750,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-refresh-f') {
     &.refresh-f {
       &::before {
@@ -5114,7 +4757,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-refresh-l') {
     &.refresh-l {
       &::before {
@@ -5122,7 +4764,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-refresh') {
     &.refresh-s {
       &::before {
@@ -5137,7 +4778,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-comment-f') {
     &.review-comment-f {
       &::before {
@@ -5145,7 +4785,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-comment-l') {
     &.review-comment-l {
       &::before {
@@ -5153,7 +4792,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-review-comment') {
     &.review-comment-s {
       &::before {
@@ -5168,7 +4806,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-comment-f') {
     &.review-comment-f {
       &::before {
@@ -5176,7 +4813,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-comment-l') {
     &.review-comment-l {
       &::before {
@@ -5184,7 +4820,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-review-comment') {
     &.review-comment-s {
       &::before {
@@ -5199,7 +4834,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-edit-f') {
     &.review-edit-f {
       &::before {
@@ -5207,7 +4841,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-edit-l') {
     &.review-edit-l {
       &::before {
@@ -5215,7 +4848,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-review-edit') {
     &.review-edit-s {
       &::before {
@@ -5230,7 +4862,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-edit-f') {
     &.review-edit-f {
       &::before {
@@ -5238,7 +4869,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-review-edit-l') {
     &.review-edit-l {
       &::before {
@@ -5246,7 +4876,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-review-edit') {
     &.review-edit-s {
       &::before {
@@ -5261,7 +4890,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rss-symbol-f') {
     &.rss-symbol-f {
       &::before {
@@ -5269,7 +4897,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rss-symbol-l') {
     &.rss-symbol-l {
       &::before {
@@ -5277,7 +4904,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rss-symbol') {
     &.rss-symbol-s {
       &::before {
@@ -5292,7 +4918,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rss-text-f') {
     &.rss-text-f {
       &::before {
@@ -5300,7 +4925,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rss-text-l') {
     &.rss-text-l {
       &::before {
@@ -5308,7 +4932,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rss-text') {
     &.rss-text-s {
       &::before {
@@ -5323,7 +4946,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rss-text-f') {
     &.rss-text-f {
       &::before {
@@ -5331,7 +4953,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-rss-text-l') {
     &.rss-text-l {
       &::before {
@@ -5339,7 +4960,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-rss-text') {
     &.rss-text-s {
       &::before {
@@ -5354,7 +4974,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-save-f') {
     &.save-f {
       &::before {
@@ -5362,7 +4981,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-save-l') {
     &.save-l {
       &::before {
@@ -5370,7 +4988,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-save') {
     &.save-s {
       &::before {
@@ -5385,7 +5002,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-save-f') {
     &.save-f {
       &::before {
@@ -5393,7 +5009,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-save-l') {
     &.save-l {
       &::before {
@@ -5401,7 +5016,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-save') {
     &.save-s {
       &::before {
@@ -5416,7 +5030,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-search-history-f') {
     &.search-history-f {
       &::before {
@@ -5424,7 +5037,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-search-history-l') {
     &.search-history-l {
       &::before {
@@ -5432,7 +5044,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-search-history') {
     &.search-history-s {
       &::before {
@@ -5447,7 +5058,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-search-history-f') {
     &.search-history-f {
       &::before {
@@ -5455,7 +5065,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-search-history-l') {
     &.search-history-l {
       &::before {
@@ -5463,7 +5072,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-search-history') {
     &.search-history-s {
       &::before {
@@ -5478,7 +5086,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-search-f') {
     &.search-f {
       &::before {
@@ -5486,7 +5093,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-search-l') {
     &.search-l {
       &::before {
@@ -5494,7 +5100,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-search') {
     &.search-s {
       &::before {
@@ -5509,7 +5114,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-security-f') {
     &.security-f {
       &::before {
@@ -5517,7 +5121,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-security-l') {
     &.security-l {
       &::before {
@@ -5525,7 +5128,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-security') {
     &.security-s {
       &::before {
@@ -5540,7 +5142,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-security-f') {
     &.security-f {
       &::before {
@@ -5548,7 +5149,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-security-l') {
     &.security-l {
       &::before {
@@ -5556,7 +5156,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-security') {
     &.security-s {
       &::before {
@@ -5571,7 +5170,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-server-f') {
     &.server-f {
       &::before {
@@ -5579,7 +5177,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-server-l') {
     &.server-l {
       &::before {
@@ -5587,7 +5184,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-server') {
     &.server-s {
       &::before {
@@ -5602,7 +5198,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-server-f') {
     &.server-f {
       &::before {
@@ -5610,7 +5205,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-server-l') {
     &.server-l {
       &::before {
@@ -5618,7 +5212,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-server') {
     &.server-s {
       &::before {
@@ -5633,7 +5226,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-settings-f') {
     &.settings-f {
       &::before {
@@ -5641,7 +5233,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-settings-l') {
     &.settings-l {
       &::before {
@@ -5649,7 +5240,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-settings') {
     &.settings-s {
       &::before {
@@ -5664,7 +5254,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-settings-f') {
     &.settings-f {
       &::before {
@@ -5672,7 +5261,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-settings-l') {
     &.settings-l {
       &::before {
@@ -5680,7 +5268,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-settings') {
     &.settings-s {
       &::before {
@@ -5695,7 +5282,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-share-f') {
     &.share-f {
       &::before {
@@ -5703,7 +5289,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-share-l') {
     &.share-l {
       &::before {
@@ -5711,7 +5296,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-share') {
     &.share-s {
       &::before {
@@ -5726,7 +5310,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-share-f') {
     &.share-f {
       &::before {
@@ -5734,7 +5317,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-share-l') {
     &.share-l {
       &::before {
@@ -5742,7 +5324,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-share') {
     &.share-s {
       &::before {
@@ -5757,7 +5338,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-shop-f') {
     &.shop-f {
       &::before {
@@ -5765,7 +5345,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-shop-l') {
     &.shop-l {
       &::before {
@@ -5773,7 +5352,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-shop') {
     &.shop-s {
       &::before {
@@ -5788,7 +5366,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-shop-f') {
     &.shop-f {
       &::before {
@@ -5796,7 +5373,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-shop-l') {
     &.shop-l {
       &::before {
@@ -5804,7 +5380,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-shop') {
     &.shop-s {
       &::before {
@@ -5819,7 +5394,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-ban-f') {
     &.sign-ban-f {
       &::before {
@@ -5827,7 +5401,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-ban-l') {
     &.sign-ban-l {
       &::before {
@@ -5835,7 +5408,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-ban') {
     &.sign-ban-s {
       &::before {
@@ -5850,7 +5422,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-ban-f') {
     &.sign-ban-f {
       &::before {
@@ -5858,7 +5429,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-ban-l') {
     &.sign-ban-l {
       &::before {
@@ -5866,7 +5436,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-ban') {
     &.sign-ban-s {
       &::before {
@@ -5881,7 +5450,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-help-f') {
     &.sign-help-f {
       &::before {
@@ -5889,7 +5457,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-help-l') {
     &.sign-help-l {
       &::before {
@@ -5897,7 +5464,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-help') {
     &.sign-help-s {
       &::before {
@@ -5912,7 +5478,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-help-f') {
     &.sign-help-f {
       &::before {
@@ -5920,7 +5485,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-help-l') {
     &.sign-help-l {
       &::before {
@@ -5928,7 +5492,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-help') {
     &.sign-help-s {
       &::before {
@@ -5943,7 +5506,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-info-f') {
     &.sign-info-f {
       &::before {
@@ -5951,7 +5513,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-info-l') {
     &.sign-info-l {
       &::before {
@@ -5959,7 +5520,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-info') {
     &.sign-info-s {
       &::before {
@@ -5974,7 +5534,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-info-f') {
     &.sign-info-f {
       &::before {
@@ -5982,7 +5541,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-info-l') {
     &.sign-info-l {
       &::before {
@@ -5990,7 +5548,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-info') {
     &.sign-info-s {
       &::before {
@@ -6005,7 +5562,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-warning-f') {
     &.sign-warning-f {
       &::before {
@@ -6013,7 +5569,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-warning-l') {
     &.sign-warning-l {
       &::before {
@@ -6021,7 +5576,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-warning') {
     &.sign-warning-s {
       &::before {
@@ -6036,7 +5590,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-warning-f') {
     &.sign-warning-f {
       &::before {
@@ -6044,7 +5597,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sign-warning-l') {
     &.sign-warning-l {
       &::before {
@@ -6052,7 +5604,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sign-warning') {
     &.sign-warning-s {
       &::before {
@@ -6067,7 +5618,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sliders-f') {
     &.sliders-f {
       &::before {
@@ -6075,7 +5625,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sliders-l') {
     &.sliders-l {
       &::before {
@@ -6083,7 +5632,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sliders') {
     &.sliders-s {
       &::before {
@@ -6098,7 +5646,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sliders-f') {
     &.sliders-f {
       &::before {
@@ -6106,7 +5653,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-sliders-l') {
     &.sliders-l {
       &::before {
@@ -6114,7 +5660,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-sliders') {
     &.sliders-s {
       &::before {
@@ -6129,7 +5674,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-smartphone-f') {
     &.smartphone-f {
       &::before {
@@ -6137,7 +5681,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-smartphone-l') {
     &.smartphone-l {
       &::before {
@@ -6145,7 +5688,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-smartphone') {
     &.smartphone-s {
       &::before {
@@ -6160,7 +5702,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-smartphone-f') {
     &.smartphone-f {
       &::before {
@@ -6168,7 +5709,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-smartphone-l') {
     &.smartphone-l {
       &::before {
@@ -6176,7 +5716,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-smartphone') {
     &.smartphone-s {
       &::before {
@@ -6191,7 +5730,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-survey-f') {
     &.survey-f {
       &::before {
@@ -6199,7 +5737,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-survey-l') {
     &.survey-l {
       &::before {
@@ -6207,7 +5744,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-survey') {
     &.survey-s {
       &::before {
@@ -6222,7 +5758,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-survey-f') {
     &.survey-f {
       &::before {
@@ -6230,7 +5765,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-survey-l') {
     &.survey-l {
       &::before {
@@ -6238,7 +5772,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-survey') {
     &.survey-s {
       &::before {
@@ -6253,7 +5786,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-switch-language-f') {
     &.switch-language-f {
       &::before {
@@ -6261,7 +5793,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-switch-language-l') {
     &.switch-language-l {
       &::before {
@@ -6269,7 +5800,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-switch-language') {
     &.switch-language-s {
       &::before {
@@ -6284,7 +5814,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-switch-language-f') {
     &.switch-language-f {
       &::before {
@@ -6292,7 +5821,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-switch-language-l') {
     &.switch-language-l {
       &::before {
@@ -6300,7 +5828,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-switch-language') {
     &.switch-language-s {
       &::before {
@@ -6315,7 +5842,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tablet-f') {
     &.tablet-f {
       &::before {
@@ -6323,7 +5849,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tablet-l') {
     &.tablet-l {
       &::before {
@@ -6331,7 +5856,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-tablet') {
     &.tablet-s {
       &::before {
@@ -6346,7 +5870,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tablet-f') {
     &.tablet-f {
       &::before {
@@ -6354,7 +5877,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tablet-l') {
     &.tablet-l {
       &::before {
@@ -6362,7 +5884,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-tablet') {
     &.tablet-s {
       &::before {
@@ -6377,7 +5898,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tag-f') {
     &.tag-f {
       &::before {
@@ -6385,7 +5905,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tag-l') {
     &.tag-l {
       &::before {
@@ -6393,7 +5912,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-tag') {
     &.tag-s {
       &::before {
@@ -6408,7 +5926,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tag-f') {
     &.tag-f {
       &::before {
@@ -6416,7 +5933,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-tag-l') {
     &.tag-l {
       &::before {
@@ -6424,7 +5940,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-tag') {
     &.tag-s {
       &::before {
@@ -6439,7 +5954,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-test-f') {
     &.test-f {
       &::before {
@@ -6447,7 +5961,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-test-l') {
     &.test-l {
       &::before {
@@ -6455,7 +5968,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-test') {
     &.test-s {
       &::before {
@@ -6470,7 +5982,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-time-f') {
     &.time-f {
       &::before {
@@ -6478,7 +5989,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-time-l') {
     &.time-l {
       &::before {
@@ -6486,7 +5996,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-time') {
     &.time-s {
       &::before {
@@ -6501,7 +6010,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-time-f') {
     &.time-f {
       &::before {
@@ -6509,7 +6017,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-time-l') {
     &.time-l {
       &::before {
@@ -6517,7 +6024,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-time') {
     &.time-s {
       &::before {
@@ -6532,7 +6038,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-train-f') {
     &.train-f {
       &::before {
@@ -6540,7 +6045,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-train-l') {
     &.train-l {
       &::before {
@@ -6548,7 +6052,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-train') {
     &.train-s {
       &::before {
@@ -6563,7 +6066,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-train-f') {
     &.train-f {
       &::before {
@@ -6571,7 +6073,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-train-l') {
     &.train-l {
       &::before {
@@ -6579,7 +6080,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-train') {
     &.train-s {
       &::before {
@@ -6594,7 +6094,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-upload-f') {
     &.upload-f {
       &::before {
@@ -6602,7 +6101,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-upload-l') {
     &.upload-l {
       &::before {
@@ -6610,7 +6108,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-upload') {
     &.upload-s {
       &::before {
@@ -6625,7 +6122,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-upload-f') {
     &.upload-f {
       &::before {
@@ -6633,7 +6129,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-upload-l') {
     &.upload-l {
       &::before {
@@ -6641,7 +6136,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-upload') {
     &.upload-s {
       &::before {
@@ -6656,7 +6150,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-voice-input-f') {
     &.voice-input-f {
       &::before {
@@ -6664,7 +6157,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-voice-input-l') {
     &.voice-input-l {
       &::before {
@@ -6672,7 +6164,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-voice-input') {
     &.voice-input-s {
       &::before {
@@ -6687,7 +6178,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-voice-input-f') {
     &.voice-input-f {
       &::before {
@@ -6695,7 +6185,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-voice-input-l') {
     &.voice-input-l {
       &::before {
@@ -6703,7 +6192,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-voice-input') {
     &.voice-input-s {
       &::before {
@@ -6718,7 +6206,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-walking-f') {
     &.walking-f {
       &::before {
@@ -6726,7 +6213,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-walking-l') {
     &.walking-l {
       &::before {
@@ -6734,7 +6220,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-walking') {
     &.walking-s {
       &::before {
@@ -6749,7 +6234,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-world-f') {
     &.world-f {
       &::before {
@@ -6757,7 +6241,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-world-l') {
     &.world-l {
       &::before {
@@ -6765,7 +6248,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-world') {
     &.world-s {
       &::before {
@@ -6780,7 +6262,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-world-f') {
     &.world-f {
       &::before {
@@ -6788,7 +6269,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-world-l') {
     &.world-l {
       &::before {
@@ -6796,7 +6276,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-world') {
     &.world-s {
       &::before {
@@ -6811,7 +6290,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-x-f') {
     &.x-f {
       &::before {
@@ -6819,7 +6297,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-x-l') {
     &.x-l {
       &::before {
@@ -6827,7 +6304,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-x') {
     &.x-s {
       &::before {
@@ -6842,7 +6318,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zip-f') {
     &.zip-f {
       &::before {
@@ -6850,7 +6325,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zip-l') {
     &.zip-l {
       &::before {
@@ -6858,7 +6332,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-zip') {
     &.zip-s {
       &::before {
@@ -6873,7 +6346,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zip-f') {
     &.zip-f {
       &::before {
@@ -6881,7 +6353,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zip-l') {
     &.zip-l {
       &::before {
@@ -6889,7 +6360,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-zip') {
     &.zip-s {
       &::before {
@@ -6904,7 +6374,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-in-f') {
     &.zoom-in-f {
       &::before {
@@ -6912,7 +6381,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-in-l') {
     &.zoom-in-l {
       &::before {
@@ -6920,7 +6388,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-zoom-in') {
     &.zoom-in-s {
       &::before {
@@ -6935,7 +6402,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-in-f') {
     &.zoom-in-f {
       &::before {
@@ -6943,7 +6409,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-in-l') {
     &.zoom-in-l {
       &::before {
@@ -6951,7 +6416,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-zoom-in') {
     &.zoom-in-s {
       &::before {
@@ -6966,7 +6430,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-out-f') {
     &.zoom-out-f {
       &::before {
@@ -6974,7 +6437,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-out-l') {
     &.zoom-out-l {
       &::before {
@@ -6982,7 +6444,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-zoom-out') {
     &.zoom-out-s {
       &::before {
@@ -6997,7 +6458,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-out-f') {
     &.zoom-out-f {
       &::before {
@@ -7005,7 +6465,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_32-zoom-out-l') {
     &.zoom-out-l {
       &::before {
@@ -7013,7 +6472,6 @@ $_32-zoom-out-l: '\f1db';
       }
     }
   }
-
   @if variable-exists('_16-zoom-out') {
     &.zoom-out-s {
       &::before {
