@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>
+    Rex CSS Framework
+  </title>
+  <meta name="description" content="Rex CSS Framework is a responsive CSS framework based on Rakuten Rex design. ">
+  <meta name="author" content="REX Css Framework Authors (https://github.com/rakuten-frontend/rex-css-framework/graphs/contributors)">
+  <link rel="prefetch" as="font" type="font/woff2" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff2"
+    crossorigin>
+  <link rel="prefetch" as="font" type="font/woff" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff"
+    crossorigin>
+  <link rel="prefetch" as="font" type="font/otf" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf"
+    crossorigin>
+
+  <!-- Rex core CSS -->
+  <link rel="stylesheet" href="/rex-css-framework/0.1.4-beta/dist/css/rex.css">
+  <link rel="stylesheet" href="/rex-css-framework/style/prism.css">
+  <link rel="stylesheet" href="/rex-css-framework/style/custom.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section id="typography">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="display-1">
+        Typography
+      </h1>
+      <h2>CDN</h2>
+      <pre class="language-html code-example"><code><!-- Dependencies -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.4-beta/css/rex-core.css" rel="stylesheet">
+<!-- Typography -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.4-beta/css/rex-typography.css" rel="stylesheet" ></code></pre>
+      <h2>NPM</h2>
+      <pre class="language-js code-example"><code>//JavaScript Import
+import 'rex-css-framework/dist/css/rex-core.css';
+import 'rex-css-framework/dist/css/rex-typography.css';</code></pre>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Working Examples</h2>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Display Title
+    </h2>
+    <div class="display-1">
+      Display Title1
+    </div>
+    <div class="display-2">
+      Display Title2
+    </div>
+    <div class="display-3">
+      Display Title3
+    </div>
+    <div class="display-4">
+      Display Title4
+    </div>
+    <div class="display-5">
+      Display Title5
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code>
+<div class="display-1">Display Title1</div>
+<div class="display-2">Display Title2</div>
+<div class="display-3">Display Title3</div>
+<div class="display-4">Display Title4</div>
+<div class="display-5">Display Title5</div>
+</code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h1>
+      Heading Title1
+    </h1>
+    <h2>
+      Heading Title2
+    </h2>
+    <h3>
+      Heading Title3
+    </h3>
+    <h4>
+      Heading Title4
+    </h4>
+    <h5>
+      Heading Title5
+    </h5>
+    <h6>
+      Heading Title1
+    </h6>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><h1>Heading Title1</h1>
+<h2>Heading Title1</h2>
+<h3>Heading Title2</h3>
+<h4>Heading Title3</h4>
+<h5>Heading Title4</h5>
+<h6>Heading Title5</h6>
+<h6>Heading Title6</h6>
+</code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h1>
+      Heading Title1
+      <small class="secondary-text">
+        Subtitle
+      </small>
+    </h1>
+    <h2>
+      Heading Title2
+      <small class="secondary-text">
+        Subtitle
+      </small>
+    </h2>
+    <h3>
+      Heading Title3
+      <small class="secondary-text">
+        Subtitle
+      </small>
+    </h3>
+    <h4>
+      Heading Title4
+      <small class="secondary-text">
+        Subtitle
+      </small>
+    </h4>
+    <h5>
+      Heading Title5
+      <small class="secondary-text">
+        Subtitle
+      </small>
+    </h5>
+    <h6>
+      Heading Title6
+      <small class="secondary-text">
+        Subtitle
+      </small>
+    </h6>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><h1>
+    Heading Title1
+    <small class="secondary-text">Subtitle</small>
+</h1>
+<h2>
+    Heading Title2
+    <small class="secondary-text">Subtitle</small>
+</h2>
+<h3>
+    Heading Title3
+    <small class="secondary-text">Subtitle</small>
+</h3>
+<h4>Heading Title4
+    <small class="secondary-text">Subtitle</small>
+</h4>
+<h5>Heading Title5
+    <small class="secondary-text">Subtitle</small>
+</h5>
+<h6>Heading Title6
+    <small class="secondary-text">Subtitle</small>
+</h6>
+</code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Pharagraph
+    </h2>
+    <h3>
+      Base Typography Paragraph
+    </h3>
+    <p>
+      Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><p>Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</p>
+</code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h3>
+      Lead Text
+    </h3>
+    <p class="lead">
+      Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><p class="lead"> Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</p></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h3>
+      Large Text
+    </h3>
+    <p class="large">
+      Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><p class="large"> Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</p></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h3>
+      Small Text
+    </h3>
+    <p class="small">
+      Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><p class="small"> Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</p></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h3>
+      Extra Small Text
+    </h3>
+    <p class="extra-small">
+      Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><p class="extra-small"> Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</p></code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Inline text elements
+    </h2>
+    <p>
+      <mark>
+        You can use the mark tag to highlight text.</mark>
+      <pre class="language-html code-example"><code><mark>You can use the mark tag to highlight text.</mark></code></pre>
+    </p>
+    <p>
+      <del>
+        This line of text is meant to be treated as deleted text.</del>
+      <pre class="language-html code-example"><code><del>This line of text is meant to be treated as deleted text.</del></code></pre>
+    </p>
+    <p>
+      <s>
+        This line of text is meant to be treated as no longer accurate.</s>
+      <pre class="language-html code-example"><code><s>This line of text is meant to be treated as no longer accurate.</s></code></pre>
+    </p>
+    <p>
+      <ins>
+        This line of text is meant to be treated as an addition to the document.</ins>
+      <pre class="language-html code-example"><code><ins>This line of text is meant to be treated as an addition to the document.</ins></code></pre>
+    </p>
+    <p>
+      <u>
+        This line of text will render as underlined
+      </u>
+      <pre class="language-html code-example"><code><u>This line of text will render as underlined</u></code></pre>
+    </p>
+    <p>
+      <small>
+        This line of text is meant to be treated as fine print.
+      </small>
+      <pre class="language-html code-example"><code><small>This line of text is meant to be treated as fine print.</small></code></pre>
+    </p>
+    <p>
+      <strong>
+        This line rendered as bold text.
+      </strong>
+      <pre class="language-html code-example"><code><strong>This line rendered as bold text.</strong></code></pre>
+    </p>
+    <p>
+      <em>
+        This line rendered as italicized text.
+      </em>
+      <pre class="language-html code-example"><code><em>This line rendered as italicized text.</em></code></pre>
+    </p>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-md-12">
+    <h2>
+      Alignment
+    </h2>
+    <h3>
+      Left
+    </h3>
+    <div class="text-left">
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="text-left">Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</div></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>
+      Right
+    </h3>
+    <div class="text-right">
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="text-right">Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</div></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>
+      Center
+    </h3>
+    <div class="text-center">
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="text-center">Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</div></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>
+      Justify
+    </h3>
+    <div class="text-justify">
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="text-justify">Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</div></code></pre>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h3>
+      No Wrap
+    </h3>
+    <div class="text-nowrap" style="overflow-x: scroll;
+overflow-y: hidden;">
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><div class="text-nowrap">Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.</div></code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Text Transform
+    </h2>
+    <p class="text-lowercase">
+      Rendered as lower-case text
+    </p>
+
+    <p class="text-uppercase">
+      Rendered as upper-case text
+    </p>
+    <p class="text-capitalize">
+      Rendered as capitalized text
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code>
+<p class="text-lowercase">Rendered as lower-case text</p>
+<p class="text-uppercase">Rendered as upper-case text</p>
+<p class="text-capitalize">Rendered as capitalized text</p>
+</code>
+</pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Attribute &amp; initialism
+    </h2>
+    <h3>
+      The &lt;abbr&gt; represents an abbreviation or acronym
+    </h3>
+    <abbr title="World Wide Web">WWW</abbr>
+    <br />
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <br />
+    <pre class="language-html code-example"><code><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></code></pre>
+    </p>
+  </div>
+  <div class="col-sm-12">
+    <h3>
+      Displays the text inside the &lt;abbr&gt; element in a slightly smaller font size
+    </h3>
+    <p>
+      <span title="HyperText Markup Language" class="initialism">HTML</span>
+       is the standard markup language for creating web pages and web applications.
+    </p>
+    <pre class="language-html code-example"><code><p><span title="HyperText Markup Language" class="initialism">HTML</span>  is the standard markup language for creating web pages and web applications.</p></code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Address
+    </h2>
+    <h3>
+      The &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.
+    </h3>
+    <address>
+      <strong>
+        Rakuten Crimson House
+      </strong>
+      <p>
+        〒158-0094
+        <br />
+        Rakuten Crimson House, 1-14-1 Tamagawa, Setagaya-ku, Tokyo
+        <br /> Tel:
+        <a href="tel:050-5581-6910">050-5581-6910</a>（代）
+      </p>
+
+    </address>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><address>
+  <strong>
+  Rakuten Crimson House
+  </strong>
+  <p>〒158-0094
+  <br />
+  Rakuten Crimson House, 1-14-1 Tamagawa, Setagaya-ku, Tokyo
+    <br /> Tel:
+    <a href="tel:050-5581-6910">050-5581-6910</a>（代）
+  </p>
+</address></code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h2>
+      Blockquote
+    </h2>
+    <blockquote>
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+    </blockquote>
+    <blockquote>
+      <p>
+        Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+      </p>
+      <footer>
+        <cite title="楽天流">
+          Hiroshi Mikitani</cite>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="col-sm-12">
+    <pre class="language-html code-example"><code><blockquote>
+<p>
+    Without dreams, we stop moving forward. Dreams are the fuel poweing our lives, businesses, and societies.
+</p>
+<footer>
+<cite title="楽天流">Hiroshi Mikitani</cite>
+</footer>
+</blockquote></code></pre>
+  </div>
+</div>
+  <div class="row">
+  <div class="col-sm-12">
+    <h1>
+      List
+    </h1>
+  </div>
+  <div class="col-sm-12">
+  <h2>
+    Unordered List
+  </h2>
+  <ul>
+    <li>
+      Lorem ipsum dolor sit amet
+      <ul>
+        <li>
+          mnesarchum vituperata eu mei
+        </li>
+        <li>
+          Sea ne vide laudem
+        </li>
+      </ul>
+    </li>
+    <li>
+      per ad dicta alterum temporibus
+    </li>
+    <li>
+      Ius ne omnium alterum ullamcorper
+    </li>
+  </ul>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><ul>
+    <li>
+    Lorem ipsum dolor sit amet
+        <ul>
+            <li>
+                mnesarchum vituperata eu mei
+            </li>
+            <li>
+                Sea ne vide laudem
+            </li>
+        </ul>
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+    <li>
+        Ius ne omnium alterum ullamcorper
+    </li>
+</ul>
+</code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    An Ordered List
+  </h2>
+  <ol>
+    <li>
+      Lorem ipsum dolor sit amet
+    </li>
+    <li>
+      mnesarchum vituperata eu mei
+    </li>
+    <li>
+      Sea ne vide laudem
+    </li>
+    <li>
+      per ad dicta alterum temporibus
+    </li>
+  </ol>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><ol>
+    <li>
+        Lorem ipsum dolor sit amet
+    </li>
+    <li>
+        mnesarchum vituperata eu mei
+    </li>
+    <li>
+        Sea ne vide laudem
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+</ol>
+</code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    Unstyled List
+  </h2>
+  <ul class="list-unstyled">
+    <li>
+      Lorem ipsum dolor sit amet
+      <ul>
+        <li>
+          mnesarchum vituperata eu mei
+        </li>
+        <li>
+          Sea ne vide laudem
+        </li>
+      </ul>
+    </li>
+    <li>
+      per ad dicta alterum temporibus
+    </li>
+    <li>
+      Ius ne omnium alterum ullamcorper
+    </li>
+  </ul>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><ul class="list-unstyled">
+    <li>
+        Lorem ipsum dolor sit amet
+            <ul>
+                <li>
+                    mnesarchum vituperata eu mei
+                </li>
+                <li>
+                    Sea ne vide laudem
+                </li>
+            </ul>
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+    <li>
+        Ius ne omnium alterum ullamcorper
+    </li>
+</ul>
+</code></pre>
+</div>
+  <div class="col-sm-12">
+ <h2>
+  Unordered List Item With Reference Mark
+ </h2>
+ <ol class="list-asterisk">
+  <li>
+   Lorem ipsum dolor sit amet
+  </li>
+  <li>
+   mnesarchum vituperata eu mei
+  </li>
+  <li>
+   Sea ne vide laudem
+  </li>
+  <li>
+   per ad dicta alterum temporibus
+  </li>
+ </ol>
+</div>
+<div class="col-sm-12">
+ <pre class="language-html code-example"><code><ol class="list-asterisk">
+    <li>
+        Lorem ipsum dolor sit amet
+    </li>
+    <li>
+        mnesarchum vituperata eu mei
+    </li>
+    <li>
+        Sea ne vide laudem
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+</ol></code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    Ordered List Item With Reference Mark
+  </h2>
+  <ol class="list-asterisk-ordered">
+    <li>
+      Lorem ipsum dolor sit amet
+    </li>
+    <li>
+      mnesarchum vituperata eu mei
+    </li>
+    <li>
+      Sea ne vide laudem
+    </li>
+    <li>
+      per ad dicta alterum temporibus
+    </li>
+    <li>
+      Ius ne omnium alterum ullamcorper
+    </li>
+  </ol>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><ol class="list-asterisk-ordered">
+    <li>
+        Lorem ipsum dolor sit amet
+    </li>
+    <li>
+        mnesarchum vituperata eu mei
+    </li>
+    <li>
+        Sea ne vide laudem
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+    <li>
+        Ius ne omnium alterum ullamcorper
+    </li>
+</ol></code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    Unordered List Item With Asterix
+  </h2>
+  <ol class="list-asterisk-en">
+    <li>
+      Lorem ipsum dolor sit amet
+    </li>
+    <li>
+      mnesarchum vituperata eu mei
+    </li>
+    <li>
+      Sea ne vide laudem
+    </li>
+    <li>
+      per ad dicta alterum temporibus
+    </li>
+  </ol>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><ol class="list-asterisk-en">
+    <li>
+        Lorem ipsum dolor sit amet
+    </li>
+    <li>
+        mnesarchum vituperata eu mei
+    </li>
+    <li>
+        Sea ne vide laudem
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+</ol></code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    Ordered List Item With Asterix
+  </h2>
+  <ol class="list-asterisk-ordered-en">
+    <li>
+      Lorem ipsum dolor sit amet
+    </li>
+    <li>
+      mnesarchum vituperata eu mei
+    </li>
+    <li>
+      Sea ne vide laudem
+    </li>
+    <li>
+      per ad dicta alterum temporibus
+    </li>
+  </ol>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><ol class="list-asterisk-ordered-en">
+    <li>
+        Lorem ipsum dolor sit amet
+    </li>
+    <li>
+        mnesarchum vituperata eu mei
+    </li>
+    <li>
+        Sea ne vide laudem
+    </li>
+    <li>
+        per ad dicta alterum temporibus
+    </li>
+</ol></code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    Description List
+  </h2>
+  <dl>
+    <dt>
+      Mercury
+    </dt>
+    <dd>
+      Mercury is the closest planet to the Sun and the smallest planet in the Solar System
+    </dd>
+    <dt>
+      Venus
+    </dt>
+    <dd>
+      Venu has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets
+    </dd>
+    <dt>
+      Mars
+    </dt>
+    <dd>
+      Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury.
+    </dd>
+  </dl>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><dl>
+    <dt>
+        Mercury
+    </dt>
+    <dd>
+        Mercury is the closest planet to the Sun and the smallest planet in the Solar System
+    </dd>
+    <dt>
+        Venus
+    </dt>
+    <dd>
+        Venu has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets
+    </dd>
+    <dt>
+        Mars
+    </dt>
+    <dd>
+        Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury.
+    </dd>
+</dl></code></pre>
+</div>
+  <div class="col-sm-12">
+  <h2>
+    Horizontal List
+  </h2>
+  <dl class="dl-horizontal">
+    <dt>
+      Mercury
+    </dt>
+    <dd>
+      Mercury is the closest planet to the Sun and the smallest planet in the Solar System
+    </dd>
+    <dt>
+      Venus
+    </dt>
+    <dd>
+      Venu has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets
+    </dd>
+  </dl>
+</div>
+<div class="col-sm-12">
+  <pre class="language-html code-example"><code><dl class="dl-horizontal">
+    <dt>
+        Mercury
+    </dt>
+    <dd>
+        Mercury is the closest planet to the Sun and the smallest planet in the Solar System
+    </dd>
+    <dt>
+        Venus
+    </dt>
+    <dd>
+        Venu has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets
+    </dd>
+</dl></code></pre>
+</div>
+  <div class="col-sm-12">
+	<h2>
+		Inline List
+	</h2>
+	<ul class="list-inline">
+		<li>
+			Lorem ipsum dolor sit amet
+		</li>
+		<li>
+			mnesarchum vituperata eu mei
+		</li>
+		<li>
+			Sea ne vide laudem
+		</li>
+	</ul>
+</div>
+<div class="col-sm-12">
+	<pre class="language-html code-example"><code><ul class="list-inline">
+    <li>
+        Lorem ipsum dolor sit amet
+    </li>
+    <li>
+        mnesarchum vituperata eu mei
+    </li>
+    <li>
+        Sea ne vide laudem
+    </li>
+</ul></code></pre>
+</div>
+</div>
+</section>
+<script>
+  String.prototype.escape = function () {
+    var tagsToReplace = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;'
+    };
+    return this.replace(/[&<>]/g, function (tag) {
+      return tagsToReplace[tag] || tag;
+    });
+  };
+
+  String.prototype.replaceEmptyProp = function (prop, propFixed) {
+    return this.replace(prop, propFixed);
+  };
+
+  function setCodeExamples() {
+    var list = document.querySelectorAll('.code-example > code');
+    for (var i = 0; i < list.length; i++) {
+      var example = list[i];
+      var innerHTML = example.innerHTML;
+      var emptyPropFix_checked = innerHTML.replaceEmptyProp('checked=""', 'checked');
+      var emptyPropFix_required = emptyPropFix_checked.replaceEmptyProp('required=""', 'required');
+      var escapedSample = emptyPropFix_required.escape();
+      example.innerHTML = escapedSample;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    setCodeExamples();
+  });
+</script>
+<script src="/rex-css-framework/js/prism.js"></script>
+</body>
+
+</html>
