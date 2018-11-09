@@ -1,145 +1,152 @@
 /*Custom CSS for document*/
 
 .wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 main section {
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 main section .row {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 form .row {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .navbar-header {
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    background-color: transparent;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+.icon-class {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 .navbar-brand,
 .navbar-nav {
-    float: left;
-    margin: 0;
+  float: left;
+  margin: 0;
 }
 
 .main-nav li a {
-    padding: .5rem;
+  padding: .5rem;
 }
 
 .navbar-brand a {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .navbar-brand img {
-    width: 8rem;
+  width: 8rem;
 }
 
 .navbar-nav li {
-    display: inline-block;
-    margin: 0;
+  display: inline-block;
+  margin: 0;
 }
 
 .navbar-nav,
 .side-navbar {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .side-navbar.fixed {
-    position: fixed;
-    top: 8rem;
+  position: fixed;
+  top: 8rem;
 }
 
 .side-navbar li a,
 .side-navbar li span {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .side-navbar li.active a {
-    border-left: 2px solid #bf0000;
-    padding-left: 1em;
-    font-weight: bold;
+  border-left: 2px solid #bf0000;
+  padding-left: 1em;
+  font-weight: bold;
 }
 
 .side-navbar h4 {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .local-extended {
-    font-size: 1.2rem;
-    margin-right: 1.5em;
+  font-size: 1.2rem;
+  margin-right: 1.5em;
 }
 
 .local-extended a {
-    margin-top: .8em;
+  margin-top: .8em;
 }
 
 .local-extended li {
-    padding-left: 0 .5em;
+  padding-left: 0 .5em;
 }
 
 .local-extended li:first-child:after {
-    content: '│';
+  content: '│';
 }
 
 .local-extended .rex-icon {
-    top: .3rem;
+  top: .3rem;
 }
 
 #grid .row {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 img.logo {
-    width: 16px;
-    margin-bottom: 0.1em;
+  width: 16px;
+  margin-bottom: 0.1em;
 }
 
 .grid-sample [class*="col-"] {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    background-color: #eee;
-    background-color: rgba(189, 0, 0, 0.19);
-    border: 1px solid #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #eee;
+  background-color: rgba(189, 0, 0, 0.19);
+  border: 1px solid #fff;
 }
 
 #icon .icon-samples .rex-icon {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 #icon .icon-samples-m .rex-icon {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 #icon .icon-samples-s .rex-icon {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+#icon .icon-samples .col-xs-2 {
+  min-height: 7.5em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+#icon .icon-samples .col-xs-2:hover {
+  background-color: #ccc;
 }
 
 .wrapper-code-sample {
-    clear: left;
-    padding-top: 1em;
+  clear: left;
+  padding: 1em 0;
 }
 
 .with-bg {
-    background-color: #F8F8F8;
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-@media screen and (max-width:600px) {
-    #button .btn {
-        display: inline-block;
-        margin-bottom: .5em;
-    }
-    #button .btn-group .btn {
-        display: inline;
-    }
+  background-color: #F8F8F8;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*----------- Hambuger Menu -----------*/
@@ -147,21 +154,21 @@ img.logo {
 /* Button styling */
 
 .menu-toggle {
-    display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #333;
+  display: inline-block;
+  padding: .75em 1.5rem;
+  line-height: 1em;
+  font-size: 1em;
+  color: #333;
 }
 
 .menu-close .rex-icon,
 .menu-toggle .rex-icon {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    color: #c00;
+  color: #c00;
 }
 
 /*
@@ -170,53 +177,53 @@ img.logo {
 */
 
 .main-menu {
-    position: absolute;
-    left: -200px;
-    top: 0;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: visible;
-    transition: left 0.3s ease, box-shadow 0.3s ease;
-    z-index: 999;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: visible;
+  transition: left 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
 }
 
 .main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 2.5em 0 0;
-    /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
-    -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
-    box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
-    min-height: 100%;
-    width: 200px;
-    background: #1a1a1a;
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
+  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
+  box-shadow: -8px 0 8px rgba(0, 0, 0, .5);
+  min-height: 100%;
+  width: 200px;
+  background: #1a1a1a;
 }
 
 .main-menu a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #383838;
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
 }
 
 .main-menu li:first-child a {
-    border-top: 1px solid #383838;
+  border-top: 1px solid #383838;
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
-    background: #333;
-    text-decoration: underline;
+  background: #333;
+  text-decoration: underline;
 }
 
 .main-menu .menu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /*
@@ -226,22 +233,35 @@ img.logo {
 
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
-    left: 0;
-    outline: none;
-    -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
-    -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
-    box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+  box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
 }
 
 .main-menu:target .menu-close,
 .main-menu[aria-expanded="true"] .menu-close {
-    z-index: 1001;
+  z-index: 1001;
 }
 
 .main-menu:target ul,
 .main-menu[aria-expanded="true"] ul {
-    position: relative;
-    z-index: 1000;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Screen reader only */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* 
@@ -251,25 +271,25 @@ img.logo {
 
 .main-menu:target+.backdrop,
 .main-menu[aria-expanded="true"]+.backdrop {
-    position: absolute;
-    display: block;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    background: #000;
-    background: rgba(0, 0, 0, .85);
-    cursor: default;
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0, 0, 0, .85);
+  cursor: default;
 }
 
 @supports (position: fixed) {
-    .main-menu,
-    .main-menu:target+.backdrop,
-    .main-menu[aria-expanded="true"]+.backdrop {
-        position: fixed;
-    }
+  .main-menu,
+  .main-menu:target+.backdrop,
+  .main-menu[aria-expanded="true"]+.backdrop {
+    position: fixed;
+  }
 }
 
 /*
@@ -277,57 +297,93 @@ img.logo {
  Horizontal menu
 */
 
-@media (min-width: 768px) {
-    .main-menu,
-    .menu-toggle,
-    .main-menu .menu-close {
-        display: none;
-    }
-    /* Undo positioning of off-canvas menu */
-    .main-menu {
-        position: relative;
-        left: auto;
-        top: auto;
-        height: auto;
-    }
-    .main-menu ul {
-        display: flex;
-        /* Undo off-canvas styling */
-        padding: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        height: auto;
-        width: auto;
-        background: none;
-    }
-    .main-menu a {
-        border: 0 !important;
-        /* Remove borders from off-canvas styling */
-    }
-    .main-menu a:hover,
-    .main-menu a:focus {
-        background: none;
-    }
+@media screen and (min-width: 768px) {
+  .main-menu,
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
+  .main-menu ul {
+    display: flex;
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  .main-menu a {
+    border: 0 !important;
+    /* Remove borders from off-canvas styling */
+  }
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none;
+  }
 }
 
-@media (max-width: 767px) {
-    .side-navbar {
-        display: none;
-    }
-    .navbar-header {
-        background-color: #fff;
-        width: 100%;
-        position: fixed;
-        z-index: 3;
-    }
-    .navbar-nav .btn {
-        padding: 0.4rem .6rem;
-        margin-top: .8em;
-        margin-left: .8em;
-        font-size: 1.2rem;
-    }
-    .navbar-header+.container {
-        padding-top: 2em;
-    }
+@media screen and (max-width: 767px) {
+  .side-navbar {
+    display: none;
+  }
+  .navbar-header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    padding-top: 0;
+  }
+  .navbar-nav {
+    padding-left: 0;
+  }
+  .navbar-nav .btn {
+    padding: 0.4rem .6rem;
+    margin-left: .8em;
+    font-size: 1.2rem;
+  }
+  .navbar-header .container {
+    position: relative;
+  }
+  .navbar-brand {
+    margin-left: 2.7rem;
+    margin-top: .85rem;
+  }
+  .navbar-brand img {
+    width: 5rem;
+  }
+  .menu-toggle {
+    position: absolute;
+    left: -.1em;
+    top: 0;
+    padding: .75em 1rem;
+  }
+  .local-extended {
+    margin: 0;
+    padding-left: 0;
+  }
+  #icon .icon-samples .col-xs-2 {
+    min-height: 9em;
+  }
+  .icon-class {
+    font-size: 1rem;
+  }
+  #button .btn {
+    display: inline-block;
+    margin-bottom: .5em;
+  }
+  #button .btn-group .btn {
+    display: inline;
+  }
+  .main-content {
+    margin-top: 7rem;
+  }
 }

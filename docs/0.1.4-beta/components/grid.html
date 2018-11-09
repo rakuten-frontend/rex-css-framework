@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>
+    Rex CSS Framework
+  </title>
+  <meta name="description" content="Rex CSS Framework is a responsive CSS framework based on Rakuten Rex design. ">
+  <meta name="author" content="REX Css Framework Authors (https://github.com/rakuten-frontend/rex-css-framework/graphs/contributors)">
+  <link rel="prefetch" as="font" type="font/woff2" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff2"
+    crossorigin>
+  <link rel="prefetch" as="font" type="font/woff" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.woff"
+    crossorigin>
+  <link rel="prefetch" as="font" type="font/otf" href="https://fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf"
+    crossorigin>
+
+  <!-- Rex core CSS -->
+  <link rel="stylesheet" href="/rex-css-framework/0.1.4-beta/dist/css/rex.css">
+  <link rel="stylesheet" href="/rex-css-framework/style/prism.css">
+  <link rel="stylesheet" href="/rex-css-framework/style/custom.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section id="grid">
+  <h1 class="display-1">
+    Grid
+  </h1>
+  <h2>
+    Grid System CSS CDN
+  </h2>
+  <p>
+    Grid System cdn for responsive(mobile, tablet, laptops and wide screen displays), mobile and non-mobile.
+  </p>
+  <h2>CDN</h2>
+  <pre class="language-html code-example"><code><!-- Grid (Responsive) -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.4-beta/css/rex-grid-responsive.css" rel="stylesheet" >
+<!-- or -->
+<!-- Grid (Non-Mobile) -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.4-beta/css/rex-grid-non-mobile.css" rel="stylesheet" >
+<!-- or -->
+<!-- Grid (Mobile) -->
+<link href="https://r.r10s.jp/com/rex/css-framework/0.1.4-beta/css/rex-grid-mobile.css" rel="stylesheet" >
+</code></pre>
+  <h2>NPM</h2>
+  <pre class="language-js code-example"><code>//JavaScript Import
+import 'rex-css-framework/dist/css/rex-grid-responsive.css';
+//or 
+import 'rex-css-framework/dist/css/rex-grid-non-mobile.css';
+//or
+import 'rex-css-framework/dist/css/rex-grid-mobile.css';
+            </code></pre>
+
+  <div class="table-responsive">
+    <table class="table table-bordered" style="width: 1100px">
+        <caption>
+            <strong class="large">
+Device resolution and breakpoints
+</strong>
+        </caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>
+                    Mobile
+                </th>
+                <th>
+                    Tablet
+                </th>
+                <th>
+                    Tablet, PC Laptop
+                </th>
+                <th>
+                    Display
+                </th>
+                <th>
+                    Display, PC Laptop
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Breakpoint
+                </td>
+                <td>&lt; 切替なし</td>
+                <td>&ge; 576px</td>
+                <td>&ge; 768px</td>
+                <td>&ge; 992px</td>
+                <td>&ge; 1200px</td>
+            </tr>
+            <tr>
+                <td>
+                    Container
+                </td>
+                <td>自動</td>
+                <td>570px</td>
+                <td>756px</td>
+                <td>976px</td>
+                <td>1168px</td>
+            </tr>
+            <tr>
+                <td>
+                    Apple devices reference
+                </td>
+                <td>
+                    <img height="50" title="iPhone SE" src="/rex-css-framework/img/device/apple-iphone-se-silver.jpg" />
+                    <img height="60" title="iPhone 8" src="/rex-css-framework/img/device/apple-iphone-8-silver.jpg" />
+                    <img height="70" title="iPhone 7 Plus" src="/rex-css-framework/img/device/apple-iphone-7-plus-silver.jpg" />
+                    <img height="70" title="iPhone X" src="/rex-css-framework/img/device/apple-iphone-x-silver.jpg" />
+                </td>
+                <td>
+                    <img height="50" title="iPad Mini 4" src="/rex-css-framework/img/device/apple-ipad-mini-4-silver.jpg" />
+                    <img height="60" title="iPad Air 2" src="/rex-css-framework/img/device/apple-ipad-air-2-silver.jpg" />
+                </td>
+                <td>
+                    <img height="70" title="iPad Pro" src="/rex-css-framework/img/device/apple-ipad-pro-silver.jpg" />
+                    <img height="60" title="Macbook Air" src="/rex-css-framework/img/device/apple-macbook-air-13.jpg" />
+                </td>
+                <td>
+                    <img height="70" title="Macbook Pro" src="/rex-css-framework/img/device/apple-macbook-pro-15.jpg" />
+                </td>
+                <td>
+                    <img height="70" title="iMac Retina" src="/rex-css-framework/img/device/apple-imac-retina.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Non-Apple devices reference
+                </td>
+                <td>
+                    <img height="50" title="Motorola Moto G" src="/rex-css-framework/img/device/motorola-moto-g.jpg" />
+                    <img height="60" title="Huawei P8" src="/rex-css-framework/img/device/huawei-p8-black.jpg" />
+                    <img height="70" title="Google Pixel 2" src="/rex-css-framework/img/device/google-pixel-2-just-black.jpg" />
+                    <img height="70" title="Samsung Galaxy S8" src="/rex-css-framework/img/device/samsung-galaxy-s8-midnight-black.jpg" />
+                </td>
+                <td>
+                    <img height="50" title="Nexus 9" src="/rex-css-framework/img/device/nexus-9.jpg" />
+                    <img height="60" title="Surface 3" src="/rex-css-framework/img/device/microsoft-surface-pro-3.jpg" />
+                </td>
+                <td>
+                    <img height="70" title="Surface Pro 4" src="/rex-css-framework/img/device/microsoft-surface-pro-4.jpg" />
+                    <img height="60" title="Dell XPS 13'" src="/rex-css-framework/img/device/dell-xps-13.jpg" />
+                </td>
+                <td>
+                    <img height="70" title="Dell XPS 15'" src="/rex-css-framework/img/device/dell-xps-15.jpg" />
+                </td>
+                <td>
+                    <img height="70" title="Dell UltraSharp HD" src="/rex-css-framework/img/device/dell-ultrasharp-5K-monitor-27.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gutter
+                </td>
+                <td colspan="5">
+                    <strong>
+30px(15px on each side of a column)
+</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Class
+                </td>
+                <td>
+                    <strong>.col-xs</strong>
+                </td>
+                <td>
+                    <strong>.col-sm-</strong>
+                </td>
+                <td>
+                    <strong>.col-md-</strong>
+                </td>
+                <td>
+                    <strong>.col-lg-</strong>
+                </td>
+                <td>
+                    <strong>.col-xl-</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+    <em class="small">* Devices images reference provided by Facebook Design
+            <a title="Facebook Design Website" href="https://facebook.design/devices">
+                <img height="20" src="/rex-css-framework/img/logo/facebook-design.png" />
+            </a>
+        </em>
+</p>
+
+  <div class="grid-sample">
+    <div class="row">
+      <h1>
+        How to layout grids
+      </h1>
+      <ul>
+        <li>
+          The container class gives its div a specific fixed width. The container-fluid&#39;s  width changes every time the viewport width changes.
+        </li>
+        <li>
+          The row class is used mainly to hold columns in it.
+        </li>
+        <li>
+          Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three .col-sm-4
+        </li>
+      </ul>
+    </div>
+    <section>
+    <div class="row">
+        <h3>.col-xl- Display, PC, Laptopサイズ</h3>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-1">
+            <span>.col-xl-1</span>
+        </div>
+        <div class="col-xl-2">
+            <span>.col-xl-2</span>
+        </div>
+        <div class="col-xl-3">
+            <span>.col-xl-3</span>
+        </div>
+        <div class="col-xl-6">
+            <span>.col-xl-6</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <span>col-xl-3</span>
+        </div>
+        <div class="col-xl-3">
+            <span>col-xl-3</span>
+        </div>
+        <div class="col-xl-3">
+            <span>col-xl-3</span>
+        </div>
+        <div class="col-xl-3">
+            <span>col-xl-3</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4">
+            <span>col-xl-4</span>
+        </div>
+        <div class="col-xl-4">
+            <span>col-xl-4</span>
+        </div>
+        <div class="col-xl-4">
+            <span>col-xl-4</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-6">
+            <span>col-xl-6</span>
+        </div>
+        <div class="col-xl-6">
+            <span>col-xl-6</span>
+        </div>
+        <div class="wrapper-code-sample">
+            <pre class="language-html code-example"><code><div class="row">
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-1">.col-xl-1</div>
+    </div>
+    <div class="row">
+        <div class="col-xl-1">.col-xl-1</div>
+        <div class="col-xl-2">.col-xl-2</div>
+        <div class="col-xl-3">.col-xl-3</div>
+        <div class="col-xl-6">.col-xl-6</div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">col-xl-3</div>
+        <div class="col-xl-3">col-xl-3</div>
+        <div class="col-xl-3">col-xl-3</div>
+        <div class="col-xl-3">col-xl-3</div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4">col-xl-4</div>
+        <div class="col-xl-4">col-xl-4</div>
+        <div class="col-xl-4">col-xl-4</div>
+    </div>
+    <div class="row">
+        <div class="col-xl-6">col-xl-6</div>
+        <div class="col-xl-6">col-xl-6</div>
+    </div>
+</code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-6">
+            <span>col-xl-6</span>
+            <div class="row">
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <span>col-xl-6</span>
+            <div class="row">
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+                <div class="col-xl-3">
+                    <span>col-xl-3</span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-code-sample">
+            <pre class="language-html code-example"><code><div class="row">
+    <div class="col-xl-6">
+        <span>col-xl-6</span>
+        <div class="row">
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6">
+        <span>col-xl-6</span>
+        <div class="row">
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+            <div class="col-xl-3">
+                <span>col-xl-3</span>
+            </div>
+        </div>
+    </div>
+</div></code></pre>
+        </div>
+</section>
+    <section>
+  <h2>.container
+    (fixed width)
+  </h2>
+  <h3>.col-md-
+    Tablet, PC Laptop
+  </h3>
+  <div class="row">
+    <div class="col-md-12">
+      <span>.col-md-1</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+    <div class="col-md-8">
+      <span>.col-md-8</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      <span>.col-md-5</span>
+    </div>
+    <div class="col-md-7">
+      <span>.col-md-7</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <span>.col-md-7</span>
+    </div>
+    <div class="col-md-5">
+      <span>.col-md-5</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <span>.col-md-8</span>
+    </div>
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <span>.col-md-9</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10">
+      <span>.col-md-10</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+  </div>
+</section>
+    <section>
+    <div class="row">
+        <h3>.col-xs-
+            Mobile
+        </h3>
+        <div class="col-xs-1">
+            <span>1</span>
+        </div>
+        <div class="col-xs-1">
+            <span>2</span>
+        </div>
+        <div class="col-xs-1">
+            <span>3</span>
+        </div>
+        <div class="col-xs-1">
+            <span>4</span>
+        </div>
+        <div class="col-xs-1">
+            <span>5</span>
+        </div>
+        <div class="col-xs-1">
+            <span>6</span>
+        </div>
+        <div class="col-xs-1">
+            <span>7</span>
+        </div>
+        <div class="col-xs-1">
+            <span>8</span>
+        </div>
+        <div class="col-xs-1">
+            <span>9</span>
+        </div>
+        <div class="col-xs-1">
+            <span>10</span>
+        </div>
+        <div class="col-xs-1">
+            <span>11</span>
+        </div>
+        <div class="col-xs-1">
+            <span>12</span>
+        </div>
+        <div class="wrapper-code-sample">
+            <pre class="language-html code-example"><code><div class="container">
+    <div class="col-xs-1">1</div>
+    <div class="col-xs-1">2</div>
+    <div class="col-xs-1">3</div>
+    <div class="col-xs-1">4</div>
+    <div class="col-xs-1">5</div>
+    <div class="col-xs-1">6</div>
+    <div class="col-xs-1">7</div>
+    <div class="col-xs-1">8</div>
+    <div class="col-xs-1">9</div>
+    <div class="col-xs-1">10</div>
+    <div class="col-xs-1">11</div>
+    <div class="col-xs-1">12</div>
+</div>
+</code></pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">
+            <span>.col-xs-1</span>
+        </div>
+        <div class="col-xs-2">
+            <span>.col-xs-2</span>
+        </div>
+        <div class="col-xs-3">
+            <span>.col-xs-3</span>
+        </div>
+        <div class="col-xs-6">
+            <span>.col-xs-6</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">
+            <span>col-xs-3</span>
+        </div>
+        <div class="col-xs-3">
+            <span>col-xs-3</span>
+        </div>
+        <div class="col-xs-3">
+            <span>col-xs-3</span>
+        </div>
+        <div class="col-xs-3">
+            <span>col-xs-3</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <span>col-xs-4</span>
+        </div>
+        <div class="col-xs-4">
+            <span>col-xs-4</span>
+        </div>
+        <div class="col-xs-4">
+            <span>col-xs-4</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <span>col-xs-6</span>
+        </div>
+        <div class="col-xs-6">
+            <span>col-xs-6</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <h3>
+            Setting different columns for different devices
+        </h3>
+        <div class="col-sm-2 col-md-4">
+            <span>.col-sm-2 .col-md-4</span>
+        </div>
+        <div class="col-sm-8 col-md-4">
+            <span>.col-sm-8 .col-md-4</span>
+        </div>
+        <div class="col-sm-2 col-md-4">
+            <span>.col-sm-2 .col-md-4</span>
+        </div>
+    </div>
+</section>
+    <section>
+    <div class="row">
+        <h3>.col-sm-
+            Tablet
+        </h3>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <span>.col-sm-1</span>
+        </div>
+        <div class="col-sm-2">
+            <span>.col-sm-2</span>
+        </div>
+        <div class="col-sm-3">
+            <span>.col-sm-3</span>
+        </div>
+        <div class="col-sm-6">
+            <span>.col-sm-6</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <span>col-sm-3</span>
+        </div>
+        <div class="col-sm-3">
+            <span>col-sm-3</span>
+        </div>
+        <div class="col-sm-3">
+            <span>col-sm-3</span>
+        </div>
+        <div class="col-sm-3">
+            <span>col-sm-3</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <span>col-sm-4</span>
+        </div>
+        <div class="col-sm-4">
+            <span>col-sm-4</span>
+        </div>
+        <div class="col-sm-4">
+            <span>col-sm-4</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <span>col-sm-6</span>
+        </div>
+        <div class="col-sm-6">
+            <span>col-sm-6</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <span>col-sm-6</span>
+            <div class="row">
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <span>col-sm-6</span>
+            <div class="row">
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>col-sm-3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="container-fluid">
+  <h2>.container-fluid
+    (full width)
+  </h2>
+  <div class="row">
+    <div class="col-md-12">
+      <span>.col-md-12</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+    <div class="col-md-1">
+      <span>.col-md-1</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+    <div class="col-md-8">
+      <span>.col-md-8</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      <span>.col-md-5</span>
+    </div>
+    <div class="col-md-7">
+      <span>.col-md-7</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+    <div class="col-md-6">
+      <span>.col-md-6</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <span>.col-md-7</span>
+    </div>
+    <div class="col-md-5">
+      <span>.col-md-5</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <span>.col-md-8</span>
+    </div>
+    <div class="col-md-4">
+      <span>.col-md-4</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <span>.col-md-9</span>
+    </div>
+    <div class="col-md-3">
+      <span>.col-md-3</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10">
+      <span>.col-md-10</span>
+    </div>
+    <div class="col-md-2">
+      <span>.col-md-2</span>
+    </div>
+  </div>
+  <div class="row"></div>
+  <div class="wrapper-code-sample">
+    <pre class="language-html code-example"><code><div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-8">.col-md-8</div>
+</div>
+<div class="row">
+    <div class="col-md-5">.col-md-5</div>
+    <div class="col-md-7">.col-md-7</div>
+</div>
+<div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+</div>
+<div class="row">
+    <div class="col-md-7">.col-md-7</div>
+    <div class="col-md-5">.col-md-5</div>
+</div>
+<div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+    <div class="col-md-9">.col-md-9</div>
+    <div class="col-md-3">.col-md-3</div>
+</div>
+<div class="row">
+    <div class="col-md-10">.col-md-10</div>
+    <div class="col-md-2">.col-md-2</div>
+</div>
+</code></pre>
+  </div>
+</div>
+    <section>
+    <h2>
+        Nesting columns
+    </h2>
+    <div class="row">
+        <div class="col-md-8">
+            .col-md-8
+            <div class="row">
+                <div class="col-md-6">
+                    <span>.col-md-6</span>
+                </div>
+                <div class="col-md-6">
+                    <span>.col-md-6</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <span>.col-md-4</span>
+        </div>
+        <div class="wrapper-code-sample">
+            <pre class="language-html code-example"><code><div class="row">
+    <div class="col-md-8">
+        .col-md-8
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+    </div>
+    <div class="col-md-4">.col-md-4</div>
+</div></code></pre>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        <h2>
+            Ofsetting columns
+        </h2>
+        <div class="col-sm-4">
+            <span>.col-sm-4</span>
+        </div>
+        <div class="col-sm-4 col-sm-offset-4">
+            <span>.col-sm-4 .col-sm-offset-4</span>
+        </div>
+        <div class="wrapper-code-sample">
+            <pre class="language-html code-example"><code><div class="row">
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-4 col-sm-offset-4">.col-sm-4 .col-sm-offset-4</div>
+</div></code></pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>
+            Centering a column
+        </h2>
+        <p>
+            Setting an offset equal to half of the remaining size of the row. For example, a column of size 2 would be centered by adding an offset of 5, that&#39;s (12-2)/2. It only works for even column sizes, so only .col-**-2, .col-**-4, col-**-6, col-**-8 and col-**-10 are supported.
+        </p>
+        <div class="col-md-10 col-md-offset-1">
+            <span>col-md-10 col-md-offset-1</span>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <span>col-md-8 col-md-offset-2</span>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            <span>col-md-6 col-md-offset-3</span>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <span>col-md-4 col-md-offset-4</span>
+        </div>
+        <div class="col-md-2 col-md-offset-5">
+            <span>col-md-2 col-md-offset-5</span>
+        </div>
+        <div class="wrapper-code-sample">
+            <pre class="language-html code-example"><code><div class="col-md-10 col-md-offset-1">
+    <span>col-md-10 col-md-offset-1</span>
+</div>
+<div class="col-md-8 col-md-offset-2">
+    <span>col-md-8 col-md-offset-2</span>
+</div>
+<div class="col-md-6 col-md-offset-3">
+    <span>col-md-6 col-md-offset-3</span>
+</div>
+<div class="col-md-4 col-md-offset-4">
+    <span>col-md-4 col-md-offset-4</span>
+</div>
+<div class="col-md-2 col-md-offset-5">
+    <span>col-md-2 col-md-offset-5</span>
+</div></code></pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>
+            Grid with different number of elements per column depending on screen size
+        </h2>
+        <h3>
+            Four column on Tablets, two column on smartphones
+        </h3>
+        <div class="col-sm-3 col-xs-6"><span>.col-sm-3 .col-xs-6</span></div>
+        <div class="col-sm-3 col-xs-6"><span>.col-sm-3 .col-xs-6</span></div>
+        <div class="col-sm-3 col-xs-6"><span>.col-sm-3 .col-xs-6</span></div>
+        <div class="col-sm-3 col-xs-6"><span>.col-sm-3 .col-xs-6</span></div>
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <h2>
+            Push And Pull - Change Column Ordering
+        </h2>
+        <p>
+            Change the order of the grid columns with .col-md-push-* and .col-md-pull-* classes:
+        </p>
+        <!-- <p>col-md-push-*は、本来の位置より、*に指定したカラム数分、右に配置する。
+            <br />col-md-pull-*は、本来の位置より、*に指定しmdカラム数分、左に配置する。</p>
+        <p>md以上の画面サイズでは、push/pullが適用されて並べ替えられています。 sm以下の画面サイズにすると解除されて 写真が先に表示されます。
+        </p> -->
+        <div class="col-md-4 col-sm-12 col-xs-12 col-md-push-8">
+            <span>
+                <img src="/rex-css-framework/img/media/sample-img01.jpg" width="200px" alt="サンプル画像" />
+                <br />
+                <p>.col-md-4 .col-sm-12 .col-xs-12 .col-md-push-8</p>
+            </span>
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12 col-md-pull-4">
+            <span>.col-md-8 .col-sm-12 .col-xs-12 .col-md-pull-4</span>
+        </div>
+    </div>
+</section>
+  </div>
+</section>
+<script>
+  String.prototype.escape = function () {
+    var tagsToReplace = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;'
+    };
+    return this.replace(/[&<>]/g, function (tag) {
+      return tagsToReplace[tag] || tag;
+    });
+  };
+
+  String.prototype.replaceEmptyProp = function (prop, propFixed) {
+    return this.replace(prop, propFixed);
+  };
+
+  function setCodeExamples() {
+    var list = document.querySelectorAll('.code-example > code');
+    for (var i = 0; i < list.length; i++) {
+      var example = list[i];
+      var innerHTML = example.innerHTML;
+      var emptyPropFix_checked = innerHTML.replaceEmptyProp('checked=""', 'checked');
+      var emptyPropFix_required = emptyPropFix_checked.replaceEmptyProp('required=""', 'required');
+      var escapedSample = emptyPropFix_required.escape();
+      example.innerHTML = escapedSample;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    setCodeExamples();
+  });
+</script>
+<script src="/rex-css-framework/js/prism.js"></script>
+</body>
+
+</html>
