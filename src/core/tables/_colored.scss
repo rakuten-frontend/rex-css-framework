@@ -1,22 +1,5 @@
-// Zebra-striping
-//
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
-.table-active {
-    background-color: #ebebeb;
-}
-
-.table-success {
-    background-color: #ebf7eb;
-}
-
-.table-info {
-    background-color: #ebf7fe;
-}
-
-.table-warning {
-    background-color: #fef3eb;
-}
-
-.table-danger {
-    background-color: #fdebeb;
-}
+@include table-row-variant(table-active, #ebebeb);
+@include table-row-variant(table-success, #ebf7eb);
+@include table-row-variant(table-info, #ebf7fe);
+@include table-row-variant(table-warning, #fef3eb);
+@include table-row-variant(table-danger, #fdebeb);

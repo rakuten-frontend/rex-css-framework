@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>rexicon-32-meatball-vertical-l</title>
+  <g>
+    <g>
+      <path d="M19,6a3,3,0,1,0-3,3A3,3,0,0,0,19,6ZM15,6a1,1,0,1,1,1,1A1.0011,1.0011,0,0,1,15,6Z" style="fill: #333"/>
+      <path d="M19,16a3,3,0,1,0-3,3A3,3,0,0,0,19,16Zm-4,0a1,1,0,1,1,1,1A1.0011,1.0011,0,0,1,15,16Z" style="fill: #333"/>
+      <path d="M19,26a3,3,0,1,0-3,3A3,3,0,0,0,19,26Zm-4,0a1,1,0,1,1,1,1A1.0011,1.0011,0,0,1,15,26Z" style="fill: #333"/>
+    </g>
+    <rect width="32" height="32" transform="translate(32 0) rotate(90)" style="fill: none"/>
+  </g>
+</svg>
